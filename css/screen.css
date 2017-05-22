@@ -45,6 +45,7 @@ html {
 
 body {
   background: var(--off-white);
+  padding-bottom: 40px;
 }
 
 ol, ul {
@@ -119,6 +120,12 @@ table {
   margin-top: -14px;
   background: var(--light-blue);
   padding-top: 11px;
+}
+
+@media  (max-width: 762px) {
+.active .nr {
+  margin-left: -10px;
+  }
 }
 
 .active .pr_title {
@@ -212,7 +219,7 @@ text-decoration: underline;
 
 .form input {
   height: 40px;
-  margin-top: 3px;
+  margin-top: 6px;
   margin-bottom: 20px;
   width: 100%;
   font-weight: normal;
@@ -370,4 +377,36 @@ height: 40px;
   height: 23px;
   float: left;
   margin-top: 15px;
+}
+
+
+#income form input {
+  max-width: 200px;
+}
+label input {
+  display: none;/* <-- hide the default checkbox */
+}
+label span {/* <-- style the artificial checkbox */
+  height: 19px;
+  margin-top: 10px;
+  width: 19px;
+  border: 1px solid var(--light-blue);
+  display: inline-block;
+  float: left;
+  border-radius: 3px;
+  position: relative;
+}
+[type=checkbox]:checked + span:before {/* <-- style its checked state..with a ticked icon */
+  content: url(../img/check.png);
+      position: absolute;
+      /* top: -1px; */
+      left: 5px;
+      height: 7px;
+}
+label p {
+  display: inline;
+    margin-left: 10px;
+    float: left;
+    margin-top: 12px;
+    font-size: 15px;
 }

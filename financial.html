@@ -77,7 +77,7 @@
 
           </div>
           <div class="row">
-            <div class="col-xs-2 active">
+            <div class="col-xs-2 ">
               <div class="nr">
                 <p>
                   1
@@ -87,7 +87,7 @@
                 Basic information
               </p>
             </div>
-            <div class="col-xs-2">
+            <div class="col-xs-2 active">
               <div class="nr">
                 <p>
                   2
@@ -177,80 +177,65 @@
 
     <div class="container">
       <div class="form nopadding">
-        <button class="accordion" data-toggle="collapse" data-target="#personal">Personal information</button>
-        <div id="personal" class="collapse">
+        <button class="accordion" data-toggle="collapse" data-target="#income">Income</button>
+        <div id="income" class="collapse">
             <div class="form">
 
             <form>
-              First name:<br>
+              Regular monthly income:<br>
               <input type="text" name="firstname"><br>
-              Last name:<br>
-              <input type="text" name="lastname">
+
+              Source of income:<br />
+              <div class="check">
+
+                <label>
+                  <input type='checkbox'>
+                  <span></span>
+                  <p>
+                    Employment
+                  </p>
+                </label>
+              </div>
+
+
+
+              <div class="check">
+
+                <label>
+                  <input type='checkbox'>
+                  <span></span>
+                  <p>
+                    Maternity
+                  </p>
+                </label>
+              </div>
+
+
+              <div class="check">
+
+                <label>
+                  <input type='checkbox'>
+                  <span></span>
+                  <p>
+                    Pension
+                  </p>
+                </label>
+              </div>
+
+
+              <div class="check">
+
+                <label>
+                  <input type='checkbox'>
+                  <span></span>
+                  <p>
+                    Other
+                  </p>
+                </label>
+              </div>
+
+
             </form>
-            <p class="continue">
-              To continue you must read and acknowledge the personal data protection policy.
-            </p>
-            <button type="button" class="orangebtn btn btn-info btn-lg" data-toggle="modal" data-target="#acknowledgemodal">Display policy</button>
-          </div>
-
-        </div>
-
-        <button class="accordion" data-toggle="collapse" data-target="#contact">Contact details</button>
-        <div id="contact" class="collapse">
-            <div class="form contact">
-            <p>
-              By inserting of your phone number andd email adress you giving us the content to contact you regarding the aplication
-            </p>
-            <form>
-
-            <div class="phone">
-
-              <h2>Enter phone number:</h2>
-              <p>
-                We will send you a code to your phone with a verification code:
-              </p>
-                <p class="hun">+36</p>
-                <input type="name" name="name">
-                <button type="button" class="bluebtn" name="button">Send verification code</button>
-            </div>
-
-            <div class="verify">
-              <h2>Enter the verification code:</h2>
-              <p>
-                We sent you a code to the phone number <span style="font-weight: bold;">+36 20 418 48 83</span>. Please enter the code you received in the text message:
-              </p>
-              <input type="email" name="email">
-              <button type="button" class="bluebtn" name="button">Verify </button>
-            </div>
-
-            <div class="success phone">
-              <img src="img/ok.png" />
-              <h2>Phone number successfully verified</h2>
-            </div>
-
-            <div class="email">
-
-              <h2>Enter email address:</h2>
-              <p>
-                We will send you an email with a verification code:
-              </p>
-                <input type="name" name="name">
-                <button type="button" class="bluebtn" name="button">Send verification code</button>
-            </div>
-
-            <div class="verify">
-              <h2>Enter the verification code:</h2>
-              <p>
-                We sent you a code to the email address  <span style="font-weight: bold;">john.doe@gmail.com</span>. Please enter the code you received in the email:
-              </p>
-              <input type="email" name="email">
-              <button type="button" class="bluebtn" name="button">Verify </button>
-            </div>
-
-            <div class="success email">
-              <img src="img/ok.png" />
-              <h2>Email address successfully verified</h2>
-            </div>
 
             </form>
 
@@ -259,6 +244,97 @@
           </div>
 
         </div>
+
+
+
+
+        <button class="accordion" data-toggle="collapse" data-target="#expenses">Expenses</button>
+        <div id="expenses" class="collapse">
+            <div class="form">
+
+            <form>
+              First name:<br>
+              <input type="text" name="firstname"><br>
+              Last name:<br>
+              <input type="text" name="lastname">
+            </form>
+
+            </form>
+
+            <button class="bluebtn" type="button" name="button">Next</button>
+
+          </div>
+
+        </div>
+
+
+
+        <button class="accordion" data-toggle="collapse" data-target="#Housing">Housing</button>
+        <div id="Housing" class="collapse">
+            <div class="form">
+
+            <form>
+              First name:<br>
+              <input type="text" name="firstname"><br>
+              Last name:<br>
+              <input type="text" name="lastname">
+            </form>
+
+            </form>
+
+            <button class="bluebtn" type="button" name="button">Next</button>
+
+          </div>
+
+        </div>
+
+
+
+
+        <button class="accordion" data-toggle="collapse" data-target="#family">Family and education</button>
+        <div id="family" class="collapse">
+            <div class="form">
+
+            <form>
+              First name:<br>
+              <input type="text" name="firstname"><br>
+              Last name:<br>
+              <input type="text" name="lastname">
+            </form>
+
+            </form>
+
+            <button class="bluebtn" type="button" name="button">Next</button>
+
+          </div>
+
+        </div>
+
+
+
+
+        <button class="accordion" data-toggle="collapse" data-target="#bank">Bank account</button>
+        <div id="bank" class="collapse">
+            <div class="form">
+
+            <form>
+              Regular monthly income:<br>
+              <input type="text" name="firstname"><br>
+
+            </form>
+
+            </form>
+
+            <button class="bluebtn" type="button" name="button">Next</button>
+
+          </div>
+
+        </div>
+
+
+
+
+
       </div>
 
   </div>
