@@ -510,7 +510,8 @@ border-color: var(--light-blue);
 .no:hover {
   background: #d2ecf7;
 }
-
+.left {
+  margin-left: 0px;}
 .bankaccount {
   max-width: 126px;
   margin-top: 20px !important;
