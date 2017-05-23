@@ -410,3 +410,45 @@ label p {
     margin-top: 12px;
     font-size: 15px;
 }
+
+
+.dropdown-toggle {
+  background: none;
+color: var(--blue);
+text-align: left;
+margin-top: 22px;
+width: 110px;
+border-color: var(--light-blue);
+
+}
+
+.dropdown-toggle:hover, .dropdown-toggle:active, .dropdown-toggle:active, .dropdown-toggle:visited {
+  background: none !important;
+  color: var(--blue) !important;
+}
+
+.btn .caret {
+
+  margin-left: 0;
+  float: right;
+  margin-top: 7px;
+
+}
+.dropdown {
+  display: inline-block;
+}
+.dropdown h2 {
+  margin-bottom: 10px;
+  position: absolute;
+  width: 300px;
+}
+
+.from  {
+  margin-left: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+.expenses input {
+  max-width: 200px;
+}
