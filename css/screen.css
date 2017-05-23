@@ -346,7 +346,19 @@ form  {
 }
 .form .form {
   border: none;
-  padding-top: 0px;
+  font-weight: bold;
+font-size: 20px;
+padding-top: 0px;
+}
+.contact {
+  margin-top: 20px;
+
+}
+.form.basic, .form.finish {
+  padding-top: 40px;
+}
+.form .form h1 {
+  margin: 10px 0px;
 }
 
 .form.contact h2 {
@@ -551,4 +563,16 @@ border-color: var(--light-blue);
 }
 .old p, .new p {
   margin-bottom: 10px;
+}
+
+.finish .col-md-2, .finish .col-md-9 {
+  margin-top: 20px;
+}
+.finish .col-md-2 .placeholder{
+  height: 50px;
+  width: 50px;
+  background: grey;
+}
+.finish .info {
+  margin-bottom: 20px;
 }

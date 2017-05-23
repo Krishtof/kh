@@ -45,7 +45,7 @@
           </p>
 
         </div>
-        <button onclick="window.location.href='/basic_contact.html'" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button">I acknowledge</button>
+        <button onclick="window.location.href='/kh/financial.html'" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button">I acknowledge</button>
         <a class="dont" href="#">I don't acknowledge</a>
 
       </div>
@@ -179,31 +179,19 @@
 
     <div class="container">
       <div class="form nopadding">
-        <button class="accordion collapsed" data-toggle="collapse" data-target="#personal">Personal information</button>
-        <div id="personal" class="collapse">
-            <div class="form">
-
+            <div class="form basic">
+            <h1 >Personal information</h1>
             <form>
               First name:<br>
               <input type="text" name="firstname"><br>
               Last name:<br>
               <input type="text" name="lastname">
             </form>
-            <p class="continue">
-              To continue you must read and acknowledge the personal data protection policy.
-            </p>
-            <button type="button" class="orangebtn btn btn-info btn-lg" data-toggle="modal" data-target="#acknowledgemodal">Display policy</button>
-          </div>
-
-        </div>
-
-        <button class="accordion collapsed" data-toggle="collapse" data-target="#contact">Contact details</button>
-        <div id="contact" class="collapse">
-            <div class="form contact">
+            <h1>Contact details</h1>
             <p>
               By inserting of your phone number andd email adress you giving us the content to contact you regarding the aplication
             </p>
-            <form>
+            <form class="contact">
 
             <div class="phone">
 
@@ -256,7 +244,10 @@
 
             </form>
 
-            <button onclick="window.location.href='financial.html'" class="bluebtn" type="button" name="button">Next</button>
+            <p class="continue">
+              To continue you must read and acknowledge the personal data protection policy.
+            </p>
+            <button type="button" class="orangebtn btn btn-info btn-lg" data-toggle="modal" data-target="#acknowledgemodal">Display policy</button>
 
           </div>
 
