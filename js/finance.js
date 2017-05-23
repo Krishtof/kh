@@ -1,6 +1,7 @@
 $(function(){
 	employment();
 	next();
+	open();
 });
 
 function employment(){
@@ -20,6 +21,7 @@ function next(){
 		$('#expenses_button').attr('data-target','#expenses');
 		$('#expenses_button').removeClass('collapsed');
 		$('#expenses').addClass('in');
+		$('#expenses').css('height','auto');
 	});
 	
 	
@@ -27,6 +29,7 @@ function next(){
 		$('#housing_button').attr('data-target','#Housing');
 		$('#housing_button').removeClass('collapsed');
 		$('#Housing').addClass('in');
+		$('#Housing').css('height','auto');
 	});
 	
 	
@@ -34,11 +37,13 @@ function next(){
 		$('#family_button').attr('data-target','#family');
 		$('#family_button').removeClass('collapsed');
 		$('#family').addClass('in');
+		$('#family').css('height','auto');
 	});
 	
 	$('button#family_next').click(function(){
 		$('#bank_button').attr('data-target','#bank');
 		$('#bank_button').removeClass('collapsed');
 		$('#bank').addClass('in');
+		$('#bank').css('height','auto');
 	});
 }
