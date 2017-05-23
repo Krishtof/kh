@@ -1,49 +1,45 @@
 $(function(){
-	employment();
 	next();
-	open();
 });
 
-function employment(){
-	$('input#employment').change(function(){
-		var value = $(this).is(':checked');
-		if(value == true){
-			$('.from').show();
-		}else{
-			$('.from').hide();
-		}
-	
-	});
-}
+
 
 function next(){
-	$('button#income_next').click(function(){
-		$('#expenses_button').attr('data-target','#expenses');
-		$('#expenses_button').removeClass('collapsed');
-		$('#expenses').addClass('in');
-		$('#expenses').css('height','auto');
+	$('#preco button').click(function(){
+		$('#precontractual').removeClass('in');
+		$('#precontractual_button').addClass('collapsed');
+		
+		$('#terms').addClass('in');
+		$('#terms_button').removeClass('collapsed');
+		$('#terms_button').attr('data-target','#terms');
 	});
 	
-	
-	$('button#expense_next').click(function(){
-		$('#housing_button').attr('data-target','#Housing');
-		$('#housing_button').removeClass('collapsed');
-		$('#Housing').addClass('in');
-		$('#Housing').css('height','auto');
+	$('#general button').click(function(){
+		$('#terms').removeClass('in');
+		$('#terms_button').addClass('collapsed');
+		
+		$('#pricelist').addClass('in');
+		$('#pricelist_button').removeClass('collapsed');
+		$('#pricelist_button').attr('data-target','#pricelist');
 	});
 	
-	
-	$('button#housing_next').click(function(){
-		$('#family_button').attr('data-target','#family');
-		$('#family_button').removeClass('collapsed');
-		$('#family').addClass('in');
-		$('#family').css('height','auto');
+	$('#list button').click(function(){
+		$('#pricelist').removeClass('in');
+		$('#pricelist_button').addClass('collapsed');
+		
+		$('#contract').addClass('in');
+		$('#contract_button').removeClass('collapsed');
+		$('#contract_button').attr('data-target','#contract');
 	});
 	
-	$('button#family_next').click(function(){
-		$('#bank_button').attr('data-target','#bank');
-		$('#bank_button').removeClass('collapsed');
+	$('#contr button').click(function(){
+		$('#contract').removeClass('in');
+		$('#contract_button').addClass('collapsed');
+		
 		$('#bank').addClass('in');
-		$('#bank').css('height','auto');
+		$('#bank_button').removeClass('collapsed');
+		$('#bank_button').attr('data-target','#bank');
 	});
+
 }
+
