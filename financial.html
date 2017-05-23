@@ -12,8 +12,10 @@
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/screen.css">
+        <link rel="stylesheet" href="css/finance.css">
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+         <script src="js/finance.js"></script>
         <title>kh</title>
     </head>
 
@@ -177,7 +179,7 @@
 
     <div class="container">
       <div class="form nopadding">
-        <button class="accordion collapsed" data-toggle="collapse" data-target="#income">Income</button>
+        <button class="accordion collapsed " data-toggle="collapse" id="income_button" data-target="#income">Income</button>
         <div id="income" class="collapse">
             <div class="form">
 
@@ -189,7 +191,7 @@
               <div class="check">
 
                 <label>
-                  <input type='checkbox'>
+                  <input type='checkbox' id="employment">
                   <span></span>
                   <p>
                     Employment
@@ -301,7 +303,7 @@
 
             </form>
 
-            <button class="bluebtn" type="button" name="button">Next</button>
+            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#income" name="button" id="income_next">Next</button>
 
           </div>
 
@@ -310,7 +312,7 @@
 
 
 
-        <button class="accordion collapsed" data-toggle="collapse" data-target="#expenses">Expenses</button>
+        <button class="accordion collapsed inactive" data-toggle="collapse" id="expenses_button" data-target="">Expenses</button>
         <div id="expenses" class="collapse">
             <div class="form">
 
@@ -323,7 +325,7 @@
 
             </form>
 
-            <button class="bluebtn" type="button" name="button">Next</button>
+            <button class="bluebtn" type="button" id="expense_next" data-toggle="collapse"  data-target="#expenses" name="button">Next</button>
 
           </div>
 
@@ -331,7 +333,7 @@
 
 
 
-        <button class="accordion collapsed" data-toggle="collapse" data-target="#Housing">Housing</button>
+        <button class="accordion collapsed inactive" data-toggle="collapse"  id="housing_button" data-target="">Housing</button>
         <div id="Housing" class="collapse">
             <div class="form housing">
               <h2>Type</h2>
@@ -378,7 +380,7 @@
 
             </form>
 
-            <button class="bluebtn" type="button" name="button">Next</button>
+            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#Housing" id="housing_next" name="button">Next</button>
 
           </div>
 
@@ -387,7 +389,7 @@
 
 
 
-        <button class="accordion collapsed" data-toggle="collapse" data-target="#family">Family and education</button>
+        <button class="accordion collapsed inactive" data-toggle="collapse"  id="family_button" data-target="">Family and education</button>
         <div id="family" class="collapse">
 
               <div class="form family">
@@ -449,7 +451,7 @@
 
                 </form>
 
-                <button class="bluebtn" type="button" name="button">Next</button>
+                <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#family" id="family_next" name="button">Next</button>
 
               </div>
 
@@ -461,7 +463,7 @@
 
 
 
-        <button class="accordion collapsed" data-toggle="collapse" data-target="#bank">Bank account</button>
+        <button class="accordion collapsed inactive" data-toggle="collapse"  id="bank_button" data-target="">Bank account</button>
         <div id="bank" class="collapse">
             <div class="form">
 
