@@ -47,7 +47,11 @@ body {
   background: var(--off-white);
   padding-bottom: 40px;
 }
-
+h2 {
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--blue);
+}
 ol, ul {
   list-style: none; }
 
@@ -64,7 +68,9 @@ table {
   background: #A1DEFB;
   height: 40px;
 }
-
+.shorter {
+  max-width: 200px;
+}
 .sec_subheader {
   width: 100%;
   background: #FFFFFF;
@@ -353,6 +359,7 @@ form  {
 .form p {
   font-weight: normal;
   font-size: 14px;
+  line-height: 18px;
 }
 
 .hun {
@@ -451,4 +458,67 @@ border-color: var(--light-blue);
 }
 .expenses input {
   max-width: 200px;
+}
+
+.radio {
+  left: 20px;
+}
+
+.radio label {
+  margin-top: 19px;
+  font-size: 15px;
+  margin-left: 10px;
+  color: var(--blue);
+}
+.housing h2 {
+  font-weight: bold;
+}
+
+.yes, .no {
+  display: inline-block;
+  width: 59px;
+  text-align: center;
+  padding: 8px;
+  height: 30px;
+}
+
+.switch {
+  border-radius: 5px;
+  border: 1px solid var(--light-blue);
+  margin-top: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 125px;
+
+}
+.yes {
+  background: white;
+  border-radius: 1px solid var(--light-blue);
+  border-right: 1px solid var(--light-blue);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.yes:hover {
+  background: #ececec;
+}
+
+.no {
+  background: var(--paleblue);
+  border-radius: 1px solid var(--light-blue);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.no:hover {
+  background: #d2ecf7;
+}
+
+.bankaccount {
+  max-width: 126px;
+  margin-top: 20px !important;
+  text-align: center;
+}
+.bankaccount:after {
+  content: '-';
+  display: inline-block;
+
 }

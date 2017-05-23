@@ -333,14 +333,48 @@
 
         <button class="accordion" data-toggle="collapse" data-target="#Housing">Housing</button>
         <div id="Housing" class="collapse">
-            <div class="form">
+            <div class="form housing">
+              <h2>Type</h2>
+              <div class="radio">
+                <input type="radio" id="r1" name="rr" />
+                <label for="r1">Rent</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="r2" name="rr" />
+                <label for="r2">Own with mortage</label>
+              </div>
 
-            <form>
-              First name:<br>
-              <input type="text" name="firstname"><br>
-              Last name:<br>
-              <input type="text" name="lastname">
-            </form>
+              <div class="radio">
+                <input type="radio" id="r2" name="rr" />
+                <label for="r2">Own without mortage</label>
+              </div>
+
+              <div class="radio">
+                <input type="radio" id="r2" name="rr" />
+                <label for="r2">Other</label>
+              </div>
+
+
+              <h2 style="margin-top: 40px;">Length of living on current address</h2>
+              <div class="radio">
+                <input type="radio" id="r1" name="rr" />
+                <label for="r1">0-1 year</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="r2" name="rr" />
+                <label for="r2">1-3 year</label>
+              </div>
+
+              <div class="radio">
+                <input type="radio" id="r2" name="rr" />
+                <label for="r2">3-6 year</label>
+              </div>
+
+              <div class="radio">
+                <input type="radio" id="r2" name="rr" />
+                <label for="r2">6+ year</label>
+              </div>
+
 
             </form>
 
@@ -355,20 +389,72 @@
 
         <button class="accordion" data-toggle="collapse" data-target="#family">Family and education</button>
         <div id="family" class="collapse">
-            <div class="form">
 
-            <form>
-              First name:<br>
-              <input type="text" name="firstname"><br>
-              Last name:<br>
-              <input type="text" name="lastname">
-            </form>
+              <div class="form family">
+                <h2>Graduate from</h2>
+                <div class="radio">
+                  <input type="radio" id="r1" name="rr" />
+                  <label for="r1">Elementary school</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" id="r2" name="rr" />
+                  <label for="r2">High school</label>
+                </div>
 
-            </form>
+                <div class="radio">
+                  <input type="radio" id="r2" name="rr" />
+                  <label for="r2">Vocational school with A-level graduation</label>
+                </div>
 
-            <button class="bluebtn" type="button" name="button">Next</button>
+                <div class="radio">
+                  <input type="radio" id="r2" name="rr" />
+                  <label for="r2">Vocation school without A-level graduation</label>
+                </div>
 
-          </div>
+                <div class="radio">
+                  <input type="radio" id="r2" name="rr" />
+                  <label for="r2">College / University</label>
+                </div>
+
+
+
+                <h2 style="margin-top: 40px;">Martial status</h2>
+                <div class="radio">
+                  <input type="radio" id="r1" name="rr" />
+                  <label for="r1">Single</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" id="r2" name="rr" />
+                  <label for="r2">Married</label>
+                </div>
+
+                <div class="radio">
+                  <input type="radio" id="r2" name="rr" />
+                  <label for="r2">Other</label>
+                </div><br />
+
+                <h2>Number of dependence:</h2><br>
+                <input class="shorter" type="text" name="firstname"><br>
+
+                <h2>Are you a politically exposed person?</h2><br>
+                <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur.</p>
+                <div class="switch">
+                  <div class="yes">
+                    Yes
+                  </div>
+                  <div class="no">
+                    No
+                  </div>
+                </div>
+
+                </form>
+
+                <button class="bluebtn" type="button" name="button">Next</button>
+
+              </div>
+
+
+
 
         </div>
 
@@ -380,12 +466,15 @@
             <div class="form">
 
             <form>
-              Regular monthly income:<br>
-              <input type="text" name="firstname"><br>
-
+              <h2>Your current account number</h2>
+              <p>
+                We will send you a micropayment to check your account, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui.
+              </p>
             </form>
+            <input placeholder="_ _ _ _ _ _ _ _" class="shorter bankaccount"type="text" name="firstname">
+            <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text" name="firstname">
+            <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text" name="firstname">
 
-            </form>
 
             <button class="bluebtn" type="button" name="button">Next</button>
 
