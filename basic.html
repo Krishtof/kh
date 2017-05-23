@@ -12,7 +12,9 @@
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/screen.css">
+        <link rel="stylesheet" href="css/basics.css">
         <script src="bower_components/jquery/dist/jquery.js"></script>
+         <script src="js/basics.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <title>basic</title>
     </head>
@@ -177,7 +179,7 @@
 
     <div class="container">
       <div class="form nopadding">
-        <button class="accordion" data-toggle="collapse" data-target="#personal">Personal information</button>
+        <button class="accordion collapsed" data-toggle="collapse" data-target="#personal">Personal information</button>
         <div id="personal" class="collapse">
             <div class="form">
 
@@ -195,7 +197,7 @@
 
         </div>
 
-        <button class="accordion" data-toggle="collapse" data-target="#contact">Contact details</button>
+        <button class="accordion collapsed" data-toggle="collapse" data-target="#contact">Contact details</button>
         <div id="contact" class="collapse">
             <div class="form contact">
             <p>
@@ -210,20 +212,20 @@
                 We will send you a code to your phone with a verification code:
               </p>
                 <p class="hun">+36</p>
-                <input type="name" name="name">
-                <button type="button" class="bluebtn" name="button">Send verification code</button>
+                <input type="name" name="name" id="phone_phone">
+                <button type="button" class="bluebtn" id="phone-send" name="button">Send verification code</button>
             </div>
 
-            <div class="verify">
+            <div class="verify" id="phone_verification">
               <h2>Enter the verification code:</h2>
               <p>
-                We sent you a code to the phone number <span style="font-weight: bold;">+36 20 418 48 83</span>. Please enter the code you received in the text message:
+                We sent you a code to the phone number <span style="font-weight: bold;" id="phone_number">+36 20 418 48 83</span>. Please enter the code you received in the text message:
               </p>
-              <input type="email" name="email">
-              <button type="button" class="bluebtn" name="button">Verify </button>
+              <input type="email" name="email" id="phone_verify">
+              <button type="button" class="bluebtn" id="phone-verify"  name="button">Verify </button>
             </div>
 
-            <div class="success phone">
+            <div class="success phone" id="phone_success">
               <img src="img/ok.png" />
               <h2>Phone number successfully verified</h2>
             </div>
@@ -234,20 +236,20 @@
               <p>
                 We will send you an email with a verification code:
               </p>
-                <input type="name" name="name">
-                <button type="button" class="bluebtn" name="button">Send verification code</button>
+                <input type="email" name="name" id="email_email">
+                <button type="button" class="bluebtn" id="email-send"  name="button">Send verification code</button>
             </div>
 
-            <div class="verify">
+            <div class="verify" id="email_verification">
               <h2>Enter the verification code:</h2>
               <p>
-                We sent you a code to the email address  <span style="font-weight: bold;">john.doe@gmail.com</span>. Please enter the code you received in the email:
+                We sent you a code to the email address  <span style="font-weight: bold;" id="user_email">john.doe@gmail.com</span>. Please enter the code you received in the email:
               </p>
-              <input type="email" name="email">
-              <button type="button" class="bluebtn" name="button">Verify </button>
+              <input type="email" name="email" id="email_verify">
+              <button type="button" class="bluebtn" id="email-verify"  name="button">Verify </button>
             </div>
 
-            <div class="success email">
+            <div class="success email" id="email_success">
               <img src="img/ok.png" />
               <h2>Email address successfully verified</h2>
             </div>
