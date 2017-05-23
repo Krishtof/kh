@@ -467,7 +467,6 @@ border-color: var(--light-blue);
 .radio label {
   margin-top: 19px;
   font-size: 15px;
-  margin-left: 10px;
   color: var(--blue);
 }
 .housing h2 {
@@ -521,4 +520,34 @@ border-color: var(--light-blue);
   content: '-';
   display: inline-block;
 
+}
+
+.old .col-md-12 {
+  background-image: url(../img/old.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border: 7px solid white;
+
+}
+.new .col-md-12{
+  background-image: url(../img/new.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  border: 7px solid white;
+}
+
+.new.active .col-md-12, .old.active .col-md-12 {
+  outline: 2px solid var(--light-blue);
+}
+.old, .new {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.form.id_type {
+  text-align: center;
+}
+.old p, .new p {
+  margin-bottom: 10px;
 }

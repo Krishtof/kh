@@ -87,7 +87,7 @@
                 Basic information
               </p>
             </div>
-            <div class="col-xs-2 active">
+            <div class="col-xs-2 ">
               <div class="nr">
                 <p>
                   2
@@ -97,7 +97,7 @@
                 Financial evaluation
               </p>
             </div>
-            <div class="col-xs-2">
+            <div class="col-xs-2 active">
               <div class="nr">
                 <p>
                   3
@@ -141,7 +141,7 @@
 
 
           </div>
-          <h2 class="title">Financial evaluation</h2>
+          <h2 class="title">Statements</h2>
         </div>
       </div>
 
@@ -177,131 +177,16 @@
 
     <div class="container">
       <div class="form nopadding">
-        <button class="accordion collapsed" data-toggle="collapse" data-target="#income">Income</button>
-        <div id="income" class="collapse">
+        <button class="accordion" data-toggle="collapse" data-target="#data">Data protection policy</button>
+        <div id="data" class="collapse">
             <div class="form">
-
-            <form>
-              Regular monthly income:<br>
-              <input type="text" name="firstname"><br>
-
-              Source of income:<br />
-              <div class="check">
-
-                <label>
-                  <input type='checkbox'>
-                  <span></span>
-                  <p>
-                    Employment
-                  </p>
-                </label>
-              </div>
-              <div class="from">
-
-                <div class="dropdown">
-                  <h2>Current employment from</h2>
-
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Month
-                  <span class="caret"></span></button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">January</a></li>
-                    <li><a href="#">February</a></li>
-                    <li><a href="#">March</a></li>
-                    <li><a href="#">April</a></li>
-                    <li><a href="#">May</a></li>
-                    <li><a href="#">June</a></li>
-                    <li><a href="#">July</a></li>
-                    <li><a href="#">August</a></li>
-                    <li><a href="#">September</a></li>
-                    <li><a href="#">October</a></li>
-                    <li><a href="#">November</a></li>
-                    <li><a href="#">December</a></li>
-                  </ul>
-                </div>
-
-
-                <div class="dropdown">
-
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Year
-                  <span class="caret"></span></button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">2017</a></li>
-                    <li><a href="#">2016</a></li>
-                    <li><a href="#">2015</a></li>
-                    <li><a href="#">2014</a></li>
-                    <li><a href="#">2013</a></li>
-                    <li><a href="#">2012</a></li>
-                    <li><a href="#">2011</a></li>
-                    <li><a href="#">2010</a></li>
-                    <li><a href="#">2009</a></li>
-                    <li><a href="#">2008</a></li>
-                    <li><a href="#">2007</a></li>
-                    <li><a href="#">2006</a></li>
-                    <li><a href="#">2005</a></li>
-                    <li><a href="#">2004</a></li>
-                    <li><a href="#">2003</a></li>
-                    <li><a href="#">2002</a></li>
-                    <li><a href="#">2001</a></li>
-                    <li><a href="#">2000</a></li>
-                    <li><a href="#">longer</a></li>
-
-                  </ul>
-                </div>
-                <div class="check">
-
-                  <label>
-                    <input type='checkbox'>
-                    <span></span>
-                    <p>
-                      I confirm that I am neither in probation on trial period
-                    </p>
-                  </label>
-                </div>
-              </div>
+            <p>
+              To verify your identity we will need sncan or photo of your ID. To continue you need to acknowledge with personal data processing.
+            </p>
 
 
 
-              <div class="check">
-
-                <label>
-                  <input type='checkbox'>
-                  <span></span>
-                  <p>
-                    Maternity
-                  </p>
-                </label>
-              </div>
-
-
-              <div class="check">
-
-                <label>
-                  <input type='checkbox'>
-                  <span></span>
-                  <p>
-                    Pension
-                  </p>
-                </label>
-              </div>
-
-
-              <div class="check">
-
-                <label>
-                  <input type='checkbox'>
-                  <span></span>
-                  <p>
-                    Other
-                  </p>
-                </label>
-              </div>
-
-
-            </form>
-
-            </form>
-
-            <button class="bluebtn" type="button" name="button">Next</button>
+            <button class="bluebtn" type="button" data-toggle="modal" data-target="#acknowledgemodal" name="button">Display policy</button>
 
           </div>
 
@@ -310,16 +195,31 @@
 
 
 
-        <button class="accordion collapsed" data-toggle="collapse" data-target="#expenses">Expenses</button>
+        <button class="accordion" data-toggle="collapse" data-target="#expenses">Select ID type</button>
         <div id="expenses" class="collapse">
-            <div class="form">
+            <div class="form id_type">
+              <h2>Which type of ID do you have?</h2>
+              <p>
+                Please select
+              </p>
+                  <div class="col-md-6 old active">
+                    <p>
+                      ID from issued before 11.12.2016.
+                    </p>
+                    <div class="col-md-12">
 
-            <form class="expenses">
-              Regular loan instalments:<br>
-              <input type="text" name="firstname"><br>
-              Regular monthly expenses:<br>
-              <input type="text" name="lastname">
-            </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6 new">
+                    <p>
+                      ID from issued before 11.12.2016.
+                    </p>
+                    <div class="col-md-12">
+
+                    </div>
+                  </div>
+
+
 
             </form>
 
@@ -331,7 +231,7 @@
 
 
 
-        <button class="accordion collapsed" data-toggle="collapse" data-target="#Housing">Housing</button>
+        <button class="accordion" data-toggle="collapse" data-target="#Housing">Housing</button>
         <div id="Housing" class="collapse">
             <div class="form housing">
               <h2>Type</h2>
@@ -387,7 +287,7 @@
 
 
 
-        <button class="accordion collapsed" data-toggle="collapse" data-target="#family">Family and education</button>
+        <button class="accordion" data-toggle="collapse" data-target="#family">Family and education</button>
         <div id="family" class="collapse">
 
               <div class="form family">
@@ -461,7 +361,7 @@
 
 
 
-        <button class="accordion collapsed" data-toggle="collapse" data-target="#bank">Bank account</button>
+        <button class="accordion" data-toggle="collapse" data-target="#bank">Bank account</button>
         <div id="bank" class="collapse">
             <div class="form">
 
