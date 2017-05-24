@@ -398,10 +398,12 @@ height: 40px;
 .success img {
   height: 23px;
   float: left;
-  margin-top: 15px;
+  margin-top: -3px;
 }
 
-
+.phone.success, .email.success {
+  min-height: 50px;
+}
 #income form input {
   max-width: 200px;
 }
@@ -648,11 +650,6 @@ input[type="file"] {
   align-items: center;
 
 }
-.success img {
-  margin: 0px;
-  margin-left: 14px;
-  height: 90px;
-}
 
 .id_ok, .mailing_address {
   padding: 50px;
@@ -786,4 +783,14 @@ input[type="file"] {
 
 .loaninfo h2 {
   margin-bottom: 15px;
+}
+.id_suc
+{    height: 90px !important;
+    float: left !important;
+    margin: 0 auto !important;
+    margin-top: -3px !important;
+    left: 50% !important;
+    position: relative !important;
+    margin-top: 29px !important;
+    margin-left: -45px !important;
 }
