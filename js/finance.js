@@ -1,7 +1,6 @@
 $(function(){
 	employment();
 	next();
-	open();
 });
 
 function employment(){
