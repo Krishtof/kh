@@ -152,7 +152,6 @@
     <div class="container">
 
       <div class="loanholder">
-        <a class="edit">edit</a>
         <h2>Loan I apply for</h2>
         <div class="amount">
           <p>
@@ -200,7 +199,7 @@
                 We will send you a code to your phone with a verification code:
               </p>
                 <p class="hun">+36</p>
-                <input type="name" name="name" id="phone_phone">
+                <input type="name" name="name" id="phone_phone" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                 <button type="button" class="bluebtn" id="phone-send" name="button">Send verification code</button>
             </div>
 
@@ -209,7 +208,7 @@
               <p>
                 We sent you a code to the phone number <span style="font-weight: bold;" id="phone_number">+36 20 418 48 83</span>. Please enter the code you received in the text message:
               </p>
-              <input type="email" name="email" id="phone_verify">
+              <input type="email" name="email" id="phone_verify" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
               <button type="button" class="bluebtn" id="phone-verify"  name="button">Verify </button>
             </div>
 
@@ -233,7 +232,7 @@
               <p>
                 We sent you a code to the email address  <span style="font-weight: bold;" id="user_email">john.doe@gmail.com</span>. Please enter the code you received in the email:
               </p>
-              <input type="email" name="email" id="email_verify">
+              <input type="email" name="email" id="email_verify" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
               <button type="button" class="bluebtn" id="email-verify"  name="button">Verify </button>
             </div>
 
