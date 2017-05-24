@@ -555,7 +555,6 @@ border-color: var(--light-blue);
 .id_btn{
   font-size: 13px;
   min-width: 108px;
-  margin-bottom: 20px;
   padding: 10px;
   border-radius: 3px;
   color: var(--light-blue);
@@ -692,4 +691,46 @@ input[type="file"] {
 }
 .street h2 {
   position: absolute;
+}
+.statementholder {
+  max-width: 460px;
+  border: 1px solid var(--light-blue);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.statementholder .bluebtn {
+  height: 30px;
+}
+
+.statementholder h2 {
+  padding: 10px;
+  line-height: 18px;
+}
+
+.uploadbox {
+  max-width: 288px;
+  background: #FBFBFB;
+  border: 1px solid #E3E3E3;
+  border-radius: 3px;
+  min-height: 186px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 30px;
+  text-align: center;
+}
+.uploadbox img {
+
+  float: none;
+  margin-bottom: 10px;
+}
+.uploadbox p {
+  margin-bottom: 10px;
+  color: var(--light-blue);
+}
+.uploadbox.success p, .uploadbox.success h2{
+  color: var(--light-blue);
+  font-size: 15px;
 }
