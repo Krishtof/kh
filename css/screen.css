@@ -279,7 +279,7 @@ form  {
   margin: 0 auto;
   margin-top: 20px;
   border: none;
-
+  margin-bottom: 20px;
   width: 200px;
 }
 
@@ -669,9 +669,7 @@ input[type="file"] {
 .checklabel {
   font-weight: bold !important;
 }
-.mailing_info {
-  margin-left: 30px;
-}
+
 .inline {
   display: inline;
 }
