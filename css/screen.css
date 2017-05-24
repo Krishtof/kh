@@ -555,7 +555,7 @@ border-color: var(--light-blue);
 .id_btn{
   font-size: 13px;
   min-width: 108px;
-  padding: 10px;
+    padding: 10px;
   border-radius: 3px;
   color: var(--light-blue);
   background: none;
@@ -733,4 +733,54 @@ input[type="file"] {
 .uploadbox.success p, .uploadbox.success h2{
   color: var(--light-blue);
   font-size: 15px;
+}
+.form.approval {
+  padding: 50px;
+}
+.form.approval h1 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.approval   {
+  width: 100%;
+}
+.approval .container,  {
+  padding: 0px;
+
+}
+.approval .container {
+  width: 100%;
+  padding: 0px;
+  margin-top: 40px;
+}
+
+.approval .container .col-md-6 {
+  padding: 10px 20px 10px 0px;;
+}
+
+.loaninfo {
+  padding: 20px !important;
+  background: #FBFBFB;
+  border: 1px solid #BEBEBE;
+}
+
+.loaninfo .line {
+  height: 1px;
+  width: 100%;
+  margin-bottom: 10px;
+  background: var(--light-blue);
+}
+.loaninfo h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+.loaninfo p {
+  line-height: 22px;
+}
+
+.loaninfo h2 {
+  margin-bottom: 15px;
 }
