@@ -102,6 +102,7 @@ table {
 }
 .nr p {
   color: white;
+  
 }
 
 .pr_title {
@@ -791,4 +792,40 @@ input[type="file"] {
     position: relative !important;
     margin-top: 29px !important;
     margin-left: -45px !important;
+}
+
+
+
+
+
+
+
+
+.landing {
+  text-align: center;
+}
+.disc {
+  text-align: left;
+  margin-top: 20px;
+  line-height: 22px;
+}
+.impresto {
+font-family: HelveticaNeue-Bold;
+font-size: 48px;
+color: var(--blue);
+margin: 30px 0px 20px;
+}
+.calculator {
+padding: 20px;
+margin-top: 40px;
+background: #FFFFFF;
+border: 1px solid #99DFF9;
+}
+.calculator h2 {
+  margin-bottom: 13px;
+}
+.calculator .n_amount {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
