@@ -19,32 +19,48 @@
 
 <!-- BODY-->
 
-<div id="acknowledgemodal" class="modal fade" role="dialog">
+<div id="upload" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
     <div class="modal-content">
-      <div class="modal-body">
-        <div class="text">
-          <h1>Data processing policy</h1>
-          <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur, molestiae definiebas efficiendi in mel. Sit ad eruditi persequeris, ne docendi omnesque pro. Id nibh ubique democritum eum, ea singulis senserit nec, vix no erant dolore intellegebat. Eam ex utamur elaboraret, idque saepe argumentum qui ei, his prodesset dissentiunt ex.
+      <div class="modal-body upload">
+        <img src="img/mobile.png" />
+        <h1>Please check your phone</h1>
+        <p>
+          We have sent you an SMS to your cell phone. Click on the link in the message and enter the following security code on the webpage: <span style="font-weight: bold;">123432</span>
+        </p>
+        <h2>Note these when taking the pictures:</h2>
+        <div class="container">
+          <div class="col-md-3">
+            <img src="img/csillan.png" />
+            <p>
+              Flash reflection
+            </p>
+          </div>
 
-          Vis saepe concludaturque ad, eius bonorum periculis vim ea, integre suscipit prodesset eu quo. Utinam scaevola has cu, cum etiam scripserit te, no copiosae definitionem pro. Phaedrum quaerendum eum ea, pro an iuvaret accommodare. Posse adipisci theophrastus at vel, te pro dolore quaestio dignissim. In eos meliore tractatos torquatos. Duo no meis lucilius deterruisset. Mundi ludus eos cu.
+          <div class="col-md-3">
+            <img src="img/kicsi.png" />
+            <p>
+              Far from the border (less then 3/4 of the picture)
+            </p>
+          </div>
 
-          Ut simul possit incorrupte cum, quo explicari temporibus ea. Dolor invidunt mel in, ferri omnium offendit ut ius. Eos at regione mentitum probatus, mel consequat elaboraret ne, pro tamquam adolescens moderatius ne. Mundi explicari torquatos vel et, duo vide epicurei ea. Ei facilisi definitiones pro, pri esse essent in.
+          <div class="col-md-3">
+            <img src="img/low.png" />
+            <p>
+              Light or low contrast background
+            </p>
+          </div>
 
-          Causae lobortis indoctum sit cu, vel case atomorum ut. Ne dolores mandamus constituto sit. Voluptaria inciderint mea ei, quo adipisci corrumpit elaboraret in. Qui bonorum molestie sententiae id, cum cu purto facete latine. Rebum virtute delicatissimi ad pri. Ius posse nobis cu, vim an nobis accusata incorrupte.
-
-          Porro iuvaret salutatus pro cu, alia sint offendit duo ei, denique reprimique dissentiet no duo. Sea ei vero brute consetetur, sed efficiendi definitiones ea. Vis quidam commodo efficiendi no. Deserunt tacimates suscipiantur ne vim. Vix ad amet delicata contentiones, ius mundi admodum suscipit eu, an mea falli euripidis.
-
-          Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur, molestiae definiebas efficiendi in mel. Sit ad eruditi persequeris, ne docendi omnesque pro. Id nibh ubique democritum eum, ea singulis senserit nec, vix no erant dolore intellegebat. Eam ex utamur elaboraret, idque saepe argumentum qui ei, his prodesset dissentiunt ex.
-
-          Vis saepe concludaturque ad, eius bonorum periculis vim ea, integre suscipit prodesset eu quo. Utinam scaevola has cu, cum etiam scripserit te, no copiosae definitionem pro. Phaedrum quaerendum eum ea, pro an iuvaret accommodare. Posse adipisci theophrastus at vel, te pro dolore quaestio dignissim. In eos meliore tractatos torquatos. Duo no meis lucilius deterruisset. Mundi ludus eos cu.
-          </p>
-
+          <div class="col-md-3">
+            <img src="img/kilog.png" />
+            <p>
+              Edge cut-off
+            </p>
+          </div>
         </div>
-        <button onclick="window.location.href='/basic_contact.html'" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button">I acknowledge</button>
-        <a class="dont" href="#">I don't acknowledge</a>
+        <button onclick="window.location.href='/basic_contact.html'" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button">Ok</button>
 
       </div>
     </div>
@@ -207,7 +223,13 @@
                       ID from issued before 11.12.2016.
                     </p>
                     <div class="col-md-12">
-
+                      <div class="selected">
+                        <p>
+                          Drag and drop file into this box to upload or choose below:
+                        </p>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture</button>
+                        <button type="button " class="id_btn" name="button" >Browse for files</button>
+                      </div>
                     </div>
                   </div>
                   <div class="col-md-6 new">
@@ -215,172 +237,135 @@
                       ID from issued before 11.12.2016.
                     </p>
                     <div class="col-md-12">
-
+                      <div class="selected error">
+                        <p>
+                          The picture you tried to upload is invalid. Please try again:
+                        </p>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture</button>
+                        <button type="button " class="id_btn" name="button" >Browse for files</button>
+                      </div>
                     </div>
                   </div>
 
 
 
             </form>
+            <div class="container watchout">
+              <h2>What to watch for:</h2>
+              <div class="col-md-3">
+                <img src="img/csillan.png" />
+                <p>
+                  Flash reflection
+                </p>
+              </div>
+
+              <div class="col-md-3">
+                <img src="img/kicsi.png" />
+                <p>
+                  Far from the border (less then 3/4 of the picture)
+                </p>
+              </div>
+
+              <div class="col-md-3">
+                <img src="img/low.png" />
+                <p>
+                  Light or low contrast background
+                </p>
+              </div>
+
+              <div class="col-md-3">
+                <img src="img/kilog.png" />
+                <p>
+                  Edge cut-off
+                </p>
+              </div>
+            </div>
+
+
+
 
             <button class="bluebtn" type="button" name="button">Next</button>
 
           </div>
+          <div class="id_ok">
 
-        </div>
+            <div class="container">
+              <div class="col-md-6 new">
+                <p>
+                  Your data was read succesfully, including permanent address.
+                </p>
+                <div class="col-md-12">
+                  <div class="selected success">
+                    <img src="img/success.png" /><br />
 
-
-
-        <button class="accordion" data-toggle="collapse" data-target="#Housing">Housing</button>
-        <div id="Housing" class="collapse">
-            <div class="form housing">
-              <h2>Type</h2>
-              <div class="radio">
-                <input type="radio" id="r1" name="rr" />
-                <label for="r1">Rent</label>
-              </div>
-              <div class="radio">
-                <input type="radio" id="r2" name="rr" />
-                <label for="r2">Own with mortage</label>
-              </div>
-
-              <div class="radio">
-                <input type="radio" id="r2" name="rr" />
-                <label for="r2">Own without mortage</label>
-              </div>
-
-              <div class="radio">
-                <input type="radio" id="r2" name="rr" />
-                <label for="r2">Other</label>
+                  </div>
+                </div>
               </div>
 
 
-              <h2 style="margin-top: 40px;">Length of living on current address</h2>
-              <div class="radio">
-                <input type="radio" id="r1" name="rr" />
-                <label for="r1">0-1 year</label>
-              </div>
-              <div class="radio">
-                <input type="radio" id="r2" name="rr" />
-                <label for="r2">1-3 year</label>
-              </div>
 
-              <div class="radio">
-                <input type="radio" id="r2" name="rr" />
-                <label for="r2">3-6 year</label>
-              </div>
-
-              <div class="radio">
-                <input type="radio" id="r2" name="rr" />
-                <label for="r2">6+ year</label>
-              </div>
-
-
-            </form>
-
-            <button class="bluebtn" type="button" name="button">Next</button>
-
+            </div>
           </div>
 
-        </div>
 
+        <div class="mailing_address">
+          <div class="check">
 
-
-
-        <button class="accordion" data-toggle="collapse" data-target="#family">Family and education</button>
-        <div id="family" class="collapse">
-
-              <div class="form family">
-                <h2>Graduate from</h2>
-                <div class="radio">
-                  <input type="radio" id="r1" name="rr" />
-                  <label for="r1">Elementary school</label>
-                </div>
-                <div class="radio">
-                  <input type="radio" id="r2" name="rr" />
-                  <label for="r2">High school</label>
-                </div>
-
-                <div class="radio">
-                  <input type="radio" id="r2" name="rr" />
-                  <label for="r2">Vocational school with A-level graduation</label>
-                </div>
-
-                <div class="radio">
-                  <input type="radio" id="r2" name="rr" />
-                  <label for="r2">Vocation school without A-level graduation</label>
-                </div>
-
-                <div class="radio">
-                  <input type="radio" id="r2" name="rr" />
-                  <label for="r2">College / University</label>
-                </div>
-
-
-
-                <h2 style="margin-top: 40px;">Martial status</h2>
-                <div class="radio">
-                  <input type="radio" id="r1" name="rr" />
-                  <label for="r1">Single</label>
-                </div>
-                <div class="radio">
-                  <input type="radio" id="r2" name="rr" />
-                  <label for="r2">Married</label>
-                </div>
-
-                <div class="radio">
-                  <input type="radio" id="r2" name="rr" />
-                  <label for="r2">Other</label>
-                </div><br />
-
-                <h2>Number of dependence:</h2><br>
-                <input class="shorter" type="text" name="firstname"><br>
-
-                <h2>Are you a politically exposed person?</h2><br>
-                <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur.</p>
-                <div class="switch">
-                  <div class="yes">
-                    Yes
-                  </div>
-                  <div class="no">
-                    No
-                  </div>
-                </div>
-
-                </form>
-
-                <button class="bluebtn" type="button" name="button">Next</button>
-
-              </div>
-
-
-
-
-        </div>
-
-
-
-
-        <button class="accordion" data-toggle="collapse" data-target="#bank">Bank account</button>
-        <div id="bank" class="collapse">
-            <div class="form">
-
-            <form>
-              <h2>Your current account number</h2>
-              <p>
-                We will send you a micropayment to check your account, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui.
+            <label>
+              <input type='checkbox' id="employment">
+              <span></span>
+              <p class="checklabel">
+                Add a new mailing address
               </p>
-            </form>
-            <input placeholder="_ _ _ _ _ _ _ _" class="shorter bankaccount"type="text" name="firstname">
-            <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text" name="firstname">
-            <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text" name="firstname">
-
-
-            <button class="bluebtn" type="button" name="button">Next</button>
+              <p class="mailing_info">
+                You acknowledge that we will enter the credit bureau and save there the data about your application
+              </p>
+            </label>
+          </div>
+          <div class="city inline">
+            <h2>Postal code</h2>
+            <input type="text" class="shortest" name="firstname">
+            <input type="text" class="shorter" name="firstname">
 
           </div>
+          <div class="street">
+            <h2>Street</h2>
+            <input type="text" class="shorter" name="firstname">
+
+            <div class="street inline">
+              <div class="dropdown shortest">
+                <h2>Street type</h2>
+
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">street
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Bu</a></li>
+                  <li><a href="#">February</a></li>
+                  <li><a href="#">March</a></li>
+                  <li><a href="#">April</a></li>
+                  <li><a href="#">May</a></li>
+                  <li><a href="#">June</a></li>
+                  <li><a href="#">July</a></li>
+                  <li><a href="#">August</a></li>
+                  <li><a href="#">September</a></li>
+                  <li><a href="#">October</a></li>
+                  <li><a href="#">November</a></li>
+                  <li><a href="#">December</a></li>
+                </ul>
+              </div>
+              <h2>Number</h2>
+              <input type="text" class="shortest" name="firstname">
+
+
+            </div>
+          </div>
+
+
+
 
         </div>
+
+
 
 
 

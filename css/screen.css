@@ -71,6 +71,9 @@ table {
 .shorter {
   max-width: 200px;
 }
+.shortest {
+  max-width: 90px;
+}
 .sec_subheader {
   width: 100%;
   background: #FFFFFF;
@@ -539,16 +542,45 @@ border-color: var(--light-blue);
   background-image: url(../img/old.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 200px;
+  min-height: 185px;
+  padding: 0px;
   border: 7px solid white;
 
+}
+
+.col-md-12 .selected p {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.id_btn{
+  font-size: 13px;
+  min-width: 108px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  color: var(--light-blue);
+  background: none;
+  border: 1px solid var(--light-blue);
+}
+.col-md-12 .selected {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+
+  min-height: 185px;
+  background: #E6F7FE;
+}
+
+input[type="file"] {
+    display: none;
 }
 .new .col-md-12{
   background-image: url(../img/new.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 200px;
-  border: 7px solid white;
+  min-height: 200px;
+  padding: 0px;
+  border: 7px solid #f5f5f5;
 }
 
 .new.active .col-md-12, .old.active .col-md-12 {
@@ -575,4 +607,89 @@ border-color: var(--light-blue);
 }
 .finish .info {
   margin-bottom: 20px;
+}
+
+.modal-body.upload .container {
+  width: 100%;
+}
+.modal-body.upload .col-md-3 p {
+  font-size: 14px;
+  text-align: left;
+  padding: 0px;
+}
+.modal-body.upload p, .modal-body.upload h2 {
+  padding: 20px 0px;
+  line-height: 20px;
+}
+.modal-body.upload h1 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 60px;
+}
+.selected.error {
+  outline: 1px solid red;
+}
+.selected.error p {
+  color: red;
+}
+.watchout {
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+}
+.watchout .col-md-3 {
+  padding-left: 0px;
+}
+.watchout h2 {
+  padding-bottom: 20px;
+}
+.selected.success {
+  background: rgba(230, 247, 254, 0.78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.success img {
+  margin: 0px;
+  margin-left: 14px;
+  height: 90px;
+}
+
+.id_ok, .mailing_address {
+  padding: 50px;
+}
+.id_ok .container {
+  width: 100%;
+  padding: 0px;
+}
+
+.id_ok .container .col-md-6 {
+  padding: 0px;
+}
+.checklabel {
+  font-weight: bold !important;
+}
+.mailing_info {
+  margin-left: 30px;
+}
+.inline {
+  display: inline;
+}
+.city {
+  margin-top: 50px;
+  display: block;
+}
+.street input {
+  display: inline-block;
+}
+.street .dropdown-toggle {
+  margin-top: 0px;
+  height: 40px;
+}
+.street .dropdown h2 {
+  position: relative;
+}
+.street h2 {
+  position: absolute;
 }
