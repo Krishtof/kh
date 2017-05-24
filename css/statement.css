@@ -1,0 +1,50 @@
+.selected.successful{
+	display: none;
+}
+
+.selected.success{
+	display: none;
+}
+
+.selected.error{
+	display: none;
+}
+
+.mailing_address .city{
+	display: none;
+	text-align: left;
+}
+
+.mailing_address .street{
+	display: none;
+	text-align: left;
+}
+
+h2{
+	position: relative !important;
+}
+
+#id_old{
+	cursor: pointer;
+}
+
+
+
+.street_holder{
+	width:200px;
+	display: inline-block;
+}
+
+.type_of_street{
+	width:110px;
+	display: inline-block;
+}
+
+.street_number{
+	width: 50px;
+	display: inline-block;
+}
+
+.mailing_address{
+	padding: 0px;
+}
