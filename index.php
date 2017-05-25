@@ -71,8 +71,8 @@
 			<div style="margin-top: 60px;"class="need">
 				<h2 class="n_label">Monthly installment:</h2>
 				<h1 class="n_amount" id="monthly_instalment">38 406 Ft</h1>
-				<input class="custom_range" type="range" name="monthly" min="5620" max="38406" step="1" value="38406" list="numbers">
-				<p class="min_amount">5 620 Ft</p>
+				<input class="custom_range" type="range" name="monthly" min="14987" max="38406" step="1" value="38406" list="numbers">
+				<p class="min_amount" id="min_monthly_instalment">14 987 Ft</p>
 				<p class="max_amount" id="max_monthly_instalment">38 406 Ft</p>
 			</div>
 
@@ -132,7 +132,9 @@
 				    success: function(msg){
 				    	var obj = $.parseJSON(msg);
 				    	$('input[type=range][name="monthly"]').attr('max',obj['loan_instalments'].replace(' ', ''));
+				    	$('input[type=range][name="monthly"]').attr('min',obj['min_loan_instalments'].replace(' ', ''));
 				    	$('#max_monthly_instalment').html(obj['loan_instalments']+' Ft');
+				    	$('#min_monthly_instalment').html(obj['min_loan_instalments']+' Ft');
 				    	//console.log(obj);
 				    	//amount you need text módosítása
 				    	$('h1#amount').html(obj['load_amount']+' Ft');
@@ -141,7 +143,7 @@
 				    	//monthly csúszka értékének beállítása
 						$('input[type=range][name="monthly"]').val(obj['loan_instalments'].replace(' ', ''));
 						//monthly csúszka mozgatása
-						var css = getCssPercentage(5620,obj['loan_instalments'].replace(' ', ''),obj['loan_instalments'].replace(' ', ''));
+						var css = getCssPercentage(obj['min_loan_instalments'].replace(' ', ''),obj['loan_instalments'].replace(' ', ''),obj['loan_instalments'].replace(' ', ''));
 						$('input[type=range][name="monthly"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="monthly"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="monthly"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
@@ -183,8 +185,8 @@
 				    }, 
 				    success: function(msg){
 				    	var obj = $.parseJSON(msg);
-				    	var max_monthly = $('#max_monthly_instalment').html();
-				    	max_monthly = $('input[type=range][name="monthly"]').attr('max');
+				    	var max_monthly = $('input[type=range][name="monthly"]').attr('max');
+				    	var min_monthly = $('input[type=range][name="monthly"]').attr('min');
 				    	
 				    	//console.log(obj);
 				    	//input val módosítás
@@ -195,14 +197,8 @@
 						$('#monthly_discount').html(obj['monthly_discount']+' Ft');
 						$('#total_saving').html(obj['total_saving']);
 						//css
-						var css = getCssPercentage2(5620, max_monthly,obj['loan_instalments'].replace(' ', ''));
+						var css = getCssPercentage2(min_monthly, max_monthly,obj['loan_instalments'].replace(' ', ''));
 						
-						console.log(max_monthly);
-						console.log(obj['loan_instalments'].replace(' ', ''));
-						console.log(css);
-						console.log('---');
-						console.log(max_monthly/100);
-						console.log(obj['loan_instalments'].replace(' ', '')/(max_monthly/100));
 						$('input[type=range][name="monthly"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="monthly"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="monthly"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
