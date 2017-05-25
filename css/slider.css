@@ -10,7 +10,7 @@ input[type=range] {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#e6f7fe',GradientType=1 ); /* IE6-9 */
 }
 
-input[type=range][name=monthly]{
+.calculator input[type=range][name=monthly]{
 	background: #00aeef; /* Old browsers */
   background: -moz-linear-gradient(left, #00aeef 0%, #00aeef 100%, #e6f7fe 100%, #e6f7fe 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(left, #00aeef 0%,#00aeef 100%,#e6f7fe 100%,#e6f7fe 100%); /* Chrome10-25,Safari5.1-6 */

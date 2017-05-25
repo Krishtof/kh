@@ -24,8 +24,6 @@
 				$_SESSION["max_loan"] = $selection['loan_instalments'];
 				$_SESSION["interest_rate"] = $selection['interest_rate'];
 				$_SESSION["total_repaid"] = $selection['total_repaid'];
-				
-				
 			}
 		}
 		$min = 999999999;

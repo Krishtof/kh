@@ -2,10 +2,14 @@
 	session_start();
 	error_reporting(0);
 	$_SESSION["loan_amount"] = number_format(800000,0,',',' ');
-	$_SESSION["loan_instalments"] = number_format(38046,0,',',' ');
+	$_SESSION["loan_instalments"] = number_format(38406,0,',',' ');
 	$_SESSION["repaid_in"] = 24;
+	$_SESSION["interest_rate"] = 13.99;
+	$_SESSION["total_repaid"] = '921 756';
+	$_SESSION["max_loan"] = '38 406';
+	$_SESSION["min_loan"] = '14 987';
 
-?>
+	?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
     <head>
@@ -329,7 +333,6 @@
 				    	var max_monthly = $('input[type=range][name="monthly"]').attr('max');
 				    	var min_monthly = $('input[type=range][name="monthly"]').attr('min');
 
-				    	//console.log(obj);
 				    	//input val módosítás
 				    	$('input[type="range"][name="monthly"]').val(obj['loan_instalments'].replace(' ', ''));
 				    	//monthly text módosítás
