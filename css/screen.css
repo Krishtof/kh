@@ -875,7 +875,7 @@ border: 1px solid #99DFF9;
 .calculator .n_amount {
   font-weight: bold;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 }
 .cal input {
   max-width: 123px;
@@ -915,6 +915,11 @@ border: 1px solid #99DFF9;
       padding-top: 20px;
       background: #4a4a4a;
       margin: 0 auto;
+}
+.qualify.col-md-6 {
+  text-align: left !important;
+  padding-left: 0px;
+
 }
 .click p {
   color: white;
@@ -976,13 +981,11 @@ border: 1px solid #99DFF9;
 .nokh [type=checkbox]:checked + span:before {
   top: -5px;
 }
-
-<<<<<<< HEAD
-.qualify {
-  text-align: left;
-  padding-left: 0px;
-
+.qualify .col-md-12 h3 {
+  margin-bottom: 40px;
 }
+<<<<<<< HEAD
+
 .qualify ul {
   line-height: 22px;
 }
