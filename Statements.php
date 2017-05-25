@@ -278,8 +278,10 @@
                           Drag and drop file into this box to upload or choose below:
                         </p>
                         <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture</button>
-                        <button type="button " class="id_btn" name="button" >Browse for files</button>
-                      </div>
+												<label class="custom-file-upload id_btn">
+													<input type="file"/>Browse for file
+												</label>
+												</div>
                       <div class="selected error">
                         <p>
                           The picture you tried to upload is invalid. Please try again:
