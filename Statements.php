@@ -47,7 +47,7 @@
           </p>
 
         </div>
-        <button onclick="#expenses" class="bluebtn" type="button" name="button">Next</button>
+        <button id="modal" class="bluebtn" type="button" name="button" data-dismiss="modal">Next</button>
         <a class="dont" href="#">I don't acknowledge</a>
 
       </div>
@@ -234,7 +234,7 @@
     <div class="container">
       <div class="form nopadding">
         <button class="accordion" data-toggle="collapse" data-target="#data">Data protection policy</button>
-        <div id="data" class="collapse">
+        <div id="data" class="collapse in">
             <div class="form">
             <p>
               To verify your identity we will need sncan or photo of your ID. To continue you need to acknowledge with personal data processing.
@@ -260,7 +260,7 @@
 
 
 
-        <button class="accordion" data-toggle="collapse" data-target="#expenses">Select & Upload ID</button>
+        <button class="accordion collapsed" data-toggle="collapse" data-target="#expenses">Select & Upload ID</button>
         <div id="expenses" class="collapse">
             <div class="form id_type">
               <h2 >Which type of ID do you have?</h2>

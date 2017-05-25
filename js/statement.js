@@ -1,7 +1,12 @@
 $(function(){
 	idclick();
 	billing();
+	modal_close();
 });
+
+function modal_close(){
+	
+}
 
 function idclick(){
 	$('#old_id').click(function(){
