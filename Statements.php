@@ -233,7 +233,7 @@
 
     <div class="container">
       <div class="form nopadding">
-        <button class="accordion" data-toggle="collapse" data-target="#data">Data protection policy</button>
+        <button class="accordion" id="data_button" data-toggle="collapse" data-target="#data">Data protection policy</button>
         <div id="data" class="collapse in">
             <div class="form">
             <p>
@@ -260,7 +260,7 @@
 
 
 
-        <button class="accordion collapsed" data-toggle="collapse" data-target="#expenses">Select & Upload ID</button>
+        <button class="accordion collapsed" id="select_upload_button" data-toggle="collapse" data-target="">Select & Upload ID</button>
         <div id="expenses" class="collapse">
             <div class="form id_type">
               <h2 >Which type of ID do you have?</h2>
@@ -409,7 +409,7 @@
 
         </div>
 
-            <button class="bluebtn" type="button" name="button">Next</button>
+            <button class="bluebtn" id="select_upload_next_button" type="button" name="button">Next</button>
 
           </div>
          <!-- <div class="id_ok">
@@ -493,7 +493,7 @@
       </div>
 
 
-      <button class="accordion collapsed" data-toggle="collapse" data-target="#account">Account statement</button>
+      <button class="accordion collapsed" data-toggle="collapse" id="account_button" data-target="">Account statement</button>
       <div id="account" class="collapse">
           <div class="form">
           <p>

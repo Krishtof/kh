@@ -2,10 +2,28 @@ $(function(){
 	idclick();
 	billing();
 	modal_close();
+	next();
 });
 
 function modal_close(){
-	
+	$('#modal').click(function(){
+		$('#data_button').addClass('collapsed done');
+		$('#data').removeClass('in');
+		$('#select_upload_button').removeClass('collapsed');
+		$('#expenses').addClass('in');
+		$('#select_upload_button').attr('data-target','#expenses');
+	});
+}
+
+function next(){
+	$('#select_upload_next_button').click(function(){
+		$('#select_upload_button').addClass('collapsed done');
+		$('#expenses').removeClass('in');
+		
+		$('#account_button').removeClass('collapsed');
+		$('#account').addClass('in');
+		$('#account_button').attr('data-target','#account');
+	});
 }
 
 function idclick(){

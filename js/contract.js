@@ -7,7 +7,7 @@ $(function(){
 function next(){
 	$('#preco button').click(function(){
 		$('#precontractual').removeClass('in');
-		$('#precontractual_button').addClass('collapsed');
+		$('#precontractual_button').addClass('collapsed done');
 		
 		$('#terms').addClass('in');
 		$('#terms_button').removeClass('collapsed');
@@ -16,7 +16,7 @@ function next(){
 	
 	$('#general button').click(function(){
 		$('#terms').removeClass('in');
-		$('#terms_button').addClass('collapsed');
+		$('#terms_button').addClass('collapsed done');
 		
 		$('#pricelist').addClass('in');
 		$('#pricelist_button').removeClass('collapsed');
@@ -25,7 +25,7 @@ function next(){
 	
 	$('#list button').click(function(){
 		$('#pricelist').removeClass('in');
-		$('#pricelist_button').addClass('collapsed');
+		$('#pricelist_button').addClass('collapsed done');
 		
 		$('#contract').addClass('in');
 		$('#contract_button').removeClass('collapsed');
@@ -34,7 +34,7 @@ function next(){
 	
 	$('#contr button').click(function(){
 		$('#contract').removeClass('in');
-		$('#contract_button').addClass('collapsed');
+		$('#contract_button').addClass('collapsed done');
 		
 		$('#bank').addClass('in');
 		$('#bank_button').removeClass('collapsed');

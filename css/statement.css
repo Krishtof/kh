@@ -28,8 +28,6 @@ h2{
 	cursor: pointer;
 }
 
-
-
 .street_holder{
 	width:200px;
 	display: inline-block;
@@ -47,4 +45,12 @@ h2{
 
 .mailing_address{
 	padding: 0px;
+}
+
+.accordion.collapsed:before{
+	display: none;
+}
+
+.accordion.collapsed.done:before{
+	display: inline-block;
 }

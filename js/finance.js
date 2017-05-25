@@ -21,6 +21,7 @@ function next(){
 		$('#expenses_button').removeClass('collapsed');
 		$('#expenses').addClass('in');
 		$('#expenses').css('height','auto');
+		$('#income_button').addClass('done');
 	});
 	
 	
@@ -29,6 +30,7 @@ function next(){
 		$('#housing_button').removeClass('collapsed');
 		$('#Housing').addClass('in');
 		$('#Housing').css('height','auto');
+		$('#expenses_button').addClass('done');
 	});
 	
 	
@@ -37,6 +39,7 @@ function next(){
 		$('#family_button').removeClass('collapsed');
 		$('#family').addClass('in');
 		$('#family').css('height','auto');
+		$('#housing_button').addClass('done');
 	});
 	
 	$('button#family_next').click(function(){
@@ -44,5 +47,6 @@ function next(){
 		$('#bank_button').removeClass('collapsed');
 		$('#bank').addClass('in');
 		$('#bank').css('height','auto');
+		$('#family_button').addClass('done');
 	});
 }
