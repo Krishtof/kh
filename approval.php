@@ -1,3 +1,6 @@
+<?php 
+	session_start();
+?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
     <head>
@@ -125,17 +128,17 @@
           <p>
             Loan amount
           </p>
-          <h1>3.000.000 Ft</h1>
+         <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
         </div>
         <div class="info">
 
           <div class="instalments">
             <h2>Instalments:</h2>
-            <p>50.000 Ft</p>
+            <p><?=$_SESSION["loan_instalments"]?> Ft</p>
           </div>
           <div class="instalments">
             <h2>Repaid in::</h2>
-            <p>3 months</p>
+           <p><?=$_SESSION["repaid_in"]?> months</p>
           </div>
         </div>
       </div>
@@ -189,7 +192,7 @@
 
 
           </div>
-          <button onclick="window.location.href='contract.html'" class="bluebtn" type="button" name="button">Next</button>
+          <button onclick="window.location.href='contract.php'" class="bluebtn" type="button" name="button">Next</button>
 
         </div>
 
