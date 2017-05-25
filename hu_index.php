@@ -112,14 +112,14 @@
 	<div class="example">
 		<div class="col-md-12" style="padding: 0px;">
 
-		<h3>reprezentatív példa</h3>
+		<h3>Reprezentatív példa</h3>
 		<p>
 			800 000 forint összegû kölcsön esetén, 48 hónapos futamidõvel, éves fix, munkabér-átutalási kedvezménnyel számított 11,99% akciós kamat mellett a havi törlesztõrészlet 21 063 forint, a teljes visszafizetendõ összeg 1 033 536 forint, a hiteldíj 233 536 forint, ebbõl a hiteldíjban foglalt díjak, költségek összege 22 512 forint, THM: 14%		</p>
 	</div>
 
 	</div>
 <div class="col-md-12" style="padding: 0px;">
-	<h3>az igénylés folyamata</h3>
+	<h3>Az igénylés folyamata</h3>
 
 	<div class="col-md-3">
 		<img src="img/peronal_data.png" />
@@ -147,7 +147,7 @@
 	<div class="col-md-3">
 		<img src="img/receive_enjoy.png" />
 		<p>
-			az igényelt hitelösszeg kiutalása
+			Az igényelt hitelösszeg kiutalása
 		</p>
 	</div>
 </div>
@@ -155,7 +155,7 @@
 
 <div class="col-md-12" style="padding: 0px;">
 
-	<h3>az online hiteligénylés előnyei:</h3>
+	<h3>Az online hiteligénylés előnyei:</h3>
 	<div class="col-md-3">
 		<img src="img/minutes.png" />
 		<p>
@@ -182,7 +182,7 @@
 	<div class="col-md-3">
 		<img src="img/security.png" />
 		<p>
-			a hitelt Magyarország egyik vezető pénzügyi szolgáltatója biztosítja
+			A hitelt Magyarország egyik vezető pénzügyi szolgáltatója biztosítja
 		</p>
 	</div>
 </div>
