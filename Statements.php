@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="css/screen.css">
         <link rel="stylesheet" href="css/statement.css">
         <script src="bower_components/jquery/dist/jquery.js"></script>
-       
+
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
          <script src="js/statement.js"></script>
         <title>kh</title>
@@ -328,24 +328,26 @@
 					 </div>
                     </div>
 
-                    
+
                   </div>
 			</div>
 
 
             </form><br>
-			<p id="success_message">Your data was read successfully, including permanent address</p>
-			<p id="after_success">SIKERES SZÖVEG</p>
 
 
-			<div class="mailing_address">
+
+			<div id="after_success" class="mailing_address">
+				<p style="text-align:left" id="success_message">Your data was read successfully, including permanent address</p><br />
+
+				<p style="text-align:left"><span style="font-weight: bold;">Permanent address: </span><br />1062 Budapest, Andrássy út 87-89.</p>
           <div class="check">
 
             <label>
               <input type='checkbox' id="employment">
               <span></span>
               <p class="checklabel">
-                Add a new mailing address
+                Add a different mailing address
               </p>
               <p class="mailing_info">
                 You acknowledge that we will enter the credit bureau and save there the data about your application
@@ -385,10 +387,10 @@
 			</div>
 
 
+			<button class="bluebtn" id="select_upload_next_button" type="button" name="button">Next</button>
 
         </div>
 
-            <button class="bluebtn" id="select_upload_next_button" type="button" name="button">Next</button>
 
           </div>
       </div>
@@ -416,7 +418,7 @@
             <p>
               Drag and drop file into this box to upload or
             </p>
-         
+
             <label class="custom-file-upload id_btn">
 			    <input type="file" id="last_file"/>Browse for file
 			</label>
