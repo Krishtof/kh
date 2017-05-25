@@ -278,9 +278,9 @@
                           Drag and drop file into this box to upload or choose below:
                         </p>
                         <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture</button>
-												<label class="custom-file-upload id_btn">
-													<input type="file"/>Browse for file
-												</label>
+						<label class="custom-file-upload id_btn">
+						    <input type="file" id="file_1"/>Browse for file
+						</label>
 												</div>
                       <div class="selected error">
                         <p>
@@ -297,7 +297,7 @@
 
                   </div>
                   <div class="col-md-6 new" data-status="" id="new_id">
-                    <p>
+                    <p id="success_message2">
                       ID from issued before 11.12.2016.
                     </p>
                     <div class="col-md-12">
@@ -313,14 +313,16 @@
                           Drag and drop file into this box to upload or choose below:
                         </p>
                         <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture</button>
-                        <button type="button " class="id_btn" name="button" >Browse for files</button>
+                        <label class="custom-file-upload id_btn">
+						    <input type="file" id="file_2"/>Browse for file
+						</label>
                       </div>
+                      <div class="selected success">
+						  <img class="id_suc" src="img/success.png" /><br />
+					 </div>
                     </div>
 
-                     <div class="selected success">
-						  <img src="img/success.png" /><br />
-
-					 </div>
+                    
                   </div>
 			</div>
 
