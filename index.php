@@ -72,7 +72,7 @@
 				<h2 class="n_label">Monthly installment:</h2>
 				<h1 class="n_amount" id="monthly_instalment">38 406 Ft</h1>
 				<input class="custom_range" type="range" name="monthly" min="5620" max="144024" step="1" value="38406" list="numbers">
-				<p class="min_amount">14 402 Ft</p>
+				<p class="min_amount">5 620 Ft</p>
 				<p class="max_amount">144 024 Ft</p>
 			</div>
 
