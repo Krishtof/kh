@@ -107,11 +107,18 @@ input[type=range]:focus::-ms-fill-upper {
 }
 .n_label, .min_amount {
   float: left;
+  margin-bottom: 17px;
 }
 .repaidin h2 {
   font-weight: bold;
   float: left;
 }
+
+#amount, #monthly_instalment {
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .repaidin h3 {
   font-weight: bold;
   font-size: 20px;
