@@ -254,6 +254,8 @@ text-decoration: underline;
   padding: 15px;
   background: #FFFFFF;
   border: 1px solid #00AEEF;
+  padding-top: 0px;
+    padding-bottom: 0px;
   border-radius: 5px;
 }
 
