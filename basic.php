@@ -205,7 +205,7 @@
             </p>
             <form class="contact">
 
-            <div class="phone">
+            <div class="phone" id="single_phone">
 
               <h2>Enter phone number:</h2>
               <p>
@@ -224,7 +224,7 @@
               <input type="email" name="email" id="phone_verify" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
               <button type="button" class="bluebtn" id="phone-verify"  name="button">Verify </button>
 							<button  class="bluebtn nobg2" type="button" name="button">Send again</button>
-							<button  class="bluebtn nobg2" type="button" name="button">Try different phone number</button>
+							<button  class="bluebtn nobg2" type="button" name="button" id="try_1">Try different phone number</button>
 
             </div>
 
@@ -233,7 +233,7 @@
               <h2>Phone number successfully verified</h2>
             </div>
 
-            <div class="email">
+            <div class="email" id="single_email">
 
               <h2>Enter email address:</h2>
               <p>
@@ -251,7 +251,7 @@
               <input type="email" name="email" id="email_verify" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
               <button type="button" class="bluebtn" id="email-verify"  name="button">Verify </button>
 							<button  class="bluebtn nobg2" type="button" name="button">Send again</button>
-							<button  class="bluebtn nobg2" type="button" name="button">Try different email address</button>
+							<button  class="bluebtn nobg2" type="button" name="button" id="try_2">Try different email address</button>
 
             </div>
 

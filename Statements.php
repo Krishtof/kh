@@ -18,8 +18,9 @@
         <link rel="stylesheet" href="css/screen.css">
         <link rel="stylesheet" href="css/statement.css">
         <script src="bower_components/jquery/dist/jquery.js"></script>
-        <script src="js/statement.js"></script>
+       
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+         <script src="js/statement.js"></script>
         <title>kh</title>
     </head>
 
@@ -264,13 +265,13 @@
         <button class="accordion collapsed" id="select_upload_button" data-toggle="collapse" data-target="">Select & Upload ID</button>
         <div id="expenses" class="collapse">
             <div class="form id_type">
-              <h2 >Which type of ID do you have?</h2>
-              <p>
+              <h2 id="which_id">Which type of ID do you have?</h2>
+              <p id="please_select">
                 Please select
               </p>
               <div class="row">
                   <div class="col-md-6 old active" id="old_id" data-status="">
-                    <p id="success_message">
+                    <p id="ip">
                       ID from issued before 11.12.2016.
                     </p>
                     <div class="col-md-12" id="old_holder">
@@ -300,7 +301,7 @@
 
                   </div>
                   <div class="col-md-6 new" data-status="" id="new_id">
-                    <p id="success_message2">
+                    <p id="ip2">
                       ID from issued before 11.12.2016.
                     </p>
                     <div class="col-md-12"  id="new_holder">
@@ -333,8 +334,8 @@
 
 
             </form><br>
-
-
+			<p id="success_message">Your data was read successfully, including permanent address</p>
+			<p id="after_success">SIKERES SZÖVEG</p>
 
 
 			<div class="mailing_address">

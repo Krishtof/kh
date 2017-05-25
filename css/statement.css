@@ -45,6 +45,7 @@ h2{
 
 .mailing_address{
 	padding: 0px;
+	display: none;
 }
 
 .accordion.collapsed:before{
@@ -57,4 +58,12 @@ h2{
 
 #new_holder.active, #old_holder.active, #new_holder:hover, #old_holder:hover{
 	outline: 2px solid var(--light-blue);
+}
+
+#after_success{
+	display: none;
+}
+
+#success_message{
+	display: none;
 }

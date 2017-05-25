@@ -1,14 +1,25 @@
 $(function(){
+	
 	idclick();
 	idclick2();
 	billing();
 	modal_close();
 	next();
 	file1();
+	file1_2();
 	file2();
+	file2_2();
 	lastfile();
 	delete_file();
 });
+
+function close(){
+	$('#which_id').hide();
+	$('#please_select').hide();
+	$('#after_success').show();
+	$('#success_message').show();
+	$('.mailing_address').show();
+}
 
 function lastfile(){
 	$(document).on('change','#last_file',function(){
@@ -33,17 +44,20 @@ function file1(){
 		$('#old_id .selected.successful').css('display','none');
 		$('#old_id .selected.success').css('display','block');
 		$('#new_id').hide();
-		$('#success_message').html('Your data was read successfully, including permanent address.');
+		$('#ip').hide();
+		//html('Your data was read successfully, including permanent address.');
+		close();
 	});
 }
 
-function file1(){
+function file1_2(){
 	$(document).on('change','#file_1_2',function(){
 		$('#old_id .selected.error').css('display','none');
 		$('#old_id .selected.successful').css('display','none');
 		$('#old_id .selected.success').css('display','block');
 		$('#new_id').hide();
-		$('#success_message').html('Your data was read successfully, including permanent address.');
+		$('#ip').hide();
+		close();
 	});
 }
 
@@ -53,17 +67,19 @@ function file2(){
 		$('#new_id .selected.successful').css('display','none');
 		$('#new_id .selected.success').css('display','block');
 		$('#old_id').hide();
-		$('#success_message2').html('Your data was read successfully, including permanent address.');
+		$('#ip2').hide();
+		close();
 	});
 }
 
-function file2(){
+function file2_2(){
 	$(document).on('change','#file_2_2',function(){
 		$('#new_id .selected.error').css('display','none');
 		$('#new_id .selected.successful').css('display','none');
 		$('#new_id .selected.success').css('display','block');
 		$('#old_id').hide();
-		$('#success_message2').html('Your data was read successfully, including permanent address.');
+		$('#ip2').hide();
+		close();
 	});
 }
 
@@ -121,7 +137,8 @@ function idclick(){
 		    $('#old_id .selected.successful').css('display','none');
 		    $('#old_id .selected.success').css('display','block');
 		    $('#new_id').hide();
-		    $('#success_message').html('Your data was read successfully, including permanent address.');
+		    $('#ip').hide();
+		    close();
 		}
 	});
 }
@@ -158,7 +175,8 @@ function idclick2(){
 			$('#new_id .selected.successful').css('display','none');
 			$('#new_id .selected.success').css('display','block');
 			$('#old_id').hide();
-			$('#success_message2').html('Your data was read successfully, including permanent address.');
+			$('#ip2').hide();
+			close();
 		}
 	});
 }

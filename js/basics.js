@@ -1,6 +1,20 @@
 $(function(){
 	verification();
+	try_again();
+	
 });
+
+function try_again(){
+	$('#try_1').click(function(){
+		$('#single_phone').show();
+		$('#phone_verification').hide();
+	});
+	$('#try_2').click(function(){
+		$('#single_email').show();
+		$('#email_verification').hide();
+	});
+}
+
 
 function verification(){
 	$('#phone-send').click(function(){
