@@ -21,6 +21,9 @@
 				$_SESSION["loan_amount"] = $selection['load_amount'];
 				$_SESSION["loan_instalments"] = $selection['loan_instalments'];
 				$_SESSION["repaid_in"] = $selection['repaid_in'];
+				$_SESSION["max_loan"] = $selection['loan_instalments'];
+				$_SESSION["interest_rate"] = $selection['interest_rate'];
+				$_SESSION["total_repaid"] = $selection['total_repaid'];
 				
 				
 			}
@@ -30,10 +33,11 @@
 			if($value['load_amount'] == $selected ){
 				if($value['loan_instalments'] < $min){
 					$selection['min_loan_instalments'] =number_format($value['loan_instalments'],0,',',' ');
+					
 				}					
 			}
 		}
-		
+		$_SESSION["min_loan"] = $selection['min_loan_instalments'] ;
 		echo json_encode($selection);
 	}
 	
@@ -58,6 +62,8 @@
 					$_SESSION["loan_amount"] = $selection['load_amount'];
 					$_SESSION["loan_instalments"] = $selection['loan_instalments'];
 					$_SESSION["repaid_in"] = $selection['repaid_in'];
+					$_SESSION["interest_rate"] = $selection['interest_rate'];
+					$_SESSION["total_repaid"] = $selection['total_repaid'];
 				}
 			}
 		}
