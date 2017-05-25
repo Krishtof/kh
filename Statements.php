@@ -47,7 +47,7 @@
           </p>
 
         </div>
-        <button id="modal" class="bluebtn" type="button" name="button" data-dismiss="modal">Next</button>
+        <button id="modal" class="bluebtn" type="button" name="button" data-dismiss="modal">I acknowledge</button>
         <a class="dont" href="#">I don't acknowledge</a>
 
       </div>
@@ -327,7 +327,7 @@
 
             </form><br>
 
-				
+
 
 
 			<div class="mailing_address">

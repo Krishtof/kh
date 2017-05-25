@@ -960,3 +960,11 @@ border: 1px solid #99DFF9;
   margin-top: 0px;
   margin-bottom: 50px;
 }
+.nokh p{
+  display: inline-block;
+    max-width: 440px !important;
+    margin-left: 10px;
+}
+.nokh [type=checkbox]:checked + span:before {
+  top: -5px;
+}

@@ -483,7 +483,19 @@
             <input placeholder="_ _ _ _ _ _ _ _" class="shorter bankaccount"type="text" name="firstname">
             <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text" name="firstname">
             <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text" name="firstname">
-
+						<div class="nokh">
+							<img src="img/no_kh.png" />
+							<p>
+								You could get a better deal if you agree to open a bank account with us because…lorem ipsum et dolor sit amet et.
+							</p>
+							<label form>
+								<input type='checkbox'>
+								<span></span>
+								<p>
+									I accept opening a KH account within one month te get the account.
+								</p>
+							</label>
+						</div>
 
             <button onclick="window.location.href='Statements.php'" class="bluebtn" type="button" name="button">Next</button>
 
