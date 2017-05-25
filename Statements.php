@@ -493,7 +493,7 @@
       </div>
 
 
-      <button class="accordion" data-toggle="collapse" data-target="#account">Account statement</button>
+      <button class="accordion collapsed" data-toggle="collapse" data-target="#account">Account statement</button>
       <div id="account" class="collapse">
           <div class="form">
           <p>
