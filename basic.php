@@ -201,8 +201,7 @@
             </form>
             <h1>Contact details</h1>
             <p>
-              By inserting of your phone number andd email adress you giving us the content to contact you regarding the aplication
-            </p>
+By inserting of your phone number and email adress you giving us the concent to contact you regarding the aplication            </p>
             <form class="contact">
 
             <div class="phone" id="single_phone">
