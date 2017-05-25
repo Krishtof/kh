@@ -53,7 +53,7 @@
 	</p>
 
 <div class="container qualify">
-	<div class="col-md-6">
+	<div class="col-md-6 qualify">
 		<h3>Do I qualify?</h3>
 		<ul>
 			<li>Are you older than 18 years?</li>
@@ -107,12 +107,18 @@
 
 	</div>
 	<div class="example">
+		<div class="col-md-12" style="padding: 0px;">
+
 		<h3>Representative Example</h3>
 		<p>
 			For a 48-month, HUF 800 thousand loan, the monthly repayment instalment with regular monthly salary income is HUF 21,063 at a fixed 11.99% annual interest rate. The total amount to be repaid is HUF 1,033,536 and the loan charges are HUF 233,536, of which fees and costs amount to HUF 22,512. The annual percentage rate (APR) is 14.0%.
 		</p>
 	</div>
+
+	</div>
+<div class="col-md-12" style="padding: 0px;">
 	<h3>How does it work?</h3>
+
 	<div class="col-md-3">
 		<img src="img/peronal_data.png" />
 		<p>
@@ -142,7 +148,10 @@
 			Receive and enjoy your money
 		</p>
 	</div>
+</div>
 
+
+<div class="col-md-12" style="padding: 0px;">
 
 	<h3>What are the benefits?</h3>
 	<div class="col-md-3">
@@ -174,6 +183,52 @@
 			Reliability and tradition of our bank.
 		</p>
 	</div>
+</div>
+
+
+
+
+
+<div class="col-md-12 banks" style="padding: 0px;">
+	<h3 style="margin-bottom: 50px;">Where can I access it?</h3>
+
+	<div class="col-md-2">
+		<img src="img/cib.png" />
+	</div>
+
+
+	<div class="col-md-2">
+		<img src="img/erste.png" />
+	</div>
+
+	<div class="col-md-2">
+		<img src="img/kh.png" />
+		<p>
+
+	</div>
+
+
+	<div class="col-md-2">
+		<img style="max-width: 40px;"src="img/MKB_logo.png" />
+
+	</div>
+
+	<div class="col-md-2">
+		<img src="img/otp.png" />
+
+	</div>
+
+	<div class="col-md-2">
+		<img src="img/Raiffeisen_Bank.png" />
+
+	</div>
+
+</div>
+
+
+
+
+</div>
 
 
 
