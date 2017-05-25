@@ -1,4 +1,4 @@
-<?php 
+<?php
 	session_start();
 ?>
 <!DOCTYPE html>
@@ -338,6 +338,7 @@
         <button class="accordion collapsed  " data-toggle="collapse"  id="housing_button" data-target="">Housing</button>
         <div id="Housing" class="collapse">
             <div class="form housing">
+							<form>
               <h2>Type</h2>
               <div class="radio">
                 <input type="radio" id="r1" name="rr" />
@@ -357,10 +358,12 @@
                 <input type="radio" id="r2" name="rr" />
                 <label for="r2">Other</label>
               </div>
+							</form>
 
 
               <h2 style="margin-top: 40px;">Length of living on current address</h2>
               <div class="radio">
+								<form>
                 <input type="radio" id="r1" name="rr" />
                 <label for="r1">0-1 year</label>
               </div>
@@ -396,6 +399,7 @@
 
               <div class="form family">
                 <h2>Graduate from</h2>
+								<form>
                 <div class="radio">
                   <input type="radio" id="r1" name="rr" />
                   <label for="r1">Elementary school</label>
@@ -419,10 +423,11 @@
                   <input type="radio" id="r2" name="rr" />
                   <label for="r2">College / University</label>
                 </div>
-
+								</form>
 
 
                 <h2 style="margin-top: 40px;">Martial status</h2>
+								<form>
                 <div class="radio">
                   <input type="radio" id="r1" name="rr" />
                   <label for="r1">Single</label>
