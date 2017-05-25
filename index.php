@@ -184,7 +184,7 @@
 						$('#monthly_discount').html(obj['monthly_discount']+' Ft');
 						$('#total_saving').html(obj['total_saving']);
 						//css
-						var css = getCssPercentage(14402,144024,obj['loan_instalments']);
+						var css = getCssPercentage(5620,144024,obj['loan_instalments'].replace(' ', ''));
   				
 						$('input[type=range][name="monthly"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="monthly"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
