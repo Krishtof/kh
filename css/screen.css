@@ -627,7 +627,7 @@ input[type="file"] {
 }
 
 .new.active .col-md-12, .old.active .col-md-12 {
-  outline: 2px solid var(--light-blue);
+  /*outline: 2px solid var(--light-blue);*/
 }
 .old, .new {
   margin-top: 40px;
@@ -977,6 +977,7 @@ border: 1px solid #99DFF9;
   top: -5px;
 }
 
+<<<<<<< HEAD
 .qualify {
   text-align: left;
   padding-left: 0px;
@@ -1016,3 +1017,16 @@ margin-right: 40px;
 .banks img {
   max-width: 100%;
 }
+=======
+h2#last_file_name{
+	text-overflow: none;
+}
+
+.uploadbox{
+	overflow: hidden;
+}
+
+.uploadbox.success{
+	display: none;
+}
+>>>>>>> origin/gh-pages

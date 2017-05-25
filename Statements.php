@@ -273,7 +273,7 @@
                     <p id="success_message">
                       ID from issued before 11.12.2016.
                     </p>
-                    <div class="col-md-12">
+                    <div class="col-md-12" id="old_holder">
                       <div class="selected successful">
                         <p>
                           Drag and drop file into this box to upload or choose below:
@@ -288,7 +288,9 @@
                           The picture you tried to upload is invalid. Please try again:
                         </p>
                         <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture</button>
-                        <button type="button " class="id_btn" name="button" >Browse for files</button>
+                        <label class="custom-file-upload id_btn">
+						    <input type="file" id="file_1_2"/>Browse for file
+						</label>
                       </div>
                       <div class="selected success">
 						  <img class="id_suc" src="img/success.png" /><br />
@@ -301,13 +303,15 @@
                     <p id="success_message2">
                       ID from issued before 11.12.2016.
                     </p>
-                    <div class="col-md-12">
+                    <div class="col-md-12"  id="new_holder">
                       <div class="selected error">
                         <p>
                           The picture you tried to upload is invalid. Please try again:
                         </p>
                         <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture</button>
-                        <button type="button " class="id_btn" name="button" >Browse for files</button>
+                         <label class="custom-file-upload id_btn">
+						    <input type="file" id="file_2_2"/>Browse for file
+						</label>
                       </div>
                       <div class="selected successful">
                         <p>
@@ -386,84 +390,6 @@
             <button class="bluebtn" id="select_upload_next_button" type="button" name="button">Next</button>
 
           </div>
-         <!-- <div class="id_ok">
-
-            <div class="container">
-              <div class="col-md-6 new">
-                <p>
-                  Your data was read succesfully, including permanent address.
-                </p>
-                <div class="col-md-12">
-                  <div class="selected success">
-                    <img src="img/success.png" /><br />
-
-                  </div>
-                </div>
-              </div>
-
-
-
-            </div>
-          </div>-->
-
-
-       <!-- <div class="mailing_address">
-          <div class="check">
-
-            <label>
-              <input type='checkbox' id="employment">
-              <span></span>
-              <p class="checklabel">
-                Add a new mailing address
-              </p>
-              <p class="mailing_info">
-                You acknowledge that we will enter the credit bureau and save there the data about your application
-              </p>
-            </label>
-          </div>
-          	<div class="city inline">
-            <h2>Postal code</h2>
-            <input type="text" class="shortest" name="firstname">
-            <input type="text" class="shorter" name="firstname">
-
-          </div>
-
-		<div class="street">
-			<div class="street_holder">
-				<h2>Street</h2>
-				<input type="text" class="shorter" name="firstname">
-            </div>
-			<div class="type_of_street">
-				<div class="dropdown shortest">
-                <h2>Street type</h2>
-
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">street
-                <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Bu</a></li>
-                  <li><a href="#">February</a></li>
-                  <li><a href="#">March</a></li>
-                  <li><a href="#">April</a></li>
-                  <li><a href="#">May</a></li>
-                  <li><a href="#">June</a></li>
-                  <li><a href="#">July</a></li>
-                  <li><a href="#">August</a></li>
-                  <li><a href="#">September</a></li>
-                  <li><a href="#">October</a></li>
-                  <li><a href="#">November</a></li>
-                  <li><a href="#">December</a></li>
-                </ul>
-              </div>
-			</div>
-			<div class="street_number">
-				 <h2>Number</h2>
-				 <input type="text" class="shortest" name="number">
-			</div>
-		</div>
-
-
-
-        </div>-->
       </div>
 
 
@@ -489,7 +415,10 @@
             <p>
               Drag and drop file into this box to upload or
             </p>
-            <button type="button " class="id_btn" name="button" >Browse for files</button>
+         
+            <label class="custom-file-upload id_btn">
+			    <input type="file" id="last_file"/>Browse for file
+			</label>
 
           </div>
 
@@ -499,8 +428,8 @@
               <p>
                 Document successfully uploaded:
               </p>
-              <h2>accountstatement.pdf</h2>
-              <p style="text-decoration: underline;">Delete file</p>
+              <h2 id="last_file_name">accountstatement.pdf</h2>
+              <p style="text-decoration: underline;" id="delete_file">Delete file</p>
 
 
 

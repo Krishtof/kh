@@ -6,7 +6,26 @@ $(function(){
 	next();
 	file1();
 	file2();
+	lastfile();
+	delete_file();
 });
+
+function lastfile(){
+	$(document).on('change','#last_file',function(){
+		var value = $(this).val();
+		$('#last_file_name').html(value);
+		$('.uploadbox').hide();
+		$('.uploadbox.success').show();
+	});
+}
+
+function delete_file(){
+	$('#delete_file').click(function(){
+		$('.uploadbox.success').hide();
+		$('.uploadbox:first').show();
+		
+	})
+}
 
 function file1(){
 	$(document).on('change','#file_1',function(){
@@ -18,8 +37,28 @@ function file1(){
 	});
 }
 
+function file1(){
+	$(document).on('change','#file_1_2',function(){
+		$('#old_id .selected.error').css('display','none');
+		$('#old_id .selected.successful').css('display','none');
+		$('#old_id .selected.success').css('display','block');
+		$('#new_id').hide();
+		$('#success_message').html('Your data was read successfully, including permanent address.');
+	});
+}
+
 function file2(){
 	$(document).on('change','#file_2',function(){
+		$('#new_id .selected.error').css('display','none');
+		$('#new_id .selected.successful').css('display','none');
+		$('#new_id .selected.success').css('display','block');
+		$('#old_id').hide();
+		$('#success_message2').html('Your data was read successfully, including permanent address.');
+	});
+}
+
+function file2(){
+	$(document).on('change','#file_2_2',function(){
 		$('#new_id .selected.error').css('display','none');
 		$('#new_id .selected.successful').css('display','none');
 		$('#new_id .selected.success').css('display','block');
@@ -51,52 +90,60 @@ function next(){
 
 function idclick(){
 	$('#old_id').click(function(){
+		$('#new_holder .selected').hide();
+		$('#new_id').attr('data-status','');
+		$('#new_holder').removeClass('active');
+		$('#old_holder').addClass('active');
 		var status = $(this).attr('data-status');
 		if(status == ''){
-			$(this).find('.selected.successful').show();
-			$(this).attr('data-status','first');
+		   $(this).find('.selected.successful').show();
+		   $(this).attr('data-status','first');
 		}
 		
 		if(status == 'first'){
-			$(this).attr('data-status','second');
+		   $(this).attr('data-status','second');
 		}
 		
 		if(status == 'second'){
-			$(this).attr('data-status','third');
+		   $(this).attr('data-status','third');
 		}
 	});
 	
 	$('#modal_button').click(function(){
 		var status = $('#old_id').attr('data-status');
 		if(status == 'second'){
-			$('#old_id .selected.error').css('display','block');
-			$('#old_id .selected.successful').css('display','none');
-			//$('#old_id').attr('status','second');
+		    $('#old_id .selected.error').css('display','block');
+		    $('#old_id .selected.successful').css('display','none');
+		    //$('#old_id').attr('status','second');
 		}
 		if(status == 'third'){
-			$('#old_id .selected.error').css('display','none');
-			$('#old_id .selected.successful').css('display','none');
-			$('#old_id .selected.success').css('display','block');
-			$('#new_id').hide();
-			$('#success_message').html('Your data was read successfully, including permanent address.');
+		    $('#old_id .selected.error').css('display','none');
+		    $('#old_id .selected.successful').css('display','none');
+		    $('#old_id .selected.success').css('display','block');
+		    $('#new_id').hide();
+		    $('#success_message').html('Your data was read successfully, including permanent address.');
 		}
 	});
 }
 
 function idclick2(){
 	$('#new_id').click(function(){
+		$('#old_holder .selected').hide();
+		$('#old_id').attr('data-status','');
+		$('#old_holder').removeClass('active');
+		$('#new_holder').addClass('active');
 		var status = $(this).attr('data-status');
 		if(status == ''){
-			$(this).find('.selected.successful').show();
-			$(this).attr('data-status','first');
+		    $(this).find('.selected.successful').show();
+		    $(this).attr('data-status','first');
 		}
 		
 		if(status == 'first'){
-			$(this).attr('data-status','second');
+		    $(this).attr('data-status','second');
 		}
 		
 		if(status == 'second'){
-			$(this).attr('data-status','third');
+		    $(this).attr('data-status','third');
 		}
 	});
 	
