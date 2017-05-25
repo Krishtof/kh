@@ -1,3 +1,11 @@
+<?php 
+	session_start();
+	error_reporting(0);
+	$_SESSION["loan_amount"] = number_format(800000,0,',',' ');
+	$_SESSION["loan_instalments"] = number_format(38046,0,',',' ');
+	$_SESSION["repaid_in"] = 24;
+	
+?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
     <head>
@@ -62,8 +70,8 @@
 		<div>
 			<div style="margin-top: 60px;"class="need">
 				<h2 class="n_label">Monthly installment:</h2>
-				<h1 class="n_amount" id="monthly_instalment">40 806 Ft</h1>
-				<input class="custom_range" type="range" name="monthly" min="14402" max="144024" step="1" value="40806">
+				<h1 class="n_amount" id="monthly_instalment">38 406 Ft</h1>
+				<input class="custom_range" type="range" name="monthly" min="5620" max="144024" step="1" value="38406" list="numbers">
 				<p class="min_amount">14 402 Ft</p>
 				<p class="max_amount">144 024 Ft</p>
 			</div>
@@ -71,14 +79,14 @@
 		</div>
 		<div class="repaidin">
 			<h2>Repaid in:</h2>
-			<h3>24 month</h3>
+			<h3><span id="month_number">24</span> month</h3>
 		</div>
 		<div class="disc">
 			<p >
-				You can get 5000 Ft discount monthly. 
+				You can get <span id="monthly_discount">1 502 Ft</span> discount monthly. 
 			</p>
 			<p>
-				Your total saving on your loan can be: 120.000 Ft.
+				Your total saving on your loan can be: <span id="total_saving">18 035 Ft</span>.
 			</p>
 		</div>
 		<button onclick="window.location.href='basic.php'" class="bluebtn" type="button" name="button">Yes, I want this loan</button>
@@ -123,10 +131,23 @@
 				    }, 
 				    success: function(msg){
 				    	var obj = $.parseJSON(msg);
+				    	//console.log(obj);
+				    	//amount you need text módosítása
 				    	$('h1#amount').html(obj['load_amount']+' Ft');
+				    	//monthly installmenst text módosítása
 				    	$('#monthly_instalment').html(obj['loan_instalments']+' Ft');
+				    	//monthly csúszka értékének beállítása
 						$('input[type=range][name="monthly"]').val(obj['loan_instalments'].replace(' ', ''));
-						$('input[type=range][name="monthly"]').trigger('change');
+						//monthly csúszka mozgatása
+						var css = getCssPercentage(5620,144024,obj['loan_instalments'].replace(' ', ''));
+						$('input[type=range][name="monthly"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+						$('input[type=range][name="monthly"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+						$('input[type=range][name="monthly"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+						//monthly_discount módosítása
+						$('#monthly_discount').html(obj['monthly_discount']+' Ft');
+						$('#total_saving').html(obj['total_saving']);
+						
+						$('#month_number').html(24);
 				    }
 				});
   			});
@@ -142,19 +163,35 @@
   		function changeRange2(){
   			$('input[type="range"][name="monthly"]').change(function(){
   				var value = $(this).val();
-  				var css = getCssPercentage(14402,144024,value);
-  				$('input[type=range][name="monthly"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
-  				$('input[type=range][name="monthly"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
-  				$('input[type=range][name="monthly"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+  				var amount = $('input[type="range"][name="amount"]').val();
+  				
   				$.ajax({
 				    type: "POST",
 				    url: "ajax.php",
 				    data: {
 				    	mode: 'monhtlyChange',
-				    	value: value
+				    	monthly: value,
+				    	amount : amount
 				    }, 
 				    success: function(msg){
-				    	console.log(msg);
+				    	var obj = $.parseJSON(msg);
+				    	//console.log(obj);
+				    	//input val módosítás
+				    	$('input[type="range"][name="monthly"]').val(obj['loan_instalments'].replace(' ', ''));
+				    	//monthly text módosítás
+				    	$('#monthly_instalment').html(obj['loan_instalments']+' Ft');
+				    	//monthly_discount módosítása
+						$('#monthly_discount').html(obj['monthly_discount']+' Ft');
+						$('#total_saving').html(obj['total_saving']);
+						//css
+						var css = getCssPercentage(14402,144024,obj['loan_instalments']);
+  				
+						$('input[type=range][name="monthly"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+						$('input[type=range][name="monthly"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+						$('input[type=range][name="monthly"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+						
+						//month edit
+						$('#month_number').html(obj['repaid_in']);
 				    }
 				});
   			});

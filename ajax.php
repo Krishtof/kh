@@ -1,5 +1,6 @@
 <?php
 	error_reporting(0);
+	session_start();
 	/*$loan_amount = array();
 	for($i = 300000;$i<=3000000;$i+=50000){
 		$loan_amount[] = $i;
@@ -36,40 +37,8 @@
 		return $total_saving/12;
 	}*/
 	
+	include_once('process_csv.php');
 	
-	$file = fopen("mark2.csv","r");
-	$csv = fgetcsv($file,100000,"x");
-	
-	$datas = array();
-	
-	foreach($csv as $key => $value){
-		$data = explode(';', $value);
-		$db = sizeof($datas);
-		$datas[$db]['load_amount'] = number_format($data[0],0,',','');
-		$datas[$db]['loan_instalments'] = number_format(($data[1]),0,',','');
-		$datas[$db]['repaid_in'] = $data[2];
-		$datas[$db]['total_repaid'] = number_format($data[3],0,',','');
-		$datas[$db]['interest_rate'] = '13.99';
-		$datas[$db]['total_saving'] =  number_format($data[16],0,',','');
-		$datas[$db]['monthly_discount'] =  number_format($data[17],0,',','');
-	}
-	
-	/*$min = 99999999;
-	$max = 1;
-	foreach($datas as $key => $value ){
-		echo $value['loan_instalments'].'>'.$max.'<br>';
-		if($value['loan_instalments'] < $min ){
-			$min = $value['loan_instalments'];
-		}
-		if($value['loan_instalments'] > $max && $value['loan_instalments'] != 0){
-			$max = $value['loan_instalments'];
-		}
-	}
-	
-	echo $max.'<br>';
-	echo $min;
-	*/
-	fclose($file);
 	
 	if(isset($_POST['mode']) && $_POST['mode'] == 'amountChange'){
 		$selected = $_POST['value'];
@@ -84,8 +53,40 @@
 				$selection['total_saving'] = number_format($value['total_saving'],0,',',' ');
 				$selection['monthly_discount'] = number_format($value['monthly_discount'],0,',',' ');
 				
+				$_SESSION["loan_amount"] = $selection['load_amount'];
+				$_SESSION["loan_instalments"] = $selection['loan_instalments'];
+				$_SESSION["repaid_in"] = $selection['repaid_in'];
+				
 				echo json_encode($selection);
 			}
 		}
 	}
+	
+	if(isset($_POST['mode']) && $_POST['mode'] == 'monhtlyChange'){
+		$monthly = $_POST['monthly'];
+		$amount = $_POST['amount'];
+		$selection = array();
+		$min = 9999999999;
+		foreach($datas as $key => $value){
+			if($value['load_amount'] == $amount ){
+				$diff = abs($value['loan_instalments'] - $monthly);
+				if($diff<$min){
+					$min = $diff;
+					$selection['load_amount'] = number_format($value['load_amount'],0,',',' ');
+					$selection['loan_instalments'] = number_format($value['loan_instalments'],0,',',' ');
+					$selection['repaid_in'] = $value['repaid_in'];
+					$selection['total_repaid'] = number_format($value['total_repaid'],0,',',' ');
+					$selection['interest_rate'] = $value['interest_rate'];
+					$selection['total_saving'] = number_format($value['total_saving'],0,',',' ');
+					$selection['monthly_discount'] = number_format($value['monthly_discount'],0,',',' ');
+					
+					$_SESSION["loan_amount"] = $selection['load_amount'];
+					$_SESSION["loan_instalments"] = $selection['loan_instalments'];
+					$_SESSION["repaid_in"] = $selection['repaid_in'];
+				}
+			}
+		}
+		echo json_encode($selection);
+	}
+	
 ?>
