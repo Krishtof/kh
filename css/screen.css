@@ -63,6 +63,24 @@ table {
   max-width: 738px;
 }
 
+.container.mobile_first {
+  background: white;
+  border: 1px solid #99DFF9;
+  padding: 30px 20px;
+  text-align: left;
+}
+
+.container.mobile_first img {
+  position: relative;
+/* right: 50%; */
+display: block;
+margin: 0 auto;
+}
+
+.container.mobile_first p {
+  padding-bottom: 20px;
+}
+
 .subheader {
   width: 100%;
   background: #A1DEFB;
@@ -434,6 +452,13 @@ label span {/* <-- style the artificial checkbox */
       left: 5px;
       height: 7px;
 }
+.seccode {
+  font-size: 30px !important;
+  text-align: center;
+  padding: 30px;
+  font-weight: bold !important;
+}
+
 label p {
   display: inline;
     margin-left: 10px;
@@ -662,7 +687,10 @@ input[type="file"] {
   align-items: center;
 
 }
-
+.mailing_info {
+  text-align: left;
+  margin-left: 30px;
+}
 .id_ok, .mailing_address {
   padding: 50px;
 }
@@ -812,6 +840,7 @@ input[type="file"] {
 
 
 
+
 .landing {
   text-align: center;
 }
@@ -831,7 +860,7 @@ padding: 20px;
 margin-top: 40px;
 background: #FFFFFF;
 border: 1px solid #99DFF9;
-
+}
 .calculator h2 {
   margin-bottom: 13px;
 }
@@ -852,4 +881,75 @@ border: 1px solid #99DFF9;
   margin-top: 30px;
   position: absolute;
   margin-left: 10px;
+}
+
+.view {
+  height: 80vh;
+  background: #A1D793;
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+  padding-top: 200px;
+}
+.click {
+  min-height: 20vh;
+  border: 0px;
+  background: #D8D8D8;
+  padding-top: 15px;
+  padding-bottom: 14px;
+
+}
+.click .button {
+  height: 80px;
+      width: 80px;
+      text-align: center;
+      border-radius: 10000px;
+      padding-top: 20px;
+      background: #4a4a4a;
+      margin: 0 auto;
+}
+.click p {
+  color: white;
+}
+.camera {
+  padding: 0px;
+}
+.picture_ok {
+  background: black;
+  padding-top: 40px;
+  text-align: center;
+}
+.picture_ok img {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+.picture_ok p {
+  color: white;
+  display: block;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.picture_ok button {
+  max-width: 140px;
+  display: inline-block;
+}
+.picture_ok button.nobg {
+  background: none;
+  border: 1px solid white;
+}
+.picture_ok a{
+  display: block;
+  color: white;
+}
+
+.upload_success {
+  text-align: center;
+
+}
+.upload_success img {
+  width: 50px;
+  margin-bottom: 20px;
 }

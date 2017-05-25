@@ -326,37 +326,8 @@
 
 
             </form><br>
-            <div class="container watchout">
 
-              <h2 style="position:inherit !important;">What to watch for:</h2>
-              <div class="col-md-3">
-                <img src="img/csillan.png" />
-                <p>
-                  Flash reflection
-                </p>
-              </div>
-
-              <div class="col-md-3">
-                <img src="img/kicsi.png" />
-                <p>
-                  Far from the border (less then 3/4 of the picture)
-                </p>
-              </div>
-
-              <div class="col-md-3">
-                <img src="img/low.png" />
-                <p>
-                  Light or low contrast background
-                </p>
-              </div>
-
-              <div class="col-md-3">
-                <img src="img/kilog.png" />
-                <p>
-                  Edge cut-off
-                </p>
-              </div>
-            </div>
+				
 
 
 			<div class="mailing_address">

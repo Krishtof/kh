@@ -184,7 +184,6 @@
 
 
 
-            <button class="bluebtn" type="button" name="button">Finish</button>
 
           </div>
 

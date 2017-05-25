@@ -1,0 +1,170 @@
+
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Description here</title>
+        <meta name="description" content="whatever">
+        <meta name="keywords" content="html5 template, css3, one page, animations, agency, portfolio, web design">
+        <meta name="author" content="Kristof Vizy">    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/screen.css">
+
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <title>kh</title>
+    </head>
+
+<!-- BODY-->
+
+
+
+    <body>
+
+<!-- HEADER -->
+      <div class="header mobile">
+        <div class="subheader">
+        </div>
+        <div class="sec_subheader">
+        </div>
+        <div class="container">
+          <img class="logo" src="img/logo.png">
+
+        </div>
+      </div>
+<!-- progress bar -->
+
+<div class="container">
+
+	<h1 class="seccode">Personal ID Upload</h1>
+	<div class="container mobile_first form">
+		<p>
+			Take a photo of your personal ID or choose a photo from the picture gallery
+		</p>
+    <img src="img/id_front.png" />
+    <button onclick="window.location.href='mobile_3.html'" class="bluebtn" type="button" name="button">Take a picture of ID</button>
+
+
+	</div>
+</div>
+
+
+
+
+
+
+
+    </body>
+
+<!-- FOOTER-->
+
+
+    <footer>
+    </footer>
+    <script>
+  		$(function(){
+  			changeRange();
+  			changeRange2();
+  		});
+
+  		function changeRange(){
+  			$('input[type="range"][name="amount"]').change(function(){
+  				var value = $(this).val();
+
+  				var css = getCssPercentage(300000,3000000,value);
+  				$('input[type=range][name="amount"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+  				$('input[type=range][name="amount"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+  				$('input[type=range][name="amount"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+  				$.ajax({
+				    type: "POST",
+				    url: "ajax.php",
+				    data: {
+				    	mode: 'amountChange',
+				    	value: value
+				    },
+				    success: function(msg){
+				    	var obj = $.parseJSON(msg);
+				    	$('input[type=range][name="monthly"]').attr('max',obj['loan_instalments'].replace(' ', ''));
+				    	$('input[type=range][name="monthly"]').attr('min',obj['min_loan_instalments'].replace(' ', ''));
+				    	$('#max_monthly_instalment').html(obj['loan_instalments']+' Ft');
+				    	$('#min_monthly_instalment').html(obj['min_loan_instalments']+' Ft');
+				    	//console.log(obj);
+				    	//amount you need text módosítása
+				    	$('h1#amount').html(obj['load_amount']+' Ft');
+				    	//monthly installmenst text módosítása
+				    	$('#monthly_instalment').html(obj['loan_instalments']+' Ft');
+				    	//monthly csúszka értékének beállítása
+						$('input[type=range][name="monthly"]').val(obj['loan_instalments'].replace(' ', ''));
+						//monthly csúszka mozgatása
+						var css = getCssPercentage(obj['min_loan_instalments'].replace(' ', ''),obj['loan_instalments'].replace(' ', ''),obj['loan_instalments'].replace(' ', ''));
+						$('input[type=range][name="monthly"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+						$('input[type=range][name="monthly"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+						$('input[type=range][name="monthly"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+						//monthly_discount módosítása
+						$('#monthly_discount').html(obj['monthly_discount']+' Ft');
+						$('#total_saving').html(obj['total_saving']);
+
+						$('#month_number').html(24);
+				    }
+				});
+  			});
+
+  		}
+
+  		function getCssPercentage(min,max,value){
+	  		var percentage_1 = (max-min)/100;
+	  		var result = (value-min)/percentage_1;
+	  		return result;
+  		}
+
+  		function getCssPercentage2(min,max,value){
+	  		var percentage_1 = (max-min)/100;
+	  		var result = (value-min)/percentage_1;
+	  		return result;
+  		}
+
+  		function changeRange2(){
+  			$('input[type="range"][name="monthly"]').change(function(){
+  				var value = $(this).val();
+  				var amount = $('input[type="range"][name="amount"]').val();
+
+  				$.ajax({
+				    type: "POST",
+				    url: "ajax.php",
+				    data: {
+				    	mode: 'monhtlyChange',
+				    	monthly: value,
+				    	amount : amount
+				    },
+				    success: function(msg){
+				    	var obj = $.parseJSON(msg);
+				    	var max_monthly = $('input[type=range][name="monthly"]').attr('max');
+				    	var min_monthly = $('input[type=range][name="monthly"]').attr('min');
+
+				    	//console.log(obj);
+				    	//input val módosítás
+				    	$('input[type="range"][name="monthly"]').val(obj['loan_instalments'].replace(' ', ''));
+				    	//monthly text módosítás
+				    	$('#monthly_instalment').html(obj['loan_instalments']+' Ft');
+				    	//monthly_discount módosítása
+						$('#monthly_discount').html(obj['monthly_discount']+' Ft');
+						$('#total_saving').html(obj['total_saving']);
+						//css
+						var css = getCssPercentage2(min_monthly, max_monthly,obj['loan_instalments'].replace(' ', ''));
+
+						$('input[type=range][name="monthly"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+						$('input[type=range][name="monthly"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+						$('input[type=range][name="monthly"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+
+						//month edit
+						$('#month_number').html(obj['repaid_in']);
+				    }
+				});
+  			});
+
+  		}
+
+  	</script>
