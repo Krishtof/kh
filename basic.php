@@ -54,7 +54,7 @@
           </p>
 
         </div>
-        <button onclick="window.location.href='financial.php'" class="bluebtn" type="button" name="button">Next</button>
+        <button onclick="window.location.href='financial.php'" class="bluebtn" type="button" name="button">I acknowledge</button>
         <a class="dont" href="#">I don't acknowledge</a>
 
       </div>
@@ -223,6 +223,9 @@
               </p>
               <input type="email" name="email" id="phone_verify" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
               <button type="button" class="bluebtn" id="phone-verify"  name="button">Verify </button>
+							<button  class="bluebtn nobg2" type="button" name="button">Send again</button>
+							<button  class="bluebtn nobg2" type="button" name="button">Try different phone number</button>
+
             </div>
 
             <div class="success phone" id="phone_success">
@@ -247,6 +250,9 @@
               </p>
               <input type="email" name="email" id="email_verify" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
               <button type="button" class="bluebtn" id="email-verify"  name="button">Verify </button>
+							<button  class="bluebtn nobg2" type="button" name="button">Send again</button>
+							<button  class="bluebtn nobg2" type="button" name="button">Try different email address</button>
+
             </div>
 
             <div class="success email" id="email_success">

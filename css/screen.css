@@ -953,3 +953,10 @@ border: 1px solid #99DFF9;
   width: 50px;
   margin-bottom: 20px;
 }
+.nobg2 {
+  background: none;
+  border: 1px solid var(--light-blue);
+  color: var(--light-blue);
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
