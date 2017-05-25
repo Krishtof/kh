@@ -54,3 +54,7 @@ h2{
 .accordion.collapsed.done:before{
 	display: inline-block;
 }
+
+#new_holder.active, #old_holder.active, #new_holder:hover, #old_holder:hover{
+	outline: 2px solid var(--light-blue);
+}
