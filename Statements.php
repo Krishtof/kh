@@ -355,9 +355,16 @@
             </label>
           </div>
           	<div class="city inline">
-            <h2>Postal code</h2>
-            <input type="text" class="shortest" name="firstname">
-            <input type="text" class="shorter" name="firstname">
+							<div class="postal inline">
+								<h2>Postal code</h2>
+								<input type="text" class="shortest" name="firstname">
+
+							</div>
+						<div class="cit inline">
+
+						<h2>City</h2>
+						<input type="text" class="shorter" name="firstname">
+					</div>
 
           </div>
 
@@ -381,7 +388,15 @@
 	              </div>
 				</div>
 				<div class="street_number">
-					 <h2>Number</h2>
+					 <h2>Str. Number</h2>
+					 <input type="text" class="shortest" name="number">
+				</div>
+				<div class="floor inline">
+					 <h2>Floor</h2>
+					 <input type="text" class="shortest" name="number">
+				</div>
+				<div class="door inline">
+					 <h2>door</h2>
 					 <input type="text" class="shortest" name="number">
 				</div>
 			</div>

@@ -1,27 +1,26 @@
-<?php 
+<?php
 	session_start();
 	error_reporting(0);
-	
+
 	function getCssPercentage($min,$max,$value){
 		$percentage_1 = ($max-$min)/100;
 		$result = ($value-$min)/$percentage_1;
 		return $result;
 	}
-	
+
 	$amount_css = getCssPercentage(300000,3000000,str_replace(' ','',$_SESSION["loan_amount"]));
 	$monthly_css = getCssPercentage(str_replace(' ','',$_SESSION["min_loan"]),str_replace(' ','',$_SESSION["max_loan"]),str_replace(' ','',$_SESSION["loan_instalments"]));
 ?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Description here</title>
-        <meta name="description" content="whatever">
-        <meta name="keywords" content="html5 template, css3, one page, animations, agency, portfolio, web design">
-        <meta name="author" content="Kristof Vizy">    <meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>Testbirds prototype</title>
+        <meta name="description" content="prototype">
+        <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -30,7 +29,6 @@
 		 <link rel="stylesheet" href="css/approval.css">
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <title>kh</title>
         <style>
         	input[name="amount"]{
 	        	background: #99fba6; /* Old browsers */
@@ -188,7 +186,7 @@
 					<p class="min_amount">300.000 Ft</p>
 					<p class="max_amount">3.000.000 Ft</p>
 				</div>
-	
+
 			</div>
 			<div>
 				<div style="margin-top: 60px;"class="need">
@@ -198,7 +196,7 @@
 					<p class="min_amount" id="min_monthly_instalment"><?=$_SESSION["min_loan"]?> Ft</p>
 					<p class="max_amount" id="max_monthly_instalment"><?=$_SESSION["max_loan"]?> Ft</p>
 				</div>
-	
+
 			</div>
 			<div class="repaidin">
 				<h2>Repaid in:</h2>
@@ -279,7 +277,7 @@
 						//monthly_discount módosítása
 						//$('#monthly_discount').html(obj['monthly_discount']+' Ft');
 						//$('#total_saving').html(obj['total_saving']);
-						
+
 						$('#total_repaid_id').html(obj['total_repaid']);
 						$('#interest_rate').html(obj['interest_rate']);
 

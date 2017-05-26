@@ -16,10 +16,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Description here</title>
-        <meta name="description" content="whatever">
-        <meta name="keywords" content="html5 template, css3, one page, animations, agency, portfolio, web design">
-        <meta name="author" content="Kristof Vizy">    <meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>Testbirds prototype</title>
+        <meta name="description" content="prototype">
+        <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -28,7 +27,6 @@
 
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <title>kh</title>
     </head>
 
 <!-- BODY-->

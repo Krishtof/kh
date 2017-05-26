@@ -18,10 +18,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Description here</title>
-        <meta name="description" content="whatever">
-        <meta name="keywords" content="html5 template, css3, one page, animations, agency, portfolio, web design">
-        <meta name="author" content="Kristof Vizy">    <meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>Testbirds prototype</title>
+        <meta name="description" content="prototype">
+        <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -30,7 +29,6 @@
 		 <link rel="stylesheet" href="css/approval.css">
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <title>kh</title>
         <style>
         	input[name="amount"]{
 	        	background: #99fba6; /* Old browsers */
@@ -178,12 +176,12 @@
     <div class="container">
       <div class="form nopadding approval">
         <h1>Az általad igényelt hitelösszeget jóváhagytuk. de lehetőséged van ennél magasabb összeget is igényelni</h1>
-        <p>az általad igényelt hitelösszeg: <?=$_SESSION["loan_amount"]?>. A maximálisan igényelhető személyi hitel összege számodra: 3 000 000 forint. </p>
+        <p>Az általad igényelt hitelösszeg: <?=$_SESSION["loan_amount"]?>. A maximálisan igényelhető személyi hitel összege számodra: 3 000 000 forint. </p>
         <div class="container">
           <div class="col-md-6">
 			<div>
 			<div class="need">
-					<h2 class="n_label">igényelt hitelösszeg</h2>
+					<h2 class="n_label">Igényelt hitelösszeg</h2>
 					<h1 class="n_amount" id="amount"><?=$_SESSION["loan_amount"]?> Ft</h1>
 					<input class="custom_range" type="range" name="amount" min="300000" max="3000000" step="50000" value="<?=str_replace(' ','',$_SESSION["loan_amount"])?>">
 					<p class="min_amount">300.000 Ft</p>
@@ -193,7 +191,7 @@
 			</div>
 			<div>
 				<div style="margin-top: 60px;"class="need">
-					<h2 class="n_label">havi törlesztőrészlet:</h2>
+					<h2 class="n_label">Havi törlesztőrészlet:</h2>
 					<h1 class="n_amount" id="monthly_instalment"><?=$_SESSION["loan_instalments"]?> Ft</h1>
 					<input class="custom_range" type="range" name="monthly" min="<?=str_replace(' ','',$_SESSION["min_loan"])?>" max="<?=str_replace(' ','',$_SESSION["max_loan"])?>" step="1" value="<?=str_replace(' ','',$_SESSION["loan_instalments"])?>" list="numbers">
 					<p class="min_amount" id="min_monthly_instalment"><?=$_SESSION["min_loan"]?> Ft</p>
@@ -202,7 +200,7 @@
 
 			</div>
 			<div class="repaidin">
-				<h2>futamidő:</h2>
+				<h2>Futamidő:</h2>
 				<h3><span id="month_number"><?=$_SESSION["repaid_in"]?></span> hónap</h3>
 			</div>
           </div>
@@ -219,7 +217,7 @@
 
 
           </div>
-          <button onclick="window.location.href='contract.php'" class="bluebtn" type="button" name="button">Következő</button>
+          <button onclick="window.location.href='hu_contract.php'" class="bluebtn" type="button" name="button">Tovább</button>
 
         </div>
 

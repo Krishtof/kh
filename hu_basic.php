@@ -9,10 +9,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Description here</title>
-        <meta name="description" content="whatever">
-        <meta name="keywords" content="html5 template, css3, one page, animations, agency, portfolio, web design">
-        <meta name="author" content="Kristof Vizy">    <meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>Testbirds prototype</title>
+        <meta name="description" content="prototype">
+        <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -25,7 +24,6 @@
          <script src="js/bootstrap-datepicker.js"></script>
 
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <title>basic</title>
     </head>
 
 <!-- BODY-->
@@ -54,7 +52,7 @@
           </p>
 
         </div>
-        <button onclick="window.location.href='financial.php'" class="bluebtn" type="button" name="button">Elfogadom</button>
+        <button onclick="window.location.href='hu_financial.php'" class="bluebtn" type="button" name="button">Elfogadom</button>
         <a class="dont" href="#">Nem fogadom el</a>
 
       </div>
@@ -188,7 +186,7 @@
     <div class="container">
       <div class="form nopadding">
             <div class="form basic">
-            <h1 >Personal information</h1>
+            <h1 >Személyes adatok</h1>
             <form>
               Vezetéknév:<br>
               <input type="text" name="firstname"><br>
@@ -206,7 +204,7 @@ telefonszámod és e-mail címed megadásával hozzájárulsz, hogy hiteligényl
 
             <div class="phone" id="single_phone">
 
-              <h2>telefonszám:</h2>
+              <h2>Telefonszám:</h2>
               <p>
 az általad megadott telefonszámra egy megerősítő kódot küldünk              </p>
                 <p class="hun">+36</p>
@@ -233,7 +231,7 @@ az általad megadott telefonszámra egy megerősítő kódot küldünk          
 
             <div class="email" id="single_email">
 
-              <h2>e-mail cím</h2>
+              <h2>E-mail cím</h2>
               <p>
                 az általad megadott e-mail címre egy megerősítő kódot küldünk
               </p>

@@ -717,7 +717,14 @@ input[type="file"] {
 }
 
 .inline {
-  display: inline;
+  display: inline-block;
+}
+.postal {
+  width: 90px;
+}
+
+.cit {
+  width: 200px;
 }
 .city {
   margin-top: 50px;

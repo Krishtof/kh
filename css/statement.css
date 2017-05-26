@@ -39,8 +39,11 @@ h2{
 }
 
 .street_number{
-	width: 50px;
+	width: 80px;
 	display: inline-block;
+}
+.floor, .door {
+	width: 90px;
 }
 
 .mailing_address{

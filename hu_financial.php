@@ -8,10 +8,9 @@
       <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Description here</title>
-        <meta name="description" content="whatever">
-        <meta name="keywords" content="html5 template, css3, one page, animations, agency, portfolio, web design">
-        <meta name="author" content="Kristof Vizy">    <meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>Testbirds prototype</title>
+        <meta name="description" content="prototype">
+        <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -20,7 +19,6 @@
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
          <script src="js/finance.js"></script>
-        <title>kh</title>
     </head>
 
 <!-- BODY-->
@@ -187,10 +185,10 @@
             <div class="form">
 
             <form>
-              rendszeres havi bevétel:<br>
+              Rendszeres havi bevétel:<br>
               <input type="text" name="firstname"><br>
 
-              bevétel forrása:<br />
+              Bevétel forrása:<br />
               <div class="check">
 
                 <label>
@@ -204,7 +202,7 @@
               <div class="from">
 
                 <div class="dropdown">
-                  <h2>munkaviszony kezdete</h2>
+                  <h2>Munkaviszony kezdete</h2>
 
                   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">hónap
                   <span class="caret"></span></button>
@@ -306,7 +304,7 @@
 
             </form>
 
-            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#income" name="button" id="income_next">Következő</button>
+            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#income" name="button" id="income_next">Tovább</button>
 
           </div>
 
@@ -315,20 +313,20 @@
 
 
 
-        <button class="accordion collapsed  " data-toggle="collapse" id="expenses_button" data-target="">kiadások</button>
+        <button class="accordion collapsed  " data-toggle="collapse" id="expenses_button" data-target="">Kiadások</button>
         <div id="expenses" class="collapse">
             <div class="form">
 
             <form class="expenses">
-              havi törlesztőrészlet:<br>
+              Havi törlesztőrészlet:<br>
               <input type="text" name="firstname"><br>
-              rendszeres egyéb havi kiadások:<br>
+              Rendszeres egyéb havi kiadások:<br>
               <input type="text" name="lastname">
             </form>
 
             </form>
 
-            <button class="bluebtn" type="button" id="expense_next" data-toggle="collapse"  data-target="#expenses" name="button">tovább</button>
+            <button class="bluebtn" type="button" id="expense_next" data-toggle="collapse"  data-target="#expenses" name="button">Tovább</button>
 
           </div>
 
@@ -362,7 +360,7 @@
 							</form>
 
 
-              <h2 style="margin-top: 40px;">mióta laksz ebben az ingatlanban?</h2>
+              <h2 style="margin-top: 40px;">Mióta laksz ebben az ingatlanban?</h2>
               <div class="radio">
 								<form>
                 <input type="radio" id="r1" name="rr" />
@@ -386,7 +384,7 @@
 
             </form>
 
-            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#Housing" id="housing_next" name="button">tovább</button>
+            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#Housing" id="housing_next" name="button">Tovább</button>
 
           </div>
 
@@ -395,11 +393,11 @@
 
 
 
-        <button class="accordion collapsed  " data-toggle="collapse"  id="family_button" data-target="">családi állapot és végzettség</button>
+        <button class="accordion collapsed  " data-toggle="collapse"  id="family_button" data-target="">Családi állapot és végzettség</button>
         <div id="family" class="collapse">
 
               <div class="form family">
-                <h2>legmagasabb iskolai végzettség</h2>
+                <h2>Legmagasabb iskolai végzettség</h2>
 								<form>
                 <div class="radio">
                   <input type="radio" id="r1" name="rr" />
@@ -427,7 +425,7 @@
 								</form>
 
 
-                <h2 style="margin-top: 40px;">családi állapot</h2>
+                <h2 style="margin-top: 40px;">Családi állapot</h2>
 								<form>
                 <div class="radio">
                   <input type="radio" id="r1" name="rr" />
@@ -459,7 +457,7 @@
 
                 </form>
 
-                <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#family" id="family_next" name="button">tovább</button>
+                <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#family" id="family_next" name="button">Tovább</button>
 
               </div>
 
@@ -471,14 +469,14 @@
 
 
 
-        <button class="accordion collapsed  " data-toggle="collapse"  id="bank_button" data-target="">bankszámlára vonatkozó adatok</button>
+        <button class="accordion collapsed  " data-toggle="collapse"  id="bank_button" data-target="">Bankszámlára vonatkozó adatok</button>
         <div id="bank" class="collapse">
             <div class="form">
 
             <form>
-              <h2>kérjük, add meg bankszámlaszámod</h2>
+              <h2>Kérjük, add meg bankszámlaszámod</h2>
               <p>
-ellenőrizzük bankszámlád érvényességét              </p>
+Ellenőrizzük bankszámlád érvényességét              </p>
             </form>
             <input placeholder="_ _ _ _ _ _ _ _" class="shorter bankaccount"type="text" name="firstname">
             <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text" name="firstname">
@@ -497,7 +495,7 @@ ellenőrizzük bankszámlád érvényességét              </p>
 							</label>
 						</div>
 
-            <button onclick="window.location.href='Statements.php'" class="bluebtn" type="button" name="button">tovább</button>
+            <button onclick="window.location.href='hu_Statements.php'" class="bluebtn" type="button" name="button">Tovább</button>
 
           </div>
 

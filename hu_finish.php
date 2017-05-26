@@ -8,17 +8,15 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Description here</title>
-        <meta name="description" content="whatever">
-        <meta name="keywords" content="html5 template, css3, one page, animations, agency, portfolio, web design">
-        <meta name="author" content="Kristof Vizy">    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Testbirds prototype</title>
+        <meta name="description" content="prototype">
+        <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/screen.css">
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <title>kh</title>
     </head>
 
 <!-- BODY-->
@@ -49,14 +47,14 @@
 
           </div>
           <div class="row">
-            <div class="col-xs-2 ">
+						<div class="col-xs-2 ">
               <div class="nr">
                 <p>
                   1
                 </p>
               </div>
               <p class="pr_title">
-                Basic information
+                Alapadatok
               </p>
             </div>
             <div class="col-xs-2 ">
@@ -66,17 +64,17 @@
                 </p>
               </div>
               <p class="pr_title ">
-                Financial evaluation
+                Személyes adatok
               </p>
             </div>
-            <div class="col-xs-2 ">
+            <div class="col-xs-2">
               <div class="nr">
                 <p>
                   3
                 </p>
               </div>
               <p class="pr_title">
-                Statements
+                Azonosítás
               </p>
             </div>
             <div class="col-xs-2">
@@ -86,17 +84,17 @@
                 </p>
               </div>
               <p class="pr_title">
-                Approval
+                Jóváhagyás
               </p>
             </div>
-            <div class="col-xs-2">
+            <div class="col-xs-2 ">
               <div class="nr">
                 <p>
                   5
                 </p>
               </div>
               <p class="pr_title">
-                Contract
+                Szerződés
               </p>
             </div>
             <div class="col-xs-2 active">
@@ -105,15 +103,15 @@
                   6
                 </p>
               </div>
-              <p class="pr_title">
-                Finish
+              <p class="pr_title ">
+                Befejezés
               </p>
             </div>
 
 
 
           </div>
-          <h2 class="title">Finish</h2>
+          <h2 class="title">Befejezés</h2>
         </div>
       </div>
 
@@ -121,23 +119,23 @@
 <!-- Loan I apply for -->
     <div class="container">
 
-      <div class="loanholder">
-        <h2>Loan I apply for</h2>
+			<div class="loanholder">
+        <h2>Hitel részletei</h2>
         <div class="amount">
           <p>
-            Loan amount
+            Hitelösszeg
           </p>
           <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
         </div>
         <div class="info">
 
           <div class="instalments">
-            <h2>Instalments:</h2>
-             <p><?=$_SESSION["loan_instalments"]?> Ft</p>
+            <h2>Törlesztőrészlet:</h2>
+            <p><?=$_SESSION["loan_instalments"]?> Ft</p>
           </div>
           <div class="instalments">
-            <h2>Repaid in::</h2>
-            <p><?=$_SESSION["repaid_in"]?> months</p>
+            <h2>Futamidő:</h2>
+            <p><?=$_SESSION["repaid_in"]?> hónap</p>
           </div>
         </div>
       </div>

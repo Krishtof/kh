@@ -8,10 +8,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Description here</title>
-        <meta name="description" content="whatever">
-        <meta name="keywords" content="html5 template, css3, one page, animations, agency, portfolio, web design">
-        <meta name="author" content="Kristof Vizy">    <meta name="viewport" content="width=device-width, initial-scale=1">
+				<title>Testbirds prototype</title>
+        <meta name="description" content="prototype">
+        <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -21,7 +20,6 @@
 
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
          <script src="js/statement.js"></script>
-        <title>kh</title>
     </head>
 
 <!-- BODY-->
@@ -266,11 +264,11 @@
 
     <div class="container">
       <div class="form nopadding">
-        <button class="accordion" id="data_button" data-toggle="collapse" data-target="#data">adatvédelmi nyilakozat</button>
+        <button class="accordion" id="data_button" data-toggle="collapse" data-target="#data">Adatvédelmi nyilakozat</button>
         <div id="data" class="collapse in">
             <div class="form">
             <p>
-kérjük, szkenneld be, vagy fotózd le személyi igazolványod.            </p>
+								Kérjük, szkenneld be, vagy fotózd le személyi igazolványod.            </p>
             <div class="container slider">
               <div class="col-md-6">
 
@@ -283,7 +281,7 @@ kérjük, szkenneld be, vagy fotózd le személyi igazolványod.            </p>
 
 
 
-            <button class="bluebtn" type="button" data-toggle="modal" data-target="#acknowledgemodal" name="button">nyilatkozat megnyitása</button>
+            <button class="bluebtn" type="button" data-toggle="modal" data-target="#acknowledgemodal" name="button">Nyilatkozat megnyitása</button>
 
           </div>
 
@@ -295,7 +293,7 @@ kérjük, szkenneld be, vagy fotózd le személyi igazolványod.            </p>
         <button class="accordion collapsed" id="select_upload_button" data-toggle="collapse" data-target="">Igazolvány kiválasztása és küldése</button>
         <div id="expenses" class="collapse">
             <div class="form id_type">
-              <h2 id="which_id">válaszd ki személyi igazolványod típusát</h2>
+              <h2 id="which_id">Válaszd ki személyi igazolványod típusát</h2>
               <p id="please_select">
                 Kérjük válassz
               </p>
@@ -308,16 +306,16 @@ kérjük, szkenneld be, vagy fotózd le személyi igazolványod.            </p>
                       <div class="selected successful">
                         <p>
 														a feltölteni kívánt képet húzd ide a kijelölt területre                        </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">fotó készítése</button>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése</button>
 						<label class="custom-file-upload id_btn">
 						    <input type="file" id="file_1"/>Kép feltöltése
 						</label>
 												</div>
                       <div class="selected error">
                         <p>
-                          az általad feltöltött kép nem megfelelő, kérjük, tölts fel egy másikat:
+                          Az általad feltöltött kép nem megfelelő, kérjük, tölts fel egy másikat:
                         </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">fotó készítése</button>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése</button>
                         <label class="custom-file-upload id_btn">
 						    <input type="file" id="file_1_2"/>Kép feltöltése
 						</label>
@@ -345,9 +343,9 @@ kérjük, szkenneld be, vagy fotózd le személyi igazolványod.            </p>
                       </div>
                       <div class="selected successful">
                         <p>
-                          a feltölteni kívánt képet húzd ide a kijelölt területre:
+                          A feltölteni kívánt képet húzd ide a kijelölt területre:
                         </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">fotó készítése</button>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése</button>
                         <label class="custom-file-upload id_btn">
 						    <input type="file" id="file_2"/>Kép feltöltése
 						</label>
@@ -386,6 +384,7 @@ kérjük, szkenneld be, vagy fotózd le személyi igazolványod.            </p>
           	<div class="city inline">
             <h2>Irányítószám</h2>
             <input type="text" class="shortest" name="firstname">
+
             <input type="text" class="shorter" name="firstname">
 
           </div>
@@ -410,7 +409,7 @@ kérjük, szkenneld be, vagy fotózd le személyi igazolványod.            </p>
 	              </div>
 				</div>
 				<div class="street_number">
-					 <h2>Number</h2>
+					 <h2>Házszám</h2>
 					 <input type="text" class="shortest" name="number">
 				</div>
 			</div>
@@ -425,7 +424,7 @@ kérjük, szkenneld be, vagy fotózd le személyi igazolványod.            </p>
       </div>
 
 
-      <button class="accordion collapsed" data-toggle="collapse" id="account_button" data-target="">bankszámlakivonat</button>
+      <button class="accordion collapsed" data-toggle="collapse" id="account_button" data-target="">Bankszámlakivonat</button>
       <div id="account" class="collapse">
           <div class="form">
           <p>
@@ -435,7 +434,7 @@ kérjük, szkenneld be, vagy fotózd le személyi igazolványod.            </p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
             </p>
-            <button class="bluebtn" type="button" data-toggle="modal" data-target="#acknowledgemodal" name="button">bővebb információ</button>
+            <button class="bluebtn" type="button" data-toggle="modal" data-target="#acknowledgemodal" name="button">Bővebb információ</button>
 
 
 
@@ -445,10 +444,10 @@ kérjük, szkenneld be, vagy fotózd le személyi igazolványod.            </p>
 
             <img src="img/pdf.png" />
             <p>
-a feltölteni kívánt PDF dokumentumot húzd ide a kijelölt területre            </p>
+A feltölteni kívánt PDF dokumentumot húzd ide a kijelölt területre            </p>
 
             <label class="custom-file-upload id_btn">
-			    <input type="file" id="last_file"/>dokumentum feltöltése
+			    <input type="file" id="last_file"/>Dokumentum feltöltése
 			</label>
 
           </div>
@@ -466,7 +465,7 @@ a feltölteni kívánt PDF dokumentumot húzd ide a kijelölt területre        
 
           </div>
 
-          <button onclick="window.location.href='approval.php'" class="bluebtn" type="button" name="button">Következő</button>
+          <button onclick="window.location.href='hu_approval.php'" class="bluebtn" type="button" name="button">Tovább</button>
 
         </div>
 
