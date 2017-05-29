@@ -1,7 +1,33 @@
 $(function(){
 	employment();
 	next();
+	bank_account();
+	jump_next();
 });
+
+function bank_account(){
+	$('#bank input.shorter.bankaccount[name="firstname"]:first').keyup(function(){
+		if($(this).val().length >= 3){
+			$('#bank .nokh').show();
+		}else{
+			$('#bank .nokh').hide();
+		}
+	});
+}
+
+function jump_next(){
+	$('#bank input.shorter.bankaccount[name="firstname"]').keyup(function(){
+		if ($(this).val().length == 8) {
+		  var $next = $(this).next('input.shorter.bankaccount').focus();
+		  /*if ($next.length)
+		      $(this).next('.inputs').focus();
+		  else
+		      $(this).blur();
+			}
+		}*/
+		}
+	});
+}
 
 function employment(){
 	$('input#employment').change(function(){
@@ -11,7 +37,6 @@ function employment(){
 		}else{
 			$('.from').hide();
 		}
-	
 	});
 }
 

@@ -478,9 +478,9 @@
               <p>
 Ellenőrizzük bankszámlád érvényességét              </p>
             </form>
-            <input placeholder="_ _ _ _ _ _ _ _" class="shorter bankaccount"type="text" name="firstname">
-            <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text" name="firstname">
-            <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text" name="firstname">
+            <input placeholder="_ _ _ _ _ _ _ _" class="shorter bankaccount"type="text" maxlength="8"  name="firstname">
+            <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
+            <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
 						<div class="nokh">
 							<img src="img/no_kh.png" />
 							<p>
