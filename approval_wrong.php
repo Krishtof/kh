@@ -8,11 +8,16 @@
 		return $result;
 	}
 	
+	
+	
 	include_once('process_csv.php');
 	
 	if(str_replace(' ','',$_SESSION["loan_amount"])>300000){
 		$_SESSION["loan_amount"] = str_replace(' ','',$_SESSION["loan_amount"]) - 50000;
 	}
+	
+	
+	$max = $_SESSION["loan_amount"]+50000;
 	$selected = $_SESSION["loan_amount"];
 	
 	$selection = array();
@@ -48,7 +53,7 @@
 
 
 	$you_can_get = str_replace(' ','',$_SESSION["loan_amount"]);
-	$amount_css = getCssPercentage(300000,3000000,$you_can_get);
+	$amount_css = getCssPercentage(300000,$max,$you_can_get);
 	$monthly_css = getCssPercentage(str_replace(' ','',$_SESSION["min_loan"]),str_replace(' ','',$_SESSION["max_loan"]),str_replace(' ','',$_SESSION["loan_instalments"]));
 ?>
 <!DOCTYPE html>
@@ -222,9 +227,9 @@
 			<div class="need">
 					<h2 class="n_label">Amount you need</h2>
 					<h1 class="n_amount" id="amount"><?=$_SESSION["loan_amount"]?> Ft</h1>
-					<input class="custom_range" type="range" name="amount" min="300000" max="3000000" step="50000" value="<?=str_replace(' ','',$_SESSION["loan_amount"])?>">
-					<p class="min_amount">300.000 Ft</p>
-					<p class="max_amount">3.000.000 Ft</p>
+					<input class="custom_range" type="range" name="amount" min="300000" max="<?=$max?>" step="50000" value="<?=str_replace(' ','',$_SESSION["loan_amount"])?>">
+					<p class="min_amount">300 000 Ft</p>
+					<p class="max_amount"><?=number_format($max,0,',',' ')?> Ft</p>
 				</div>
 
 			</div>
@@ -297,7 +302,7 @@
   					$(this).val(<?=str_replace(' ','',$_SESSION["loan_amount"])?>);
   				}
 	  			var value = $(this).val();
-	  			var css = getCssPercentage(300000,3000000,value);
+	  			var css = getCssPercentage(300000,<?=$max?>,value);
 	  			console.log(css);
 	  			$('input[type=range][name="amount"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%, #e6f7fe '+css+'%, #e6f7fe '+<?=$amount_css?>+'%,#f89ca8 '+<?=$amount_css?>+'%,#f89ca8 100%)');
 	  			$('input[type=range][name="amount"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%, e6f7fe '+css+'%, #e6f7fe '+<?=$amount_css?>+'%,#f89ca8 '+<?=$amount_css?>+'%,#f89ca8 100%)');
