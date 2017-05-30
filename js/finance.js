@@ -4,12 +4,19 @@ $(function(){
 	bank_account();
 	jump_next();
 	dropdown();
+	a_prevent();
 });
 
 function dropdown(){
 	$('.dropdown-menu li').click(function(){
 		var selected = $(this).find('a').html();
-		$(this).closest('.dropdown').find('button.dropdown-toggle').html(selected);
+		$(this).closest('.dropdown').find('button.dropdown-toggle').html(selected+'<span class="caret"></span>');
+	});
+}
+
+function a_prevent(){
+	$('ul.dropdown-menu li a').click(function(e){
+		e.preventDefault();
 	});
 }
 
