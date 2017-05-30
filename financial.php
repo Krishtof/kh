@@ -186,7 +186,7 @@
 
             <form>
               Regular monthly income:<br>
-              <input type="text" name="firstname"><br>
+              <input type="text" name="firstname" value="0"><br>
 
               Source of income:<br />
               <div class="check">
@@ -201,29 +201,11 @@
               </div>
               <div class="from">
 
-                <div class="dropdown">
-                  <h2>Current employment from</h2>
 
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Month
-                  <span class="caret"></span></button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">January</a></li>
-                    <li><a href="#">February</a></li>
-                    <li><a href="#">March</a></li>
-                    <li><a href="#">April</a></li>
-                    <li><a href="#">May</a></li>
-                    <li><a href="#">June</a></li>
-                    <li><a href="#">July</a></li>
-                    <li><a href="#">August</a></li>
-                    <li><a href="#">September</a></li>
-                    <li><a href="#">October</a></li>
-                    <li><a href="#">November</a></li>
-                    <li><a href="#">December</a></li>
-                  </ul>
-                </div>
 
 
                 <div class="dropdown">
+									<h2>Current employment from</h2>
 
                   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Year
                   <span class="caret"></span></button>
@@ -248,6 +230,25 @@
                     <li><a href="#">2000</a></li>
                     <li><a href="#">longer</a></li>
 
+                  </ul>
+                </div>
+								<div class="dropdown">
+
+                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Month
+                  <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">January</a></li>
+                    <li><a href="#">February</a></li>
+                    <li><a href="#">March</a></li>
+                    <li><a href="#">April</a></li>
+                    <li><a href="#">May</a></li>
+                    <li><a href="#">June</a></li>
+                    <li><a href="#">July</a></li>
+                    <li><a href="#">August</a></li>
+                    <li><a href="#">September</a></li>
+                    <li><a href="#">October</a></li>
+                    <li><a href="#">November</a></li>
+                    <li><a href="#">December</a></li>
                   </ul>
                 </div>
                 <div class="check">
@@ -319,9 +320,9 @@
 
             <form class="expenses">
               Regular loan instalments:<br>
-              <input type="text" name="firstname"><br>
+              <input type="text" name="firstname" value="0"><br>
               Regular monthly expenses:<br>
-              <input type="text" name="lastname">
+              <input type="text" name="lastname" value="0">
             </form>
 
             </form>
@@ -442,7 +443,7 @@
                 </div><br />
 
                 <h2>Number of dependence:</h2><br>
-                <input class="shorter" type="text" name="firstname"><br>
+                <input class="shorter" type="text" name="firstname" value="0"><br>
 
                 <h2>Are you a politically exposed person?</h2><br>
                 <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur.</p>

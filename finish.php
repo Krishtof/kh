@@ -179,6 +179,7 @@
 
             </div>
 
+						<button onclick="window.location.href='index.php'" class="bluebtn" type="button" name="button">Go to home page</button>
 
 
 

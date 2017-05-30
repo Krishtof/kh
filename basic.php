@@ -192,9 +192,63 @@
               <input type="text" name="firstname"><br>
               Last name:<br>
               <input type="text" name="lastname">
-              <div class="cal" id="sandbox-container">
-                <h2>Date of birth:</h2>
-                  <input type="text" type="text" class=" shorter form-control" />
+							<div class="cal">
+								<div class="from">
+									<div class="dropdown ">
+										<h2>Date of birth</h2>
+
+										<button class="birthyear btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Year
+										<span class="caret"></span></button>
+										<ul class="dropdown-menu">
+											<li><a href="#">2017</a></li>
+											<li><a href="#">2016</a></li>
+											<li><a href="#">2015</a></li>
+											<li><a href="#">2014</a></li>
+											<li><a href="#">2013</a></li>
+											<li><a href="#">2012</a></li>
+											<li><a href="#">2011</a></li>
+											<li><a href="#">2010</a></li>
+											<li><a href="#">2009</a></li>
+											<li><a href="#">2008</a></li>
+											<li><a href="#">2007</a></li>
+											<li><a href="#">2006</a></li>
+											<li><a href="#">2005</a></li>
+											<li><a href="#">2004</a></li>
+											<li><a href="#">2003</a></li>
+											<li><a href="#">2002</a></li>
+											<li><a href="#">2001</a></li>
+											<li><a href="#">2000</a></li>
+											<li><a href="#">longer</a></li>
+
+										</ul>
+									</div>
+									<div class="dropdown ">
+
+										<button class="birthmonth btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Month
+										<span class="caret"></span></button>
+										<ul class="dropdown-menu">
+											<li><a href="#">January</a></li>
+											<li><a href="#">February</a></li>
+											<li><a href="#">March</a></li>
+											<li><a href="#">April</a></li>
+											<li><a href="#">May</a></li>
+											<li><a href="#">June</a></li>
+											<li><a href="#">July</a></li>
+											<li><a href="#">August</a></li>
+											<li><a href="#">September</a></li>
+											<li><a href="#">October</a></li>
+											<li><a href="#">November</a></li>
+											<li><a href="#">December</a></li>
+										</ul>
+									</div>
+									<div class="day shortest inline" >
+										<h2>  </h2>
+										<input type="text" type="text"  placeholder="Day" />
+
+									</div>
+
+
+								</div>
               </div>
             </form>
             <h1>Contact details</h1>

@@ -356,6 +356,12 @@ form  {
   display: block;
   float: right;
 }
+
+#forint:after {
+  content: 'Ft';
+  display: block;
+
+}
 .accordion.collapsed:after {
   content: '+';
   display: block;
@@ -888,16 +894,23 @@ border: 1px solid #99DFF9;
   max-width: 123px;
   padding-left: 35px;
 }
-.cal::before {
-  content: url(../img/cal.png);
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  margin-top: 30px;
-  position: absolute;
-  margin-left: 10px;
+.cal .from {
+  margin-left: 0px;
 }
 
+.day {
+  position: absolute;
+margin-left: 3px;
+padding-top: 15px;
+}
+.birthyear, .birthmonth {
+  width: 90px;
+}
+.day input {
+  width: 60px;
+    padding: 10px;
+    height: 35px;
+}
 .view {
   height: 80vh;
   background: #A1D793;

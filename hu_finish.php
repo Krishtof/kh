@@ -174,6 +174,7 @@ Your money will be credited to your account within 15 minutes through a payment 
 Do not forget to check your e-mail. We just sent you the signed contract and information about repayment installments.               </p></div>
 
             </div>
+						<button onclick="window.location.href='hu_index.php'" class="bluebtn" type="button" name="button">Vissza a főoldalra</button>
 
 
 
