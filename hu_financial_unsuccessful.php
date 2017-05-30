@@ -440,7 +440,7 @@
 
                 <div class="radio">
                   <input type="radio" id="r2" name="rr" />
-                  <label for="r2">egyéb</label>
+                  <label for="r2">egyéb (párkapcsolat, élettársi kapcsolat, özvegy, elvált)</label>
                 </div><br />
 
                 <h2>eltartottak száma:</h2><br>

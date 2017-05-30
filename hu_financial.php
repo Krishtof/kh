@@ -131,9 +131,13 @@
                 Szerződéskötés
               </p>
             </div>
-						<div class="col-xs-2 last">
-							<img src="img/finish.png" />
-              <p class="pr_title ">
+            <div class="col-xs-2">
+              <div class="nr">
+                <p>
+                  6
+                </p>
+              </div>
+              <p class="pr_title">
                 Befejezés
               </p>
             </div>
@@ -235,16 +239,16 @@
                   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Hónap
                   <span class="caret"></span></button>
                   <ul class="dropdown-menu">
-                    <li><a href="#">January</a></li>
-                    <li><a href="#">February</a></li>
-                    <li><a href="#">March</a></li>
-                    <li><a href="#">April</a></li>
-                    <li><a href="#">May</a></li>
-                    <li><a href="#">June</a></li>
-                    <li><a href="#">July</a></li>
-                    <li><a href="#">August</a></li>
-                    <li><a href="#">September</a></li>
-                    <li><a href="#">October</a></li>
+                    <li><a href="#">Január</a></li>
+                    <li><a href="#">Február</a></li>
+                    <li><a href="#">Március</a></li>
+                    <li><a href="#">Április</a></li>
+                    <li><a href="#">Május</a></li>
+                    <li><a href="#">Június</a></li>
+                    <li><a href="#">Július</a></li>
+                    <li><a href="#">Augusztus</a></li>
+                    <li><a href="#">Szeptember</a></li>
+                    <li><a href="#">Oktober</a></li>
                     <li><a href="#">November</a></li>
                     <li><a href="#">December</a></li>
                   </ul>
@@ -435,12 +439,12 @@
                 </div>
                 <div class="radio">
                   <input type="radio" id="r2" name="rr" />
-                  <label for="r2">házas</label>
+                  <label for="r2">házas/bejegyzett élettársi kapcsolat</label>
                 </div>
 
                 <div class="radio">
                   <input type="radio" id="r2" name="rr" />
-                  <label for="r2">egyéb</label>
+                  <label for="r2">egyéb (párkapcsolat, élettársi kapcsolat, özvegy, elvált)</label>
                 </div><br />
 
                 <h2>eltartottak száma:</h2><br>
