@@ -97,12 +97,8 @@
                 Szerződés
               </p>
             </div>
-            <div class="col-xs-2 active">
-              <div class="nr">
-                <p>
-                  6
-                </p>
-              </div>
+						<div class="col-xs-2 last active">
+							<img src="img/finish.png" />
               <p class="pr_title ">
                 Befejezés
               </p>

@@ -1084,4 +1084,17 @@ h2#last_file_name{
 .uploadbox.success{
 	display: none;
 }
->>>>>>> origin/gh-pages
+
+.banklist {
+  color: var(--blue);
+  text-decoration: underline;
+}
+.col-xs-2.last img{
+  max-width: 60px;
+  margin-top: -16px;
+}
+@media (min-width: 992px){
+  .col-xs-2.last.active img{
+    max-width: 90px;
+  }
+}

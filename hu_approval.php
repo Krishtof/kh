@@ -125,13 +125,9 @@
                 Szerződéskötés
               </p>
             </div>
-            <div class="col-xs-2">
-              <div class="nr">
-                <p>
-                  6
-                </p>
-              </div>
-              <p class="pr_title">
+						<div class="col-xs-2 last">
+							<img src="img/finish.png" />
+              <p class="pr_title ">
                 Befejezés
               </p>
             </div>

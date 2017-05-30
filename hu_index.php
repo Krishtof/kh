@@ -60,7 +60,7 @@
 			<li>rendelkezel havi rendszerességű, munkáltatótól származó, igazolható jövedelemmel </li>
 			<li>havi igazolható jövedelmed eléri a nettó 250.000 forintot</li>
 			<li>
-				a fenti számla az alábbi támogatott bankok valamelyikénél található
+				<a href="#" class="banklist" data-toggle="tooltip" title="Erste Bank,CIB Bank, K&H Bank, MKB Bank, OTP Bank, Raiffeisen Bank ">A hitelt Magyarország egyik vezető pénzügyi szolgáltatója biztosítja.</a>
 			</li>
 		</ul>
 
