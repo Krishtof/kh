@@ -184,7 +184,7 @@
 	<div class="col-md-3">
 		<img src="img/security.png" />
 		<p>
-			A hitelt Magyarország egyik vezető pénzügyi szolgáltatója biztosítja
+			A hitelt Magyarország egyik vezető pénzügyi szolgáltatója biztosítja.
 		</p>
 	</div>
 </div>
