@@ -215,7 +215,7 @@
 
     <div class="container">
       <div class="form nopadding approval">
-				<div class="good">You are doing well! Only 1 more step!</div>
+				<div class="good approve">You are doing well! Only 2 more step!</div>
 
         <h1>The amount you requested cannot be approved, please try a smaller amount.</h1>
         <p>You applied for <?=number_format(str_replace(' ','',$_SESSION["loan_amount"])+50000,0,',',' ')?> Ft. The maximum amount you can apply for is <?=number_format(str_replace(' ','',$_SESSION["loan_amount"]),0,',',' ')?> Ft.</p>
