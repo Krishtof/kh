@@ -59,8 +59,10 @@
 			<li>már elmúltál 18 éves</li>
 			<li>rendelkezel havi rendszerességű, munkáltatótól származó, igazolható jövedelmmel </li>
 			<li>havi igazolható jövedelmed eléri a nettó 250.000 forintot</li>
-			<li>
-				a fenti számla az alábbi támogatott bankok valamelyikénél található
+			<li>rendelkezel bankszámlával és hozzá kapcsolódó internet bank eléréssel az oldal alján található bankok egyikénél</li>
+
+			<li>a fenti számla
+				<a href="#" class="banklist" data-toggle="tooltip" title="Erste Bank,CIB Bank, K&H Bank, MKB Bank, OTP Bank, Raiffeisen Bank ">az alábbi támogatott bankok valamelyikénél </a>található
 			</li>
 		</ul>
 
@@ -197,33 +199,33 @@
 	<h3 style="margin-bottom: 50px;">A K&H azonnali hiteligénylése az alábbi bankoknál érhető el:</h3>
 
 	<div class="col-md-2">
-		<img src="img/cib.png" />
+		<h2>CIB Bank</h2>
 	</div>
 
 
 	<div class="col-md-2">
-		<img src="img/erste.png" />
+		<h2>Erste Bank</h2>
 	</div>
 
 	<div class="col-md-2">
-		<img src="img/kh.png" />
+		<h2>K&H Bank</h2>
 		<p>
 
 	</div>
 
 
 	<div class="col-md-2">
-		<img style="max-width: 40px;"src="img/MKB_logo.png" />
+		<h2>MKB Bank</h2>
 
 	</div>
 
 	<div class="col-md-2">
-		<img src="img/otp.png" />
+		<h2>OTP Bank</h2>
 
 	</div>
 
 	<div class="col-md-2">
-		<img src="img/Raiffeisen_Bank.png" />
+		<h2>Raiffeisen Bank</h2>
 
 	</div>
 

@@ -103,7 +103,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="text">
-          <h1>Általános szerződési feltételek</h1>
+          <h1>Ügyféltájékoztató és általános szerződési feltételek</h1>
           <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur, molestiae definiebas efficiendi in mel. Sit ad eruditi persequeris, ne docendi omnesque pro. Id nibh ubique democritum eum, ea singulis senserit nec, vix no erant dolore intellegebat. Eam ex utamur elaboraret, idque saepe argumentum qui ei, his prodesset dissentiunt ex.
 
           Vis saepe concludaturque ad, eius bonorum periculis vim ea, integre suscipit prodesset eu quo. Utinam scaevola has cu, cum etiam scripserit te, no copiosae definitionem pro. Phaedrum quaerendum eum ea, pro an iuvaret accommodare. Posse adipisci theophrastus at vel, te pro dolore quaestio dignissim. In eos meliore tractatos torquatos. Duo no meis lucilius deterruisset. Mundi ludus eos cu.
@@ -308,7 +308,7 @@
 
 
 
-        <button class="accordion collapsed" id = "terms_button" data-toggle="collapse" data-target="">Általános szerződési feltételek</button>
+        <button class="accordion collapsed" id = "terms_button" data-toggle="collapse" data-target="">Ügyféltájékoztató és általános szerződési feltételek</button>
         <div id="terms" class="collapse ">
             <div class="form">
               <p>
@@ -340,7 +340,7 @@
 
 
 
-              <button class="bluebtn left" type="button" data-toggle="modal" data-target="#list" name="button">Árlista megnyitása</button>
+              <button class="bluebtn left" type="button" data-toggle="modal" data-target="#list" name="button">Nyilatkozat megnyitása</button>
 
 
             </form>
@@ -393,7 +393,7 @@ Az aláírás előtt kérjük, hogy olvasd el a szerződést alaposan. A szerző
 						<input type="text" name="firstname">
 
 
-            <button onclick="window.location.href='hu_finish.php'" class="bluebtn" type="button" name="button">Következő</button>
+            <button onclick="window.location.href='hu_finish.php'" class="bluebtn" type="button" name="button">Aláírom</button>
 
           </div>
 

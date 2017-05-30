@@ -107,21 +107,21 @@
           <div class="col-md-3">
             <img src="img/csillan.png" />
             <p>
-              túlságosan tükröződő felület
+              Ne tükröződjön túlságosan felület
             </p>
           </div>
 
           <div class="col-md-3">
             <img src="img/kicsi.png" />
             <p>
-              az igazolványról készült fotó túl kicsi (a kép méretének kevesebb, mint 3/4 részét foglalja el)
+              a kép szélei is látsszanak
             </p>
           </div>
 
           <div class="col-md-3">
             <img src="img/low.png" />
             <p>
-              túl világos, vagy túl alacsony felbontású kép
+              az igazolványról készült fotó ne legyen túl kicsi
             </p>
           </div>
 
@@ -132,7 +132,7 @@
             </p>
           </div>
         </div>
-        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" id="modal_button" type="button" data-dismiss="modal" name="button">Ok</button>
+        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" id="modal_button" type="button" data-dismiss="modal" name="button">Rendben</button>
 
       </div>
     </div>
@@ -260,7 +260,7 @@
 
     <div class="container">
       <div class="form nopadding">
-				<div class="good">Remek! Még 3 lépés és készen is vagy!</div>
+				<div class="good">Remek! Még 2 lépés és készen is vagy!</div>
 
         <button class="accordion" id="data_button" data-toggle="collapse" data-target="#data">Adatvédelmi nyilakozat</button>
         <div id="data" class="collapse in">
@@ -288,10 +288,10 @@
 
 
 
-        <button class="accordion collapsed" id="select_upload_button" data-toggle="collapse" data-target="">Igazolvány kiválasztása és küldése</button>
+        <button class="accordion collapsed" id="select_upload_button" data-toggle="collapse" data-target="">Személyi igazolvány</button>
         <div id="expenses" class="collapse">
             <div class="form id_type">
-              <h2 id="which_id">Válaszd ki személyi igazolványod típusát</h2>
+              <h2 id="which_id">Az azonosításhoz szükségünk lesz a személyi igazolványod másolatára</h2>
               <p id="please_select">
                 Kérjük válassz
               </p>
@@ -304,16 +304,16 @@
                       <div class="selected successful">
                         <p>
 														a feltölteni kívánt képet húzd ide a kijelölt területre                        </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése</button>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése mobiloddal</button>
 						<label class="custom-file-upload id_btn">
 						    <input type="file" id="file_1"/>Kép feltöltése
 						</label>
 												</div>
                       <div class="selected error">
                         <p>
-                          Az általad feltöltött kép nem megfelelő, kérjük, tölts fel egy másikat:
+                          az általad feltöltött képről nem tudtuk beolvasni a szükséges adatokat, kérjük, próbáld újra:
                         </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése</button>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése mobiloddal</button>
                         <label class="custom-file-upload id_btn">
 						    <input type="file" id="file_1_2"/>Kép feltöltése
 						</label>
@@ -365,14 +365,13 @@
 			<div id="after_success" class="mailing_address">
 				<p style="text-align:left" id="success_message">Adatait sikeresen beolvastuk.</p><br />
 
-				<p style="text-align:left"><span style="font-weight: bold;">Az Ön állandó lakcím: </span><br />1062 Budapest, Andrássy út 87-89.</p>
           <div class="check">
 
             <label>
               <input type='checkbox' id="employment">
               <span></span>
               <p class="checklabel">
-                Másik levelezési cím hozzáadása
+                Az állandó lakcímemtől eltérő levelezési címet adok meg
               </p>
               <p class="mailing_info">
                 You acknowledge that we will enter the credit bureau and save there the data about your application
@@ -424,6 +423,9 @@
 				 <h2>Ajtó</h2>
 				 <input type="text" class="shortest" name="number">
 			</div>
+			<P>
+				Hozzájárulsz, hogy az igénylésed adatait a KHR részére átadjuk.
+			</P>
 		</div>
 
 
@@ -442,11 +444,14 @@
           <p>
           kérjük, tölts fel egy három hónapnál nem régebbi bankszámlakivonatot (az eredeti PDF-et)       </p>
           <div class="statementholder">
-            <h2>Útmutató a bankszámlakivonat feltöltéséhez</h2>
+						<h2>Hogyan tudom letölteni a bankszámla kivonatomat az e-bankomból?</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+              1. látogass el a mybank.com-ra <br />
+2. jelentkezz be az e-bankodba<br />
+3. a bejelentkezés után válaszd a ""bankszámlatörténet"" menüpontot<br />
+4. válaszd ki az időszakot<br />
+5. kattints a ""PDF letöltése"" gombra<br />
             </p>
-            <button class="bluebtn" type="button" data-toggle="modal" data-target="#acknowledgemodal" name="button">Bővebb információ</button>
 
 
 

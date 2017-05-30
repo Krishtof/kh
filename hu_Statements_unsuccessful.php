@@ -104,33 +104,33 @@
         </p>
         <h2>Ezekre figyeljen a fénykép készítése során:</h2>
         <div class="container">
-          <div class="col-md-3">
-            <img src="img/csillan.png" />
-            <p>
-              túlságosan tükröződő felület
-            </p>
-          </div>
+					<div class="col-md-3">
+						<img src="img/csillan.png" />
+						<p>
+							Ne tükröződjön túlságosan felület
+						</p>
+					</div>
 
-          <div class="col-md-3">
-            <img src="img/kicsi.png" />
-            <p>
-              az igazolványról készült fotó túl kicsi (a kép méretének kevesebb, mint 3/4 részét foglalja el)
-            </p>
-          </div>
+					<div class="col-md-3">
+						<img src="img/kicsi.png" />
+						<p>
+							a kép szélei is látsszanak
+						</p>
+					</div>
 
-          <div class="col-md-3">
-            <img src="img/low.png" />
-            <p>
-              túl világos, vagy túl alacsony felbontású kép
-            </p>
-          </div>
+					<div class="col-md-3">
+						<img src="img/low.png" />
+						<p>
+							az igazolványról készült fotó ne legyen túl kicsi
+						</p>
+					</div>
 
-          <div class="col-md-3">
-            <img src="img/kilog.png" />
-            <p>
-              a kép szélei nem látszanak
-            </p>
-          </div>
+					<div class="col-md-3">
+						<img src="img/kilog.png" />
+						<p>
+							a kép szélei nem látszanak
+						</p>
+					</div>
         </div>
         <button onclick="" style="margin-bottom: 10px;"class="bluebtn" id="modal_button" type="button" data-dismiss="modal" name="button">Ok</button>
 
@@ -260,7 +260,7 @@
 
     <div class="container">
       <div class="form nopadding">
-				<div class="good">Remek! Még 3 lépés és készen is vagy!</div>
+				<div class="good">Remek! Még 2 lépés és készen is vagy!</div>
 
         <button class="accordion" id="data_button" data-toggle="collapse" data-target="#data">Adatvédelmi nyilakozat</button>
         <div id="data" class="collapse in">
@@ -288,7 +288,7 @@
 
 
 
-        <button class="accordion collapsed" id="select_upload_button" data-toggle="collapse" data-target="">Igazolvány kiválasztása és küldése</button>
+        <button class="accordion collapsed" id="select_upload_button" data-toggle="collapse" data-target="">Személyi igazolvány</button>
         <div id="expenses" class="collapse">
             <div class="form id_type">
               <h2 id="which_id">Válaszd ki személyi igazolványod típusát</h2>
@@ -311,7 +311,7 @@
 												</div>
                       <div class="selected error">
                         <p>
-                          Az általad feltöltött kép nem megfelelő, kérjük, tölts fel egy másikat:
+													az általad feltöltött képről nem tudtuk beolvasni a szükséges adatokat, kérjük, próbáld újra:
                         </p>
                         <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése</button>
                         <label class="custom-file-upload id_btn">
@@ -424,7 +424,11 @@
 				 <h2>Ajtó</h2>
 				 <input type="text" class="shortest" name="number">
 			</div>
+			<P>
+				Hozzájárulsz, hogy az igénylésed adatait a KHR részére átadjuk.
+			</P>
 		</div>
+
 
 
 			<button class="bluebtn" id="select_upload_next_button" type="button" name="button">Tovább</button>
@@ -442,9 +446,13 @@
           <p>
           kérjük, tölts fel egy három hónapnál nem régebbi bankszámlakivonatot (az eredeti PDF-et)       </p>
           <div class="statementholder">
-            <h2>Útmutató a bankszámlakivonat feltöltéséhez</h2>
+            <h2>Hogyan tudom letölteni a bankszámla kivonatomat az e-bankomból?</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
+              1. látogass el a mybank.com-ra <br />
+2. jelentkezz be az e-bankodba<br />
+3. a bejelentkezés után válaszd a ""bankszámlatörténet"" menüpontot<br />
+4. válaszd ki az időszakot<br />
+5. kattints a ""PDF letöltése"" gombra<br />
             </p>
             <button class="bluebtn" type="button" data-toggle="modal" data-target="#acknowledgemodal" name="button">Bővebb információ</button>
 

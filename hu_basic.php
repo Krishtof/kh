@@ -181,7 +181,7 @@
 
     <div class="container">
       <div class="form nopadding">
-				<div class="good">Remek! Még 5 lépés és készen is vagy!</div>
+				<div class="good">Remek! Még 4 lépés és készen is vagy!</div>
             <div class="form basic">
             <h1 >Személyes adatok</h1>
             <form>

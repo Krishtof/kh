@@ -51,6 +51,7 @@ h2 {
   font-weight: bold;
   font-size: 15px;
   color: var(--blue);
+  line-height: 19px;
 }
 ol, ul {
   list-style: none; }
@@ -439,6 +440,8 @@ padding-top: 0px;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 #phone_phone {
   padding-left: 45px;
@@ -634,12 +637,14 @@ border-color: var(--light-blue);
 }
 .id_btn{
   font-size: 13px;
-  min-width: 108px;
-    padding: 10px;
-  border-radius: 3px;
-  color: var(--light-blue);
-  background: none;
-  border: 1px solid var(--light-blue);
+      min-width: 108px;
+      margin-bottom: 10px;
+      padding: 10px;
+      min-width: 190px;
+      border-radius: 3px;
+      color: var(--light-blue);
+      background: none;
+      border: 1px solid var(--light-blue);
 }
 .col-md-12 .selected {
   height: 100%;
@@ -826,6 +831,7 @@ input[type="file"] {
 }
 .form.approval h1 {
   font-weight: bold;
+  line-height: 26px;
   font-size: 20px;
   margin-bottom: 10px;
 }

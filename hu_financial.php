@@ -180,17 +180,23 @@
 
     <div class="container">
       <div class="form nopadding">
-				<div class="good">Remek! Még 4 lépés és készen is vagy!</div>
+				<div class="good">Remek! Még 3 lépés és készen is vagy!</div>
 
         <button class="accordion  " data-toggle="collapse" id="income_button" data-target="#income">Bevétel:</button>
         <div id="income" class="collapse in">
             <div class="form">
 
             <form>
-              Rendszeres havi nettó bevétel:<br>
+              Rendszeres havi nettó bevétel<br>
+							<p>
+								A rendszeres munkából, nyugdíjból vagy gyermekgondozásból származó jövedelmet említsd.
+							</p>
               <input type="text" name="firstname" class="forint" id="forint" value="0"><br>
 
-              Bevétel forrása:<br />
+              Bevétel forrása<br />
+							<p>
+								Több bevételi forrást is megjelölhetsz
+							</p>
               <div class="check">
 
                 <label>
@@ -278,6 +284,16 @@
                 </label>
               </div>
 
+							<div class="check">
+
+                <label>
+                  <input type='checkbox'>
+                  <span></span>
+                  <p>
+                    Egyéni vállalkozó
+                  </p>
+                </label>
+              </div>
 
               <div class="check">
 
@@ -448,6 +464,9 @@
                 </div><br />
 
                 <h2>eltartottak száma:</h2><br>
+								<p>
+									A hiteligénylő nem számít eltartottnak
+								</p>
                 <input class="shorter" type="text" name="firstname" value="0"><br>
 
                 <h2>Ön kiemelt politikai közszereplő?</h2><br>

@@ -171,7 +171,7 @@
 
     <div class="container">
       <div class="form nopadding approval">
-				<div class="good approve">Remek! Még 2 lépés és készen is vagy!</div>
+				<div class="good approve">Már csak a szerződéskötés van hátra!</div>
 
         <h1>Az általad igényelt hitelösszeget jóváhagytuk. Ugyanakkor lehetőséged van ennél magasabb összeget is igényelni</h1>
         <p>Az általad igényelt hitelösszeg: <?=$_SESSION["loan_amount"]?>A maximálisan igényelhető személyi hitel összege számodra: 3 000 000 forint. </p>
