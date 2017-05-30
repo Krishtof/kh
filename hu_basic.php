@@ -228,16 +228,16 @@
 										<button class="birthmonth btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Hónap
 										<span class="caret"></span></button>
 										<ul class="dropdown-menu">
-											<li><a href="#">January</a></li>
-											<li><a href="#">February</a></li>
-											<li><a href="#">March</a></li>
-											<li><a href="#">April</a></li>
-											<li><a href="#">May</a></li>
-											<li><a href="#">June</a></li>
-											<li><a href="#">July</a></li>
-											<li><a href="#">August</a></li>
-											<li><a href="#">September</a></li>
-											<li><a href="#">October</a></li>
+											<li><a href="#">Január</a></li>
+											<li><a href="#">Február</a></li>
+											<li><a href="#">Március</a></li>
+											<li><a href="#">Április</a></li>
+											<li><a href="#">Május</a></li>
+											<li><a href="#">Június</a></li>
+											<li><a href="#">Július</a></li>
+											<li><a href="#">Augusztus</a></li>
+											<li><a href="#">Szeptember</a></li>
+											<li><a href="#">Október</a></li>
 											<li><a href="#">November</a></li>
 											<li><a href="#">December</a></li>
 										</ul>
@@ -254,7 +254,7 @@
             </form>
             <h1>kapcsolati adatok</h1>
             <p>
-telefonszámod és e-mail címed megadásával hozzájárulsz, hogy hiteligényléseddel kapcsolatban megkeressünk.            </p>
+Add meg a mobilszámod és az e-mail címed. A fentiek megadásával hozzájárulsz, hogy hiteligényléseddel kapcsolatban megkeressünk.            </p>
             <form class="contact">
 
             <div class="phone" id="single_phone">
@@ -270,7 +270,7 @@ Add meg a mobilszámod és kattints a "megerősítő kód küldése" gombra     
             <div class="verify" id="phone_verification">
               <h2>Add meg a megerősítő kódot:</h2>
               <p>
-                Az általad megadott, <span style="font-weight: bold;" id="phone_number">+36 20 418 48 83</span> mobilszámra egy megerősítő kódot küldünk. Kérjük, hogy másold be ide a kódot és kattints a "megerősítem" gombra . Kód megadása:
+                Az általad megadott, <span style="font-weight: bold;" id="phone_number">+36 20 418 48 83</span> mobilszámra egy megerősítő kódot küldünk. Kérjük, hogy másold be ide a kódot és kattints a "megerősítem" gombra.
               </p>
               <input type="email" name="email" id="phone_verify" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
               <button type="button" class="bluebtn" id="phone-verify"  name="button">megerősítem </button>
@@ -314,7 +314,7 @@ Add meg a mobilszámod és kattints a "megerősítő kód küldése" gombra     
             </form>
 
             <p class="continue">
-Az igénylés folytatáshoz kérjük, olvasd el a személyes adatok kezelésére vonatkozó nyilatkozatot            </p>
+Az igénylés folytatásához kérjük, olvasd el a személyes adatok kezelésére vonatkozó nyilatkozatot.</p>
             <button type="button" class="orangebtn btn btn-info btn-lg" data-toggle="modal" data-target="#acknowledgemodal">nyilatkozat megnyitása</button>
 
           </div>

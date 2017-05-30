@@ -178,7 +178,7 @@
 				<div class="good">Remek! Még 2 lépés és készen is vagy!</div>
 
         <h1>az általad igényelt hitelösszeget jóváhagytuk. Ugyanakkor lehetőséged van ennél magasabb összeget is igényelni</h1>
-        <p>Az általad igényelt hitelösszeg: <?=$_SESSION["loan_amount"]?>. A maximálisan igényelhető személyi hitel összege számodra: 3 000 000 forint. </p>
+        <p>Az általad igényelt hitelösszeg: <?=$_SESSION["loan_amount"]?>A maximálisan igényelhető személyi hitel összege számodra: 3 000 000 forint. </p>
         <div class="container">
           <div class="col-md-6">
 			<div>
