@@ -49,7 +49,7 @@
 <!-- progress bar -->
 
 <div class="container landing">
-	<h1 class="impresto">Impresto</h1>
+	<h1 class="impresto"> </h1>
 	<p style="line-height: 22px;	">
 		Szabad felhasználású hiteligénylés a K&H-tól, mostantól teljesen online! Végezd el az igénylést a neten keresztül és az aláírást követően 15 percen belül meg is érkezik a számládra a kért összeg!
 <div class="container qualify">
