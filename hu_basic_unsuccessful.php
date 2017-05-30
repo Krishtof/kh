@@ -190,10 +190,10 @@
               <input type="text" name="lastname">
               <div class="cal">
 								<div class="from">
-									<div class="dropdown ">
+									<div class="dropdown">
 										<h2>Születési dátum</h2>
 
-										<button class="birthyear btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Év
+										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Év
 										<span class="caret"></span></button>
 										<ul class="dropdown-menu">
 											<li><a href="#">2017</a></li>
@@ -214,34 +214,88 @@
 											<li><a href="#">2002</a></li>
 											<li><a href="#">2001</a></li>
 											<li><a href="#">2000</a></li>
-											<li><a href="#">longer</a></li>
+											<li><a href="#">1999</a></li>
+											<li><a href="#">1998</a></li>
+											<li><a href="#">1997</a></li>
+											<li><a href="#">1996</a></li>
+											<li><a href="#">1995</a></li>
+											<li><a href="#">1994</a></li>
+											<li><a href="#">1993</a></li>
+											<li><a href="#">1992</a></li>
+											<li><a href="#">1991</a></li>
+											<li><a href="#">1990</a></li>
+											<li><a href="#">1989</a></li>
+											<li><a href="#">1988</a></li>
+											<li><a href="#">1987</a></li>
+											<li><a href="#">1986</a></li>
+											<li><a href="#">1985</a></li>
+											<li><a href="#">1984</a></li>
+											<li><a href="#">1983</a></li>
+											<li><a href="#">1982</a></li>
+											<li><a href="#">1981</a></li>
+											<li><a href="#">1980</a></li>
+
 
 										</ul>
 									</div>
-									<div class="dropdown ">
+									<div class="dropdown">
 
-										<button class="birthmonth btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Hónap
+										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Hónap
 										<span class="caret"></span></button>
 										<ul class="dropdown-menu">
-											<li><a href="#">January</a></li>
-											<li><a href="#">February</a></li>
-											<li><a href="#">March</a></li>
-											<li><a href="#">April</a></li>
-											<li><a href="#">May</a></li>
-											<li><a href="#">June</a></li>
-											<li><a href="#">July</a></li>
-											<li><a href="#">August</a></li>
-											<li><a href="#">September</a></li>
-											<li><a href="#">October</a></li>
+											<li><a href="#">Január</a></li>
+											<li><a href="#">Február</a></li>
+											<li><a href="#">Március</a></li>
+											<li><a href="#">Április</a></li>
+											<li><a href="#">Május</a></li>
+											<li><a href="#">Június</a></li>
+											<li><a href="#">Július</a></li>
+											<li><a href="#">Augusztus</a></li>
+											<li><a href="#">Szeptember</a></li>
+											<li><a href="#">Oktober</a></li>
 											<li><a href="#">November</a></li>
 											<li><a href="#">December</a></li>
 										</ul>
 									</div>
-									<div class="day shortest inline" >
-										<h2>  </h2>
-										<input type="text" type="text"  placeholder="nap" />
+									<div class="dropdown">
 
+										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Nap
+										<span class="caret"></span></button>
+										<ul class="dropdown-menu">
+											<li><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#">4</a></li>
+											<li><a href="#">5</a></li>
+											<li><a href="#">6</a></li>
+											<li><a href="#">7</a></li>
+											<li><a href="#">8</a></li>
+											<li><a href="#">9</a></li>
+											<li><a href="#">10</a></li>
+											<li><a href="#">11</a></li>
+											<li><a href="#">12</a></li>
+											<li><a href="#">13</a></li>
+											<li><a href="#">14</a></li>
+											<li><a href="#">15</a></li>
+											<li><a href="#">16</a></li>
+											<li><a href="#">17</a></li>
+											<li><a href="#">18</a></li>
+											<li><a href="#">19</a></li>
+											<li><a href="#">20</a></li>
+											<li><a href="#">21</a></li>
+											<li><a href="#">22</a></li>
+											<li><a href="#">23</a></li>
+											<li><a href="#">24</a></li>
+											<li><a href="#">25</a></li>
+											<li><a href="#">26</a></li>
+											<li><a href="#">27</a></li>
+											<li><a href="#">28</a></li>
+											<li><a href="#">29</a></li>
+											<li><a href="#">30</a></li>
+											<li><a href="#">31</a></li>
+										</ul>
 									</div>
+							
 
 
 								</div>

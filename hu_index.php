@@ -97,7 +97,7 @@
 		</div>
 		<div class="repaidin">
 			<h2>futamidő:</h2>
-			<h3><span id="month_number">24</span> month</h3>
+			<h3><span id="month_number">24</span> hónap</h3>
 		</div>
 		<div class="disc">
 			<p >

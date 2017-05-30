@@ -440,7 +440,6 @@ padding-top: 0px;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  margin-top: 3px;
   margin-bottom: 3px;
 }
 #phone_phone {
@@ -450,7 +449,7 @@ padding-top: 0px;
   display: inline-block;
   margin-right: 10px;
   position: absolute;
-  margin-top: 30px;
+  margin-top: 30px !important;
   margin-left: 12px;
 }
 .phone input, .verify input, .email input  {
@@ -622,7 +621,7 @@ border-color: var(--light-blue);
 }
 
 .old .col-md-12 {
-  background-image: url(../img/old.png);
+  background-image: url(../img/new.png);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 185px;
@@ -659,7 +658,7 @@ input[type="file"] {
     display: none;
 }
 .new .col-md-12{
-  background-image: url(../img/new.png);
+  background-image: url(../img/old.png);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 200px;
@@ -1107,4 +1106,9 @@ h2#last_file_name{
   .col-xs-2.last.active img{
     max-width: 90px;
   }
+}
+
+.dropdown-menu {
+  max-height: 300px;
+overflow: auto;
 }

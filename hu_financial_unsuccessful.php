@@ -208,53 +208,53 @@
 
 
 
-                <div class="dropdown">
+								<div class="dropdown">
 									<h2>Munkaviszony kezdete</h2>
 
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Év
-                  <span class="caret"></span></button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">2017</a></li>
-                    <li><a href="#">2016</a></li>
-                    <li><a href="#">2015</a></li>
-                    <li><a href="#">2014</a></li>
-                    <li><a href="#">2013</a></li>
-                    <li><a href="#">2012</a></li>
-                    <li><a href="#">2011</a></li>
-                    <li><a href="#">2010</a></li>
-                    <li><a href="#">2009</a></li>
-                    <li><a href="#">2008</a></li>
-                    <li><a href="#">2007</a></li>
-                    <li><a href="#">2006</a></li>
-                    <li><a href="#">2005</a></li>
-                    <li><a href="#">2004</a></li>
-                    <li><a href="#">2003</a></li>
-                    <li><a href="#">2002</a></li>
-                    <li><a href="#">2001</a></li>
-                    <li><a href="#">2000</a></li>
-                    <li><a href="#">longer</a></li>
+									<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Év
+									<span class="caret"></span></button>
+									<ul class="dropdown-menu">
+										<li><a href="#">2017</a></li>
+										<li><a href="#">2016</a></li>
+										<li><a href="#">2015</a></li>
+										<li><a href="#">2014</a></li>
+										<li><a href="#">2013</a></li>
+										<li><a href="#">2012</a></li>
+										<li><a href="#">2011</a></li>
+										<li><a href="#">2010</a></li>
+										<li><a href="#">2009</a></li>
+										<li><a href="#">2008</a></li>
+										<li><a href="#">2007</a></li>
+										<li><a href="#">2006</a></li>
+										<li><a href="#">2005</a></li>
+										<li><a href="#">2004</a></li>
+										<li><a href="#">2003</a></li>
+										<li><a href="#">2002</a></li>
+										<li><a href="#">2001</a></li>
+										<li><a href="#">2000</a></li>
+										<li><a href="#">longer</a></li>
 
-                  </ul>
-                </div>
+									</ul>
+								</div>
 								<div class="dropdown">
 
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Hónap
-                  <span class="caret"></span></button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">January</a></li>
-                    <li><a href="#">February</a></li>
-                    <li><a href="#">March</a></li>
-                    <li><a href="#">April</a></li>
-                    <li><a href="#">May</a></li>
-                    <li><a href="#">June</a></li>
-                    <li><a href="#">July</a></li>
-                    <li><a href="#">August</a></li>
-                    <li><a href="#">September</a></li>
-                    <li><a href="#">October</a></li>
-                    <li><a href="#">November</a></li>
-                    <li><a href="#">December</a></li>
-                  </ul>
-                </div>
+									<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Hónap
+									<span class="caret"></span></button>
+									<ul class="dropdown-menu">
+										<li><a href="#">Január</a></li>
+										<li><a href="#">Február</a></li>
+										<li><a href="#">Március</a></li>
+										<li><a href="#">Április</a></li>
+										<li><a href="#">Május</a></li>
+										<li><a href="#">Június</a></li>
+										<li><a href="#">Július</a></li>
+										<li><a href="#">Augusztus</a></li>
+										<li><a href="#">Szeptember</a></li>
+										<li><a href="#">Oktober</a></li>
+										<li><a href="#">November</a></li>
+										<li><a href="#">December</a></li>
+									</ul>
+								</div>
                 <div class="check">
 
                   <label>
@@ -502,9 +502,9 @@ Azt a számlaszámodat add meg, ahova a jövedelmed érkezik. <br /><br />Egy ki
             <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
             <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
 						<div class="nokh">
-							<img src="img/no_kh.png" />
+							<img src="img/us.png" />
 							<p>
-								You could get a better deal if you agree to open a bank account with us because…lorem ipsum et dolor sit amet et.
+									Már a bankunk ügyfele vagy! Nagyszerű, amennyiben a jövedelmedet is igazolod a törlesztendő összeged XXX Ft-tal kevesebb lesz!
 							</p>
 							<label form>
 								<input type='checkbox'>
