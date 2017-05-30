@@ -3,7 +3,15 @@ $(function(){
 	next();
 	bank_account();
 	jump_next();
+	dropdown();
 });
+
+function dropdown(){
+	$('.dropdown-menu li').click(function(){
+		var selected = $(this).find('a').html();
+		$(this).closest('.dropdown').find('button.dropdown-toggle').html(selected);
+	});
+}
 
 function bank_account(){
 	$('#bank input.shorter.bankaccount[name="firstname"]:first').keyup(function(){
