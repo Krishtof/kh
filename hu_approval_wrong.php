@@ -7,21 +7,21 @@
 		$result = ($value-$min)/$percentage_1;
 		return $result;
 	}
-	
-	
-	
+
+
+
 	include_once('process_csv.php');
-	
+
 	if(str_replace(' ','',$_SESSION["loan_amount"])>300000){
 		$_SESSION["loan_amount"] = str_replace(' ','',$_SESSION["loan_amount"]) - 50000;
 	}
-	
-	
+
+
 	$max = $_SESSION["loan_amount"]+50000;
 	$selected = $_SESSION["loan_amount"];
-	
+
 	$selection = array();
-	
+
 	foreach($datas as $key => $value){
 	    if($value['load_amount'] == $selected && $value['repaid_in'] == 24){
 	    	$selection['load_amount'] = number_format($value['load_amount'],0,',',' ');
@@ -31,7 +31,7 @@
 	    	$selection['interest_rate'] = $value['interest_rate'];
 	    	$selection['total_saving'] = number_format($value['total_saving'],0,',',' ');
 	    	$selection['monthly_discount'] = number_format($value['monthly_discount'],0,',',' ');
-	    	
+
 	    	$_SESSION["loan_amount"] = $selection['load_amount'];
 	    	$_SESSION["loan_instalments"] = $selection['loan_instalments'];
 	    	$_SESSION["repaid_in"] = $selection['repaid_in'];
@@ -45,8 +45,8 @@
 	    if($value['load_amount'] == $selected ){
 	    	if($value['loan_instalments'] < $min){
 	    		$selection['min_loan_instalments'] =number_format($value['loan_instalments'],0,',',' ');
-	    		
-	    	}					
+
+	    	}
 	    }
 	}
 	$_SESSION["min_loan"] = $selection['min_loan_instalments'] ;
@@ -219,6 +219,8 @@
 
     <div class="container">
       <div class="form nopadding approval">
+				<div class="good">Remek! Még 1 lépés és készen is vagy!</div>
+
         <h1>The amount you requested cannot be approved, please try a smaller amount.</h1>
         <p>You applied for <?=number_format(str_replace(' ','',$_SESSION["loan_amount"])+50000,0,',',' ')?> Ft. The maximum amount you can apply for is <?=number_format(str_replace(' ','',$_SESSION["loan_amount"]),0,',',' ')?> Ft.</p>
         <div class="container">
@@ -285,7 +287,7 @@
   			changeRange2();
   			noIncrease();
   		});
-  		
+
   		function noIncrease(){
 	  		$('input[name="amount"]').change(function(event){
 	  			event.stopPropagation();
@@ -297,7 +299,7 @@
 
   		function changeRange(){
   			$('input[type="range"][name="amount"]').change(function(){
-  				
+
   				if($(this).val() > <?=str_replace(' ','',$_SESSION["loan_amount"])?>){
   					$(this).val(<?=str_replace(' ','',$_SESSION["loan_amount"])?>);
   				}
@@ -307,10 +309,10 @@
 	  			$('input[type=range][name="amount"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%, #e6f7fe '+css+'%, #e6f7fe '+<?=$amount_css?>+'%,#f89ca8 '+<?=$amount_css?>+'%,#f89ca8 100%)');
 	  			$('input[type=range][name="amount"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%, e6f7fe '+css+'%, #e6f7fe '+<?=$amount_css?>+'%,#f89ca8 '+<?=$amount_css?>+'%,#f89ca8 100%)');
 	  			$('input[type=range][name="amount"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%, #e6f7fe '+<?=$amount_css?>+'%,#f89ca8 '+<?=$amount_css?>+'%,#f89ca8 100%)');
-	  			
-	  			
-				
-	  			
+
+
+
+
 	  			$.ajax({
 				    type: "POST",
 				    url: "ajax.php",
@@ -339,14 +341,14 @@
 				    	//monthly_discount módosítása
 				    	//$('#monthly_discount').html(obj['monthly_discount']+' Ft');
 				    	//$('#total_saving').html(obj['total_saving']);
-	
+
 				    	$('#total_repaid_id').html(obj['total_repaid']);
 				    	$('#interest_rate').html(obj['interest_rate']);
-	
+
 				    	$('#month_number').html(24);
 				    }
 				});
-				
+
   			});
 
   		}
