@@ -57,7 +57,7 @@
 		<h3>Megfelelek-e a személyi hitel igénylés feltételeinek? A válasz igen, ha:</h3>
 		<ul>
 			<li>már elmúltál 18 éves</li>
-			<li>rendelkezel havi rendszerességű, munkáltatótól származó, igazolható jövedelmmel </li>
+			<li>rendelkezel havi rendszerességű, munkáltatótól származó, igazolható jövedelemmel </li>
 			<li>havi igazolható jövedelmed eléri a nettó 250.000 forintot</li>
 			<li>
 				a fenti számla az alábbi támogatott bankok valamelyikénél található
