@@ -235,6 +235,8 @@
 
     <div class="container">
       <div class="form nopadding">
+				<div class="good">You are doing well! Only 3 more steps!</div>
+
         <button class="accordion" id="data_button" data-toggle="collapse" data-target="#data">Data protection policy</button>
         <div id="data" class="collapse in">
             <div class="form">

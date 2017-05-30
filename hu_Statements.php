@@ -264,6 +264,8 @@
 
     <div class="container">
       <div class="form nopadding">
+				<div class="good">Remek! Még 3 lépés és készen is vagy!</div>
+
         <button class="accordion" id="data_button" data-toggle="collapse" data-target="#data">Adatvédelmi nyilakozat</button>
         <div id="data" class="collapse in">
             <div class="form">
@@ -381,38 +383,52 @@
               </p>
             </label>
           </div>
-          	<div class="city inline">
-            <h2>Irányítószám</h2>
-            <input type="text" class="shortest" name="firstname">
+					<div class="city inline">
+						<div class="postal inline">
+							<h2>Ir.szám</h2>
+							<input type="text" class="shortest" name="firstname">
 
-            <input type="text" class="shorter" name="firstname">
+						</div>
+					<div class="cit inline">
 
-          </div>
-
-			<div class="street">
-				<div class="street_holder">
-					<h2>Utca</h2>
+					<h2>Város</h2>
 					<input type="text" class="shorter" name="firstname">
-	            </div>
-				<div class="type_of_street">
-					<div class="dropdown shortest">
-	                <h2>Közterület típusa</h2>
-
-	                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Utca
-	                <span class="caret"></span></button>
-	                <ul class="dropdown-menu">
-	                  <li><a href="#">utca</a></li>
-	                  <li><a href="#">tér</a></li>
-	                  <li><a href="#">út</a></li>
-
-	                </ul>
-	              </div>
 				</div>
-				<div class="street_number">
-					 <h2>Házszám</h2>
-					 <input type="text" class="shortest" name="number">
+
 				</div>
+
+		<div class="street">
+			<div class="street_holder">
+				<h2>Utca</h2>
+				<input type="text" class="shorter" name="firstname">
+						</div>
+			<div class="type_of_street">
+				<div class="dropdown shortest">
+								<h2>Utca típus</h2>
+
+								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Utca
+								<span class="caret"></span></button>
+								<ul class="dropdown-menu">
+									<li><a href="#">Utca</a></li>
+									<li><a href="#">Tér</a></li>
+									<li><a href="#">Út</a></li>
+
+								</ul>
+							</div>
 			</div>
+			<div class="street_number">
+				 <h2>Házszám</h2>
+				 <input type="text" class="shortest" name="number">
+			</div>
+			<div class="floor inline">
+				 <h2>Emelet</h2>
+				 <input type="text" class="shortest" name="number">
+			</div>
+			<div class="door inline">
+				 <h2>Ajtó</h2>
+				 <input type="text" class="shortest" name="number">
+			</div>
+		</div>
 
 
 			<button class="bluebtn" id="select_upload_next_button" type="button" name="button">Tovább</button>
