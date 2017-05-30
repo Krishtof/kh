@@ -1076,7 +1076,11 @@ margin-right: 40px;
 h2#last_file_name{
 	text-overflow: none;
 }
+.good.approve {
+  margin-top: -70px;
+    margin-bottom: 30px;
 
+}
 .uploadbox{
 	overflow: hidden;
 }

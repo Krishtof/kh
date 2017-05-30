@@ -214,6 +214,8 @@
 
     <div class="container">
       <div class="form nopadding approval">
+				<div class="good approve">Remek! Még 2 lépés és készen is vagy!</div>
+
         <h1>A kért összeg nem fogadható el, kérjük próbálkozzon kisebb összeggel.</h1>
         <p>Az általad igényelt hitelösszeg <?=number_format(str_replace(' ','',$_SESSION["loan_amount"])+50000,0,',',' ')?> Ft. A maximálisan igényelhető személyi hitel összege számodra: 3 000 000 forint. <?=number_format(str_replace(' ','',$_SESSION["loan_amount"]),0,',',' ')?> Ft.</p>
         <div class="container">
