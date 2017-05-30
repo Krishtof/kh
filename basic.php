@@ -185,6 +185,8 @@
 
     <div class="container">
       <div class="form nopadding">
+				<div class="good">You are doing well! Only 5 more steps!</div>
+
             <div class="form basic">
             <h1 >Personal information</h1>
             <form>

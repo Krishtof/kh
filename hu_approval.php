@@ -175,7 +175,9 @@
 
     <div class="container">
       <div class="form nopadding approval">
-        <h1>Az általad igényelt hitelösszeget jóváhagytuk. de lehetőséged van ennél magasabb összeget is igényelni</h1>
+				<div class="good">Remek! Még 2 lépés és készen is vagy!</div>
+
+        <h1>az általad igényelt hitelösszeget jóváhagytuk. Ugyanakkor lehetőséged van ennél magasabb összeget is igényelni</h1>
         <p>Az általad igényelt hitelösszeg: <?=$_SESSION["loan_amount"]?>. A maximálisan igényelhető személyi hitel összege számodra: 3 000 000 forint. </p>
         <div class="container">
           <div class="col-md-6">
@@ -184,8 +186,8 @@
 					<h2 class="n_label">Igényelt hitelösszeg</h2>
 					<h1 class="n_amount" id="amount"><?=$_SESSION["loan_amount"]?> Ft</h1>
 					<input class="custom_range" type="range" name="amount" min="300000" max="3000000" step="50000" value="<?=str_replace(' ','',$_SESSION["loan_amount"])?>">
-					<p class="min_amount">300.000 Ft</p>
-					<p class="max_amount">3.000.000 Ft</p>
+					<p class="min_amount">300 000 Ft</p>
+					<p class="max_amount">3 000 000 Ft</p>
 				</div>
 
 			</div>

@@ -104,6 +104,8 @@
 			<p>
 				Your total saving on your loan can be: <span id="total_saving">18 035 Ft</span>.
 			</p>
+			<a href="#" class="mytooltip" data-toggle="tooltip" title="A kedvezmény feltétele, hogy rendelkezel K&H számlával vagy meghatározott időn belül nyitsz egyet és legalább 100 000 Ft munkabéred érkezik ide havonta. Ebben ez esetben 2% kedvezményt adunk a kamatból.  Az új számlát bármikor megnyithatod, a kedvezmény az első fizetési jóváírás beérkezését követő hónaptól lép majd érvénybe. ">i</a>
+
 		</div>
 		<button onclick="window.location.href='basic.php'" class="bluebtn" type="button" name="button">Yes, I want this loan</button>
 
@@ -354,3 +356,8 @@
   		}
 
   	</script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+		    $('[data-toggle="tooltip"]').tooltip();
+		});
+		</script>

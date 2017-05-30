@@ -51,15 +51,17 @@
 <div class="container landing">
 	<h1 class="impresto">Impresto</h1>
 	<p style="line-height: 22px;	">
-				Valósítsd meg álmaid a K&H személyi kölcsöneivel! Igényelheted lakáskorszerűsítéshez vagy felújításhoz, autóvásárláshoz, hitelkiváltáshoz vagy akár a mindennapi kiadásaidhoz.	</p>
-
+		Szabad felhasználású hiteligénylés a K&H-tól, mostantól teljesen online! Végezd el az igénylést a neten keresztül és az aláírást követően 15 percen belül meg is érkezik a számládra a kért összeg!
 <div class="container qualify">
 	<div class="col-md-6 qualify">
 		<h3>Megfelelek-e a személyi hitel igénylés feltételeinek? A válasz igen, ha:</h3>
 		<ul>
 			<li>már elmúltál 18 éves</li>
-			<li>rendelkezel bankszámlával és hozzá kapcsolódó internet bank eléréssel az oldal alján található bankok egyikénél</li>
+			<li>rendelkezel havi rendszerességű, munkáltatótól származó, igazolható jövedelmmel </li>
 			<li>havi igazolható jövedelmed eléri a nettó 250.000 forintot</li>
+			<li>
+				a fenti számla az alábbi támogatott bankok valamelyikénél található
+			</li>
 		</ul>
 
 		<h3>az igényléshez az alábbiakra lesz szükséged:</h3>
@@ -77,8 +79,8 @@
 				<h2 class="n_label">igényelt hitelösszeg</h2>
 				<h1 class="n_amount" id="amount">800 000 Ft</h1>
 				<input class="custom_range" type="range" name="amount" min="300000" max="3000000" step="50000" value="800000">
-				<p class="min_amount">300.000 Ft</p>
-				<p class="max_amount">3.000.000 Ft</p>
+				<p class="min_amount">300 000 Ft</p>
+				<p class="max_amount">3 000 000 Ft</p>
 			</div>
 
 		</div>
@@ -103,6 +105,8 @@
 			<p>
 				Teljes megtakarításod a hitelen <span id="total_saving">18 035 Ft</span> lehet.
 			</p>
+			<a href="#" class="mytooltip" data-toggle="tooltip" title="A kedvezmény feltétele, hogy rendelkezel K&H számlával vagy meghatározott időn belül nyitsz egyet és legalább 100 000 Ft munkabéred érkezik ide havonta. Ebben ez esetben 2% kedvezményt adunk a kamatból.  Az új számlát bármikor megnyithatod, a kedvezmény az első fizetési jóváírás beérkezését követő hónaptól lép majd érvénybe. ">i</a>
+
 		</div>
 		<button onclick="window.location.href='hu_basic.php'" class="bluebtn" type="button" name="button">kérem a hitelt</button>
 
@@ -352,3 +356,8 @@
   		}
 
   	</script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+		    $('[data-toggle="tooltip"]').tooltip();
+		});
+		</script>

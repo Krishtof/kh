@@ -185,6 +185,7 @@
 
     <div class="container">
       <div class="form nopadding">
+				<div class="good">Remek! Még 5 lépés és készen is vagy!</div>
             <div class="form basic">
             <h1 >Személyes adatok</h1>
             <form>
@@ -260,16 +261,16 @@ telefonszámod és e-mail címed megadásával hozzájárulsz, hogy hiteligényl
 
               <h2>Telefonszám:</h2>
               <p>
-az általad megadott telefonszámra egy megerősítő kódot küldünk              </p>
+Add meg a mobilszámod és kattints a "megerősítő kód küldése" gombra             </p>
                 <p class="hun">+36</p>
                 <input type="name" name="name" id="phone_phone" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                 <button type="button" class="bluebtn" id="phone-send" name="button">megerősítő kód elküldése</button>
             </div>
 
             <div class="verify" id="phone_verification">
-              <h2>Enter the verification code:</h2>
+              <h2>Add meg a megerősítő kódot:</h2>
               <p>
-                We sent you a code to the phone number <span style="font-weight: bold;" id="phone_number">+36 20 418 48 83</span>. Kód megadása:
+                Az általad megadott, <span style="font-weight: bold;" id="phone_number">+36 20 418 48 83</span> mobilszámra egy megerősítő kódot küldünk. Kérjük, hogy másold be ide a kódot és kattints a "megerősítem" gombra . Kód megadása:
               </p>
               <input type="email" name="email" id="phone_verify" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
               <button type="button" class="bluebtn" id="phone-verify"  name="button">megerősítem </button>
@@ -287,7 +288,7 @@ az általad megadott telefonszámra egy megerősítő kódot küldünk          
 
               <h2>E-mail cím</h2>
               <p>
-                az általad megadott e-mail címre egy megerősítő kódot küldünk
+                Add meg az e-mail címed és kattints a "megerősítő kód küldése" gombra
               </p>
                 <input type="email" name="name" id="email_email">
                 <button type="button" class="bluebtn" id="email-send"  name="button">megerősítő kód elküldése</button>
@@ -296,7 +297,7 @@ az általad megadott telefonszámra egy megerősítő kódot küldünk          
             <div class="verify" id="email_verification">
               <h2>Megerősítő kód megadása:</h2>
               <p>
-                Az általad megadott e-mail címre egy megerősítő kódot küldünk. Megerősítő kód megadása:
+                az általad megadott e-mail címre egy megerősítő kódot küldünk. Kérjük, hogy másold be ide a kódot és kattints a "megerősítem" gombra:
               </p>
               <input type="email" name="email" id="email_verify" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
               <button type="button" class="bluebtn" id="email-verify"  name="button">megerősítem </button>

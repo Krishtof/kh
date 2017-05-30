@@ -291,6 +291,8 @@
 
     <div class="container">
       <div class="form nopadding">
+				<div class="good">You are doing well! Only 1 more step!</div>
+
         <button class="accordion " id="precontractual_button" data-toggle="collapse" data-target="#precontractual">Precontractual Information</button>
         <div id="precontractual" class="collapse in">
             <div class="form">

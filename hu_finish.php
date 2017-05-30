@@ -147,9 +147,9 @@
     <div class="container">
       <div class="form nopadding">
             <div class="form finish">
-              <h1>Szerződése sikeresen aláírásra került!</h2>
+              <h1>A szerződés sikeresen létrejött! Az igényelt összeg már úton is van!</h2>
               <p>
-Thank you for using our new Quick Loan Services. We hope everything wnt smoothly. In a few minutes your money will be credited to your account.               </p>
+Köszönjük, hogy a K&H-t válaszottad. Bízunk benne, hogy minden egyszerűen és gyorsan ment. Az igényelt összeg néhány percen belül megérkezik a megadott számládra.              </p>
 
 
               <div class="info">
@@ -159,19 +159,19 @@ Thank you for using our new Quick Loan Services. We hope everything wnt smoothly
                 </div>
               </div>
               <div class="col-md-9"><p>
-Please setup a direct debit in the required installement amount on your account 12345678-12345678-12345678. Please bear in mind that you can only repay your installments from this account!              </p></div>
+Kérjük, hogy állíts be a havi hiteltörlesztési összegednek megfelelő beszedési megbízást a(z) 12345678-12345678-12345678 számlaszámodhoz tartozó fiókodban.            </p></div>
               <div class="col-md-2">
                 <div class="placeholder">
                 </div>
               </div>
               <div class="col-md-9"><p>
-Your money will be credited to your account within 15 minutes through a payment from K&H. If somerthing goes wrong, please call us at +36 1 123 45 67.              </p></div>
+Az általad igényelt összeg 15 percen belül megérkezik a megadott számládra. Ha bármilyen problémába ütköznél, kérjük vedd fel velünk a kapcsolatot a +36 1 123 45 67 számon.          </p></div>
               <div class="col-md-2">
                 <div class="placeholder">
                 </div>
               </div>
               <div class="col-md-9"><p>
-Do not forget to check your e-mail. We just sent you the signed contract and information about repayment installments.               </p></div>
+Ne felejtsd el megnézni az e-mail fiókodat. Az aláírt szerződésedet és a törlesztőrészletekkel kapcsolatos dokumentumokat átküldtük neked.           </p></div>
 
             </div>
 						<button onclick="window.location.href='hu_index.php'" class="bluebtn" type="button" name="button">Vissza a főoldalra</button>

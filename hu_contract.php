@@ -290,16 +290,20 @@
 
     <div class="container">
       <div class="form nopadding">
-        <button class="accordion " id="precontractual_button" data-toggle="collapse" data-target="#precontractual">Előzetes szerződési információk</button>
+				<div class="good">Remek! Még 1 lépés és készen is vagy!</div>
+
+        <button class="accordion " id="precontractual_button" data-toggle="collapse" data-target="#precontractual">Előzetes ajánlat</button>
         <div id="precontractual" class="collapse in">
             <div class="form">
             <p>
               Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur.
             </p>
+						<br />
 
-
-
-            <button class="bluebtn left" type="button" data-toggle="modal" data-target="#preco" name="button">nyilatkozat megnyitása</button>
+						<h2>
+							A folytatáshoz olvasd el az előzetes ajánlatot:
+						</h2>
+            <button class="bluebtn left" type="button" data-toggle="modal" data-target="#preco" name="button">Ajánlat megnyitása</button>
 
           </div>
 
@@ -331,7 +335,7 @@
 
 
 
-        <button class="accordion collapsed" id = "pricelist_button" data-toggle="collapse" data-target="">Árlista</button>
+        <button class="accordion collapsed" id = "pricelist_button" data-toggle="collapse" data-target="">Kondíciós lista</button>
         <div id="pricelist" class="collapse">
             <div class="form ">
               <p>
@@ -360,8 +364,7 @@
 
 
                 <p>
-                  Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur.
-                </p>
+Az aláírás előtt kérjük, hogy olvasd el a szerződést alaposan. A szerződést elektronikusan fogod aláírni, a korábban a számládra (12345678-12345678-1235678) küldött kis összegű jóváírás közleményében található kóddal. Az elekromos aláírás másik két eleme a korábban megerősített SMS-ben és e-mail-ben kapott két másik kód.                 </p>
 
 
 
@@ -387,8 +390,11 @@
             <form>
 
             </form>
-            <h2>Szerződés aláírásához illessze be a bankszámlájára küldött mikrotranzakció közleményében található karaktersort. </h2>
-            <input type="text" name="firstname">
+            <h2>A szerződés aláírásához add meg a korábban a számládra (12345678-12345678-1235678) küldött kis összegű jóváírás közleményében található kódot. Amennyiben nem kaptad meg a jóváírást, kérjük vedd fel velünk a kapcsolatot a +36 1 123 45 67 számon. </h2>
+						<p>
+							Az "aláírom" gomb megnyomásával a szerződést elektonikusan aláírod.
+						</p>
+						<input type="text" name="firstname">
 
 
             <button onclick="window.location.href='hu_finish.php'" class="bluebtn" type="button" name="button">Következő</button>

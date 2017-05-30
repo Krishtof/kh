@@ -180,12 +180,14 @@
 
     <div class="container">
       <div class="form nopadding">
+				<div class="good">Remek! Még 4 lépés és készen is vagy!</div>
+
         <button class="accordion  " data-toggle="collapse" id="income_button" data-target="#income">Bevétel:</button>
         <div id="income" class="collapse in">
             <div class="form">
 
             <form>
-              Rendszeres havi bevétel:<br>
+              Rendszeres havi nettó bevétel:<br>
               <input type="text" name="firstname" class="forint" id="forint" value="0"><br>
 
               Bevétel forrása:<br />
@@ -320,8 +322,14 @@
 
             <form class="expenses">
               Havi törlesztőrészlet:<br>
+							<p>
+								Abban az esetben, ha már van másik hiteled:
+							</p>
               <input type="text" name="firstname" value="0"><br>
               Rendszeres egyéb havi kiadások:<br>
+							<p>
+								Mint például közüzemi számlák, lakbér, ételre vagy gyógyszerekre fordított összeg, stb.:
+							</p>
               <input type="text" name="lastname" value="0">
             </form>
 
@@ -346,13 +354,10 @@
               </div>
               <div class="radio">
                 <input type="radio" id="r2" name="rr" />
-                <label for="r2">hitellel terhelt saját ingatlanban élek</label>
+                <label for="r2">saját ingatlanban élek</label>
               </div>
 
-              <div class="radio">
-                <input type="radio" id="r2" name="rr" />
-                <label for="r2">tehermentes saját ingatlanban élek</label>
-              </div>
+
 
               <div class="radio">
                 <input type="radio" id="r2" name="rr" />
@@ -477,7 +482,7 @@
             <form>
               <h2>Kérjük, add meg bankszámlaszámod</h2>
               <p>
-Ellenőrizzük bankszámlád érvényességét              </p>
+Azt a számlaszámodat add meg, ahova a jövedelmed érkezik. <br /><br />Egy kis összegű jóváírást küldünk a számládra, hogy ellenőrizzük az érvényességét. A későbbiekben, az aláírás során, ennek a jóváírásnak a közleményben szereplő kódra még szükséged lesz!              </p>
             </form>
             <input placeholder="_ _ _ _ _ _ _ _" class="shorter bankaccount"type="text" maxlength="8"  name="firstname">
             <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text"  maxlength="8" name="firstname">

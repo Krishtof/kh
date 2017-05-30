@@ -182,6 +182,7 @@ margin: 0 auto;
   color: white;
   margin-top: 30px;
   padding: 20px;
+  padding-bottom: 30px;
 }
 .info {
   display: inline-block;
@@ -348,6 +349,25 @@ form  {
   padding-bottom: 30px;
 
 }
+.good {
+  height: 20px;
+background: white;
+max-width: 300px;
+margin: 0 auto;
+margin-top: -20px;
+text-align: center;
+padding: 10px;
+min-height: 40px;
+max-width: 350px;
+color: var(--blue);
+font-size: 15px;
+font-weight: bold;
+/* Rectangle 19: */
+border: 1px solid #d4d4d4;
+border-radius: 5px;
+display: block;
+/* margin-left: 50%; */
+}
 .accordion:focus {
   outline: none;
 }
@@ -356,7 +376,17 @@ form  {
   display: block;
   float: right;
 }
-
+.mytooltip {
+  width: 30px;
+height: 30px;
+border-radius: 1000000px;
+display: block;
+margin-top: 20px;
+color: white;
+background: #00aeef;
+padding: 4px;
+padding-left: 14px;
+}
 #forint:after {
   content: 'Ft';
   display: block;
