@@ -1091,6 +1091,15 @@ margin-right: 40px;
 .banks img {
   max-width: 100%;
 }
+
+.banks .col-md-2 h2 {
+  font-weight: bold;
+background: #e4e4e4;
+font-size: 15px;
+padding: 5px;
+color: var(--blue);
+line-height: 19px;
+}
 =======
 h2#last_file_name{
 	text-overflow: none;
