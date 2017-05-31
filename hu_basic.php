@@ -304,7 +304,7 @@
             </form>
             <h1>kapcsolati adatok</h1>
             <p>
-Add meg a mobilszámod és az e-mail címed. A fentiek megadásával hozzájárulsz, hogy hiteligényléseddel kapcsolatban megkeressünk.            </p>
+Add meg a <span style="font-weight: bold;">mobilszámod és az e-mail címed</span>. A fentiek megadásával hozzájárulsz, hogy hiteligényléseddel kapcsolatban megkeressünk.            </p>
             <form class="contact">
 
             <div class="phone" id="single_phone">

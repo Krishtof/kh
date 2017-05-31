@@ -374,8 +374,9 @@
                 Az állandó lakcímemtől eltérő levelezési címet adok meg
               </p>
               <p class="mailing_info">
-                You acknowledge that we will enter the credit bureau and save there the data about your application
+								Hozzájárulsz, hogy az igénylésed adatait a KHR részére átadjuk.
               </p>
+
             </label>
           </div>
 					<div class="city inline">
@@ -423,9 +424,7 @@
 				 <h2>Ajtó</h2>
 				 <input type="text" class="shortest" name="number">
 			</div>
-			<P>
-				Hozzájárulsz, hogy az igénylésed adatait a KHR részére átadjuk.
-			</P>
+
 		</div>
 
 
