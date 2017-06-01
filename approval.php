@@ -75,14 +75,14 @@
 
           </div>
           <div class="row">
-            <div class="col-xs-2 ">
+						<div class="col-xs-2 ">
               <div class="nr">
                 <p>
                   1
                 </p>
               </div>
               <p class="pr_title">
-                Basic information
+                Alapadatok
               </p>
             </div>
             <div class="col-xs-2 ">
@@ -92,7 +92,7 @@
                 </p>
               </div>
               <p class="pr_title ">
-                Financial evaluation
+                Személyes adatok
               </p>
             </div>
             <div class="col-xs-2 ">
@@ -102,7 +102,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Statements
+                Azonosítás
               </p>
             </div>
             <div class="col-xs-2 active">
@@ -112,30 +112,30 @@
                 </p>
               </div>
               <p class="pr_title">
-                Approval
+                Jóváhagyás
               </p>
             </div>
-            <div class="col-xs-2 ">
+            <div class="col-xs-2">
               <div class="nr">
                 <p>
                   5
                 </p>
               </div>
               <p class="pr_title">
-                Contract
+                Szerződéskötés
               </p>
             </div>
 						<div class="col-xs-2 last">
 							<img src="img/finish.png" />
               <p class="pr_title ">
-                Finish
+                Befejezés
               </p>
             </div>
 
 
 
           </div>
-          <h2 class="title">Finish</h2>
+          <h2 class="title">Jóváhagyás</h2>
         </div>
       </div>
 
@@ -143,26 +143,27 @@
 <!-- Loan I apply for -->
     <div class="container">
 
-      <div class="loanholder">
-        <h2>Loan I apply for</h2>
+			<div class="loanholder">
+        <h2>Hitel részletei</h2>
         <div class="amount">
           <p>
-            Loan amount
+            Hitelösszeg
           </p>
-         <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
+          <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
         </div>
         <div class="info">
 
           <div class="instalments">
-            <h2>Instalments:</h2>
+            <h2>Törlesztőrészlet:</h2>
             <p><?=$_SESSION["loan_instalments"]?> Ft</p>
           </div>
           <div class="instalments">
-            <h2>Repaid in::</h2>
-           <p><?=$_SESSION["repaid_in"]?> months</p>
+            <h2>Futamidő:</h2>
+            <p><?=$_SESSION["repaid_in"]?> hónap</p>
           </div>
         </div>
       </div>
+
 
     </div>
 
@@ -170,25 +171,25 @@
 
     <div class="container">
       <div class="form nopadding approval">
-				<div class="good approve">You are doing well! Only 2 more steps!</div>
+				<div class="good approve">Már csak a szerződéskötés van hátra!</div>
 
-        <h1>The amount you requested cannot be approved, please try a smaller amount.</h1>
-        <p>You applied for <?=$_SESSION["loan_amount"]?> Ft. The maximum amount you can apply for is 3.000.000 Ft.</p>
+        <h1>Az általad igényelt hitelösszeget jóváhagytuk. Ugyanakkor lehetőséged van ennél magasabb összeget is igényelni</h1>
+        <p>Az általad igényelt hitelösszeg: <?=$_SESSION["loan_amount"]?> Ft. A maximálisan igényelhető személyi hitel összege számodra: 3 000 000 forint. </p>
         <div class="container">
           <div class="col-md-6">
 			<div>
 			<div class="need">
-					<h2 class="n_label">Amount you need</h2>
+					<h2 class="n_label">Igényelt hitelösszeg</h2>
 					<h1 class="n_amount" id="amount"><?=$_SESSION["loan_amount"]?> Ft</h1>
 					<input class="custom_range" type="range" name="amount" min="300000" max="3000000" step="50000" value="<?=str_replace(' ','',$_SESSION["loan_amount"])?>">
-					<p class="min_amount">300.000 Ft</p>
-					<p class="max_amount">3.000.000 Ft</p>
+					<p class="min_amount">300 000 Ft</p>
+					<p class="max_amount">3 000 000 Ft</p>
 				</div>
 
 			</div>
 			<div>
 				<div style="margin-top: 60px;"class="need">
-					<h2 class="n_label">Monthly installment:</h2>
+					<h2 class="n_label">Havi törlesztőrészlet:</h2>
 					<h1 class="n_amount" id="monthly_instalment"><?=$_SESSION["loan_instalments"]?> Ft</h1>
 					<input class="custom_range" type="range" name="monthly" min="<?=str_replace(' ','',$_SESSION["min_loan"])?>" max="<?=str_replace(' ','',$_SESSION["max_loan"])?>" step="1" value="<?=str_replace(' ','',$_SESSION["loan_instalments"])?>" list="numbers">
 					<p class="min_amount" id="min_monthly_instalment"><?=$_SESSION["min_loan"]?> Ft</p>
@@ -197,24 +198,36 @@
 
 			</div>
 			<div class="repaidin">
-				<h2>Repaid in:</h2>
-				<h3><span id="month_number"><?=$_SESSION["repaid_in"]?></span> month</h3>
+				<h2>Futamidő:</h2>
+				<h3><span id="month_number"><?=$_SESSION["repaid_in"]?></span> hónap</h3>
 			</div>
           </div>
 
           <div class="col-md-6 loaninfo">
-            <h4>Total amount to be repaid</h4>
+            <h4>Visszafizetendő összeg:</h4>
             <h1><span id="total_repaid_id"><?=$_SESSION["total_repaid"]?></span> Ft </h1>
             <div class="line"></div>
-            <p>Fixed Annual Interest Rate</p>
+            <p>Éves kamat:</p>
             <h2><span id="interest_rate"><?=$_SESSION["interest_rate"]?></span>%</h2>
+						<p>
+							THM:
+						</p>
+						<h2>13,99%</h2>
+						<p>
+							Ügyintézési költség:
+						</p>
+						<h2>0 Ft</h2>
+						<p>
+							Első törlesztés napja:
+						</p>
+						<h2>2017. 07.15.</h2>
           </div>
 
 
 
 
           </div>
-          <button onclick="window.location.href='contract.php'" class="bluebtn" type="button" name="button">Next</button>
+          <button onclick="window.location.href='hu_contract.php'" class="bluebtn" type="button" name="button">Tovább</button>
 
         </div>
 

@@ -34,7 +34,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="text">
-          <h1>Precontractual information</h1>
+          <h1>Előzetes szerződési információk</h1>
           <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur, molestiae definiebas efficiendi in mel. Sit ad eruditi persequeris, ne docendi omnesque pro. Id nibh ubique democritum eum, ea singulis senserit nec, vix no erant dolore intellegebat. Eam ex utamur elaboraret, idque saepe argumentum qui ei, his prodesset dissentiunt ex.
 
           Vis saepe concludaturque ad, eius bonorum periculis vim ea, integre suscipit prodesset eu quo. Utinam scaevola has cu, cum etiam scripserit te, no copiosae definitionem pro. Phaedrum quaerendum eum ea, pro an iuvaret accommodare. Posse adipisci theophrastus at vel, te pro dolore quaestio dignissim. In eos meliore tractatos torquatos. Duo no meis lucilius deterruisset. Mundi ludus eos cu.
@@ -51,8 +51,8 @@
           </p>
 
         </div>
-        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">I acknowledge</button>
-        <a class="dont" href="#">I don't acknowledge</a>
+        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">Elfogadom</button>
+        <a class="dont" href="#">Nem fogadom el</a>
 
       </div>
     </div>
@@ -69,7 +69,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="text">
-          <h1>Contract</h1>
+          <h1>Szerződés</h1>
           <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur, molestiae definiebas efficiendi in mel. Sit ad eruditi persequeris, ne docendi omnesque pro. Id nibh ubique democritum eum, ea singulis senserit nec, vix no erant dolore intellegebat. Eam ex utamur elaboraret, idque saepe argumentum qui ei, his prodesset dissentiunt ex.
 
           Vis saepe concludaturque ad, eius bonorum periculis vim ea, integre suscipit prodesset eu quo. Utinam scaevola has cu, cum etiam scripserit te, no copiosae definitionem pro. Phaedrum quaerendum eum ea, pro an iuvaret accommodare. Posse adipisci theophrastus at vel, te pro dolore quaestio dignissim. In eos meliore tractatos torquatos. Duo no meis lucilius deterruisset. Mundi ludus eos cu.
@@ -86,8 +86,8 @@
           </p>
 
         </div>
-        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button"data-dismiss="modal"  name="button">I acknowledge</button>
-        <a class="dont" href="#">I don't acknowledge</a>
+        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button"data-dismiss="modal"  name="button">Elfogadom</button>
+        <a class="dont" href="#">Nem fogadom el</a>
 
       </div>
     </div>
@@ -103,7 +103,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="text">
-          <h1>General Terms and Conditions</h1>
+          <h1>Ügyféltájékoztató és általános szerződési feltételek</h1>
           <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur, molestiae definiebas efficiendi in mel. Sit ad eruditi persequeris, ne docendi omnesque pro. Id nibh ubique democritum eum, ea singulis senserit nec, vix no erant dolore intellegebat. Eam ex utamur elaboraret, idque saepe argumentum qui ei, his prodesset dissentiunt ex.
 
           Vis saepe concludaturque ad, eius bonorum periculis vim ea, integre suscipit prodesset eu quo. Utinam scaevola has cu, cum etiam scripserit te, no copiosae definitionem pro. Phaedrum quaerendum eum ea, pro an iuvaret accommodare. Posse adipisci theophrastus at vel, te pro dolore quaestio dignissim. In eos meliore tractatos torquatos. Duo no meis lucilius deterruisset. Mundi ludus eos cu.
@@ -120,8 +120,8 @@
           </p>
 
         </div>
-        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">I acknowledge</button>
-        <a class="dont" href="#">I don't acknowledge</a>
+        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">Elfogadom</button>
+        <a class="dont" href="#">Nem fogadom el</a>
 
       </div>
     </div>
@@ -139,7 +139,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="text">
-          <h1>Price list</h1>
+          <h1>Árlista</h1>
           <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur, molestiae definiebas efficiendi in mel. Sit ad eruditi persequeris, ne docendi omnesque pro. Id nibh ubique democritum eum, ea singulis senserit nec, vix no erant dolore intellegebat. Eam ex utamur elaboraret, idque saepe argumentum qui ei, his prodesset dissentiunt ex.
 
           Vis saepe concludaturque ad, eius bonorum periculis vim ea, integre suscipit prodesset eu quo. Utinam scaevola has cu, cum etiam scripserit te, no copiosae definitionem pro. Phaedrum quaerendum eum ea, pro an iuvaret accommodare. Posse adipisci theophrastus at vel, te pro dolore quaestio dignissim. In eos meliore tractatos torquatos. Duo no meis lucilius deterruisset. Mundi ludus eos cu.
@@ -156,8 +156,8 @@
           </p>
 
         </div>
-        <button onclick=""  style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">I acknowledge</button>
-        <a class="dont" href="#">I don't acknowledge</a>
+        <button onclick=""  style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">Elfogadom</button>
+        <a class="dont" href="#">Nem fogadom el</a>
 
       </div>
     </div>
@@ -192,14 +192,14 @@
 
           </div>
           <div class="row">
-            <div class="col-xs-2 ">
+						<div class="col-xs-2 ">
               <div class="nr">
                 <p>
                   1
                 </p>
               </div>
               <p class="pr_title">
-                Basic information
+                Alapadatok
               </p>
             </div>
             <div class="col-xs-2 ">
@@ -209,17 +209,17 @@
                 </p>
               </div>
               <p class="pr_title ">
-                Financial evaluation
+                Személyes adatok
               </p>
             </div>
-            <div class="col-xs-2 ">
+            <div class="col-xs-2">
               <div class="nr">
                 <p>
                   3
                 </p>
               </div>
               <p class="pr_title">
-                Statements
+                Azonosítás
               </p>
             </div>
             <div class="col-xs-2">
@@ -229,7 +229,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Approval
+                Jóváhagyás
               </p>
             </div>
             <div class="col-xs-2 active">
@@ -239,20 +239,19 @@
                 </p>
               </div>
               <p class="pr_title">
-                Contract
+                Szerződés
               </p>
             </div>
 						<div class="col-xs-2 last">
 							<img src="img/finish.png" />
               <p class="pr_title ">
-                Finish
+                Befejezés
               </p>
             </div>
 
 
-
           </div>
-          <h2 class="title">Contract</h2>
+          <h2 class="title">Szerződés</h2>
         </div>
       </div>
 
@@ -260,23 +259,23 @@
 <!-- Loan I apply for -->
     <div class="container">
 
-      <div class="loanholder">
-        <h2>Loan I apply for</h2>
+			<div class="loanholder">
+        <h2>Hitel részletei</h2>
         <div class="amount">
           <p>
-            Loan amount
+            Hitelösszeg
           </p>
           <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
         </div>
         <div class="info">
 
           <div class="instalments">
-            <h2>Instalments:</h2>
+            <h2>Törlesztőrészlet:</h2>
             <p><?=$_SESSION["loan_instalments"]?> Ft</p>
           </div>
           <div class="instalments">
-            <h2>Repaid in::</h2>
-            <p><?=$_SESSION["repaid_in"]?> months</p>
+            <h2>Futamidő:</h2>
+            <p><?=$_SESSION["repaid_in"]?> hónap</p>
           </div>
         </div>
       </div>
@@ -287,18 +286,20 @@
 
     <div class="container">
       <div class="form nopadding">
-				<div class="good">You are doing well! Only 1 more step!</div>
+				<div class="good">Remek! Még 1 lépés és készen is vagy!</div>
 
-        <button class="accordion " id="precontractual_button" data-toggle="collapse" data-target="#precontractual">Precontractual Information</button>
+        <button class="accordion " id="precontractual_button" data-toggle="collapse" data-target="#precontractual">Előzetes ajánlat</button>
         <div id="precontractual" class="collapse in">
             <div class="form">
             <p>
               Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur.
             </p>
+						<br />
 
-
-
-            <button class="bluebtn left" type="button" data-toggle="modal" data-target="#preco" name="button">Display information</button>
+						<h2>
+							A folytatáshoz olvasd el az előzetes ajánlatot:
+						</h2>
+            <button class="bluebtn left" type="button" data-toggle="modal" data-target="#preco" name="button">Ajánlat megnyitása</button>
 
           </div>
 
@@ -307,7 +308,7 @@
 
 
 
-        <button class="accordion collapsed" id = "terms_button" data-toggle="collapse" data-target="">General Terms and Conditions</button>
+        <button class="accordion collapsed" id = "terms_button" data-toggle="collapse" data-target="">Ügyféltájékoztató és általános szerződési feltételek</button>
         <div id="terms" class="collapse ">
             <div class="form">
               <p>
@@ -316,7 +317,7 @@
 
 
 
-              <button class="bluebtn left" type="button" data-toggle="modal" data-target="#general" name="button">Display conditions</button>
+              <button class="bluebtn left" type="button" data-toggle="modal" data-target="#general" name="button">Szerződési feltételek megnyitása</button>
 
 
 
@@ -330,7 +331,7 @@
 
 
 
-        <button class="accordion collapsed" id = "pricelist_button" data-toggle="collapse" data-target="">Price list</button>
+        <button class="accordion collapsed" id = "pricelist_button" data-toggle="collapse" data-target="">Kondíciós lista</button>
         <div id="pricelist" class="collapse">
             <div class="form ">
               <p>
@@ -339,7 +340,7 @@
 
 
 
-              <button class="bluebtn left" type="button" data-toggle="modal" data-target="#list" name="button">Display Price list</button>
+              <button class="bluebtn left" type="button" data-toggle="modal" data-target="#list" name="button">Nyilatkozat megnyitása</button>
 
 
             </form>
@@ -352,19 +353,18 @@
 
 
 
-        <button class="accordion collapsed" id = "contract_button" data-toggle="collapse" data-target="">Contract</button>
+        <button class="accordion collapsed" id = "contract_button" data-toggle="collapse" data-target="">Szerződés</button>
         <div id="contract" class="collapse">
 
               <div class="form family">
 
 
                 <p>
-                  Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur.
-                </p>
+Az aláírás előtt kérjük, hogy olvasd el a szerződést alaposan. A szerződést elektronikusan fogod aláírni, a korábban a számládra (12345678-12345678-1235678) küldött kis összegű jóváírás közleményében található kóddal. Az elekromos aláírás másik két eleme a korábban megerősített SMS-ben és e-mail-ben kapott két másik kód.                 </p>
 
 
 
-                <button class="bluebtn left" type="button" data-toggle="modal" data-target="#contr" name="button">Display conditions</button>
+                <button class="bluebtn left" type="button" data-toggle="modal" data-target="#contr" name="button">Szerződés megtekintése</button>
 
 
 
@@ -379,18 +379,21 @@
 
 
 
-        <button class="accordion collapsed" id = "bank_button" data-toggle="collapse" data-target="">Sign</button>
+        <button class="accordion collapsed" id = "bank_button" data-toggle="collapse" data-target="">Aláírás</button>
         <div id="bank" class="collapse">
             <div class="form">
 
             <form>
 
             </form>
-            <h2 >To sign the contract insert the variable symbol from the payment:</h2>
-            <input type="text" name="firstname">
+            <h2>A szerződés aláírásához add meg a korábban a számládra (12345678-12345678-1235678) küldött kis összegű jóváírás közleményében található kódot. Amennyiben nem kaptad meg a jóváírást, kérjük vedd fel velünk a kapcsolatot a +36 1 123 45 67 számon. </h2>
+						<p>
+							Az "aláírom" gomb megnyomásával a szerződést elektonikusan aláírod.
+						</p>
+						<input type="text" name="firstname">
 
 
-            <button onclick="window.location.href='finish.php'" class="bluebtn" type="button" name="button">Next</button>
+            <button onclick="window.location.href='hu_finish.php'" class="bluebtn" type="button" name="button">Aláírom</button>
 
           </div>
 
