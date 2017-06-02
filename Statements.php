@@ -30,7 +30,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="text">
-          <h1>Adatvédelmi nyilakozat</h1>
+          <h1>Data protection policy</h1>
           <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur, molestiae definiebas efficiendi in mel. Sit ad eruditi persequeris, ne docendi omnesque pro. Id nibh ubique democritum eum, ea singulis senserit nec, vix no erant dolore intellegebat. Eam ex utamur elaboraret, idque saepe argumentum qui ei, his prodesset dissentiunt ex.
 
           Vis saepe concludaturque ad, eius bonorum periculis vim ea, integre suscipit prodesset eu quo. Utinam scaevola has cu, cum etiam scripserit te, no copiosae definitionem pro. Phaedrum quaerendum eum ea, pro an iuvaret accommodare. Posse adipisci theophrastus at vel, te pro dolore quaestio dignissim. In eos meliore tractatos torquatos. Duo no meis lucilius deterruisset. Mundi ludus eos cu.
@@ -47,8 +47,8 @@
           </p>
 
         </div>
-        <button id="modal" class="bluebtn" type="button" name="button" data-dismiss="modal">Elfogadom</button>
-        <a class="dont" href="#">Nem fogadom el</a>
+        <button id="modal" class="bluebtn" type="button" name="button" data-dismiss="modal">I acknowledge</button>
+        <a class="dont" href="#">I don't acknowledge</a>
 
       </div>
     </div>
@@ -64,7 +64,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="text">
-          <h1>adatvédelmi nyilakozat</h1>
+          <h1>Data protection policy</h1>
           <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur, molestiae definiebas efficiendi in mel. Sit ad eruditi persequeris, ne docendi omnesque pro. Id nibh ubique democritum eum, ea singulis senserit nec, vix no erant dolore intellegebat. Eam ex utamur elaboraret, idque saepe argumentum qui ei, his prodesset dissentiunt ex.
 
           Vis saepe concludaturque ad, eius bonorum periculis vim ea, integre suscipit prodesset eu quo. Utinam scaevola has cu, cum etiam scripserit te, no copiosae definitionem pro. Phaedrum quaerendum eum ea, pro an iuvaret accommodare. Posse adipisci theophrastus at vel, te pro dolore quaestio dignissim. In eos meliore tractatos torquatos. Duo no meis lucilius deterruisset. Mundi ludus eos cu.
@@ -81,8 +81,8 @@
           </p>
 
         </div>
-        <button id="modal" class="bluebtn" type="button" name="button" data-dismiss="modal">Elfogadom</button>
-        <a class="dont" href="#">Nem fogadom el</a>
+        <button id="modal" class="bluebtn" type="button" name="button" data-dismiss="modal">I acknowledge</button>
+        <a class="dont" href="#">I don't acknowledge</a>
 
       </div>
     </div>
@@ -98,41 +98,41 @@
     <div class="modal-content">
       <div class="modal-body upload">
         <img src="img/mobile.png" />
-        <h1>Kérjük ellenőrizze telefonját</h1>
+        <h1>Please check your phone</h1>
         <p>
-          Küldtünk egy SMS-t telefonjára. Kattintson a linkre az üzenetben és adja meg a weboldalon a következő biztonsági kódot: <span style="font-weight: bold;">123432</span>
+          We have sent you an SMS to your cell phone. Click on the link in the message and enter the following security code on the webpage:<span style="font-weight: bold;">123432</span>
         </p>
-        <h2>Ezekre figyeljen a fénykép készítése során:</h2>
+        <h2>Please take care of the followings when taking the picture:</h2>
         <div class="container">
           <div class="col-md-3">
             <img src="img/csillan.png" />
             <p>
-              Ne tükröződjön túlságosan felület
+              Flash reflection
             </p>
           </div>
 
           <div class="col-md-3">
             <img src="img/kicsi.png" />
             <p>
-              a kép szélei is látsszanak
+              Edge cut-off
             </p>
           </div>
 
           <div class="col-md-3">
             <img src="img/low.png" />
             <p>
-              az igazolványról készült fotó ne legyen túl kicsi
+              Far from the border(less then 3/4 of the picture)
             </p>
           </div>
 
           <div class="col-md-3">
             <img src="img/kilog.png" />
             <p>
-              a kép szélei nem látszanak
+              Edge cut-off
             </p>
           </div>
         </div>
-        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" id="modal_button" type="button" data-dismiss="modal" name="button">Rendben</button>
+        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" id="modal_button" type="button" data-dismiss="modal" name="button">Ok</button>
 
       </div>
     </div>
@@ -172,7 +172,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Alapadatok
+                Basic information
               </p>
             </div>
             <div class="col-xs-2 ">
@@ -182,7 +182,7 @@
                 </p>
               </div>
               <p class="pr_title ">
-                Személyes adatok
+                About You
               </p>
             </div>
             <div class="col-xs-2 active">
@@ -192,7 +192,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Azonosítás
+                Identification
               </p>
             </div>
             <div class="col-xs-2">
@@ -202,7 +202,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Jóváhagyás
+                Approval
               </p>
             </div>
             <div class="col-xs-2">
@@ -212,20 +212,20 @@
                 </p>
               </div>
               <p class="pr_title">
-                Szerződéskötés
+                Contract signature
               </p>
             </div>
 						<div class="col-xs-2 last">
 							<img src="img/finish.png" />
               <p class="pr_title ">
-                Befejezés
+                Finish
               </p>
             </div>
 
 
 
           </div>
-          <h2 class="title">Azonosítás</h2>
+          <h2 class="title">Identification</h2>
         </div>
       </div>
 
@@ -234,22 +234,22 @@
     <div class="container">
 
 			<div class="loanholder">
-        <h2>Hitel részletei</h2>
+        <h2>Loan I apply for</h2>
         <div class="amount">
           <p>
-            Hitelösszeg
+            Loan amount
           </p>
           <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
         </div>
         <div class="info">
 
           <div class="instalments">
-            <h2>Törlesztőrészlet:</h2>
+            <h2>Instalments:</h2>
             <p><?=$_SESSION["loan_instalments"]?> Ft</p>
           </div>
           <div class="instalments">
-            <h2>Futamidő:</h2>
-            <p><?=$_SESSION["repaid_in"]?> hónap</p>
+            <h2>Repaid in:</h2>
+            <p><?=$_SESSION["repaid_in"]?> month</p>
           </div>
         </div>
       </div>
@@ -260,13 +260,13 @@
 
     <div class="container">
       <div class="form nopadding">
-				<div class="good">Remek! Még 2 lépés és készen is vagy!</div>
+				<div class="good">You are doing well! Only 2 more steps!</div>
 
-        <button class="accordion" id="data_button" data-toggle="collapse" data-target="#data">Adatvédelmi nyilakozat</button>
+        <button class="accordion" id="data_button" data-toggle="collapse" data-target="#data">Data protection policy</button>
         <div id="data" class="collapse in">
             <div class="form">
             <p>
-								Kérjük, szkenneld be, vagy fotózd le személyi igazolványod.            </p>
+								To verify your identity we will need scan or photo of your ID. To continue you need to acknowledge with personal data processing.            </p>
             <div class="container slider">
               <div class="col-md-6">
 
@@ -279,7 +279,7 @@
 
 
 
-            <button class="bluebtn" type="button" data-toggle="modal" data-target="#acknowledgemodal" name="button">Nyilatkozat megnyitása</button>
+            <button class="bluebtn" type="button" data-toggle="modal" data-target="#acknowledgemodal" name="button">Display policy</button>
 
           </div>
 
@@ -288,34 +288,34 @@
 
 
 
-        <button class="accordion collapsed" id="select_upload_button" data-toggle="collapse" data-target="">Személyi igazolvány</button>
+        <button class="accordion collapsed" id="select_upload_button" data-toggle="collapse" data-target="">Select ID type</button>
         <div id="expenses" class="collapse">
             <div class="form id_type">
-              <h2 id="which_id">Az azonosításhoz szükségünk lesz a személyi igazolványod másolatára</h2>
+              <h2 id="which_id">To verify your identity we will need scan or photo of your ID</h2>
               <p id="please_select">
-                Kérjük válassz
+                Please select
               </p>
               <div class="row">
                   <div class="col-md-6 old active" id="old_id" data-status="">
                     <p id="ip">
-                      2016.11.12 előtt kiállított személyi igazolvány
+                      ID from issued before 11.12.2016
                     </p>
                     <div class="col-md-12" id="old_holder">
                       <div class="selected successful">
                         <p>
-														a feltölteni kívánt képet húzd ide a kijelölt területre                        </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése mobiloddal</button>
+														Drag and drop images into this window to upload                        </p>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
 						<label class="custom-file-upload id_btn">
-						    <input type="file" id="file_1"/>Kép feltöltése
+						    <input type="file" id="file_1"/>ID upload
 						</label>
 												</div>
                       <div class="selected error">
                         <p>
-                          az általad feltöltött képről nem tudtuk beolvasni a szükséges adatokat, kérjük, próbáld újra:
+                          We cant recognize the data from the picture what you just uploaded. please try again
                         </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése mobiloddal</button>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
                         <label class="custom-file-upload id_btn">
-						    <input type="file" id="file_1_2"/>Kép feltöltése
+						    <input type="file" id="file_1_2"/>Upload from your computer
 						</label>
                       </div>
                       <div class="selected success">
@@ -327,25 +327,25 @@
                   </div>
                   <div class="col-md-6 new" data-status="" id="new_id">
                     <p id="ip2">
-                      2016.11.12 után kiállított személyi igazolvány
+                      ID from issued after 11.12.2016
                     </p>
                     <div class="col-md-12"  id="new_holder">
                       <div class="selected error">
                         <p>
-                          az általad feltöltött kép nem megfelelő, kérjük, tölts fel egy másikat:
+                          We cant recognize the data from the picture what you just uploaded. please try again
                         </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">fotó készítése</button>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture</button>
                          <label class="custom-file-upload id_btn">
-						    <input type="file" id="file_2_2"/>Kép feltöltése
+						    <input type="file" id="file_2_2"/>ID upload
 						</label>
                       </div>
                       <div class="selected successful">
                         <p>
-                          A feltölteni kívánt képet húzd ide a kijelölt területre:
+                          Drag and drop images into this window to upload:
                         </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése</button>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture</button>
                         <label class="custom-file-upload id_btn">
-						    <input type="file" id="file_2"/>Kép feltöltése
+						    <input type="file" id="file_2"/>ID upload
 						</label>
                       </div>
                       <div class="selected success">
@@ -363,7 +363,7 @@
 
 
 			<div id="after_success" class="mailing_address">
-				<p style="text-align:left" id="success_message">Adatait sikeresen beolvastuk.</p><br />
+				<p style="text-align:left" id="success_message">Your data were succesfully recognized.</p><br />
 
           <div class="check">
 
@@ -371,23 +371,23 @@
               <input type='checkbox' id="employment">
               <span></span>
               <p class="checklabel">
-                Az állandó lakcímemtől eltérő levelezési címet adok meg
+                I have different mailing address than the permanent address
               </p>
               <p class="mailing_info">
-								Hozzájárulsz, hogy az igénylésed adatait a KHR részére átadjuk.
+								You acknowledge that we will enter the credit bureau and save there the data about your application.
               </p>
 
             </label>
           </div>
 					<div class="city inline">
 						<div class="postal inline">
-							<h2>Ir.szám</h2>
+							<h2>Postal code</h2>
 							<input type="text" class="shortest" name="firstname">
 
 						</div>
 					<div class="cit inline">
 
-					<h2>Város</h2>
+					<h2>City</h2>
 					<input type="text" class="shorter" name="firstname">
 				</div>
 
@@ -395,40 +395,40 @@
 
 		<div class="street">
 			<div class="street_holder">
-				<h2>Utca</h2>
+				<h2>Street</h2>
 				<input type="text" class="shorter" name="firstname">
 						</div>
 			<div class="type_of_street">
 				<div class="dropdown shortest">
-								<h2>Utca típus</h2>
+								<h2>Type of street</h2>
 
-								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Utca
+								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Street
 								<span class="caret"></span></button>
 								<ul class="dropdown-menu">
-									<li><a href="#">Utca</a></li>
-									<li><a href="#">Tér</a></li>
-									<li><a href="#">Út</a></li>
+									<li><a href="#">Street</a></li>
+									<li><a href="#">Square</a></li>
+									<li><a href="#">Road</a></li>
 
 								</ul>
 							</div>
 			</div>
 			<div class="street_number">
-				 <h2>Házszám</h2>
+				 <h2>Number</h2>
 				 <input type="text" class="shortest" name="number">
 			</div>
 			<div class="floor inline">
-				 <h2>Emelet</h2>
+				 <h2>Floor</h2>
 				 <input type="text" class="shortest" name="number">
 			</div>
 			<div class="door inline">
-				 <h2>Ajtó</h2>
+				 <h2>Door</h2>
 				 <input type="text" class="shortest" name="number">
 			</div>
 
 		</div>
 
 
-			<button class="bluebtn" id="select_upload_next_button" type="button" name="button">Tovább</button>
+			<button class="bluebtn" id="select_upload_next_button" type="button" name="button">Next</button>
 
         </div>
 
@@ -437,19 +437,20 @@
       </div>
 
 
-      <button class="accordion collapsed" data-toggle="collapse" id="account_button" data-target="">Bankszámlakivonat</button>
+      <button class="accordion collapsed" data-toggle="collapse" id="account_button" data-target="">Bank account statement</button>
       <div id="account" class="collapse">
           <div class="form">
           <p>
-          kérjük, tölts fel egy három hónapnál nem régebbi bankszámlakivonatot (az eredeti PDF-et)       </p>
+          Please upload account statement from your bank account from March 2017 in PDF (need to be original PDF, the picture is not enough)       </p>
           <div class="statementholder">
-						<h2>Hogyan tudom letölteni a bankszámla kivonatomat az e-bankomból?</h2>
-            <p>
-              1. látogass el a mybank.com-ra <br />
-2. jelentkezz be az e-bankodba<br />
-3. a bejelentkezés után válaszd a ""bankszámlatörténet"" menüpontot<br />
-4. válaszd ki az időszakot<br />
-5. kattints a ""PDF letöltése"" gombra<br />
+						<h2>How to download the Account statement from your internet banking?</h2>
+            <p> To do this simply:
+              1. Visit mybank.com <br />
+2. Log in to Internet Banking<br />
+3. Once you're logged in, select 'statements' from the options on the left of the screen<br />
+4. Click on view statement<br />
+5. Choose a time period to view<br />
+6. Click on 'download in PDF'<br />
             </p>
 
 
@@ -460,10 +461,10 @@
 
             <img src="img/pdf.png" />
             <p>
-A feltölteni kívánt PDF dokumentumot húzd ide a kijelölt területre            </p>
+Drag and drop images into this window to upload            </p>
 
             <label class="custom-file-upload id_btn">
-			    <input type="file" id="last_file"/>Dokumentum feltöltése
+			    <input type="file" id="last_file"/>Browse for file on your computer
 			</label>
 
           </div>
@@ -472,16 +473,16 @@ A feltölteni kívánt PDF dokumentumot húzd ide a kijelölt területre        
 
               <img src="img/success.png" /><br />
               <p>
-                Fájl sikeresen feltöltve:
+                File successfully uploaded:
               </p>
               <h2 id="last_file_name">accountstatement.pdf</h2>
-              <p style="text-decoration: underline;" id="delete_file">Fájl törlése</p>
+              <p style="text-decoration: underline;" id="delete_file">Delete file</p>
 
 
 
           </div>
 
-          <button onclick="window.location.href='hu_approval.php'" class="bluebtn" type="button" name="button">Tovább</button>
+          <button onclick="window.location.href='approval.php'" class="bluebtn" type="button" name="button">Next</button>
 
         </div>
 

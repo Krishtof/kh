@@ -134,7 +134,7 @@
 							<a href="#" class="mytooltip" data-toggle="tooltip" title="A kedvezmény feltétele, hogy rendelkezel K&H számlával vagy meghatározott időn belül nyitsz egyet és legalább 100 000 Ft munkabéred érkezik ide havonta. Ebben ez esetben 2% kedvezményt adunk a kamatból.  Az új számlát bármikor megnyithatod, a kedvezmény az első fizetési jóváírás beérkezését követő hónaptól lép majd érvénybe. ">i</a>
 
 						</div>
-						<button onclick="window.location.href='hu_basic_unsuccessful.php'" class="bluebtn" type="button" name="button">kérem a hitelt</button>
+						<button onclick="window.location.href='basic_unsuccessful.php'" class="bluebtn" type="button" name="button">kérem a hitelt</button>
 
 					</div>
 					<div class="example">

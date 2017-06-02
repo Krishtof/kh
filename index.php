@@ -51,24 +51,24 @@
 <div class="container landing">
 	<h1 class="impresto"> </h1>
 	<p style="line-height: 22px;	">
-		Szabad felhasználású hiteligénylés a K&H-tól, mostantól teljesen online! Végezd el az igénylést a neten keresztül és az aláírást követően 15 percen belül meg is érkezik a számládra a kért összeg!
+		Unrestricted loan from K&H now fully online. Start and finish your application here and you will receive money on your current account in 15 minutes after contract signature.
 <div class="container qualify">
 	<div class="col-md-6 qualify">
-		<h3>Megfelelek-e a személyi hitel igénylés feltételeinek? A válasz igen, ha:</h3>
+		<h3>Do I qualify? Yes, if </h3>
 		<ul>
-			<li>már elmúltál 18 éves</li>
-			<li>rendelkezel havi rendszerességű, munkáltatótól származó, igazolható jövedelemmel </li>
-			<li>rendelkezel bankszámlával és hozzá kapcsolódó internet bank eléréssel az oldal alján található bankok egyikénél</li>
-			<li>a fenti számla
-				<a href="#" class="banklist" data-toggle="tooltip" title="Erste Bank,CIB Bank, K&H Bank, MKB Bank, OTP Bank, Raiffeisen Bank ">az alábbi támogatott bankok valamelyikénél </a>található
+			<li>You are older than 18</li>
+			<li>You receive regular salary from employment to your bank account</li>
+			<li>You have access to internet banking of this account</li>
+			<li>This account is at one of these
+				<a href="#" class="banklist" data-toggle="tooltip" title="Erste Bank,CIB Bank, K&H Bank, MKB Bank, OTP Bank, Raiffeisen Bank ">supported banks </a>
 			</li>
 		</ul>
 
-		<h3>az igényléshez az alábbiakra lesz szükséged:</h3>
+		<h3>What sould you have ready?</h3>
 		<ul>
-			<li>érvényes személyi igazolvány</li>
-			<li>érvényes mobiltelefonszám</li>
-			<li>érvényes e-mail cím</li>
+			<li>Your valid ID</li>
+			<li>Your cell phone</li>
+			<li>E-mail address</li>
 		</ul>
 
 
@@ -76,7 +76,7 @@
 	<div class="col-md-6 calculator">
 		<div>
 			<div class="need">
-				<h2 class="n_label">igényelt hitelösszeg</h2>
+				<h2 class="n_label">Amount you need</h2>
 				<h1 class="n_amount" id="amount">800 000 Ft</h1>
 				<input class="custom_range" type="range" name="amount" min="300000" max="3000000" step="50000" value="800000">
 				<p class="min_amount">300 000 Ft</p>
@@ -86,7 +86,7 @@
 		</div>
 		<div>
 			<div style="margin-top: 60px;"class="need">
-				<h2 class="n_label">havi törlesztőrészlet:</h2>
+				<h2 class="n_label">Monthly installment you want</h2>
 				<h1 class="n_amount" id="monthly_instalment">38 406 Ft</h1>
 				<input class="custom_range" type="range" name="monthly" min="14987" max="38406" step="1" value="38406" list="numbers">
 				<p class="min_amount" id="min_monthly_instalment">14 987 Ft</p>
@@ -95,38 +95,38 @@
 
 		</div>
 		<div class="repaidin">
-			<h2>futamidő:</h2>
-			<h3><span id="month_number">24</span> hónap</h3>
+			<h2>Repaid in 24 months</h2>
+			<h3><span id="month_number">24</span> month</h3>
 		</div>
 		<div class="disc">
 			<p >
-				Havi <span id="monthly_discount">1 502 Ft</span> kedvezményre vagy jogosult. 
+				You could pay less just <span id="monthly_discount">1 502 Ft</span> monthly
 			</p>
 			<p>
-				Teljes megtakarításod a hitelen <span id="total_saving">18 035 Ft</span> lehet.
+				Your total saving on the loan will be <span id="total_saving">18 035 Ft</span>
 			</p>
-			<a href="#" class="mytooltip" data-toggle="tooltip" title="A kedvezmény feltétele, hogy rendelkezel K&H számlával vagy meghatározott időn belül nyitsz egyet és legalább 100 000 Ft munkabéred érkezik ide havonta. Ebben ez esetben 2% kedvezményt adunk a kamatból.  Az új számlát bármikor megnyithatod, a kedvezmény az első fizetési jóváírás beérkezését követő hónaptól lép majd érvénybe. ">i</a>
+			<a href="#" class="mytooltip" data-toggle="tooltip" title="Discount will be applicable if you are having or you will open a KH current account and sending there your salary  (at least 100.000 Ft) then you will get 2% discount on the interest rate. You can open the current account in KH anytime, the discount will be effective following month after you will receive your first salary there.">i</a>
 
 		</div>
-		<button onclick="window.location.href='hu_basic.php'" class="bluebtn" type="button" name="button">kérem a hitelt</button>
+		<button onclick="window.location.href='basic.php'" class="bluebtn" type="button" name="button">Yes, I want this loan</button>
 
 	</div>
 	<div class="example">
 		<div class="col-md-12" style="padding: 0px;">
 
-		<h3>Reprezentatív példa</h3>
+		<h3>Representative Example</h3>
 		<p>
-			800 000 forint összegû kölcsön esetén, 48 hónapos futamidõvel, éves fix, munkabér-átutalási kedvezménnyel számított 11,99% akciós kamat mellett a havi törlesztõrészlet 21 063 forint, a teljes visszafizetendõ összeg 1 033 536 forint, a hiteldíj 233 536 forint, ebbõl a hiteldíjban foglalt díjak, költségek összege 22 512 forint, THM: 14%		</p>
+			For a 48-month, HUF 800 thousand loan, the monthly repayment instalment with regular monthly salary income is HUF 21,063 at a fixed 11.99% annual interest rate. The Total amount to be repaid is HUF 1,033,536 and the loan charges are HUF 233,536% of which fees and costs amount to HUF 22,512. The annual percentage rate (APR) is 14.0%	</p>
 	</div>
 
 	</div>
 <div class="col-md-12" style="padding: 0px;">
-	<h3>Az igénylés folyamata</h3>
+	<h3>How does it work?</h3>
 
 	<div class="col-md-3">
 		<img src="img/peronal_data.png" />
 		<p>
-			személyes adatok megadása
+			Enter your personal Data
 		</p>
 	</div>
 
@@ -134,14 +134,14 @@
 	<div class="col-md-3">
 		<img src="img/take_pic.png" />
 		<p>
-			a személyi igazolványról készült fotó feltöltése
+			Take a picture of your ID card
 		</p>
 	</div>
 
 	<div class="col-md-3">
 		<img src="img/read_sign.png" />
 		<p>
-			a szerződés ellenőrzése, aláírása
+			Read and sign the contract online
 		</p>
 	</div>
 
@@ -149,7 +149,7 @@
 	<div class="col-md-3">
 		<img src="img/receive_enjoy.png" />
 		<p>
-			Az igényelt hitelösszeg kiutalása
+			Receive and enjoy your money
 		</p>
 	</div>
 </div>
@@ -157,11 +157,11 @@
 
 <div class="col-md-12" style="padding: 0px;">
 
-	<h3>Az online hiteligénylés előnyei:</h3>
+	<h3>What are the benefits?</h3>
 	<div class="col-md-3">
 		<img src="img/minutes.png" />
 		<p>
-			az igényelt összeg a szerződés aláírását követő 15 percen belűl megérkezhet bankszámládra
+			Money credited within 15 minutes after online contract signature.
 		</p>
 	</div>
 
@@ -169,14 +169,14 @@
 	<div class="col-md-3">
 		<img src="img/online_application.png" />
 		<p>
-			az igényléshez nem szükséges bankfiókba menni
+			Purely online application without having to go to a branch.
 		</p>
 	</div>
 
 	<div class="col-md-3">
 		<img src="img/management.png" />
 		<p>
-			nincs ügyintézési költség
+			No management or other hidden fees.
 		</p>
 	</div>
 
@@ -184,7 +184,7 @@
 	<div class="col-md-3">
 		<img src="img/security.png" />
 		<p>
-			A hitelt Magyarország egyik vezető pénzügyi szolgáltatója biztosítja.
+			Reliability and tradition of our bank.
 		</p>
 	</div>
 </div>
@@ -194,7 +194,7 @@
 
 
 <div class="col-md-12 banks" style="padding: 0px;">
-	<h3 style="margin-bottom: 50px;">A K&H azonnali hitelét, akkor igényelheted, ha az alábbi bankok egyikénél vezeted a folyószámládat:</h3>
+	<h3 style="margin-bottom: 50px;">Where can I access it?</h3>
 
 	<div class="col-md-2">
 		<h2>CIB Bank</h2>
