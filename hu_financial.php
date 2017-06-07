@@ -507,17 +507,11 @@ Azt a számlaszámodat add meg, ahova a jövedelmed érkezik. <br /><br />Egy ki
             <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
             <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
 						<div class="nokh">
-							<img src="img/no_kh.png" />
+							<img src="img/ok.png" />
 							<p>
-								You could get a better deal if you agree to open a bank account with us because…lorem ipsum et dolor sit amet et.
+									Már a bankunk ügyfele vagy! Nagyszerű, amennyiben a jövedelmedet is igazolod, a hiteled kamata 2%-al kevesebb lesz lesz!
 							</p>
-							<label form>
-								<input type='checkbox'>
-								<span></span>
-								<p>
-									I accept opening a KH account within one month te get the account.
-								</p>
-							</label>
+
 						</div>
 
             <button onclick="window.location.href='hu_Statements.php'" class="bluebtn" type="button" name="button">Tovább</button>

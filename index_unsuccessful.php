@@ -49,25 +49,26 @@
 <!-- progress bar -->
 
 <div class="container landing">
-	<h1 class="impresto">Impresto</h1>
+	<h1 class="impresto"> </h1>
 	<p style="line-height: 22px;	">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-	</p>
-
+		Unrestricted loan from K&H now fully online. Start and finish your application here and you will receive money on your current account in 15 minutes after contract signature.
 <div class="container qualify">
 	<div class="col-md-6 qualify">
-		<h3>Do I qualify?</h3>
+		<h3>Do I qualify? Yes, if </h3>
 		<ul>
-			<li>Are you older than 18 years?</li>
-			<li>Do you have access to your current account internet banking with one of the banks below?</li>
-			<li>Do you have sufficient income from a regular employment (apart from probation and notice period), pension or parental befnefits?</li>
+			<li>You are older than 18</li>
+			<li>You receive regular salary from employment to your bank account</li>
+			<li>You have access to internet banking of this account</li>
+			<li>This account is at one of these
+				<a href="#" class="banklist" data-toggle="tooltip" title="Erste Bank,CIB Bank, K&H Bank, MKB Bank, OTP Bank, Raiffeisen Bank ">supported banks </a>
+			</li>
 		</ul>
 
-		<h3>What should you have ready?</h3>
+		<h3>What sould you have ready?</h3>
 		<ul>
-			<li>Your Valid ID</li>
+			<li>Your valid ID</li>
 			<li>Your cell phone</li>
-			<li>Do you have sufficient income from a regular employment (apart from probation and notice period), pension or parental befnefits?</li>
+			<li>E-mail address</li>
 		</ul>
 
 
@@ -78,14 +79,14 @@
 				<h2 class="n_label">Amount you need</h2>
 				<h1 class="n_amount" id="amount">800 000 Ft</h1>
 				<input class="custom_range" type="range" name="amount" min="300000" max="3000000" step="50000" value="800000">
-				<p class="min_amount">300.000 Ft</p>
-				<p class="max_amount">3.000.000 Ft</p>
+				<p class="min_amount">300 000 Ft</p>
+				<p class="max_amount">3 000 000 Ft</p>
 			</div>
 
 		</div>
 		<div>
 			<div style="margin-top: 60px;"class="need">
-				<h2 class="n_label">Monthly installment:</h2>
+				<h2 class="n_label">Monthly installment you want</h2>
 				<h1 class="n_amount" id="monthly_instalment">38 406 Ft</h1>
 				<input class="custom_range" type="range" name="monthly" min="14987" max="38406" step="1" value="38406" list="numbers">
 				<p class="min_amount" id="min_monthly_instalment">14 987 Ft</p>
@@ -99,12 +100,12 @@
 		</div>
 		<div class="disc">
 			<p >
-				You can get <span id="monthly_discount">1 502 Ft</span> discount monthly. 
+				You could pay less just <span id="monthly_discount">1 502 Ft</span> monthly
 			</p>
 			<p>
-				Your total saving on your loan can be: <span id="total_saving">18 035 Ft</span>.
+				Your total saving on the loan will be <span id="total_saving">18 035</span>Ft
 			</p>
-			<a href="#" class="mytooltip" data-toggle="tooltip" title="A kedvezmény feltétele, hogy rendelkezel K&H számlával vagy meghatározott időn belül nyitsz egyet és legalább 100 000 Ft munkabéred érkezik ide havonta. Ebben ez esetben 2% kedvezményt adunk a kamatból.  Az új számlát bármikor megnyithatod, a kedvezmény az első fizetési jóváírás beérkezését követő hónaptól lép majd érvénybe. ">i</a>
+			<a href="#" class="mytooltip" data-toggle="tooltip" title="Discount will be applicable if you are having or you will open a KH current account and sending there your salary  (at least 100.000 Ft) then you will get 2% discount on the interest rate. You can open the current account in KH anytime, the discount will be effective following month after you will receive your first salary there.">i</a>
 
 		</div>
 		<button onclick="window.location.href='basic_unsuccessful.php'" class="bluebtn" type="button" name="button">Yes, I want this loan</button>
@@ -115,8 +116,7 @@
 
 		<h3>Representative Example</h3>
 		<p>
-			For a 48-month, HUF 800 thousand loan, the monthly repayment instalment with regular monthly salary income is HUF 21,063 at a fixed 11.99% annual interest rate. The total amount to be repaid is HUF 1,033,536 and the loan charges are HUF 233,536, of which fees and costs amount to HUF 22,512. The annual percentage rate (APR) is 14.0%.
-		</p>
+			For a 48-month, HUF 800 thousand loan, the monthly repayment instalment with regular monthly salary income is HUF 21,063 at a fixed 11.99% annual interest rate. The Total amount to be repaid is HUF 1,033,536 and the loan charges are HUF 233,536% of which fees and costs amount to HUF 22,512. The annual percentage rate (APR) is 14.0%	</p>
 	</div>
 
 	</div>
@@ -197,33 +197,33 @@
 	<h3 style="margin-bottom: 50px;">Where can I access it?</h3>
 
 	<div class="col-md-2">
-		<img src="img/cib.png" />
+		<h2>CIB Bank</h2>
 	</div>
 
 
 	<div class="col-md-2">
-		<img src="img/erste.png" />
+		<h2>Erste Bank</h2>
 	</div>
 
 	<div class="col-md-2">
-		<img src="img/kh.png" />
+		<h2>K&H Bank</h2>
 		<p>
 
 	</div>
 
 
 	<div class="col-md-2">
-		<img style="max-width: 40px;"src="img/MKB_logo.png" />
+		<h2>MKB Bank</h2>
 
 	</div>
 
 	<div class="col-md-2">
-		<img src="img/otp.png" />
+		<h2>OTP Bank</h2>
 
 	</div>
 
 	<div class="col-md-2">
-		<img src="img/Raiffeisen_Bank.png" />
+		<h2>Raiffeisen Bank</h2>
 
 	</div>
 

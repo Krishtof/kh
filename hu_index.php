@@ -58,7 +58,6 @@
 		<ul>
 			<li>már elmúltál 18 éves</li>
 			<li>rendelkezel havi rendszerességű, munkáltatótól származó, igazolható jövedelemmel </li>
-			<li>havi igazolható jövedelmed eléri a nettó 250.000 forintot</li>
 			<li>rendelkezel bankszámlával és hozzá kapcsolódó internet bank eléréssel az oldal alján található bankok egyikénél</li>
 			<li>a fenti számla
 				<a href="#" class="banklist" data-toggle="tooltip" title="Erste Bank,CIB Bank, K&H Bank, MKB Bank, OTP Bank, Raiffeisen Bank ">az alábbi támogatott bankok valamelyikénél </a>található
@@ -97,7 +96,7 @@
 		</div>
 		<div class="repaidin">
 			<h2>futamidő:</h2>
-			<h3><span id="month_number">24</span> month</h3>
+			<h3><span id="month_number">24</span> hónap</h3>
 		</div>
 		<div class="disc">
 			<p >
@@ -195,7 +194,7 @@
 
 
 <div class="col-md-12 banks" style="padding: 0px;">
-	<h3 style="margin-bottom: 50px;">A K&H azonnali hiteligénylése az alábbi bankoknál érhető el:</h3>
+	<h3 style="margin-bottom: 50px;">A K&H azonnali hitelét, akkor igényelheted, ha az alábbi bankok egyikénél vezeted a folyószámládat</h3>
 
 	<div class="col-md-2">
 		<h2>CIB Bank</h2>
