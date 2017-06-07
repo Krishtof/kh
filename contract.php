@@ -378,7 +378,7 @@
 
 
 
-        <button class="accordion collapsed" id = "bank_button" data-toggle="collapse" data-target="">Aláírás</button>
+        <button class="accordion collapsed" id = "bank_button" data-toggle="collapse" data-target="">Sign</button>
         <div id="bank" class="collapse">
             <div class="form">
 
@@ -386,13 +386,11 @@
 
             </form>
             <h2>To sign the contract insert the reference code of the payment form Impresto what you just received on your account (12345678-12345678-12345678). In case you will not received the payment in 5 minutes please call to help line. </h2>
-						<p>
-							By pressing the button your contract will be electronically signed.
-						</p>
+
 						<input type="text" name="firstname">
 
-
-            <button onclick="window.location.href='hu_finish.php'" class="bluebtn" type="button" name="button">Sign</button>
+						<p style="text-align: center;">By pressing the button your contract will be electronically signed</p>
+            <button onclick="window.location.href='finish.php'" class="bluebtn" type="button" name="button">Sign</button>
 
           </div>
 

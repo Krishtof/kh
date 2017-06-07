@@ -52,7 +52,7 @@
           </p>
 
         </div>
-        <button onclick="window.location.href='financial_unsuccessfull.php'" class="bluebtn" type="button" name="button">I acknowledge</button>
+        <button onclick="window.location.href='financial_unsuccessful.php'" class="bluebtn" type="button" name="button">I acknowledge</button>
         <a class="dont" href="#">I don't acknowledge</a>
 
       </div>

@@ -95,7 +95,7 @@
 
 		</div>
 		<div class="repaidin">
-			<h2>Repaid in 24 months</h2>
+			<h2>Repaid in:</h2>
 			<h3><span id="month_number">24</span> month</h3>
 		</div>
 		<div class="disc">
@@ -103,7 +103,7 @@
 				You could pay less just <span id="monthly_discount">1 502 Ft</span> monthly
 			</p>
 			<p>
-				Your total saving on the loan will be <span id="total_saving">18 035 Ft</span>
+				Your total saving on the loan will be <span id="total_saving">18 035</span>Ft
 			</p>
 			<a href="#" class="mytooltip" data-toggle="tooltip" title="Discount will be applicable if you are having or you will open a KH current account and sending there your salary  (at least 100.000 Ft) then you will get 2% discount on the interest rate. You can open the current account in KH anytime, the discount will be effective following month after you will receive your first salary there.">i</a>
 

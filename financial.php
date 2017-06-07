@@ -290,7 +290,7 @@
                   <input type='checkbox'>
                   <span></span>
                   <p>
-                    self-employment
+                    Self-employment
                   </p>
                 </label>
               </div>
@@ -437,7 +437,7 @@
 
                 <div class="radio">
                   <input type="radio" id="r2" name="rr" />
-                  <label for="r2">Vocational school with A-level graduation</label>
+                  <label for="r2">Vocational school without A-level graduation</label>
                 </div>
 
                 <div class="radio">

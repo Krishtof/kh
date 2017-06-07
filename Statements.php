@@ -334,7 +334,7 @@
                         <p>
                           We cant recognize the data from the picture what you just uploaded. please try again
                         </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture</button>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
                          <label class="custom-file-upload id_btn">
 						    <input type="file" id="file_2_2"/>ID upload
 						</label>
@@ -343,7 +343,7 @@
                         <p>
                           Drag and drop images into this window to upload:
                         </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture</button>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
                         <label class="custom-file-upload id_btn">
 						    <input type="file" id="file_2"/>ID upload
 						</label>
@@ -441,7 +441,7 @@
       <div id="account" class="collapse">
           <div class="form">
           <p>
-          Please upload account statement from your bank account from March 2017 in PDF (need to be original PDF, the picture is not enough)       </p>
+						Please upload account statement from your bank account from <span style="font-weight: bold;">March 2017</span> in PDF (need to be original PDF, the picture is not enough)       </p>
           <div class="statementholder">
 						<h2>How to download the Account statement from your internet banking?</h2>
             <p> To do this simply:

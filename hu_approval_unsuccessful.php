@@ -8,52 +8,7 @@
 		return $result;
 	}
 
-
-
-	include_once('process_csv.php');
-
-	if(str_replace(' ','',$_SESSION["loan_amount"])>300000){
-		$_SESSION["loan_amount"] = str_replace(' ','',$_SESSION["loan_amount"]) - 50000;
-	}
-
-
-	$max = $_SESSION["loan_amount"]+50000;
-	$selected = $_SESSION["loan_amount"];
-
-	$selection = array();
-
-	foreach($datas as $key => $value){
-	    if($value['load_amount'] == $selected && $value['repaid_in'] == 24){
-	    	$selection['load_amount'] = number_format($value['load_amount'],0,',',' ');
-	    	$selection['loan_instalments'] = number_format($value['loan_instalments'],0,',',' ');
-	    	$selection['repaid_in'] = $value['repaid_in'];
-	    	$selection['total_repaid'] = number_format($value['total_repaid'],0,',',' ');
-	    	$selection['interest_rate'] = $value['interest_rate'];
-	    	$selection['total_saving'] = number_format($value['total_saving'],0,',',' ');
-	    	$selection['monthly_discount'] = number_format($value['monthly_discount'],0,',',' ');
-
-	    	$_SESSION["loan_amount"] = $selection['load_amount'];
-	    	$_SESSION["loan_instalments"] = $selection['loan_instalments'];
-	    	$_SESSION["repaid_in"] = $selection['repaid_in'];
-	    	$_SESSION["max_loan"] = $selection['loan_instalments'];
-	    	$_SESSION["interest_rate"] = $selection['interest_rate'];
-	    	$_SESSION["total_repaid"] = $selection['total_repaid'];
-	    }
-	}
-	$min = 999999999;
-	foreach($datas as $key => $value){
-	    if($value['load_amount'] == $selected ){
-	    	if($value['loan_instalments'] < $min){
-	    		$selection['min_loan_instalments'] =number_format($value['loan_instalments'],0,',',' ');
-
-	    	}
-	    }
-	}
-	$_SESSION["min_loan"] = $selection['min_loan_instalments'] ;
-
-
-	$you_can_get = str_replace(' ','',$_SESSION["loan_amount"]);
-	$amount_css = getCssPercentage(300000,$max,$you_can_get);
+	$amount_css = getCssPercentage(300000,3000000,str_replace(' ','',$_SESSION["loan_amount"]));
 	$monthly_css = getCssPercentage(str_replace(' ','',$_SESSION["min_loan"]),str_replace(' ','',$_SESSION["max_loan"]),str_replace(' ','',$_SESSION["loan_instalments"]));
 ?>
 <!DOCTYPE html>
@@ -77,10 +32,10 @@
         <style>
         	input[name="amount"]{
 	        	background: #99fba6; /* Old browsers */
-				background: -moz-linear-gradient(left, #00aeef 0%, #00aeef <?=$amount_css?>%, #f89ca8 <?=$amount_css?>%, #f89ca8 100%) ; /* FF3.6-15 */
-				background: -webkit-linear-gradient(left, #00aeef 0%,#00aeef <?=$amount_css?>%,#99fba6 <?=$amount_css?>%,#f89ca8 100%) ; /* Chrome10-25,Safari5.1-6 */
-				background: linear-gradient(to right, #00aeef 0%,#00aeef <?=$amount_css?>%,#f89ca8 <?=$amount_css?>%,#f89ca8 100%) ; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#f89ca8',GradientType=1 ) ; /* IE6-9 */
+				background: -moz-linear-gradient(left, #00aeef 0%, #00aeef <?=$amount_css?>%, #99fba6 <?=$amount_css?>%, #99fba6 100%) ; /* FF3.6-15 */
+				background: -webkit-linear-gradient(left, #00aeef 0%,#00aeef <?=$amount_css?>%,#99fba6 <?=$amount_css?>%,#99fba6 100%) ; /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right, #00aeef 0%,#00aeef <?=$amount_css?>%,#99fba6 <?=$amount_css?>%,#99fba6 100%) ; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#e6f7fe',GradientType=1 ) ; /* IE6-9 */
 			}
 			input[name="monthly"]{
 	        	background: #99fba6; /* Old browsers */
@@ -120,14 +75,14 @@
 
           </div>
           <div class="row">
-            <div class="col-xs-2 ">
+						<div class="col-xs-2 ">
               <div class="nr">
                 <p>
                   1
                 </p>
               </div>
               <p class="pr_title">
-                Basic information
+                Alapadatok
               </p>
             </div>
             <div class="col-xs-2 ">
@@ -137,7 +92,7 @@
                 </p>
               </div>
               <p class="pr_title ">
-                Financial evaluation
+                Személyes adatok
               </p>
             </div>
             <div class="col-xs-2 ">
@@ -147,7 +102,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Statements
+                Azonosítás
               </p>
             </div>
             <div class="col-xs-2 active">
@@ -157,30 +112,34 @@
                 </p>
               </div>
               <p class="pr_title">
-                Approval
+                Jóváhagyás
               </p>
             </div>
-            <div class="col-xs-2 ">
+            <div class="col-xs-2">
               <div class="nr">
                 <p>
                   5
                 </p>
               </div>
               <p class="pr_title">
-                Contract
+                Szerződéskötés
               </p>
             </div>
-						<div class="col-xs-2 last">
-							<img src="img/finish.png" />
-              <p class="pr_title ">
-                Finish
+            <div class="col-xs-2">
+              <div class="nr">
+                <p>
+                  6
+                </p>
+              </div>
+              <p class="pr_title">
+                Befejezés
               </p>
             </div>
 
 
 
           </div>
-          <h2 class="title">Finish</h2>
+          <h2 class="title">Jóváhagyás</h2>
         </div>
       </div>
 
@@ -188,26 +147,27 @@
 <!-- Loan I apply for -->
     <div class="container">
 
-      <div class="loanholder">
-        <h2>Loan I apply for</h2>
+			<div class="loanholder">
+        <h2>Hitel részletei</h2>
         <div class="amount">
           <p>
-            Loan amount
+            Hitelösszeg
           </p>
-         <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
+          <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
         </div>
         <div class="info">
 
           <div class="instalments">
-            <h2>Instalments:</h2>
+            <h2>Törlesztőrészlet:</h2>
             <p><?=$_SESSION["loan_instalments"]?> Ft</p>
           </div>
           <div class="instalments">
-            <h2>Repaid in::</h2>
-           <p><?=$_SESSION["repaid_in"]?> months</p>
+            <h2>Futamidő:</h2>
+            <p><?=$_SESSION["repaid_in"]?> hónap</p>
           </div>
         </div>
       </div>
+
 
     </div>
 
@@ -215,25 +175,25 @@
 
     <div class="container">
       <div class="form nopadding approval">
-				<div class="good approve">You are doing well! Only 2 more step!</div>
+				<div class="good">Remek! Még 2 lépés és készen is vagy!</div>
 
-        <h1>The amount you requested cannot be approved, please try a smaller amount.</h1>
-        <p>You applied for <?=number_format(str_replace(' ','',$_SESSION["loan_amount"])+50000,0,',',' ')?> Ft. The maximum amount you can apply for is <?=number_format(str_replace(' ','',$_SESSION["loan_amount"]),0,',',' ')?> Ft.</p>
+        <h1>az általad igényelt hitelösszeget jóváhagytuk. Ugyanakkor lehetőséged van ennél magasabb összeget is igényelni</h1>
+        <p>Az általad igényelt hitelösszeg: <?=$_SESSION["loan_amount"]?>. A maximálisan igényelhető személyi hitel összege számodra: 3 000 000 forint. </p>
         <div class="container">
           <div class="col-md-6">
 			<div>
 			<div class="need">
-					<h2 class="n_label">Amount you need</h2>
+					<h2 class="n_label">Igényelt hitelösszeg</h2>
 					<h1 class="n_amount" id="amount"><?=$_SESSION["loan_amount"]?> Ft</h1>
-					<input class="custom_range" type="range" name="amount" min="300000" max="<?=$max?>" step="50000" value="<?=str_replace(' ','',$_SESSION["loan_amount"])?>">
+					<input class="custom_range" type="range" name="amount" min="300000" max="3000000" step="50000" value="<?=str_replace(' ','',$_SESSION["loan_amount"])?>">
 					<p class="min_amount">300 000 Ft</p>
-					<p class="max_amount"><?=number_format($max,0,',',' ')?> Ft</p>
+					<p class="max_amount">3 000 000 Ft</p>
 				</div>
 
 			</div>
 			<div>
 				<div style="margin-top: 60px;"class="need">
-					<h2 class="n_label">Monthly installment:</h2>
+					<h2 class="n_label">Havi törlesztőrészlet:</h2>
 					<h1 class="n_amount" id="monthly_instalment"><?=$_SESSION["loan_instalments"]?> Ft</h1>
 					<input class="custom_range" type="range" name="monthly" min="<?=str_replace(' ','',$_SESSION["min_loan"])?>" max="<?=str_replace(' ','',$_SESSION["max_loan"])?>" step="1" value="<?=str_replace(' ','',$_SESSION["loan_instalments"])?>" list="numbers">
 					<p class="min_amount" id="min_monthly_instalment"><?=$_SESSION["min_loan"]?> Ft</p>
@@ -242,16 +202,16 @@
 
 			</div>
 			<div class="repaidin">
-				<h2>Repaid in:</h2>
-				<h3><span id="month_number"><?=$_SESSION["repaid_in"]?></span> month</h3>
+				<h2>Futamidő:</h2>
+				<h3><span id="month_number"><?=$_SESSION["repaid_in"]?></span> hónap</h3>
 			</div>
           </div>
 
           <div class="col-md-6 loaninfo">
-            <h4>Total amount to be repaid</h4>
+            <h4>Visszafizetendő összeg:</h4>
             <h1><span id="total_repaid_id"><?=$_SESSION["total_repaid"]?></span> Ft </h1>
             <div class="line"></div>
-            <p>Fixed Annual Interest Rate</p>
+            <p>Éves kamat:</p>
             <h2><span id="interest_rate"><?=$_SESSION["interest_rate"]?></span>%</h2>
           </div>
 
@@ -259,7 +219,7 @@
 
 
           </div>
-          <button onclick="window.location.href='contract.php'" class="bluebtn" type="button" name="button">Next</button>
+          <button onclick="window.location.href='hu_contract.php'" class="bluebtn" type="button" name="button">Tovább</button>
 
         </div>
 
@@ -281,35 +241,17 @@
   		$(function(){
   			changeRange();
   			changeRange2();
-  			noIncrease();
   		});
-
-  		function noIncrease(){
-	  		$('input[name="amount"]').change(function(event){
-	  			event.stopPropagation();
-		  		if($(this).val() > <?=str_replace(' ','',$_SESSION["loan_amount"])?>){
-			  		$(this).val(<?=str_replace(' ','',$_SESSION["loan_amount"])?>);
-		  		}
-	  		});
-  		}
 
   		function changeRange(){
   			$('input[type="range"][name="amount"]').change(function(){
+  				var value = $(this).val();
 
-  				if($(this).val() > <?=str_replace(' ','',$_SESSION["loan_amount"])?>){
-  					$(this).val(<?=str_replace(' ','',$_SESSION["loan_amount"])?>);
-  				}
-	  			var value = $(this).val();
-	  			var css = getCssPercentage(300000,<?=$max?>,value);
-	  			console.log(css);
-	  			$('input[type=range][name="amount"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%, #e6f7fe '+css+'%, #e6f7fe '+<?=$amount_css?>+'%,#f89ca8 '+<?=$amount_css?>+'%,#f89ca8 100%)');
-	  			$('input[type=range][name="amount"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%, e6f7fe '+css+'%, #e6f7fe '+<?=$amount_css?>+'%,#f89ca8 '+<?=$amount_css?>+'%,#f89ca8 100%)');
-	  			$('input[type=range][name="amount"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%, #e6f7fe '+<?=$amount_css?>+'%,#f89ca8 '+<?=$amount_css?>+'%,#f89ca8 100%)');
-
-
-
-
-	  			$.ajax({
+  				var css = getCssPercentage(300000,3000000,value);
+  				$('input[type=range][name="amount"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#99fba6 '+css+'%,#99fba6 100%)');
+  				$('input[type=range][name="amount"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#99fba6 '+css+'%,#99fba6 100%)');
+  				$('input[type=range][name="amount"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#99fba6 '+css+'%,#99fba6 100%)');
+  				$.ajax({
 				    type: "POST",
 				    url: "ajax.php",
 				    data: {
@@ -318,6 +260,7 @@
 				    },
 				    success: function(msg){
 				    	var obj = $.parseJSON(msg);
+				    	console.log(obj)
 				    	$('input[type=range][name="monthly"]').attr('max',obj['loan_instalments'].replace(' ', ''));
 				    	$('input[type=range][name="monthly"]').attr('min',obj['min_loan_instalments'].replace(' ', ''));
 				    	$('#max_monthly_instalment').html(obj['loan_instalments']+' Ft');
@@ -328,23 +271,22 @@
 				    	//monthly installmenst text módosítása
 				    	$('#monthly_instalment').html(obj['loan_instalments']+' Ft');
 				    	//monthly csúszka értékének beállítása
-				    	$('input[type=range][name="monthly"]').val(obj['loan_instalments'].replace(' ', ''));
-				    	//monthly csúszka mozgatása
-				    	var css = getCssPercentage(obj['min_loan_instalments'].replace(' ', ''),obj['loan_instalments'].replace(' ', ''),obj['loan_instalments'].replace(' ', ''));
-				    	$('input[type=range][name="monthly"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,##f89ca8 '+css+'%,##f89ca8 100%)');
-				    	$('input[type=range][name="monthly"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,##f89ca8 '+css+'%,##f89ca8 100%)');
-				    	$('input[type=range][name="monthly"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,##f89ca8 '+css+'%,##f89ca8 100%)');
-				    	//monthly_discount módosítása
-				    	//$('#monthly_discount').html(obj['monthly_discount']+' Ft');
-				    	//$('#total_saving').html(obj['total_saving']);
+						$('input[type=range][name="monthly"]').val(obj['loan_instalments'].replace(' ', ''));
+						//monthly csúszka mozgatása
+						var css = getCssPercentage(obj['min_loan_instalments'].replace(' ', ''),obj['loan_instalments'].replace(' ', ''),obj['loan_instalments'].replace(' ', ''));
+						$('input[type=range][name="monthly"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+						$('input[type=range][name="monthly"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+						$('input[type=range][name="monthly"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+						//monthly_discount módosítása
+						//$('#monthly_discount').html(obj['monthly_discount']+' Ft');
+						//$('#total_saving').html(obj['total_saving']);
 
-				    	$('#total_repaid_id').html(obj['total_repaid']);
-				    	$('#interest_rate').html(obj['interest_rate']);
+						$('#total_repaid_id').html(obj['total_repaid']);
+						$('#interest_rate').html(obj['interest_rate']);
 
-				    	$('#month_number').html(24);
+						$('#month_number').html(24);
 				    }
 				});
-
   			});
 
   		}
