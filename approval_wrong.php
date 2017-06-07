@@ -7,23 +7,34 @@
 		$result = ($value-$min)/$percentage_1;
 		return $result;
 	}
-
-
+	
+	
+	//keressük ki a választottnál kisebb számot
+	function getLower($datas,$amount){
+		$val = 0;
+		foreach($datas as $key => $value){
+			if($value['load_amount'] > $val && $value['load_amount'] < $amount){
+				$val = $value['load_amount'];
+			}
+		}
+		return $val;
+	}
+	
 
 	include_once('process_csv.php');
+	
+	$max = str_replace(' ','',$_SESSION["loan_amount"]);
 
-	if(str_replace(' ','',$_SESSION["loan_amount"])>300000){
+	/*if(str_replace(' ','',$_SESSION["loan_amount"])>300000){
 		$_SESSION["loan_amount"] = str_replace(' ','',$_SESSION["loan_amount"]) - 50000;
-	}
-
-
-	$max = $_SESSION["loan_amount"]+50000;
-	$selected = $_SESSION["loan_amount"];
+	}*/
+	
+	$selected = getLower($datas,str_replace(' ','',$_SESSION["loan_amount"]));
 
 	$selection = array();
 
 	foreach($datas as $key => $value){
-	    if($value['load_amount'] == $selected && $value['repaid_in'] == 24){
+	    if($value['load_amount'] == $selected && $value['repaid_in'] == $_SESSION['repaid_in']){
 	    	$selection['load_amount'] = number_format($value['load_amount'],0,',',' ');
 	    	$selection['loan_instalments'] = number_format($value['loan_instalments'],0,',',' ');
 	    	$selection['repaid_in'] = $value['repaid_in'];
@@ -41,6 +52,7 @@
 	    }
 	}
 	$min = 999999999;
+	$max_s = 0;
 	foreach($datas as $key => $value){
 	    if($value['load_amount'] == $selected ){
 	    	if($value['loan_instalments'] < $min){
@@ -49,12 +61,25 @@
 	    	}
 	    }
 	}
-	$_SESSION["min_loan"] = $selection['min_loan_instalments'] ;
+	
+	foreach($datas as $key => $value){
+	    if($value['load_amount'] == str_replace(' ','',$selection['load_amount'])){
+	    	if($value['loan_instalments'] > $max_s){
+	    		$max_s = $value['loan_instalments'];
+	    		$selection['max_loan_instalments'] = number_format($value['loan_instalments'],0,',',' ');
+	    		
+	    	}					
+	    }
+	}
+	
+	$_SESSION["min_loan"] = $selection['min_loan_instalments'];
+	$_SESSION["max_loan"] = $selection['max_loan_instalments'];
 
-
-	$you_can_get = str_replace(' ','',$_SESSION["loan_amount"]);
+	$you_can_get = str_replace(' ','',$selected);
 	$amount_css = getCssPercentage(300000,$max,$you_can_get);
 	$monthly_css = getCssPercentage(str_replace(' ','',$_SESSION["min_loan"]),str_replace(' ','',$_SESSION["max_loan"]),str_replace(' ','',$_SESSION["loan_instalments"]));
+	
+	
 ?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
@@ -218,7 +243,7 @@
 				<div class="good approve">You are doing well! Only 2 more step!</div>
 
         <h1>The amount you requested cannot be approved, please try a smaller amount.</h1>
-        <p>You applied for <?=number_format(str_replace(' ','',$_SESSION["loan_amount"])+50000,0,',',' ')?> Ft. The maximum amount you can apply for is <?=number_format(str_replace(' ','',$_SESSION["loan_amount"]),0,',',' ')?> Ft.</p>
+        <p>You applied for <?=number_format($max,0,',',' ')?> Ft. The maximum amount you can apply for is <?=number_format(str_replace(' ','',$_SESSION["loan_amount"]),0,',',' ')?> Ft.</p>
         <div class="container">
           <div class="col-md-6">
 			<div>
@@ -235,7 +260,11 @@
 				<div style="margin-top: 60px;"class="need">
 					<h2 class="n_label">Monthly installment:</h2>
 					<h1 class="n_amount" id="monthly_instalment"><?=$_SESSION["loan_instalments"]?> Ft</h1>
-					<input class="custom_range" type="range" name="monthly" min="<?=str_replace(' ','',$_SESSION["min_loan"])?>" max="<?=str_replace(' ','',$_SESSION["max_loan"])?>" step="1" value="<?=str_replace(' ','',$_SESSION["loan_instalments"])?>" list="numbers">
+					<input class="custom_range" type="range" name="monthly" style="background: #99fba6; /* Old browsers */
+				background: -moz-linear-gradient(left, #00aeef 0%, #00aeef <?=$monthly_css?>%, #e6f7fe <?=$monthly_css?>%, #e6f7fe 100%) ; /* FF3.6-15 */
+				background: -webkit-linear-gradient(left, #00aeef 0%,#00aeef <?=$monthly_css?>%,#e6f7fe <?=$monthly_css?>%,#e6f7fe 100%) ; /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right, #00aeef 0%,#00aeef <?=$monthly_css?>%,#e6f7fe <?=$monthly_css?>%,#e6f7fe 100%) ; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#e6f7fe',GradientType=1 ) ; " min="<?=str_replace(' ','',$_SESSION["min_loan"])?>" max="<?=str_replace(' ','',$_SESSION["max_loan"])?>" step="1" value="<?=str_replace(' ','',$_SESSION["loan_instalments"])?>" list="numbers">
 					<p class="min_amount" id="min_monthly_instalment"><?=$_SESSION["min_loan"]?> Ft</p>
 					<p class="max_amount" id="max_monthly_instalment"><?=$_SESSION["max_loan"]?> Ft</p>
 				</div>
@@ -300,11 +329,8 @@
   					$(this).val(<?=str_replace(' ','',$_SESSION["loan_amount"])?>);
   				}
 	  			var value = $(this).val();
-	  			var css = getCssPercentage(300000,<?=$max?>,value);
-	  			console.log(css);
-	  			$('input[type=range][name="amount"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%, #e6f7fe '+css+'%, #e6f7fe '+<?=$amount_css?>+'%,#f89ca8 '+<?=$amount_css?>+'%,#f89ca8 100%)');
-	  			$('input[type=range][name="amount"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%, e6f7fe '+css+'%, #e6f7fe '+<?=$amount_css?>+'%,#f89ca8 '+<?=$amount_css?>+'%,#f89ca8 100%)');
-	  			$('input[type=range][name="amount"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%, #e6f7fe '+<?=$amount_css?>+'%,#f89ca8 '+<?=$amount_css?>+'%,#f89ca8 100%)');
+	  			var month = $('#month_number').html();
+	  			
 
 
 
@@ -314,23 +340,37 @@
 				    url: "ajax.php",
 				    data: {
 				    	mode: 'amountChange',
+				    	month : month,
 				    	value: value
 				    },
 				    success: function(msg){
 				    	var obj = $.parseJSON(msg);
-				    	$('input[type=range][name="monthly"]').attr('max',obj['loan_instalments'].replace(' ', ''));
+				    	$('input[type=range][name="monthly"]').attr('max',obj['max_loan_instalments'].replace(' ', ''));
 				    	$('input[type=range][name="monthly"]').attr('min',obj['min_loan_instalments'].replace(' ', ''));
-				    	$('#max_monthly_instalment').html(obj['loan_instalments']+' Ft');
+				    	$('#max_monthly_instalment').html(obj['max_loan_instalments']+' Ft');
 				    	$('#min_monthly_instalment').html(obj['min_loan_instalments']+' Ft');
 				    	//console.log(obj);
 				    	//amount you need text módosítása
 				    	$('h1#amount').html(obj['load_amount']+' Ft');
+				    	var new_value = obj['load_amount'].replace(' ', '');
+				    	var new_value = new_value.replace(' ', '');
+				    	if(new_value > <?=str_replace(' ','',$_SESSION["loan_amount"])?>){
+					    	new_value = <?=str_replace(' ','',$_SESSION["loan_amount"])?>;
+				    	}
+				    	$('input[type=range][name="amount"]').val(new_value);
+				    	
+				    	var css = getCssPercentage(300000,<?=$max?>,new_value);
+	  			
+						$('input[type=range][name="amount"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%, #e6f7fe '+css+'%, #e6f7fe '+<?=$amount_css?>+'%,#f89ca8 '+<?=$amount_css?>+'%,#f89ca8 100%)');
+						$('input[type=range][name="amount"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%, e6f7fe '+css+'%, #e6f7fe '+<?=$amount_css?>+'%,#f89ca8 '+<?=$amount_css?>+'%,#f89ca8 100%)');
+						$('input[type=range][name="amount"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%, #e6f7fe '+<?=$amount_css?>+'%,#f89ca8 '+<?=$amount_css?>+'%,#f89ca8 100%)');
+				    	
 				    	//monthly installmenst text módosítása
 				    	$('#monthly_instalment').html(obj['loan_instalments']+' Ft');
 				    	//monthly csúszka értékének beállítása
 				    	$('input[type=range][name="monthly"]').val(obj['loan_instalments'].replace(' ', ''));
 				    	//monthly csúszka mozgatása
-				    	var css = getCssPercentage(obj['min_loan_instalments'].replace(' ', ''),obj['loan_instalments'].replace(' ', ''),obj['loan_instalments'].replace(' ', ''));
+				    	var css = getCssPercentage(obj['min_loan_instalments'].replace(' ', ''),obj['max_loan_instalments'].replace(' ', ''),obj['loan_instalments'].replace(' ', ''));
 				    	$('input[type=range][name="monthly"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,##f89ca8 '+css+'%,##f89ca8 100%)');
 				    	$('input[type=range][name="monthly"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,##f89ca8 '+css+'%,##f89ca8 100%)');
 				    	$('input[type=range][name="monthly"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,##f89ca8 '+css+'%,##f89ca8 100%)');
@@ -341,7 +381,7 @@
 				    	$('#total_repaid_id').html(obj['total_repaid']);
 				    	$('#interest_rate').html(obj['interest_rate']);
 
-				    	$('#month_number').html(24);
+				    	$('#month_number').html(month);
 				    }
 				});
 

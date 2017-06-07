@@ -1,14 +1,13 @@
 <?php
 	session_start();
 	error_reporting(0);
-	$_SESSION["loan_amount"] = number_format(800000,0,',',' ');
-	$_SESSION["loan_instalments"] = number_format(38406,0,',',' ');
+	$_SESSION["loan_amount"] = number_format(600000,0,',',' ');
+	$_SESSION["loan_instalments"] = number_format(32500,0,',',' ');
 	$_SESSION["repaid_in"] = 24;
 	$_SESSION["interest_rate"] = 13.99;
-	$_SESSION["total_repaid"] = '921 756';
-	$_SESSION["max_loan"] = '38 406';
-	$_SESSION["min_loan"] = '14 987';
-
+	$_SESSION["total_repaid"] = '780 000';
+	$_SESSION["max_loan"] = '65 000';
+	$_SESSION["min_loan"] = '10 833';
 	?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
@@ -76,8 +75,8 @@
 		<div>
 			<div class="need">
 				<h2 class="n_label">Amount you need</h2>
-				<h1 class="n_amount" id="amount">800 000 Ft</h1>
-				<input class="custom_range" type="range" name="amount" min="300000" max="3000000" step="50000" value="800000">
+				<h1 class="n_amount" id="amount">600 000 Ft</h1>
+				<input class="custom_range" type="range" name="amount" min="300000" max="3000000" step="1" value="600000">
 				<p class="min_amount">300.000 Ft</p>
 				<p class="max_amount">3.000.000 Ft</p>
 			</div>
@@ -86,10 +85,10 @@
 		<div>
 			<div style="margin-top: 60px;"class="need">
 				<h2 class="n_label">Monthly installment:</h2>
-				<h1 class="n_amount" id="monthly_instalment">38 406 Ft</h1>
-				<input class="custom_range" type="range" name="monthly" min="14987" max="38406" step="1" value="38406" list="numbers">
-				<p class="min_amount" id="min_monthly_instalment">14 987 Ft</p>
-				<p class="max_amount" id="max_monthly_instalment">38 406 Ft</p>
+				<h1 class="n_amount" id="monthly_instalment">32 500 Ft</h1>
+				<input class="custom_range" type="range" name="monthly" min="10833" max="65000" step="1" value="32500" list="numbers">
+				<p class="min_amount" id="min_monthly_instalment">10 833 Ft</p>
+				<p class="max_amount" id="max_monthly_instalment">65 000 Ft</p>
 			</div>
 
 		</div>
@@ -262,33 +261,43 @@
   		function changeRange(){
   			$('input[type="range"][name="amount"]').change(function(){
   				var value = $(this).val();
-
-  				var css = getCssPercentage(300000,3000000,value);
-  				$('input[type=range][name="amount"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
-  				$('input[type=range][name="amount"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
-  				$('input[type=range][name="amount"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+  				var month = $('#month_number').html();
   				$.ajax({
 				    type: "POST",
 				    url: "ajax.php",
 				    data: {
 				    	mode: 'amountChange',
+				    	month : month,
 				    	value: value
 				    },
 				    success: function(msg){
 				    	var obj = $.parseJSON(msg);
-				    	$('input[type=range][name="monthly"]').attr('max',obj['loan_instalments'].replace(' ', ''));
+				    	
+				    	$('input[type=range][name="monthly"]').attr('max',obj['max_loan_instalments'].replace(' ', ''));
 				    	$('input[type=range][name="monthly"]').attr('min',obj['min_loan_instalments'].replace(' ', ''));
-				    	$('#max_monthly_instalment').html(obj['loan_instalments']+' Ft');
+				    	$('#max_monthly_instalment').html(obj['max_loan_instalments']+' Ft');
 				    	$('#min_monthly_instalment').html(obj['min_loan_instalments']+' Ft');
-				    	//console.log(obj);
+				    	
 				    	//amount you need text módosítása
 				    	$('h1#amount').html(obj['load_amount']+' Ft');
+				    	//felső csúszka módosítása
+				    	var new_value = obj['load_amount'].replace(' ', '');
+				    	var new_value = new_value.replace(' ', '');
+				    	
+				    	$('input[type=range][name="amount"]').val(new_value);
+				    	
+						var css = getCssPercentage(300000,3000000,new_value);
+						
+						$('input[type=range][name="amount"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+						$('input[type=range][name="amount"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
+						$('input[type=range][name="amount"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 				    	//monthly installmenst text módosítása
 				    	$('#monthly_instalment').html(obj['loan_instalments']+' Ft');
 				    	//monthly csúszka értékének beállítása
 						$('input[type=range][name="monthly"]').val(obj['loan_instalments'].replace(' ', ''));
 						//monthly csúszka mozgatása
-						var css = getCssPercentage(obj['min_loan_instalments'].replace(' ', ''),obj['loan_instalments'].replace(' ', ''),obj['loan_instalments'].replace(' ', ''));
+						var css = getCssPercentage(obj['min_loan_instalments'].replace(' ', ''),obj['max_loan_instalments'].replace(' ', ''),obj['loan_instalments'].replace(' ', ''));
+						
 						$('input[type=range][name="monthly"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="monthly"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="monthly"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
@@ -296,7 +305,7 @@
 						$('#monthly_discount').html(obj['monthly_discount']+' Ft');
 						$('#total_saving').html(obj['total_saving']);
 
-						$('#month_number').html(24);
+						$('#month_number').html(month);
 				    }
 				});
   			});
@@ -356,8 +365,8 @@
   		}
 
   	</script>
-		<script type="text/javascript">
-		$(document).ready(function(){
-		    $('[data-toggle="tooltip"]').tooltip();
-		});
-		</script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	    $('[data-toggle="tooltip"]').tooltip();
+	});
+	</script>
