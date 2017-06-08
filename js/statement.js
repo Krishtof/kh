@@ -14,7 +14,7 @@ $(function(){
 	
 	//new version
 	upload_id();
-	new_click();
+	//new_click();
 	back_click();
 	upload_new_id();
 	
@@ -22,7 +22,21 @@ $(function(){
 	billing();
 	next();
 	lastfile();
+	idclick2();
+	idclick();
 });
+
+//leellenőrzi, hogy mind a 3 id fel lett-e töltve
+function check_all_ids(){
+	var front = $('#front_side .success:visible').length;
+	var back = $('#back_side .success:visible').length;
+	var address = $('#address_card .success:visible').length;
+	if(front+back+address == 3){
+		$('#after_success').show();
+	}else{
+		$('#after_success').hide();
+	}
+}
 
 function upload_new_id(){
 	
@@ -30,6 +44,7 @@ function upload_new_id(){
 		var value = $(this).val();
 		$(this).closest('.col-md-6').find('.successful').hide();
 		$(this).closest('.col-md-6').find('.success').show();
+		check_all_ids();
 	});
 
 }
@@ -44,11 +59,13 @@ function back_click(){
 		$('#old_holder .successful').hide();
 		$('#new_holder .successful').hide();
 		$('span.back').hide();
+		$('#old_id').attr('data-status','');
+		$('#new_id').attr('data-status','');
 	});
 }
 
 function new_click(){
-	$('#old_holder').click(function(){
+	/*$('#old_holder').click(function(){
 		$('#new_holder').find('.successful').hide();
 		$(this).find('.successful').show();
 	});
@@ -56,7 +73,7 @@ function new_click(){
 	$('#new_holder').click(function(){
 		$('#old_holder').find('.successful').hide();
 		$(this).find('.successful').show();
-	});
+	});*/
 }
 
 function upload_id(){
@@ -66,14 +83,15 @@ function upload_id(){
 		$('#front_side').show();
 		$('#back_side').show();
 		$('#address_card').show();
+		//console.log($('#back_side .success:visible').length);
 		if($('#back_side .success:visible').length == 0){
-			$('#back_side .successful').show();
+			$('#back_side .successful').css('display','block');
 		}
 		if($('#front_side .success:visible').length == 0){
-			$('#front_side .successful').show();
+			$('#front_side .successful').css('display','block');
 		}
 		if($('#address_card .success:visible').length == 0){
-			$('#address_card .successful').show();
+			$('#address_card .successful').css('display','block');
 		}
 		$('span.back').show();
 	});
@@ -199,15 +217,17 @@ function next(){
 	$('#select_upload_next_button').click(function(){
 		$('#select_upload_button').addClass('collapsed done');
 		$('#expenses').removeClass('in');
-		
+		$('#select_upload_button').attr('data-target','#expenses');
 		$('#account_button').removeClass('collapsed');
 		$('#account').addClass('in');
 		$('#account_button').attr('data-target','#account');
 	});
 }
 
+
 function idclick(){
 	$('#old_id').click(function(){
+		//console.log('klikk');
 		$('#new_holder .selected').hide();
 		$('#new_id').attr('data-status','');
 		$('#new_holder').removeClass('active');

@@ -340,7 +340,7 @@
                   </div>
                   
                   <div class="col-md-6 front_side" data-status="" id="front_side">
-                    <div class="col-md-12"  id="new_holder">
+                    <div class="col-md-12"  >
                       <div class="selected error">
                         <p>
                           We cant recognize the data from the picture what you just uploaded. please try again
@@ -370,7 +370,7 @@
 
                   </div>
                   <div class="col-md-6 back_side" data-status="" id="back_side">
-                    <div class="col-md-12"  id="new_holder">
+                    <div class="col-md-12" >
                       <div class="selected error">
                         <p>
                           We cant recognize the data from the picture what you just uploaded. please try again
@@ -400,7 +400,7 @@
 
                   </div>
                   <div class="col-md-6 address_card" data-status="" id="address_card">
-                    <div class="col-md-12"  id="new_holder">
+                    <div class="col-md-12" >
                       <div class="selected error">
                         <p>
                           We cant recognize the data from the picture what you just uploaded. please try again
