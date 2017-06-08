@@ -154,6 +154,8 @@
     <div class="container">
 
 			<div class="loanholder">
+				<p class="edit" >Edit</p>
+
         <h2>Loan I apply for</h2>
         <div class="amount">
           <p>
@@ -471,11 +473,11 @@
 
                 <h2>Are you a politically exposed person?</h2><br>
                 <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur.</p>
-                <div class="switch">
-                  <div class="yes">
+                <div class="switch switchbtn">
+                  <div class="yes switchbtn">
                     Yes
                   </div>
-                  <div class="no">
+                  <div class="no switchbtn">
                     No
                   </div>
                 </div>

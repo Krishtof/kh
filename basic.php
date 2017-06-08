@@ -34,6 +34,8 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-body">
+				<button style="position: absolute; top: 20px; right: 20px;"type="button" class="close" data-dismiss="modal">&times;</button>
+
         <div class="text">
           <h1>Data protection policy</h1>
           <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur, molestiae definiebas efficiendi in mel. Sit ad eruditi persequeris, ne docendi omnesque pro. Id nibh ubique democritum eum, ea singulis senserit nec, vix no erant dolore intellegebat. Eam ex utamur elaboraret, idque saepe argumentum qui ei, his prodesset dissentiunt ex.
@@ -52,6 +54,10 @@
           </p>
 
         </div>
+				<p class="modalwarning">
+					By pressing the button you are confirming that you read and
+understand the document and you agree with it
+				</p>
         <button onclick="window.location.href='financial.php'" class="bluebtn" type="button" name="button">I acknowledge</button>
         <a class="dont" href="#">I don't acknowledge</a>
 
@@ -155,6 +161,7 @@
     <div class="container">
 
       <div class="loanholder">
+				<p class="edit" >Edit</p>
         <h2>Loan I apply for</h2>
         <div class="amount">
           <p>
@@ -191,7 +198,7 @@
               <input type="text" name="lastname">
               <div class="cal">
 								<div class="from">
-									<div class="dropdown">
+									<div class="dropdown desktop_cal">
 										<h2>Date of birth</h2>
 
 	                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Year
@@ -239,7 +246,7 @@
 
 	                  </ul>
 	                </div>
-									<div class="dropdown">
+									<div class="dropdown desktop_cal">
 
 										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Month
 										<span class="caret"></span></button>
@@ -258,7 +265,7 @@
 											<li><a href="#">December</a></li>
 										</ul>
 									</div>
-									<div class="dropdown">
+									<div class="dropdown desktop_cal">
 
 	                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Day
 	                  <span class="caret"></span></button>
@@ -296,7 +303,8 @@
 											<li><a href="#">31</a></li>
 	                  </ul>
 	                </div>
-
+									<h2 class="mobile_cal">Date if birth:</h2>
+		              <input class="mobile_cal" type="date" name="lastname">
 
 
 								</div>

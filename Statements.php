@@ -262,34 +262,13 @@
       <div class="form nopadding">
 				<div class="good">You are doing well! Only 2 more steps!</div>
 
-        <button class="accordion" id="data_button" data-toggle="collapse" data-target="#data">Data protection policy</button>
-        <div id="data" class="collapse in">
-            <div class="form">
-            <p>
-								To verify your identity we will need scan or photo of your ID. To continue you need to acknowledge with personal data processing.            </p>
-            <div class="container slider">
-              <div class="col-md-6">
-
-              </div>
-
-              <div class="col-md-6">
-
-              </div>
-            </div>
-
-
-
-            <button class="bluebtn" type="button" data-toggle="modal" data-target="#acknowledgemodal" name="button">Display policy</button>
-
-          </div>
-
-        </div>
+      
 
 
 
 
-        <button class="accordion collapsed" id="select_upload_button" data-toggle="collapse" data-target="">Select ID type</button>
-        <div id="expenses" class="collapse">
+        <button class="accordion" id="select_upload_button" data-toggle="collapse" data-target="">Select ID type</button>
+        <div id="expenses" class="collapse in">
             <div class="form id_type">
               <h2 id="which_id">To verify your identity we will need scan or photo of your ID</h2>
               <p id="please_select">
