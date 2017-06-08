@@ -15,6 +15,10 @@
 	text-align: left;
 }
 
+.back{
+	display: none;
+}
+
 .mailing_address .street{
 	display: none;
 	text-align: left;
@@ -70,3 +74,5 @@ h2{
 #success_message{
 	display: none;
 }
+
+

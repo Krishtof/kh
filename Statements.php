@@ -274,6 +274,7 @@
               <p id="please_select">
                 Please select
               </p>
+              <span class="back">back</span>
               <div class="row">
                   <div class="col-md-6 old active" id="old_id" data-status="">
                     <p id="ip">
@@ -284,10 +285,11 @@
                         <p>
 														Drag and drop images into this window to upload                        </p>
                         <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
-						<label class="custom-file-upload id_btn">
+						<!--<label class="custom-file-upload id_btn">
 						    <input type="file" id="file_1"/>ID upload
-						</label>
-												</div>
+						</label>-->
+						 <button type="button " class="id_btn"  id="upload_id" name="button">Upload ID from computer</button>
+					</div>
                       <div class="selected error">
                         <p>
                           We cant recognize the data from the picture what you just uploaded. please try again
@@ -317,14 +319,108 @@
                          <label class="custom-file-upload id_btn">
 						    <input type="file" id="file_2_2"/>ID upload
 						</label>
+						
                       </div>
                       <div class="selected successful">
                         <p>
                           Drag and drop images into this window to upload:
                         </p>
                         <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
+                        <!--<label class="custom-file-upload id_btn">
+						    <input type="file" id="file_2"/>ID upload
+						</label>-->
+						 <button type="button " class="id_btn"  id="upload_id_2" name="button">Upload ID from computer</button>
+                      </div>
+                      <div class="selected success">
+						  <img class="id_suc" src="img/success.png" /><br />
+					 </div>
+                    </div>
+
+
+                  </div>
+                  
+                  <div class="col-md-6 front_side" data-status="" id="front_side">
+                    <div class="col-md-12"  id="new_holder">
+                      <div class="selected error">
+                        <p>
+                          We cant recognize the data from the picture what you just uploaded. please try again
+                        </p>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
+                         <label class="custom-file-upload id_btn">
+						    <input type="file" id="file_2_2"/>ID upload
+						</label>
+						
+                      </div>
+                      <div class="selected successful">
+                        <p>
+                          Drag and drop images into this window to upload:
+                        </p>
+                        <!--<button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
                         <label class="custom-file-upload id_btn">
 						    <input type="file" id="file_2"/>ID upload
+						</label>-->
+						  <label class="custom-file-upload id_btn upload_new_id">
+						    <input type="file" class="new_upload_id"/>Upload ID from computer
+						</label>
+                      </div>
+                      <div class="selected success">
+						  <img class="id_suc" src="img/success.png" /><br />
+					 </div>
+                    </div>
+
+                  </div>
+                  <div class="col-md-6 back_side" data-status="" id="back_side">
+                    <div class="col-md-12"  id="new_holder">
+                      <div class="selected error">
+                        <p>
+                          We cant recognize the data from the picture what you just uploaded. please try again
+                        </p>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
+                         <label class="custom-file-upload id_btn">
+						    <input type="file" id="file_2_2"/>ID upload
+						</label>
+						
+                      </div>
+                      <div class="selected successful">
+                        <p>
+                          Drag and drop images into this window to upload:
+                        </p>
+                       <!-- <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
+                        <label class="custom-file-upload id_btn">
+						    <input type="file" id="file_2"/>ID upload
+						</label>-->
+						 <label class="custom-file-upload id_btn upload_new_id" >
+						    <input type="file"  class="new_upload_id"/>Upload ID from computer
+						</label>
+                      </div>
+                      <div class="selected success">
+						  <img class="id_suc" src="img/success.png" /><br />
+					 </div>
+                    </div>
+
+                  </div>
+                  <div class="col-md-6 address_card" data-status="" id="address_card">
+                    <div class="col-md-12"  id="new_holder">
+                      <div class="selected error">
+                        <p>
+                          We cant recognize the data from the picture what you just uploaded. please try again
+                        </p>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
+                         <label class="custom-file-upload id_btn">
+						    <input type="file" id="file_2_2"/>ID upload
+						</label>
+						
+                      </div>
+                      <div class="selected successful">
+                        <p>
+                          Drag and drop images into this window to upload:
+                        </p>
+                       <!-- <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
+                        <label class="custom-file-upload id_btn">
+						    <input type="file" id="file_2"/>ID upload
+						</label>-->
+						 <label class="custom-file-upload id_btn upload_new_id" >
+						    <input type="file"  class="new_upload_id"/>Upload ID from computer
 						</label>
                       </div>
                       <div class="selected success">

@@ -1,6 +1,6 @@
 $(function(){
 	
-	idclick();
+	/*idclick();
 	idclick2();
 	billing();
 	modal_close();
@@ -10,8 +10,110 @@ $(function(){
 	file2();
 	file2_2();
 	lastfile();
-	delete_file();
+	delete_file();*/
+	
+	//new version
+	upload_id();
+	new_click();
+	back_click();
+	upload_new_id();
+	
+	modal_close();
+	billing();
+	next();
+	lastfile();
 });
+
+function upload_new_id(){
+	
+	$(document).on('change','.new_upload_id',function(){
+		var value = $(this).val();
+		$(this).closest('.col-md-6').find('.successful').hide();
+		$(this).closest('.col-md-6').find('.success').show();
+	});
+
+}
+
+function back_click(){
+	$('span.back').click(function(){
+		$('#new_id').show();
+		$('#old_id').show();
+		$('#front_side ').hide();
+		$('#back_side ').hide();
+		$('#address_card ').hide();
+		$('#old_holder .successful').hide();
+		$('#new_holder .successful').hide();
+		$('span.back').hide();
+	});
+}
+
+function new_click(){
+	$('#old_holder').click(function(){
+		$('#new_holder').find('.successful').hide();
+		$(this).find('.successful').show();
+	});
+	
+	$('#new_holder').click(function(){
+		$('#old_holder').find('.successful').hide();
+		$(this).find('.successful').show();
+	});
+}
+
+function upload_id(){
+	$('#upload_id').click(function(){
+		$('#new_id').hide();
+		$('#old_id').hide();
+		$('#front_side').show();
+		$('#back_side').show();
+		$('#address_card').show();
+		if($('#back_side .success:visible').length == 0){
+			$('#back_side .successful').show();
+		}
+		if($('#front_side .success:visible').length == 0){
+			$('#front_side .successful').show();
+		}
+		if($('#address_card .success:visible').length == 0){
+			$('#address_card .successful').show();
+		}
+		$('span.back').show();
+	});
+	
+	$('#upload_id_2').click(function(){
+		$('#new_id').hide();
+		$('#old_id').hide();
+		$('#front_side').show();
+		$('#back_side').show();
+		$('#address_card').show();
+		if($('#back_side .success:visible').length == 0){
+			$('#back_side .successful').show();
+		}
+		if($('#front_side .success:visible').length == 0){
+			$('#front_side .successful').show();
+		}
+		if($('#address_card .success:visible').length == 0){
+			$('#address_card .successful').show();
+		}
+		$('span.back').show();
+	});
+}
+
+
+
+/*********
+ *********
+ *********
+ ÚJ KÓD
+ *********
+ *********
+**********/
+
+
+
+
+
+
+
+
 
 function close(){
 	$('#which_id').hide();
