@@ -174,7 +174,7 @@
 				<div class="good approve">Már csak a szerződéskötés van hátra!</div>
 
         <h1>Az általad igényelt hitelösszeget jóváhagytuk. Ugyanakkor lehetőséged van ennél magasabb összeget is igényelni</h1>
-        <p>Az általad igényelt hitelösszeg: <?=$_SESSION["loan_amount"]?>A maximálisan igényelhető személyi hitel összege számodra: 3 000 000 forint. </p>
+        <p>Az általad igényelt hitelösszeg: <?=$_SESSION["loan_amount"]?> Ft. A maximálisan igényelhető személyi hitel összege számodra: 3 000 000 forint. </p>
         <div class="container">
           <div class="col-md-6">
 			<div>
@@ -209,6 +209,18 @@
             <div class="line"></div>
             <p>Éves kamat:</p>
             <h2><span id="interest_rate"><?=$_SESSION["interest_rate"]?></span>%</h2>
+						<p>
+							THM:
+						</p>
+						<h2>13,99%</h2>
+						<p>
+							Ügyintézési költség:
+						</p>
+						<h2>0 Ft</h2>
+						<p>
+							Első törlesztés napja:
+						</p>
+						<h2>2017. 07.15.</h2>
           </div>
 
 

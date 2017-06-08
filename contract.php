@@ -34,7 +34,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="text">
-          <h1>Precontractual information</h1>
+          <h1>Precontractual Information</h1>
           <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur, molestiae definiebas efficiendi in mel. Sit ad eruditi persequeris, ne docendi omnesque pro. Id nibh ubique democritum eum, ea singulis senserit nec, vix no erant dolore intellegebat. Eam ex utamur elaboraret, idque saepe argumentum qui ei, his prodesset dissentiunt ex.
 
           Vis saepe concludaturque ad, eius bonorum periculis vim ea, integre suscipit prodesset eu quo. Utinam scaevola has cu, cum etiam scripserit te, no copiosae definitionem pro. Phaedrum quaerendum eum ea, pro an iuvaret accommodare. Posse adipisci theophrastus at vel, te pro dolore quaestio dignissim. In eos meliore tractatos torquatos. Duo no meis lucilius deterruisset. Mundi ludus eos cu.
@@ -51,8 +51,8 @@
           </p>
 
         </div>
-        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">I acknowledge</button>
-        <a class="dont" href="#">I don't acknowledge</a>
+        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">Agree</button>
+        <a class="dont" href="#">I do not agree</a>
 
       </div>
     </div>
@@ -86,8 +86,8 @@
           </p>
 
         </div>
-        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button"data-dismiss="modal"  name="button">I acknowledge</button>
-        <a class="dont" href="#">I don't acknowledge</a>
+        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button"data-dismiss="modal"  name="button">Agree</button>
+        <a class="dont" href="#">I do not agree</a>
 
       </div>
     </div>
@@ -120,8 +120,8 @@
           </p>
 
         </div>
-        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">I acknowledge</button>
-        <a class="dont" href="#">I don't acknowledge</a>
+        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">Agree</button>
+        <a class="dont" href="#">I do not agree</a>
 
       </div>
     </div>
@@ -156,8 +156,8 @@
           </p>
 
         </div>
-        <button onclick=""  style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">I acknowledge</button>
-        <a class="dont" href="#">I don't acknowledge</a>
+        <button onclick=""  style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">Agree</button>
+        <a class="dont" href="#">I do not agree</a>
 
       </div>
     </div>
@@ -192,14 +192,14 @@
 
           </div>
           <div class="row">
-            <div class="col-xs-2 ">
+						<div class="col-xs-2 ">
               <div class="nr">
                 <p>
                   1
                 </p>
               </div>
               <p class="pr_title">
-                Basic information
+                Basic Information
               </p>
             </div>
             <div class="col-xs-2 ">
@@ -209,17 +209,17 @@
                 </p>
               </div>
               <p class="pr_title ">
-                Financial evaluation
+                About You
               </p>
             </div>
-            <div class="col-xs-2 ">
+            <div class="col-xs-2">
               <div class="nr">
                 <p>
                   3
                 </p>
               </div>
               <p class="pr_title">
-                Statements
+                Identification
               </p>
             </div>
             <div class="col-xs-2">
@@ -239,7 +239,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Contract
+                Contract signature
               </p>
             </div>
 						<div class="col-xs-2 last">
@@ -248,7 +248,6 @@
                 Finish
               </p>
             </div>
-
 
 
           </div>
@@ -260,7 +259,8 @@
 <!-- Loan I apply for -->
     <div class="container">
 
-      <div class="loanholder">
+			<div class="loanholder">
+
         <h2>Loan I apply for</h2>
         <div class="amount">
           <p>
@@ -271,12 +271,12 @@
         <div class="info">
 
           <div class="instalments">
-            <h2>Instalments:</h2>
+            <h2>Installments:</h2>
             <p><?=$_SESSION["loan_instalments"]?> Ft</p>
           </div>
           <div class="instalments">
-            <h2>Repaid in::</h2>
-            <p><?=$_SESSION["repaid_in"]?> months</p>
+            <h2>Repaid in:</h2>
+            <p><?=$_SESSION["repaid_in"]?> Month</p>
           </div>
         </div>
       </div>
@@ -287,7 +287,7 @@
 
     <div class="container">
       <div class="form nopadding">
-				<div class="good">You are doing well! Only 1 more step!</div>
+				<div class="good">You are doing well! Only 1 more step</div>
 
         <button class="accordion " id="precontractual_button" data-toggle="collapse" data-target="#precontractual">Precontractual Information</button>
         <div id="precontractual" class="collapse in">
@@ -295,12 +295,24 @@
             <p>
               Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur.
             </p>
+						<br />
 
+						<h2>
+							Get acquainted with the Pre-contractual information to continue.
+						</h2>
+            <button class="bluebtn left" type="button" data-toggle="modal" data-target="#preco" name="button">Display policy</button>
+					</div>
 
+						<div class="done form">
+							<img src="img/ok.png" />
+							<p>
+								Precontractual information was agreed and download to your computer
+							</p><br />
+							<a href="img/downloaded_document.txt" download="Precontractual information">
+								<button class="bluebtn left" type="button" data-toggle="modal"  name="button">Download again</button></a>
 
-            <button class="bluebtn left" type="button" data-toggle="modal" data-target="#preco" name="button">Display information</button>
+						</div>
 
-          </div>
 
         </div>
 
@@ -316,7 +328,7 @@
 
 
 
-              <button class="bluebtn left" type="button" data-toggle="modal" data-target="#general" name="button">Display conditions</button>
+              <button class="bluebtn left" type="button" data-toggle="modal" data-target="#general" name="button">Display policy</button>
 
 
 
@@ -325,7 +337,15 @@
 
 
           </div>
+					<div class="done form">
+						<img src="img/ok.png" />
+						<p>
+							General terms and conditions was agreed and download to your computer
+						</p><br />
+						<a href="img/downloaded_document.txt" download="Precontractual information">
+							<button class="bluebtn left" type="button" data-toggle="modal"  name="button">Download again</button></a>
 
+					</div>
         </div>
 
 
@@ -339,14 +359,22 @@
 
 
 
-              <button class="bluebtn left" type="button" data-toggle="modal" data-target="#list" name="button">Display Price list</button>
+              <button class="bluebtn left" type="button" data-toggle="modal" data-target="#list" name="button">Display policy</button>
 
 
             </form>
 
 
           </div>
+					<div class="done form">
+						<img src="img/ok.png" />
+						<p>
+							Price list was agreed and download to your computer
+						</p><br />
+						<a href="img/downloaded_document.txt" download="Precontractual information">
+							<button class="bluebtn left" type="button" data-toggle="modal"  name="button">Download again</button></a>
 
+					</div>
         </div>
 
 
@@ -358,19 +386,25 @@
               <div class="form family">
 
 
-                <p>
-                  Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur.
-                </p>
+                <p>Read the loan contract carefully before signing it. You will sign the contract electronically by entering the reference code from the payment we credited from K&H to your personal account number (12345678-12345678-12345678). Apart from the reference code, the online signature is composed also from the SMS and e-mail verification codes you entered earlier.              </p>
 
 
 
-                <button class="bluebtn left" type="button" data-toggle="modal" data-target="#contr" name="button">Display conditions</button>
+                <button class="bluebtn left" type="button" data-toggle="modal" data-target="#contr" name="button">Display contract</button>
 
 
 
 
               </div>
+							<div class="done form">
+								<img src="img/ok.png" />
+								<p>
+									Contract was agreed and successfully download to your computer
+								</p><br />
+								<a href="img/downloaded_document.txt" download="Precontractual information">
+									<button class="bluebtn left" type="button" data-toggle="modal"  name="button">Download again</button></a>
 
+							</div>
 
 
 
@@ -386,11 +420,12 @@
             <form>
 
             </form>
-            <h2 >To sign the contract insert the variable symbol from the payment:</h2>
-            <input type="text" name="firstname">
+            <h2>To sign the contract insert the reference code of the payment form Impresto what you just received on your account (12345678-12345678-12345678). In case you will not received the payment in 5 minutes please call to help line. </h2>
 
+						<input type="text" name="firstname">
 
-            <button onclick="window.location.href='finish.php'" class="bluebtn" type="button" name="button">Next</button>
+						<p style="text-align: center;">By pressing the button your contract will be electronically signed</p>
+            <button onclick="window.location.href='finish.php'" class="bluebtn" type="button" name="button">Sign</button>
 
           </div>
 

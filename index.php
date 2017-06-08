@@ -107,6 +107,17 @@
 
 		</div>
 		<button onclick="window.location.href='basic.php'" class="bluebtn" type="button" name="button">Yes, I want this loan</button>
+		<a href="#" class="ttip" data-toggle="tooltip" title="Follow the guide issued by HNB will be hyper link to show this:
+		the client shall only sign a loan agreement which he or she
+		fully understands; any change in the client’s circumstances, he or she still
+		remain obliged to pay back the loan amount; if the client has solvency problems he or she must
+		immediately inform the Bank; in case of any expired payment obligation the Bank will apply
+		late payment interest; in case of non-performance of the contract the Bank is
+		entitled to immediately terminate the loan agreement and all
+		outstanding amount become due; any expenses from the enforcement of claims arising from a
+		terminated loan agreement by the Bank will be paid by the
+		client">Client should act responsibly and
+follow the guide issued by HNB.</a>
 
 	</div>
 	<div class="example">

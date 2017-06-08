@@ -253,11 +253,12 @@ text-decoration: underline;
   margin-bottom: 20px;
   width: 100%;
   font-weight: normal;
-  padding: 15px;
+  padding: 5px;
   background: #FFFFFF;
   border: 1px solid #00AEEF;
+  font-size: 12px;
   padding-top: 0px;
-    padding-bottom: 0px;
+  padding-bottom: 0px;
   border-radius: 5px;
 }
 
@@ -310,12 +311,12 @@ form  {
 
 .modal-body {
   padding: 50px;
+
   text-align: center;
 }
 
 .modal-body .text {
   border: 1px solid #979797;
-  max-height: 500px;
   font-size: 14px;
   padding: 20px;
   text-align: left;
@@ -351,24 +352,38 @@ form  {
 
 }
 .good {
-  height: 20px;
-background: white;
-max-width: 300px;
-margin: 0 auto;
-margin-top: -20px;
-text-align: center;
-padding: 10px;
-min-height: 40px;
-max-width: 350px;
-color: var(--blue);
-font-size: 15px;
-font-weight: bold;
-/* Rectangle 19: */
-border: 1px solid #d4d4d4;
-border-radius: 5px;
-display: block;
+  background: white;
+  /* max-width: 300px; */
+  margin: 0 auto;
+  margin-top: -20px;
+  text-align: center;
+  float: left;
+  padding: 10px;
+  min-height: 40px;
+  margin-top: 0px;
+  width: 410px;
+  color: var(--blue);
+  position: absolute;
+  margin: 0 auto;
+  font-size: 15px;
+  left: 50%;
+  margin-left: -205px;
+  margin-top: -20px;
+  font-weight: bold;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  /* float: right; */
+  display: block;
+  /* margin-left: 50%; */
 /* margin-left: 50%; */
 }
+@media (max-width: 762px) {
+  .good {
+    width: 280px;
+    margin-left: -140px;
+  }
+}
+
 .accordion:focus {
   outline: none;
 }
@@ -440,7 +455,6 @@ padding-top: 0px;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  margin-top: 3px;
   margin-bottom: 3px;
 }
 #phone_phone {
@@ -450,7 +464,7 @@ padding-top: 0px;
   display: inline-block;
   margin-right: 10px;
   position: absolute;
-  margin-top: 30px;
+  margin-top: 30px !important;
   margin-left: 12px;
 }
 .phone input, .verify input, .email input  {
@@ -600,10 +614,17 @@ border-color: var(--light-blue);
 }
 
 .no {
-  background: var(--paleblue);
   border-radius: 1px solid var(--light-blue);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+.switchbtn .active {
+  background: var(--paleblue);
+
+}
+
+.inactive {
+  background: white;
 }
 .no:hover {
   background: #d2ecf7;
@@ -614,6 +635,8 @@ border-color: var(--light-blue);
   max-width: 126px;
   margin-top: 20px !important;
   text-align: center;
+  width: 100px !important;
+
 }
 .bankaccount:after {
   content: '-';
@@ -622,7 +645,7 @@ border-color: var(--light-blue);
 }
 
 .old .col-md-12 {
-  background-image: url(../img/old.png);
+  background-image: url(../img/new.png);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 185px;
@@ -659,7 +682,7 @@ input[type="file"] {
     display: none;
 }
 .new .col-md-12{
-  background-image: url(../img/new.png);
+  background-image: url(../img/old.png);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 200px;
@@ -1078,6 +1101,15 @@ margin-right: 40px;
 .banks img {
   max-width: 100%;
 }
+
+.banks .col-md-2 h2 {
+  font-weight: bold;
+background: #e4e4e4;
+font-size: 15px;
+padding: 5px;
+color: var(--blue);
+line-height: 19px;
+}
 =======
 h2#last_file_name{
 	text-overflow: none;
@@ -1107,4 +1139,78 @@ h2#last_file_name{
   .col-xs-2.last.active img{
     max-width: 90px;
   }
+}
+
+.dropdown-menu {
+  max-height: 300px;
+overflow: auto;
+}
+.mobile_cal {
+  max-width: initial !important;
+  padding: 10px !important;
+}
+@media (min-width: 763px) {
+
+  .mobile_cal{
+    display: none;
+
+  }
+
+}
+@media (max-width: 763px) {
+
+  .desktop_cal {
+    display: none;
+  }
+  .form .form {
+    padding: 20px;
+    }
+  .accordion, .accordion.collapsed {
+    padding-left: 20px;
+  }
+  .modal-body {
+    padding: 20px;
+    padding-top: 60px;
+  }
+
+}
+@media (max-width: 590px) {
+  .hun {
+    margin-top: 18px !important;
+  }
+}
+.ttip {
+  font-size: 14px;
+}
+.modalwarning {
+  font-size: 14px;
+  margin: 10px;
+  line-height: 18px;
+  color: var(--blue);
+}
+
+.done p {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+.done img {
+  vertical-align: bottom;
+
+  width: 30px;
+}
+
+.download_again {
+  height: 40px;
+  width: 200px;
+  color: var(--light-blue);
+  font-weight: bold;
+  font-size: 14px;
+  padding: 14px;
+  border: 1px solid var(--light-blue);
+}
+.done a:hover {
+  color: var(--light-blue);
+  text-decoration: none;
+  cursor: pointer;
 }
