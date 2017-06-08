@@ -253,12 +253,11 @@ text-decoration: underline;
   margin-bottom: 20px;
   width: 100%;
   font-weight: normal;
-  padding: 5px;
+  padding: 15px;
   background: #FFFFFF;
   border: 1px solid #00AEEF;
-  font-size: 12px;
   padding-top: 0px;
-  padding-bottom: 0px;
+    padding-bottom: 0px;
   border-radius: 5px;
 }
 
@@ -311,12 +310,12 @@ form  {
 
 .modal-body {
   padding: 50px;
-
   text-align: center;
 }
 
 .modal-body .text {
   border: 1px solid #979797;
+  max-height: 500px;
   font-size: 14px;
   padding: 20px;
   text-align: left;
@@ -614,17 +613,10 @@ border-color: var(--light-blue);
 }
 
 .no {
+  background: var(--paleblue);
   border-radius: 1px solid var(--light-blue);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-}
-.switchbtn .active {
-  background: var(--paleblue);
-
-}
-
-.inactive {
-  background: white;
 }
 .no:hover {
   background: #d2ecf7;
@@ -635,8 +627,6 @@ border-color: var(--light-blue);
   max-width: 126px;
   margin-top: 20px !important;
   text-align: center;
-  width: 100px !important;
-
 }
 .bankaccount:after {
   content: '-';
@@ -1144,73 +1134,4 @@ h2#last_file_name{
 .dropdown-menu {
   max-height: 300px;
 overflow: auto;
-}
-.mobile_cal {
-  max-width: initial !important;
-  padding: 10px !important;
-}
-@media (min-width: 763px) {
-
-  .mobile_cal{
-    display: none;
-
-  }
-
-}
-@media (max-width: 763px) {
-
-  .desktop_cal {
-    display: none;
-  }
-  .form .form {
-    padding: 20px;
-    }
-  .accordion, .accordion.collapsed {
-    padding-left: 20px;
-  }
-  .modal-body {
-    padding: 20px;
-    padding-top: 60px;
-  }
-
-}
-@media (max-width: 590px) {
-  .hun {
-    margin-top: 18px !important;
-  }
-}
-.ttip {
-  font-size: 14px;
-}
-.modalwarning {
-  font-size: 14px;
-  margin: 10px;
-  line-height: 18px;
-  color: var(--blue);
-}
-
-.done p {
-  display: inline-block;
-  margin-bottom: 5px;
-  margin-left: 5px;
-}
-.done img {
-  vertical-align: bottom;
-
-  width: 30px;
-}
-
-.download_again {
-  height: 40px;
-  width: 200px;
-  color: var(--light-blue);
-  font-weight: bold;
-  font-size: 14px;
-  padding: 14px;
-  border: 1px solid var(--light-blue);
-}
-.done a:hover {
-  color: var(--light-blue);
-  text-decoration: none;
-  cursor: pointer;
 }

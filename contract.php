@@ -51,8 +51,8 @@
           </p>
 
         </div>
-        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">Agree</button>
-        <a class="dont" href="#">I do not agree</a>
+        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">I acknowledge</button>
+        <a class="dont" href="#">I don't acknowledge</a>
 
       </div>
     </div>
@@ -86,8 +86,8 @@
           </p>
 
         </div>
-        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button"data-dismiss="modal"  name="button">Agree</button>
-        <a class="dont" href="#">I do not agree</a>
+        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button"data-dismiss="modal"  name="button">I acknowledge</button>
+        <a class="dont" href="#">I don't acknowledge</a>
 
       </div>
     </div>
@@ -120,8 +120,8 @@
           </p>
 
         </div>
-        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">Agree</button>
-        <a class="dont" href="#">I do not agree</a>
+        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">I acknowledge</button>
+        <a class="dont" href="#">I don't acknowledge</a>
 
       </div>
     </div>
@@ -156,8 +156,8 @@
           </p>
 
         </div>
-        <button onclick=""  style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">Agree</button>
-        <a class="dont" href="#">I do not agree</a>
+        <button onclick=""  style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">I acknowledge</button>
+        <a class="dont" href="#">I don't acknowledge</a>
 
       </div>
     </div>
@@ -260,7 +260,6 @@
     <div class="container">
 
 			<div class="loanholder">
-
         <h2>Loan I apply for</h2>
         <div class="amount">
           <p>
@@ -301,18 +300,8 @@
 							Get acquainted with the Pre-contractual information to continue.
 						</h2>
             <button class="bluebtn left" type="button" data-toggle="modal" data-target="#preco" name="button">Display policy</button>
-					</div>
 
-						<div class="done form">
-							<img src="img/ok.png" />
-							<p>
-								Precontractual information was agreed and download to your computer
-							</p><br />
-							<a href="img/downloaded_document.txt" download="Precontractual information">
-								<button class="bluebtn left" type="button" data-toggle="modal"  name="button">Download again</button></a>
-
-						</div>
-
+          </div>
 
         </div>
 
@@ -337,15 +326,7 @@
 
 
           </div>
-					<div class="done form">
-						<img src="img/ok.png" />
-						<p>
-							General terms and conditions was agreed and download to your computer
-						</p><br />
-						<a href="img/downloaded_document.txt" download="Precontractual information">
-							<button class="bluebtn left" type="button" data-toggle="modal"  name="button">Download again</button></a>
 
-					</div>
         </div>
 
 
@@ -366,15 +347,7 @@
 
 
           </div>
-					<div class="done form">
-						<img src="img/ok.png" />
-						<p>
-							Price list was agreed and download to your computer
-						</p><br />
-						<a href="img/downloaded_document.txt" download="Precontractual information">
-							<button class="bluebtn left" type="button" data-toggle="modal"  name="button">Download again</button></a>
 
-					</div>
         </div>
 
 
@@ -396,15 +369,7 @@
 
 
               </div>
-							<div class="done form">
-								<img src="img/ok.png" />
-								<p>
-									Contract was agreed and successfully download to your computer
-								</p><br />
-								<a href="img/downloaded_document.txt" download="Precontractual information">
-									<button class="bluebtn left" type="button" data-toggle="modal"  name="button">Download again</button></a>
 
-							</div>
 
 
 

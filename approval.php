@@ -144,8 +144,6 @@
     <div class="container">
 
 			<div class="loanholder">
-				<p class="edit" >Edit</p>
-
         <h2>Loan I apply for</h2>
         <div class="amount">
           <p>
