@@ -252,18 +252,6 @@
             <div class="line"></div>
             <p>Éves kamat</p>
             <h2><span id="interest_rate"><?=$_SESSION["interest_rate"]?></span>%</h2>
-						<p>
-							THM:
-						</p>
-						<h2>13,99%</h2>
-						<p>
-							Ügyintézési költség:
-						</p>
-						<h2>0 Ft</h2>
-						<p>
-							Első törlesztés napja:
-						</p>
-						<h2>2017. 07.15.</h2>
           </div>
 
 

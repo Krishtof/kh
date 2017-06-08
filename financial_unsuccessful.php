@@ -30,7 +30,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="text">
-          <h1>Data protection policy</h1>
+          <h1>Data processing policy</h1>
           <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur, molestiae definiebas efficiendi in mel. Sit ad eruditi persequeris, ne docendi omnesque pro. Id nibh ubique democritum eum, ea singulis senserit nec, vix no erant dolore intellegebat. Eam ex utamur elaboraret, idque saepe argumentum qui ei, his prodesset dissentiunt ex.
 
           Vis saepe concludaturque ad, eius bonorum periculis vim ea, integre suscipit prodesset eu quo. Utinam scaevola has cu, cum etiam scripserit te, no copiosae definitionem pro. Phaedrum quaerendum eum ea, pro an iuvaret accommodare. Posse adipisci theophrastus at vel, te pro dolore quaestio dignissim. In eos meliore tractatos torquatos. Duo no meis lucilius deterruisset. Mundi ludus eos cu.
@@ -81,7 +81,7 @@
 
           </div>
           <div class="row">
-						<div class="col-xs-2 ">
+            <div class="col-xs-2 ">
               <div class="nr">
                 <p>
                   1
@@ -98,7 +98,7 @@
                 </p>
               </div>
               <p class="pr_title ">
-                About you
+                Financial evaluation
               </p>
             </div>
             <div class="col-xs-2">
@@ -108,7 +108,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Identification
+                Statements
               </p>
             </div>
             <div class="col-xs-2">
@@ -128,16 +128,12 @@
                 </p>
               </div>
               <p class="pr_title">
-                Contract signature
+                Contract
               </p>
             </div>
-            <div class="col-xs-2">
-              <div class="nr">
-                <p>
-                  6
-                </p>
-              </div>
-              <p class="pr_title">
+						<div class="col-xs-2 last">
+							<img src="img/finish.png" />
+              <p class="pr_title ">
                 Finish
               </p>
             </div>
@@ -145,7 +141,7 @@
 
 
           </div>
-          <h2 class="title">Personal details</h2>
+          <h2 class="title">Financial evaluation</h2>
         </div>
       </div>
 
@@ -153,23 +149,23 @@
 <!-- Loan I apply for -->
     <div class="container">
 
-			<div class="loanholder">
+      <div class="loanholder">
         <h2>Loan I apply for</h2>
         <div class="amount">
           <p>
-            Loan amount:
+            Loan amount
           </p>
           <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
         </div>
         <div class="info">
 
           <div class="instalments">
-            <h2>Installments:</h2>
-            <p><?=$_SESSION["loan_instalments"]?> Ft</p>
+            <h2>Instalments:</h2>
+           <p><?=$_SESSION["loan_instalments"]?> Ft</p>
           </div>
           <div class="instalments">
-            <h2>Repaid in:</h2>
-            <p><?=$_SESSION["repaid_in"]?> month</p>
+            <h2>Repaid in::</h2>
+            <p><?=$_SESSION["repaid_in"]?> months</p>
           </div>
         </div>
       </div>
@@ -180,23 +176,17 @@
 
     <div class="container">
       <div class="form nopadding">
-				<div class="good">You are doing well!Only 3 more steps!</div>
+				<div class="good">You are doing well! Only 4 more steps!</div>
 
-        <button class="accordion  " data-toggle="collapse" id="income_button" data-target="#income">Income:</button>
+        <button class="accordion  " data-toggle="collapse" id="income_button" data-target="#income">Income</button>
         <div id="income" class="collapse in">
             <div class="form">
 
             <form>
-              Your regular monthly net income<br>
-							<p>
-								insert just income from regular employment, pension or maternity
-							</p>
-              <input type="text" name="firstname" class="forint" id="forint" value="0"><br>
+              Regular monthly income:<br>
+              <input type="text" name="firstname" value="0"><br>
 
-              Source of income<br />
-							<p>
-								You can choose more than one option
-							</p>
+              Source of income:<br />
               <div class="check">
 
                 <label>
@@ -265,7 +255,7 @@
                     <input type='checkbox'>
                     <span></span>
                     <p>
-                      I confirm that I am neither in probation or trial period.
+                      I confirm that I am neither in probation on trial period
                     </p>
                   </label>
                 </div>
@@ -284,16 +274,6 @@
                 </label>
               </div>
 
-							<div class="check">
-
-                <label>
-                  <input type='checkbox'>
-                  <span></span>
-                  <p>
-                    Self-employment
-                  </p>
-                </label>
-              </div>
 
               <div class="check">
 
@@ -338,14 +318,8 @@
 
             <form class="expenses">
               Regular loan instalments:<br>
-							<p>
-								Just if you are already paying other loan installments
-							</p>
               <input type="text" name="firstname" value="0"><br>
               Regular monthly expenses:<br>
-							<p>
-								It contain regular monthly expenses on housing, food, medicaments etc.
-							</p>
               <input type="text" name="lastname" value="0">
             </form>
 
@@ -370,10 +344,13 @@
               </div>
               <div class="radio">
                 <input type="radio" id="r2" name="rr" />
-                <label for="r2">Own</label>
+                <label for="r2">Own with mortage</label>
               </div>
 
-
+              <div class="radio">
+                <input type="radio" id="r2" name="rr" />
+                <label for="r2">Own without mortage</label>
+              </div>
 
               <div class="radio">
                 <input type="radio" id="r2" name="rr" />
@@ -382,7 +359,7 @@
 							</form>
 
 
-              <h2 style="margin-top: 40px;">Length of living on current address?</h2>
+              <h2 style="margin-top: 40px;">Length of living on current address</h2>
               <div class="radio">
 								<form>
                 <input type="radio" id="r1" name="rr" />
@@ -419,7 +396,7 @@
         <div id="family" class="collapse">
 
               <div class="form family">
-                <h2>Level of education</h2>
+                <h2>Graduate from</h2>
 								<form>
                 <div class="radio">
                   <input type="radio" id="r1" name="rr" />
@@ -437,12 +414,12 @@
 
                 <div class="radio">
                   <input type="radio" id="r2" name="rr" />
-                  <label for="r2">Vocational school without A-level graduation</label>
+                  <label for="r2">Vocation school without A-level graduation</label>
                 </div>
 
                 <div class="radio">
                   <input type="radio" id="r2" name="rr" />
-                  <label for="r2">College/University</label>
+                  <label for="r2">College / University</label>
                 </div>
 								</form>
 
@@ -455,18 +432,15 @@
                 </div>
                 <div class="radio">
                   <input type="radio" id="r2" name="rr" />
-                  <label for="r2">Married / living in registered partnership </label>
+                  <label for="r2">Married</label>
                 </div>
 
                 <div class="radio">
                   <input type="radio" id="r2" name="rr" />
-                  <label for="r2">Other (companion, widow/widower, divorced, common living)</label>
+                  <label for="r2">Other</label>
                 </div><br />
 
                 <h2>Number of dependence:</h2><br>
-								<p>
-									Applicant himself doesn’t count
-								</p>
                 <input class="shorter" type="text" name="firstname" value="0"><br>
 
                 <h2>Are you a politically exposed person?</h2><br>
@@ -499,19 +473,26 @@
             <div class="form">
 
             <form>
-              <h2>You current account number</h2>
+              <h2>Your current account number</h2>
               <p>
-Insert your account number where you are receiving the salary <br /><br />We will send to your account a small amount validation payment via our account. You will need reference code from this payment as signature at the end of this application              </p>
+                We will send you a micropayment to check your account, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui.
+              </p>
             </form>
-            <input placeholder="_ _ _ _ _ _ _ _" class="shorter bankaccount"type="text" maxlength="8"  name="firstname">
-            <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
+            <input placeholder="_ _ _ _ _ _ _ _" class="shorter bankaccount"type="text" maxlength="8" name="firstname">
+            <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text" maxlength="8"name="firstname">
             <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
 						<div class="nokh">
-							<img src="img/ok.png" />
+							<img src="img/no_kh.png" />
 							<p>
-									You are banking with us! Great news after we will verify your income what you provided to us your loan will be about XXX FT cheaper
+								You could get a better deal if you agree to open a bank account with us because…lorem ipsum et dolor sit amet et.
 							</p>
-
+							<label form>
+								<input type='checkbox'>
+								<span></span>
+								<p>
+									I accept opening a KH account within one month te get the account.
+								</p>
+							</label>
 						</div>
 
             <button onclick="window.location.href='Statements_unsuccessful.php'" class="bluebtn" type="button" name="button">Next</button>

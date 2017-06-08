@@ -374,8 +374,8 @@
               <p class="checklabel">
                 Másik levelezési cím hozzáadása
               </p>
-							<p class="mailing_info">
-								Hozzájárulsz, hogy az igénylésed adatait a KHR részére átadjuk.
+              <p class="mailing_info">
+                You acknowledge that we will enter the credit bureau and save there the data about your application
               </p>
             </label>
           </div>

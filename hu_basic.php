@@ -191,57 +191,37 @@
               <input type="text" name="lastname">
               <div class="cal">
 								<div class="from">
-									<div class="dropdown">
+									<div class="dropdown ">
 										<h2>Születési dátum</h2>
 
-	                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Év
-	                  <span class="caret"></span></button>
-	                  <ul class="dropdown-menu">
-	                    <li><a href="#">2017</a></li>
-	                    <li><a href="#">2016</a></li>
-	                    <li><a href="#">2015</a></li>
-	                    <li><a href="#">2014</a></li>
-	                    <li><a href="#">2013</a></li>
-	                    <li><a href="#">2012</a></li>
-	                    <li><a href="#">2011</a></li>
-	                    <li><a href="#">2010</a></li>
-	                    <li><a href="#">2009</a></li>
-	                    <li><a href="#">2008</a></li>
-	                    <li><a href="#">2007</a></li>
-	                    <li><a href="#">2006</a></li>
-	                    <li><a href="#">2005</a></li>
-	                    <li><a href="#">2004</a></li>
-	                    <li><a href="#">2003</a></li>
-	                    <li><a href="#">2002</a></li>
-	                    <li><a href="#">2001</a></li>
-	                    <li><a href="#">2000</a></li>
-											<li><a href="#">1999</a></li>
-											<li><a href="#">1998</a></li>
-											<li><a href="#">1997</a></li>
-											<li><a href="#">1996</a></li>
-											<li><a href="#">1995</a></li>
-											<li><a href="#">1994</a></li>
-											<li><a href="#">1993</a></li>
-											<li><a href="#">1992</a></li>
-											<li><a href="#">1991</a></li>
-											<li><a href="#">1990</a></li>
-											<li><a href="#">1989</a></li>
-											<li><a href="#">1988</a></li>
-											<li><a href="#">1987</a></li>
-											<li><a href="#">1986</a></li>
-											<li><a href="#">1985</a></li>
-											<li><a href="#">1984</a></li>
-											<li><a href="#">1983</a></li>
-											<li><a href="#">1982</a></li>
-											<li><a href="#">1981</a></li>
-											<li><a href="#">1980</a></li>
+										<button class="birthyear btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Év
+										<span class="caret"></span></button>
+										<ul class="dropdown-menu">
+											<li><a href="#">2017</a></li>
+											<li><a href="#">2016</a></li>
+											<li><a href="#">2015</a></li>
+											<li><a href="#">2014</a></li>
+											<li><a href="#">2013</a></li>
+											<li><a href="#">2012</a></li>
+											<li><a href="#">2011</a></li>
+											<li><a href="#">2010</a></li>
+											<li><a href="#">2009</a></li>
+											<li><a href="#">2008</a></li>
+											<li><a href="#">2007</a></li>
+											<li><a href="#">2006</a></li>
+											<li><a href="#">2005</a></li>
+											<li><a href="#">2004</a></li>
+											<li><a href="#">2003</a></li>
+											<li><a href="#">2002</a></li>
+											<li><a href="#">2001</a></li>
+											<li><a href="#">2000</a></li>
+											<li><a href="#">longer</a></li>
 
+										</ul>
+									</div>
+									<div class="dropdown ">
 
-	                  </ul>
-	                </div>
-									<div class="dropdown">
-
-										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Hónap
+										<button class="birthmonth btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Hónap
 										<span class="caret"></span></button>
 										<ul class="dropdown-menu">
 											<li><a href="#">Január</a></li>
@@ -253,50 +233,16 @@
 											<li><a href="#">Július</a></li>
 											<li><a href="#">Augusztus</a></li>
 											<li><a href="#">Szeptember</a></li>
-											<li><a href="#">Oktober</a></li>
+											<li><a href="#">Október</a></li>
 											<li><a href="#">November</a></li>
 											<li><a href="#">December</a></li>
 										</ul>
 									</div>
-									<div class="dropdown">
+									<div class="day shortest inline" >
+										<h2>  </h2>
+										<input type="text" type="text"  placeholder="nap" />
 
-	                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Nap
-	                  <span class="caret"></span></button>
-	                  <ul class="dropdown-menu">
-	                    <li><a href="#">1</a></li>
-	                    <li><a href="#">2</a></li>
-	                    <li><a href="#">3</a></li>
-	                    <li><a href="#">4</a></li>
-	                    <li><a href="#">5</a></li>
-	                    <li><a href="#">6</a></li>
-	                    <li><a href="#">7</a></li>
-	                    <li><a href="#">8</a></li>
-	                    <li><a href="#">9</a></li>
-	                    <li><a href="#">10</a></li>
-	                    <li><a href="#">11</a></li>
-	                    <li><a href="#">12</a></li>
-	                    <li><a href="#">13</a></li>
-											<li><a href="#">14</a></li>
-											<li><a href="#">15</a></li>
-											<li><a href="#">16</a></li>
-											<li><a href="#">17</a></li>
-											<li><a href="#">18</a></li>
-											<li><a href="#">19</a></li>
-	                    <li><a href="#">20</a></li>
-											<li><a href="#">21</a></li>
-											<li><a href="#">22</a></li>
-											<li><a href="#">23</a></li>
-											<li><a href="#">24</a></li>
-											<li><a href="#">25</a></li>
-											<li><a href="#">26</a></li>
-											<li><a href="#">27</a></li>
-											<li><a href="#">28</a></li>
-											<li><a href="#">29</a></li>
-											<li><a href="#">30</a></li>
-											<li><a href="#">31</a></li>
-	                  </ul>
-	                </div>
-
+									</div>
 
 
 								</div>
@@ -304,7 +250,7 @@
             </form>
             <h1>kapcsolati adatok</h1>
             <p>
-Add meg a <span style="font-weight: bold;">mobilszámod és az e-mail címed</span>. A fentiek megadásával hozzájárulsz, hogy hiteligényléseddel kapcsolatban megkeressünk.            </p>
+Add meg a mobilszámod és az e-mail címed. A fentiek megadásával hozzájárulsz, hogy hiteligényléseddel kapcsolatban megkeressünk.            </p>
             <form class="contact">
 
             <div class="phone" id="single_phone">

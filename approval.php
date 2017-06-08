@@ -75,14 +75,14 @@
 
           </div>
           <div class="row">
-						<div class="col-xs-2 ">
+            <div class="col-xs-2 ">
               <div class="nr">
                 <p>
                   1
                 </p>
               </div>
               <p class="pr_title">
-                Basic Information
+                Basic information
               </p>
             </div>
             <div class="col-xs-2 ">
@@ -92,7 +92,7 @@
                 </p>
               </div>
               <p class="pr_title ">
-                About You
+                Financial evaluation
               </p>
             </div>
             <div class="col-xs-2 ">
@@ -102,7 +102,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Identification
+                Statements
               </p>
             </div>
             <div class="col-xs-2 active">
@@ -115,14 +115,14 @@
                 Approval
               </p>
             </div>
-            <div class="col-xs-2">
+            <div class="col-xs-2 ">
               <div class="nr">
                 <p>
                   5
                 </p>
               </div>
               <p class="pr_title">
-                Contract signature
+                Contract
               </p>
             </div>
 						<div class="col-xs-2 last">
@@ -135,7 +135,7 @@
 
 
           </div>
-          <h2 class="title">Approval</h2>
+          <h2 class="title">Finish</h2>
         </div>
       </div>
 
@@ -143,13 +143,13 @@
 <!-- Loan I apply for -->
     <div class="container">
 
-			<div class="loanholder">
+      <div class="loanholder">
         <h2>Loan I apply for</h2>
         <div class="amount">
           <p>
             Loan amount
           </p>
-          <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
+         <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
         </div>
         <div class="info">
 
@@ -158,12 +158,11 @@
             <p><?=$_SESSION["loan_instalments"]?> Ft</p>
           </div>
           <div class="instalments">
-            <h2>Reapid in:</h2>
-            <p><?=$_SESSION["repaid_in"]?> month</p>
+            <h2>Repaid in::</h2>
+           <p><?=$_SESSION["repaid_in"]?> months</p>
           </div>
         </div>
       </div>
-
 
     </div>
 
@@ -171,10 +170,10 @@
 
     <div class="container">
       <div class="form nopadding approval">
-				<div class="good approve">Only the contract signature is left!</div>
+				<div class="good approve">You are doing well! Only 2 more steps!</div>
 
-        <h1>The loan you requested is approved, and you can apply for an even higher amount if you want</h1>
-        <p>The loan amount you applied for is: <?=$_SESSION["loan_amount"]?> Ft. The maximum amount you can request is 3 000 000 Ft. </p>
+        <h1>The amount you requested cannot be approved, please try a smaller amount.</h1>
+        <p>You applied for <?=$_SESSION["loan_amount"]?> Ft. The maximum amount you can apply for is 3.000.000 Ft.</p>
         <div class="container">
           <div class="col-md-6">
 			<div>
@@ -182,14 +181,14 @@
 					<h2 class="n_label">Amount you need</h2>
 					<h1 class="n_amount" id="amount"><?=$_SESSION["loan_amount"]?> Ft</h1>
 					<input class="custom_range" type="range" name="amount" min="300000" max="3000000" step="50000" value="<?=str_replace(' ','',$_SESSION["loan_amount"])?>">
-					<p class="min_amount">300 000 Ft</p>
-					<p class="max_amount">3 000 000 Ft</p>
+					<p class="min_amount">300.000 Ft</p>
+					<p class="max_amount">3.000.000 Ft</p>
 				</div>
 
 			</div>
 			<div>
 				<div style="margin-top: 60px;"class="need">
-					<h2 class="n_label">Monthly installment you want:</h2>
+					<h2 class="n_label">Monthly installment:</h2>
 					<h1 class="n_amount" id="monthly_instalment"><?=$_SESSION["loan_instalments"]?> Ft</h1>
 					<input class="custom_range" type="range" name="monthly" min="<?=str_replace(' ','',$_SESSION["min_loan"])?>" max="<?=str_replace(' ','',$_SESSION["max_loan"])?>" step="1" value="<?=str_replace(' ','',$_SESSION["loan_instalments"])?>" list="numbers">
 					<p class="min_amount" id="min_monthly_instalment"><?=$_SESSION["min_loan"]?> Ft</p>
@@ -199,28 +198,16 @@
 			</div>
 			<div class="repaidin">
 				<h2>Repaid in:</h2>
-				<h3><span id="month_number"><?=$_SESSION["repaid_in"]?></span> Month</h3>
+				<h3><span id="month_number"><?=$_SESSION["repaid_in"]?></span> month</h3>
 			</div>
           </div>
 
           <div class="col-md-6 loaninfo">
-            <h4>Total repayment:</h4>
+            <h4>Total amount to be repaid</h4>
             <h1><span id="total_repaid_id"><?=$_SESSION["total_repaid"]?></span> Ft </h1>
             <div class="line"></div>
-            <p>Interest rate:</p>
+            <p>Fixed Annual Interest Rate</p>
             <h2><span id="interest_rate"><?=$_SESSION["interest_rate"]?></span>%</h2>
-						<p>
-							APR:
-						</p>
-						<h2>13,99%</h2>
-						<p>
-							Management fee:
-						</p>
-						<h2>0 Ft</h2>
-						<p>
-							Day of first installment:
-						</p>
-						<h2>2017. 07.15.</h2>
           </div>
 
 

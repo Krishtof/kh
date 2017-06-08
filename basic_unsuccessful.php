@@ -35,7 +35,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="text">
-          <h1>Data protection policy</h1>
+          <h1>Data processing policy</h1>
           <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur, molestiae definiebas efficiendi in mel. Sit ad eruditi persequeris, ne docendi omnesque pro. Id nibh ubique democritum eum, ea singulis senserit nec, vix no erant dolore intellegebat. Eam ex utamur elaboraret, idque saepe argumentum qui ei, his prodesset dissentiunt ex.
 
           Vis saepe concludaturque ad, eius bonorum periculis vim ea, integre suscipit prodesset eu quo. Utinam scaevola has cu, cum etiam scripserit te, no copiosae definitionem pro. Phaedrum quaerendum eum ea, pro an iuvaret accommodare. Posse adipisci theophrastus at vel, te pro dolore quaestio dignissim. In eos meliore tractatos torquatos. Duo no meis lucilius deterruisset. Mundi ludus eos cu.
@@ -93,7 +93,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Basic Information
+                Basic information
               </p>
             </div>
             <div class="col-xs-2">
@@ -103,7 +103,7 @@
                 </p>
               </div>
               <p class="pr_title ">
-                About You
+                Financial evaluation
               </p>
             </div>
             <div class="col-xs-2">
@@ -113,7 +113,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Identification
+                Statements
               </p>
             </div>
             <div class="col-xs-2">
@@ -133,13 +133,13 @@
                 </p>
               </div>
               <p class="pr_title">
-                Contract signature
+                Contract
               </p>
             </div>
-            <div class="col-xs-2 last">
+						<div class="col-xs-2 last">
 							<img src="img/finish.png" />
               <p class="pr_title ">
-                Finish
+                Befejezés
               </p>
             </div>
 
@@ -165,12 +165,12 @@
         <div class="info">
 
           <div class="instalments">
-            <h2>Installments:</h2>
+            <h2>Instalments:</h2>
             <p><?=$_SESSION["loan_instalments"]?> Ft</p>
           </div>
           <div class="instalments">
-            <h2>Repaid in:</h2>
-            <p><?=$_SESSION["repaid_in"]?> month</p>
+            <h2>Repaid in::</h2>
+            <p><?=$_SESSION["repaid_in"]?> months</p>
           </div>
         </div>
       </div>
@@ -181,67 +181,48 @@
 
     <div class="container">
       <div class="form nopadding">
-				<div class="good">You are doing well! Only 4 more steps!</div>
+				<div class="good">You are doing well! Only 5 more steps!</div>
+
             <div class="form basic">
-            <h1>Personal details</h1>
+            <h1 >Personal information</h1>
             <form>
-              Surname:<br>
+              First name:<br>
               <input type="text" name="firstname"><br>
-              First Name:<br>
+              Last name:<br>
               <input type="text" name="lastname">
-              <div class="cal">
+							<div class="cal">
 								<div class="from">
-									<div class="dropdown">
+									<div class="dropdown ">
 										<h2>Date of birth</h2>
 
-	                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Year
-	                  <span class="caret"></span></button>
-	                  <ul class="dropdown-menu">
-	                    <li><a href="#">2017</a></li>
-	                    <li><a href="#">2016</a></li>
-	                    <li><a href="#">2015</a></li>
-	                    <li><a href="#">2014</a></li>
-	                    <li><a href="#">2013</a></li>
-	                    <li><a href="#">2012</a></li>
-	                    <li><a href="#">2011</a></li>
-	                    <li><a href="#">2010</a></li>
-	                    <li><a href="#">2009</a></li>
-	                    <li><a href="#">2008</a></li>
-	                    <li><a href="#">2007</a></li>
-	                    <li><a href="#">2006</a></li>
-	                    <li><a href="#">2005</a></li>
-	                    <li><a href="#">2004</a></li>
-	                    <li><a href="#">2003</a></li>
-	                    <li><a href="#">2002</a></li>
-	                    <li><a href="#">2001</a></li>
-	                    <li><a href="#">2000</a></li>
-											<li><a href="#">1999</a></li>
-											<li><a href="#">1998</a></li>
-											<li><a href="#">1997</a></li>
-											<li><a href="#">1996</a></li>
-											<li><a href="#">1995</a></li>
-											<li><a href="#">1994</a></li>
-											<li><a href="#">1993</a></li>
-											<li><a href="#">1992</a></li>
-											<li><a href="#">1991</a></li>
-											<li><a href="#">1990</a></li>
-											<li><a href="#">1989</a></li>
-											<li><a href="#">1988</a></li>
-											<li><a href="#">1987</a></li>
-											<li><a href="#">1986</a></li>
-											<li><a href="#">1985</a></li>
-											<li><a href="#">1984</a></li>
-											<li><a href="#">1983</a></li>
-											<li><a href="#">1982</a></li>
-											<li><a href="#">1981</a></li>
-											<li><a href="#">1980</a></li>
+										<button class="birthyear btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Year
+										<span class="caret"></span></button>
+										<ul class="dropdown-menu">
+											<li><a href="#">2017</a></li>
+											<li><a href="#">2016</a></li>
+											<li><a href="#">2015</a></li>
+											<li><a href="#">2014</a></li>
+											<li><a href="#">2013</a></li>
+											<li><a href="#">2012</a></li>
+											<li><a href="#">2011</a></li>
+											<li><a href="#">2010</a></li>
+											<li><a href="#">2009</a></li>
+											<li><a href="#">2008</a></li>
+											<li><a href="#">2007</a></li>
+											<li><a href="#">2006</a></li>
+											<li><a href="#">2005</a></li>
+											<li><a href="#">2004</a></li>
+											<li><a href="#">2003</a></li>
+											<li><a href="#">2002</a></li>
+											<li><a href="#">2001</a></li>
+											<li><a href="#">2000</a></li>
+											<li><a href="#">longer</a></li>
 
+										</ul>
+									</div>
+									<div class="dropdown ">
 
-	                  </ul>
-	                </div>
-									<div class="dropdown">
-
-										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Month
+										<button class="birthmonth btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Month
 										<span class="caret"></span></button>
 										<ul class="dropdown-menu">
 											<li><a href="#">January</a></li>
@@ -258,45 +239,11 @@
 											<li><a href="#">December</a></li>
 										</ul>
 									</div>
-									<div class="dropdown">
+									<div class="day shortest inline" >
+										<h2>  </h2>
+										<input type="text" type="text"  placeholder="Day" />
 
-	                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Day
-	                  <span class="caret"></span></button>
-	                  <ul class="dropdown-menu">
-	                    <li><a href="#">1</a></li>
-	                    <li><a href="#">2</a></li>
-	                    <li><a href="#">3</a></li>
-	                    <li><a href="#">4</a></li>
-	                    <li><a href="#">5</a></li>
-	                    <li><a href="#">6</a></li>
-	                    <li><a href="#">7</a></li>
-	                    <li><a href="#">8</a></li>
-	                    <li><a href="#">9</a></li>
-	                    <li><a href="#">10</a></li>
-	                    <li><a href="#">11</a></li>
-	                    <li><a href="#">12</a></li>
-	                    <li><a href="#">13</a></li>
-											<li><a href="#">14</a></li>
-											<li><a href="#">15</a></li>
-											<li><a href="#">16</a></li>
-											<li><a href="#">17</a></li>
-											<li><a href="#">18</a></li>
-											<li><a href="#">19</a></li>
-	                    <li><a href="#">20</a></li>
-											<li><a href="#">21</a></li>
-											<li><a href="#">22</a></li>
-											<li><a href="#">23</a></li>
-											<li><a href="#">24</a></li>
-											<li><a href="#">25</a></li>
-											<li><a href="#">26</a></li>
-											<li><a href="#">27</a></li>
-											<li><a href="#">28</a></li>
-											<li><a href="#">29</a></li>
-											<li><a href="#">30</a></li>
-											<li><a href="#">31</a></li>
-	                  </ul>
-	                </div>
-
+									</div>
 
 
 								</div>
@@ -304,23 +251,24 @@
             </form>
             <h1>Contact details</h1>
             <p>
-Please add <span style="font-weight: bold;">your phone number and your email address</span>. By inserting them you give us the consent to contact you regarding your application. </p>
+By inserting of your phone number and email adress you giving us the concent to contact you regarding the aplication            </p>
             <form class="contact">
 
             <div class="phone" id="single_phone">
 
-              <h2>Phone number:</h2>
+              <h2>Enter phone number:</h2>
               <p>
-Enter phone number and click on send verification code button     </p>
+                We will send you a code to your phone with a verification code:
+              </p>
                 <p class="hun">+36</p>
                 <input type="name" name="name" id="phone_phone" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                 <button type="button" class="bluebtn" id="phone-send" name="button">Send verification code</button>
             </div>
 
             <div class="verify" id="phone_verification">
-              <h2>Send verification code</h2>
+              <h2>Enter the verification code:</h2>
               <p>
-                We sent you a code to the phone number <span style="font-weight: bold;" id="phone_number">+36 20 418 48 83</span> please insert the code to the application and click on verify button
+                We sent you a code to the phone number <span style="font-weight: bold;" id="phone_number">+36 20 418 48 83</span>. Please enter the code you received in the text message:
               </p>
               <input type="email" name="email" id="phone_verify" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
               <button type="button" class="bluebtn" id="phone-verify"  name="button">Verify </button>
@@ -336,23 +284,23 @@ Enter phone number and click on send verification code button     </p>
 
             <div class="email" id="single_email">
 
-              <h2>E-mail address</h2>
+              <h2>Enter email address:</h2>
               <p>
-                Enter email address  and click on send verification code button
+                We will send you an email with a verification code:
               </p>
                 <input type="email" name="name" id="email_email">
                 <button type="button" class="bluebtn" id="email-send"  name="button">Send verification code</button>
             </div>
 
             <div class="verify" id="email_verification">
-              <h2>Send verification code</h2>
+              <h2>Enter the verification code:</h2>
               <p>
-                We will send you an email with a verification code
+                We sent you a code to the email address  <span style="font-weight: bold;" id="user_email">john.doe@gmail.com</span>. Please enter the code you received in the email:
               </p>
               <input type="email" name="email" id="email_verify" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
               <button type="button" class="bluebtn" id="email-verify"  name="button">Verify </button>
 							<button  class="bluebtn nobg2" type="button" name="button">Send again</button>
-							<button  class="bluebtn nobg2" type="button" name="button" id="try_2">Try different e-mail address</button>
+							<button  class="bluebtn nobg2" type="button" name="button" id="try_2">Try different email address</button>
 
             </div>
 
@@ -364,7 +312,8 @@ Enter phone number and click on send verification code button     </p>
             </form>
 
             <p class="continue">
-To continue you must read and acknowledge the personal data protection policy</p>
+              To continue you must read and acknowledge the personal data protection policy.
+            </p>
             <button type="button" class="orangebtn btn btn-info btn-lg" data-toggle="modal" data-target="#acknowledgemodal">Display policy</button>
 
           </div>
