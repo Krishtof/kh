@@ -285,9 +285,6 @@
                         <p class="instruction">
 														Drag and drop images into this window to upload                        </p>
                         <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
-						<!--<label class="custom-file-upload id_btn">
-						    <input type="file" id="file_1"/>ID upload
-						</label>-->
 						 <button type="button " class="id_btn"  id="upload_id" name="button">Upload ID from computer</button>
 					</div>
                       <div class="selected error">
@@ -295,9 +292,7 @@
                           We cant recognize the data from the picture what you just uploaded. please try again
                         </p>
                         <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
-                        <label class="custom-file-upload id_btn">
-						    <input type="file" id="file_1_2"/>Upload from your computer
-						</label>
+                        <button type="button " class="id_btn" id="asdasd" name="button">Upload ID from computer</button>
                       </div>
                       <div class="selected success">
 						  <img class="id_suc" src="img/success.png" /><br />
@@ -316,9 +311,7 @@
                           We cant recognize the data from the picture what you just uploaded. please try again
                         </p>
                         <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
-                         <label class="custom-file-upload id_btn">
-						    <input type="file" id="file_2_2"/>ID upload
-						</label>
+                        <button type="button " class="id_btn" id="upload_id_2" name="button">Upload ID from computer</button>
 
                       </div>
                       <div class="selected successful">
@@ -326,10 +319,7 @@
                           Drag and drop images into this window to upload:
                         </p>
                         <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
-                        <!--<label class="custom-file-upload id_btn">
-						    <input type="file" id="file_2"/>ID upload
-						</label>-->
-						 <button type="button " class="id_btn"  id="upload_id_2" name="button">Upload ID from computer</button>
+						<button type="button " class="id_btn"  id="upload_id_2" name="button">Upload ID from computer</button>
                       </div>
                       <div class="selected success">
 						  <img class="id_suc" src="img/success.png" /><br />

@@ -78,6 +78,27 @@ function new_click(){
 
 function upload_id(){
 	$('#upload_id').click(function(){
+		console.log('klikk');
+		$('#new_id').hide();
+		$('#old_id').hide();
+		$('#front_side').show();
+		$('#back_side').show();
+		$('#address_card').show();
+		//console.log($('#back_side .success:visible').length);
+		if($('#back_side .success:visible').length == 0){
+			$('#back_side .successful').css('display','block');
+		}
+		if($('#front_side .success:visible').length == 0){
+			$('#front_side .successful').css('display','block');
+		}
+		if($('#address_card .success:visible').length == 0){
+			$('#address_card .successful').css('display','block');
+		}
+		$('span.back').show();
+	});
+	
+	$('#asdasd').click(function(){
+		console.log('klikk');
 		$('#new_id').hide();
 		$('#old_id').hide();
 		$('#front_side').show();
@@ -97,6 +118,7 @@ function upload_id(){
 	});
 	
 	$('#upload_id_2').click(function(){
+		console.log('klikk2');
 		$('#new_id').hide();
 		$('#old_id').hide();
 		$('#front_side').show();
