@@ -257,8 +257,10 @@ function idclick(){
 		if(status == 'third'){
 		    $('#old_id .selected.error').css('display','none');
 		    $('#old_id .selected.successful').css('display','none');
-		    $('#old_id .selected.success').css('display','block');
+		    $('#old_id .selected.success').css('display','none');
+		    $('.new_id_upload_check .selected.success').css('display','block');
 		    $('#new_id').hide();
+		    $('#old_id').hide();
 		    $('#ip').hide();
 		    close();
 		}
@@ -295,8 +297,10 @@ function idclick2(){
 		if(status == 'third'){
 			$('#new_id .selected.error').css('display','none');
 			$('#new_id .selected.successful').css('display','none');
-			$('#new_id .selected.success').css('display','block');
+			$('#new_id .selected.success').css('display','none');
+			$('.new_id_upload_check .selected.success').css('display','block');
 			$('#old_id').hide();
+			$('#new_id').hide();
 			$('#ip2').hide();
 			close();
 		}
