@@ -321,7 +321,7 @@ Please add <span style="font-weight: bold;">your phone number and your email add
               <p>
 Enter phone number and click on send verification code button     </p>
                 <p class="hun">+36</p>
-                <input type="name" name="name" id="phone_phone" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                <input type="number" name="name" id="phone_phone" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
                 <button type="button" class="bluebtn" id="phone-send" name="button">Send verification code</button>
             </div>
 

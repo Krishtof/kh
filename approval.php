@@ -142,14 +142,8 @@
 
 <!-- Loan I apply for -->
     <div class="container">
-
-<<<<<<< HEAD
-      <div class="loanholder">
-=======
 			<div class="loanholder">
 				<p class="edit" >Edit</p>
-
->>>>>>> parent of ce07303... Revert ".."
         <h2>Loan I apply for</h2>
         <div class="amount">
           <p>
@@ -164,7 +158,7 @@
             <p><?=$_SESSION["loan_instalments"]?> Ft</p>
           </div>
           <div class="instalments">
-            <h2>Repaid in::</h2>
+            <h2>Repaid in:</h2>
            <p><?=$_SESSION["repaid_in"]?> months</p>
           </div>
         </div>
@@ -179,16 +173,16 @@
 				<div class="good approve">You are doing well! Only 2 more steps!</div>
 
         <h1>The amount you requested cannot be approved, please try a smaller amount.</h1>
-        <p>You applied for <?=$_SESSION["loan_amount"]?> Ft. The maximum amount you can apply for is 3.000.000 Ft.</p>
+        <p>You applied for <?=$_SESSION["loan_amount"]?> Ft. The maximum amount you can apply for is 2.400.000 Ft.</p>
         <div class="container">
           <div class="col-md-6">
 			<div>
 			<div class="need">
 					<h2 class="n_label">Amount you need</h2>
 					<h1 class="n_amount" id="amount"><?=$_SESSION["loan_amount"]?> Ft</h1>
-					<input class="custom_range" type="range" name="amount" min="300000" max="3000000" step="50000" value="<?=str_replace(' ','',$_SESSION["loan_amount"])?>">
+					<input class="custom_range" type="range" name="amount" min="300000" max="2400000" step="50000" value="<?=str_replace(' ','',$_SESSION["loan_amount"])?>">
 					<p class="min_amount">300.000 Ft</p>
-					<p class="max_amount">3.000.000 Ft</p>
+					<p class="max_amount">2.400.000 Ft</p>
 				</div>
 
 			</div>
@@ -258,33 +252,33 @@
 				    },
 				    success: function(msg){
 				    	var obj = $.parseJSON(msg);
-				    	
+
 				    	$('input[type=range][name="monthly"]').attr('max',obj['max_loan_instalments'].replace(' ', ''));
 				    	$('input[type=range][name="monthly"]').attr('min',obj['min_loan_instalments'].replace(' ', ''));
 				    	$('#max_monthly_instalment').html(obj['max_loan_instalments']+' Ft');
 				    	$('#min_monthly_instalment').html(obj['min_loan_instalments']+' Ft');
-				    	
+
 				    	//amount you need text módosítása
 				    	$('h1#amount').html(obj['load_amount']+' Ft');
-				    	
+
 				    	var new_value = obj['load_amount'].replace(' ', '');
 				    	var new_value = new_value.replace(' ', '');
-				    	
+
 				    	$('input[type=range][name="amount"]').val(new_value);
-				    	
-				    	var css = getCssPercentage(300000,3000000,new_value);
-				    	
+
+				    	var css = getCssPercentage(300000,2400000,new_value);
+
 						$('input[type=range][name="amount"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#99fba6 '+css+'%,#99fba6 100%)');
 						$('input[type=range][name="amount"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#99fba6 '+css+'%,#99fba6 100%)');
 						$('input[type=range][name="amount"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#99fba6 '+css+'%,#99fba6 100%)');
-				    	
+
 				    	//monthly installmenst text módosítása
 				    	$('#monthly_instalment').html(obj['loan_instalments']+' Ft');
 				    	//monthly csúszka értékének beállítása
 						$('input[type=range][name="monthly"]').val(obj['loan_instalments'].replace(' ', ''));
 						//monthly csúszka mozgatása
 						var css = getCssPercentage(obj['min_loan_instalments'].replace(' ', ''),obj['max_loan_instalments'].replace(' ', ''),obj['loan_instalments'].replace(' ', ''));
-						
+
 						$('input[type=range][name="monthly"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="monthly"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="monthly"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');

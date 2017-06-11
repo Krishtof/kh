@@ -48,26 +48,28 @@
 <!-- progress bar -->
 
 <div class="container landing">
-	<h1 class="impresto">Impresto</h1>
-	<p style="line-height: 22px;	">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-	</p>
+	<p style="line-height: 22px; margin-top: 30px;	">
+Unrestricted loan from K&H now fully online. Start and finish your application here and you will receive money on your current account in 15 minutes after contract signature. 	</p>
 
 <div class="container qualify">
 	<div class="col-md-6 qualify">
-		<h3>Do I qualify?</h3>
+		<h3>Do I qualify? Yes, if </h3>
 		<ul>
-			<li>Are you older than 18 years?</li>
-			<li>Do you have access to your current account internet banking with one of the banks below?</li>
-			<li>Do you have sufficient income from a regular employment (apart from probation and notice period), pension or parental befnefits?</li>
+			<li>You are older than 18</li>
+			<li>You receive regular salary from employment to your bank account</li>
+			<li>You have access to internet banking of this account</li>
+			<li>This account is at one of these
+				<a href="#" class="banklist" data-toggle="tooltip" title="Erste Bank,CIB Bank, K&H Bank, MKB Bank, OTP Bank, Raiffeisen Bank ">supported banks </a>
+			</li>
 		</ul>
 
-		<h3>What should you have ready?</h3>
+		<h3>What sould you have ready?</h3>
 		<ul>
-			<li>Your Valid ID</li>
+			<li>Your valid ID</li>
 			<li>Your cell phone</li>
-			<li>Do you have sufficient income from a regular employment (apart from probation and notice period), pension or parental befnefits?</li>
+			<li>E-mail address</li>
 		</ul>
+
 
 
 	</div>
@@ -103,11 +105,11 @@
 			<p>
 				Your total saving on your loan can be: <span id="total_saving">18 035 Ft</span>.
 			</p>
-			<a href="#" class="mytooltip" data-toggle="tooltip" title="A kedvezmény feltétele, hogy rendelkezel K&H számlával vagy meghatározott időn belül nyitsz egyet és legalább 100 000 Ft munkabéred érkezik ide havonta. Ebben ez esetben 2% kedvezményt adunk a kamatból.  Az új számlát bármikor megnyithatod, a kedvezmény az első fizetési jóváírás beérkezését követő hónaptól lép majd érvénybe. ">i</a>
+			<a class="ttip" data-toggle="tooltip" title="Discount will be applicable if you are having or you will open a KH current account and sending there your salary  (at least 100.000 Ft) then you will get 2% discount on the interest rate. You can open the current account in KH anytime, the discount will be effective following month after you will receive your first salary there. ">Learn more about the discount.</a>
 
 		</div>
 		<button onclick="window.location.href='basic.php'" class="bluebtn" type="button" name="button">Yes, I want this loan</button>
-		<a href="#" class="ttip" data-toggle="tooltip" title="Follow the guide issued by HNB will be hyper link to show this:
+		<a class="ttip" data-toggle="tooltip" title="Follow the guide issued by HNB will be hyper link to show this:
 		the client shall only sign a loan agreement which he or she
 		fully understands; any change in the client’s circumstances, he or she still
 		remain obliged to pay back the loan amount; if the client has solvency problems he or she must
@@ -201,39 +203,37 @@ follow the guide issued by HNB.</a>
 
 
 
-
-
 <div class="col-md-12 banks" style="padding: 0px;">
 	<h3 style="margin-bottom: 50px;">Where can I access it?</h3>
 
 	<div class="col-md-2">
-		<img src="img/cib.png" />
+		<h2>CIB Bank</h2>
 	</div>
 
 
 	<div class="col-md-2">
-		<img src="img/erste.png" />
+		<h2>Erste Bank</h2>
 	</div>
 
 	<div class="col-md-2">
-		<img src="img/kh.png" />
+		<h2>K&H Bank</h2>
 		<p>
 
 	</div>
 
 
 	<div class="col-md-2">
-		<img style="max-width: 40px;"src="img/MKB_logo.png" />
+		<h2>MKB Bank</h2>
 
 	</div>
 
 	<div class="col-md-2">
-		<img src="img/otp.png" />
+		<h2>OTP Bank</h2>
 
 	</div>
 
 	<div class="col-md-2">
-		<img src="img/Raiffeisen_Bank.png" />
+		<h2>Raiffeisen Bank</h2>
 
 	</div>
 
@@ -283,22 +283,22 @@ follow the guide issued by HNB.</a>
 				    },
 				    success: function(msg){
 				    	var obj = $.parseJSON(msg);
-				    	
+
 				    	$('input[type=range][name="monthly"]').attr('max',obj['max_loan_instalments'].replace(' ', ''));
 				    	$('input[type=range][name="monthly"]').attr('min',obj['min_loan_instalments'].replace(' ', ''));
 				    	$('#max_monthly_instalment').html(obj['max_loan_instalments']+' Ft');
 				    	$('#min_monthly_instalment').html(obj['min_loan_instalments']+' Ft');
-				    	
+
 				    	//amount you need text módosítása
 				    	$('h1#amount').html(obj['load_amount']+' Ft');
 				    	//felső csúszka módosítása
 				    	var new_value = obj['load_amount'].replace(' ', '');
 				    	var new_value = new_value.replace(' ', '');
-				    	
+
 				    	$('input[type=range][name="amount"]').val(new_value);
-				    	
+
 						var css = getCssPercentage(300000,3000000,new_value);
-						
+
 						$('input[type=range][name="amount"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="amount"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="amount"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
@@ -308,7 +308,7 @@ follow the guide issued by HNB.</a>
 						$('input[type=range][name="monthly"]').val(obj['loan_instalments'].replace(' ', ''));
 						//monthly csúszka mozgatása
 						var css = getCssPercentage(obj['min_loan_instalments'].replace(' ', ''),obj['max_loan_instalments'].replace(' ', ''),obj['loan_instalments'].replace(' ', ''));
-						
+
 						$('input[type=range][name="monthly"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="monthly"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="monthly"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');

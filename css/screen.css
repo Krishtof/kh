@@ -253,12 +253,10 @@ text-decoration: underline;
   margin-bottom: 20px;
   width: 100%;
   font-weight: normal;
-  padding: 5px;
+  padding: 10px;
   background: #FFFFFF;
   border: 1px solid #00AEEF;
-  font-size: 12px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  font-size: 14px;
   border-radius: 5px;
 }
 
@@ -635,6 +633,8 @@ border-color: var(--light-blue);
   max-width: 126px;
   margin-top: 20px !important;
   text-align: center;
+  font-size: 12px !important;
+  padding-left: 5px;
   width: 100px !important;
 
 }
@@ -648,16 +648,15 @@ border-color: var(--light-blue);
   background-image: url(../img/new.png);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 185px;
+  min-height: 229px;
   padding: 0px;
   border: 7px solid white;
 
 }
 
 .col-md-12 .selected p {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
+  padding: 23px;
+  }
 .id_btn{
   font-size: 13px;
       min-width: 108px;
@@ -665,6 +664,8 @@ border-color: var(--light-blue);
       padding: 10px;
       min-width: 190px;
       border-radius: 3px;
+      cursor: pointer;
+      width: 200px;
       color: var(--light-blue);
       background: none;
       border: 1px solid var(--light-blue);
@@ -685,7 +686,7 @@ input[type="file"] {
   background-image: url(../img/old.png);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 200px;
+  min-height: 229px;
   padding: 0px;
   border: 7px solid #f5f5f5;
 }
@@ -754,6 +755,7 @@ input[type="file"] {
   background: rgba(230, 247, 254, 0.78);
   display: flex;
   justify-content: center;
+  height: 200px;
   align-items: center;
 
 }
@@ -907,7 +909,7 @@ input[type="file"] {
     margin-top: -3px !important;
     left: 50% !important;
     position: relative !important;
-    margin-top: 29px !important;
+    margin-top: 20px !important;
     margin-left: -45px !important;
 }
 
@@ -927,7 +929,7 @@ input[type="file"] {
   margin-top: 20px;
   line-height: 22px;
   font-size: 15px;
-margin-top: 50px;
+margin-top: 20px;
 }
 .impresto {
 font-family: HelveticaNeue-Bold;
@@ -1213,4 +1215,41 @@ overflow: auto;
   color: var(--light-blue);
   text-decoration: none;
   cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+.block {
+  display: block;
+}
+#precontractual .done {
+  display: none;
+}
+
+.form.id_type .row {
+  margin-top: 20px;
+}
+.back {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.id_title {
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+  font-weight: bold !important;
+  padding-top: 8px !important;
+  color: var(--blue);
+}
+
+.instruction {
+  color: var(--light-blue);
+}
+.selected {
+  /* Mask: */
+border: 5px solid #F6F6F6;
+border-radius: 3px;
 }

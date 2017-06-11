@@ -464,6 +464,7 @@
                   <input type="radio" id="r2" name="rr" />
                   <label for="r2">Other (companion, widow/widower, divorced, common living)</label>
                 </div><br />
+							</form>
 
                 <h2>Number of dependence:</h2><br>
 								<p>
@@ -473,14 +474,16 @@
 
                 <h2>Are you a politically exposed person?</h2><br>
                 <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur.</p>
-                <div class="switch switchbtn">
-                  <div class="yes switchbtn">
-                    Yes
-                  </div>
-                  <div class="no switchbtn">
-                    No
-                  </div>
-                </div>
+								<form>
+								<div class="radio">
+									<input type="radio" id="r1" name="rr" />
+									<label for="r1">Yes</label>
+								</div>
+								<div class="radio">
+									<input type="radio" id="r2" name="rr" />
+									<label for="r2">No </label>
+								</div>
+
 
                 </form>
 

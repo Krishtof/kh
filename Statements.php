@@ -100,7 +100,7 @@
         <img src="img/mobile.png" />
         <h1>Please check your phone</h1>
         <p>
-          We have sent you an SMS to your cell phone. Click on the link in the message and enter the following security code on the webpage:<span style="font-weight: bold;">123432</span>
+          We have sent you an SMS to your cell phone. Click on the link in the message and enter the following security code on the webpage:<br /><span style="font-weight: bold; font-size: 22px; line-height: 40px;">123432</span>
         </p>
         <h2>Please take care of the followings when taking the picture:</h2>
         <div class="container">
@@ -262,7 +262,7 @@
       <div class="form nopadding">
 				<div class="good">You are doing well! Only 2 more steps!</div>
 
-      
+
 
 
 
@@ -282,7 +282,7 @@
                     </p>
                     <div class="col-md-12" id="old_holder">
                       <div class="selected successful">
-                        <p>
+                        <p class="instruction">
 														Drag and drop images into this window to upload                        </p>
                         <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
 						<!--<label class="custom-file-upload id_btn">
@@ -319,10 +319,10 @@
                          <label class="custom-file-upload id_btn">
 						    <input type="file" id="file_2_2"/>ID upload
 						</label>
-						
+
                       </div>
                       <div class="selected successful">
-                        <p>
+                        <p class="instruction">
                           Drag and drop images into this window to upload:
                         </p>
                         <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
@@ -338,10 +338,11 @@
 
 
                   </div>
-                  
+
                   <div class="col-md-6 front_side" data-status="" id="front_side">
                     <div class="col-md-12"  >
                       <div class="selected error">
+
                         <p>
                           We cant recognize the data from the picture what you just uploaded. please try again
                         </p>
@@ -349,10 +350,12 @@
                          <label class="custom-file-upload id_btn">
 						    <input type="file" id="file_2_2"/>ID upload
 						</label>
-						
+
                       </div>
                       <div class="selected successful">
-                        <p>
+												<p class="id_title">Front side of ID</p>
+
+                        <p class="instruction">
                           Drag and drop images into this window to upload:
                         </p>
                         <!--<button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
@@ -364,12 +367,15 @@
 						</label>
                       </div>
                       <div class="selected success">
+												<p class="id_title">Front side of ID</p>
+
 						  <img class="id_suc" src="img/success.png" /><br />
 					 </div>
                     </div>
 
                   </div>
                   <div class="col-md-6 back_side" data-status="" id="back_side">
+
                     <div class="col-md-12" >
                       <div class="selected error">
                         <p>
@@ -379,10 +385,12 @@
                          <label class="custom-file-upload id_btn">
 						    <input type="file" id="file_2_2"/>ID upload
 						</label>
-						
+
                       </div>
                       <div class="selected successful">
-                        <p>
+												<p class="id_title">Back side of ID</p>
+
+                        <p class="instruction">
                           Drag and drop images into this window to upload:
                         </p>
                        <!-- <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
@@ -394,14 +402,19 @@
 						</label>
                       </div>
                       <div class="selected success">
+												<p class="id_title">Back side of ID</p>
+
 						  <img class="id_suc" src="img/success.png" /><br />
 					 </div>
                     </div>
 
                   </div>
-                  <div class="col-md-6 address_card" data-status="" id="address_card">
-                    <div class="col-md-12" >
+                  <div class=" address_card" style="    max-width: 310px; margin: 0 auto; margin-top: 50px;}" data-status="" id="address_card">
+
+									  <div class="col-md-12" style="margin-top: 50px;" >
+
                       <div class="selected error">
+
                         <p>
                           We cant recognize the data from the picture what you just uploaded. please try again
                         </p>
@@ -409,10 +422,12 @@
                          <label class="custom-file-upload id_btn">
 						    <input type="file" id="file_2_2"/>ID upload
 						</label>
-						
+
                       </div>
                       <div class="selected successful">
-                        <p>
+												<p class="id_title">Front side of Address card</p>
+
+                        <p class="instruction">
                           Drag and drop images into this window to upload:
                         </p>
                        <!-- <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
@@ -424,6 +439,8 @@
 						</label>
                       </div>
                       <div class="selected success">
+												<p class="id_title">Front side of Address card</p>
+
 						  <img class="id_suc" src="img/success.png" /><br />
 					 </div>
                     </div>
@@ -535,7 +552,7 @@
           <div class="uploadbox">
 
             <img src="img/pdf.png" />
-            <p>
+            <p >
 Drag and drop images into this window to upload            </p>
 
             <label class="custom-file-upload id_btn">
