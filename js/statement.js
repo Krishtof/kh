@@ -42,8 +42,8 @@ function upload_new_id(){
 	
 	$(document).on('change','.new_upload_id',function(){
 		var value = $(this).val();
-		$(this).closest('.col-md-6').find('.successful').hide();
-		$(this).closest('.col-md-6').find('.success').show();
+		$(this).closest('.new_id_upload_check').find('.successful').hide();
+		$(this).closest('.new_id_upload_check').find('.success').show();
 		check_all_ids();
 	});
 

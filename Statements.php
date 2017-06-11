@@ -339,7 +339,7 @@
 
                   </div>
 
-                  <div class="col-md-6 front_side" data-status="" id="front_side">
+                  <div class="col-md-6 front_side new_id_upload_check" data-status="" id="front_side">
                     <div class="col-md-12"  >
                       <div class="selected error">
 
@@ -374,7 +374,7 @@
                     </div>
 
                   </div>
-                  <div class="col-md-6 back_side" data-status="" id="back_side">
+                  <div class="col-md-6 back_side new_id_upload_check" data-status="" id="back_side">
 
                     <div class="col-md-12" >
                       <div class="selected error">
@@ -409,7 +409,7 @@
                     </div>
 
                   </div>
-                  <div class=" address_card" style="    max-width: 310px; margin: 0 auto; margin-top: 50px;}" data-status="" id="address_card">
+                  <div class=" address_card new_id_upload_check" style="    max-width: 310px; margin: 0 auto; margin-top: 50px;}" data-status="" id="address_card">
 
 									  <div class="col-md-12" style="margin-top: 50px;" >
 
