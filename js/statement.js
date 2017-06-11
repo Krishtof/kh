@@ -24,7 +24,9 @@ $(function(){
 	lastfile();
 	idclick2();
 	idclick();
+	test();
 });
+
 
 //leellenőrzi, hogy mind a 3 id fel lett-e töltve
 function check_all_ids(){
@@ -118,6 +120,27 @@ function upload_id(){
 	});
 	
 	$('#asdasd').click(function(){
+		console.log('klikk');
+		$('#new_id').hide();
+		$('#old_id').hide();
+		$('#front_side').show();
+		$('#back_side').show();
+		$('#address_card').show();
+		textchanger();
+		//console.log($('#back_side .success:visible').length);
+		if($('#back_side .success:visible').length == 0){
+			$('#back_side .successful').css('display','block');
+		}
+		if($('#front_side .success:visible').length == 0){
+			$('#front_side .successful').css('display','block');
+		}
+		if($('#address_card .success:visible').length == 0){
+			$('#address_card .successful').css('display','block');
+		}
+		$('span.back').show();
+	});
+	
+		$('#dsdsds').click(function(){
 		console.log('klikk');
 		$('#new_id').hide();
 		$('#old_id').hide();

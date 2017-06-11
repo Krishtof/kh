@@ -323,7 +323,7 @@
                           Drag and drop images into this window to upload:
                         </p>
                         <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
-						<button type="button " class="id_btn"  id="upload_id_2" name="button">Upload ID from computer</button>
+						<button type="button " class="id_btn"  id="dsdsds" name="button">Upload ID from computer</button>
                       </div>
                       <div class="selected success">
 						  <img class="id_suc" src="img/success.png" /><br />
