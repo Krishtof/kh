@@ -271,8 +271,12 @@
         <div id="expenses" class="collapse in">
             <div class="form id_type">
               <h2 id="which_id">To verify your identity we will need scan or photo of your ID</h2>
+              <h2 id="upload_id_issued">Upload ID from issued after 11.12.2016.</h2>
               <p id="please_select">
                 Please select
+              </p>
+              <p id="please_upload">
+                Please upload files
               </p>
               <span class="back">back</span>
               <div class="row">
@@ -399,8 +403,9 @@
                     </div>
 
                   </div>
-                  <div class=" address_card new_id_upload_check" style="    max-width: 310px; margin: 0 auto; margin-top: 50px;}" data-status="" id="address_card">
-
+                  <div class=" address_card new_id_upload_check" style="max-width: 310px; margin: 0 auto; margin-top: 50px;" data-status="" id="address_card">
+					  <h2 id="upload_address_card">Upload Address Card</h2>
+					  <p id="please_upload_front_side">Please upload the front side of the Address card with the address visible.</p>
 									  <div class="col-md-12" style="margin-top: 50px;" >
 
                       <div class="selected error">

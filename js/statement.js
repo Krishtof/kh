@@ -61,6 +61,7 @@ function back_click(){
 		$('span.back').hide();
 		$('#old_id').attr('data-status','');
 		$('#new_id').attr('data-status','');
+		textbackchanger();
 	});
 }
 
@@ -76,6 +77,24 @@ function new_click(){
 	});*/
 }
 
+function textchanger(){
+	$('h2#which_id').hide();
+	$('h2#upload_id_issued').show();
+	$('p#please_select').hide();
+	$('p#please_upload').show();
+	$('p#please_upload_front_side').show();
+	$('h2#upload_address_card').show();
+}
+
+function textbackchanger(){
+	$('h2#which_id').show();
+	$('h2#upload_id_issued').hide();
+	$('p#please_select').show();
+	$('p#please_upload').hide();
+	$('p#please_upload_front_side').hide();
+	$('h2#upload_address_card').hide();
+}
+
 function upload_id(){
 	$('#upload_id').click(function(){
 		console.log('klikk');
@@ -84,6 +103,7 @@ function upload_id(){
 		$('#front_side').show();
 		$('#back_side').show();
 		$('#address_card').show();
+		textchanger();
 		//console.log($('#back_side .success:visible').length);
 		if($('#back_side .success:visible').length == 0){
 			$('#back_side .successful').css('display','block');
@@ -104,6 +124,7 @@ function upload_id(){
 		$('#front_side').show();
 		$('#back_side').show();
 		$('#address_card').show();
+		textchanger();
 		//console.log($('#back_side .success:visible').length);
 		if($('#back_side .success:visible').length == 0){
 			$('#back_side .successful').css('display','block');
@@ -124,6 +145,7 @@ function upload_id(){
 		$('#front_side').show();
 		$('#back_side').show();
 		$('#address_card').show();
+		textchanger();
 		if($('#back_side .success:visible').length == 0){
 			$('#back_side .successful').show();
 		}

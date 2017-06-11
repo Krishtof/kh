@@ -75,4 +75,19 @@ h2{
 	display: none;
 }
 
+h2#upload_id_issued{
+	display: none;
+}
 
+p#please_upload{
+	display: none;
+}
+
+
+p#please_upload_front_side{
+	display: none;
+}
+
+h2#upload_address_card{
+	display: none;
+}
