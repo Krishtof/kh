@@ -155,7 +155,8 @@ Köszönjük, hogy a K&H-t válaszottad. Bízunk benne, hogy minden egyszerűen 
                 </div>
               </div>
               <div class="col-md-9"><p>
-Kérjük, hogy állíts be a havi hiteltörlesztési összegednek megfelelő beszedési megbízást a(z) 12345678-12345678-12345678 számlaszámodhoz tartozó fiókodban.            </p></div>
+Kérjük, hogy a hiteltörlesztéshez állíts be a fiókodban havi rendszerességű, közvetlen fizetést a lejjebb megadott bankszámlánkra.
+Fizetési részletek: számlaszám (12345678-12345678-12345678), hivatkozási kód (123456), részlet esedékességének első napja (20.06.2017), havi előfordulások száma (125) </p></div>
               <div class="col-md-2">
                 <div class="placeholder">
                 </div>
