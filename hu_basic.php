@@ -364,7 +364,7 @@ Add meg a mobilszámod és kattints a "megerősítő kód küldése" gombra     
             </form>
 
             <p class="continue">
-Az igénylés folytatásához kérjük, olvasd el a személyes adatok kezelésére vonatkozó nyilatkozatot.</p>
+Az igénylés folytatáshoz a személyes adatok kezelésére vonatkozó nyilatkozat elolvasása és elfogadása szükséges</p>
             <button type="button" class="orangebtn btn btn-info btn-lg" data-toggle="modal" data-target="#acknowledgemodal">nyilatkozat megnyitása</button>
 
           </div>
