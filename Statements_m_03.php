@@ -280,15 +280,13 @@
 							</div>
 							<div class="uploadbtn">
 								<img src="img/success.png" /><br />
-								<h2>Front side of ID successfully uploaded.</h2>
+								<h2>Back side of ID successfully uploaded.</h2>
 
 							</div>
 							<div class="uploadbtn" style="margin-top: 50px;">
-								<h2>Upload Address Card</h2>
-								<p >Please upload the front side of the Address card with the address visible.</p>
 
 								<img src="img/success.png" /><br />
-								<h2>Front side of ID successfully uploaded.</h2>
+								<h2>Address card successfully uploaded.</h2>
 
 							</div>
 						</div>

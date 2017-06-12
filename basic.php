@@ -58,8 +58,8 @@
 					By pressing the button you are confirming that you read and
 understand the document and you agree with it
 				</p>
-        <button onclick="window.location.href='financial.php'" class="bluebtn" type="button" name="button">I acknowledge</button>
-        <a class="dont" href="#">I don't acknowledge</a>
+        <button onclick="window.location.href='financial.php'" class="bluebtn" type="button" name="button">I agree</button>
+        <a class="dont" href="#">I do not agree</a>
 
       </div>
     </div>

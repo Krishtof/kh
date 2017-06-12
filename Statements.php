@@ -454,15 +454,13 @@
 
           <div class="check">
 
-            <label>
+            <label style="float: left;">
               <input type='checkbox' id="employment">
               <span></span>
               <p class="checklabel">
                 I have different mailing address than the permanent address
               </p>
-              <p class="mailing_info">
-								You acknowledge that we will enter the credit bureau and save there the data about your application.
-              </p>
+
 
             </label>
           </div>
@@ -514,7 +512,9 @@
 
 		</div>
 
-
+		<p class="mailing_info">
+			You acknowledge that we will enter the credit bureau and save there the data about your application.
+		</p>
 			<button class="bluebtn" id="select_upload_next_button" type="button" name="button">Next</button>
 
         </div>
@@ -544,6 +544,8 @@
 
 
           </div>
+					<h2 class="highlight">Upload account statement</h2>
+
           <div class="uploadbox">
 
             <img src="img/pdf.png" />

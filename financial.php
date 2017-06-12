@@ -210,57 +210,62 @@
                 </label>
               </div>
               <div class="from">
+								<div class="dropdowns">
+									<div class="dropdown">
+										<h2>Current employment from</h2>
+
+	                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Year
+	                  <span class="caret"></span></button>
+	                  <ul class="dropdown-menu">
+	                    <li><a href="#">2017</a></li>
+	                    <li><a href="#">2016</a></li>
+	                    <li><a href="#">2015</a></li>
+	                    <li><a href="#">2014</a></li>
+	                    <li><a href="#">2013</a></li>
+	                    <li><a href="#">2012</a></li>
+	                    <li><a href="#">2011</a></li>
+	                    <li><a href="#">2010</a></li>
+	                    <li><a href="#">2009</a></li>
+	                    <li><a href="#">2008</a></li>
+	                    <li><a href="#">2007</a></li>
+	                    <li><a href="#">2006</a></li>
+	                    <li><a href="#">2005</a></li>
+	                    <li><a href="#">2004</a></li>
+	                    <li><a href="#">2003</a></li>
+	                    <li><a href="#">2002</a></li>
+	                    <li><a href="#">2001</a></li>
+	                    <li><a href="#">2000</a></li>
+	                    <li><a href="#">longer</a></li>
+
+	                  </ul>
+	                </div>
+									<div class="dropdown">
+
+	                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Month
+	                  <span class="caret"></span></button>
+	                  <ul class="dropdown-menu">
+	                    <li><a href="#">January</a></li>
+	                    <li><a href="#">February</a></li>
+	                    <li><a href="#">March</a></li>
+	                    <li><a href="#">April</a></li>
+	                    <li><a href="#">May</a></li>
+	                    <li><a href="#">June</a></li>
+	                    <li><a href="#">July</a></li>
+	                    <li><a href="#">August</a></li>
+	                    <li><a href="#">September</a></li>
+	                    <li><a href="#">October</a></li>
+	                    <li><a href="#">November</a></li>
+	                    <li><a href="#">December</a></li>
+	                  </ul>
+	                </div>
+								</div>
 
 
 
 
-                <div class="dropdown">
-									<h2>Current employment from</h2>
 
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Year
-                  <span class="caret"></span></button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">2017</a></li>
-                    <li><a href="#">2016</a></li>
-                    <li><a href="#">2015</a></li>
-                    <li><a href="#">2014</a></li>
-                    <li><a href="#">2013</a></li>
-                    <li><a href="#">2012</a></li>
-                    <li><a href="#">2011</a></li>
-                    <li><a href="#">2010</a></li>
-                    <li><a href="#">2009</a></li>
-                    <li><a href="#">2008</a></li>
-                    <li><a href="#">2007</a></li>
-                    <li><a href="#">2006</a></li>
-                    <li><a href="#">2005</a></li>
-                    <li><a href="#">2004</a></li>
-                    <li><a href="#">2003</a></li>
-                    <li><a href="#">2002</a></li>
-                    <li><a href="#">2001</a></li>
-                    <li><a href="#">2000</a></li>
-                    <li><a href="#">longer</a></li>
+								<input class="mobile_cal" type="date" name="lastname">
 
-                  </ul>
-                </div>
-								<div class="dropdown">
-
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Month
-                  <span class="caret"></span></button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">January</a></li>
-                    <li><a href="#">February</a></li>
-                    <li><a href="#">March</a></li>
-                    <li><a href="#">April</a></li>
-                    <li><a href="#">May</a></li>
-                    <li><a href="#">June</a></li>
-                    <li><a href="#">July</a></li>
-                    <li><a href="#">August</a></li>
-                    <li><a href="#">September</a></li>
-                    <li><a href="#">October</a></li>
-                    <li><a href="#">November</a></li>
-                    <li><a href="#">December</a></li>
-                  </ul>
-                </div>
                 <div class="check">
 
                   <label>
@@ -508,9 +513,9 @@
               <p>
 Insert your account number where you are receiving the salary <br /><br />We will send to your account a small amount validation payment via our account. You will need reference code from this payment as signature at the end of this application              </p>
             </form>
-            <input placeholder="_ _ _ _ _ _ _ _" class="shorter bankaccount"type="text" maxlength="8"  name="firstname">
-            <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
-            <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
+            <input placeholder="" class="shorter bankaccount"type="text" maxlength="8"  name="firstname">
+            <input placeholder=""class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
+            <input placeholder=""class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
 						<div class="nokh">
 							<img src="img/ok.png" />
 							<p>

@@ -341,7 +341,7 @@ form  {
 .accordion {
   width: 100%;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
   text-align: left;
   border: none;
   background: white;
@@ -349,32 +349,52 @@ form  {
   padding-bottom: 30px;
 
 }
+
+@media (min-width: 767px) {
+  .accordion {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    border: none;
+    background: white;
+    padding: 50px;
+    padding-bottom: 30px;
+
+  }
+}
+
+
 .good {
   background: white;
-  /* max-width: 300px; */
-  margin: 0 auto;
-  margin-top: -20px;
-  text-align: center;
-  float: left;
-  padding: 10px;
-  min-height: 40px;
-  margin-top: 0px;
-  width: 410px;
-  color: var(--blue);
-  position: absolute;
-  margin: 0 auto;
-  font-size: 15px;
-  left: 50%;
-  margin-left: -205px;
-  margin-top: -20px;
-  font-weight: bold;
-  border: 1px solid #d4d4d4;
-  border-radius: 5px;
-  /* float: right; */
-  display: block;
+      /* max-width: 300px; */
+      margin: 0 auto;
+      margin-top: -20px;
+      text-align: center;
+      float: left;
+      padding: 8px;
+      min-height: 34px;
+      margin-top: 0px;
+      width: 410px;
+      color: var(--blue);
+      position: absolute;
+      margin: 0 auto;
+      font-size: 14px;
+      left: 50%;
+      margin-left: -205px;
+      margin-top: -22px;
+      font-weight: bold;
+      border: 1px solid #d4d4d4;
+      border-radius: 5px;
+      /* float: right; */
+      display: block;
   /* margin-left: 50%; */
 /* margin-left: 50%; */
 }
+
+
+
+
 @media (max-width: 762px) {
   .good {
     width: 280px;
@@ -422,6 +442,8 @@ padding-left: 14px;
   background: var(--paleblue);
   padding: 50px;
   margin-bottom: 1px;
+  padding-top: 20px;
+padding-bottom: 20px;
 
 
 }
@@ -634,8 +656,8 @@ border-color: var(--light-blue);
   margin-top: 20px !important;
   text-align: center;
   font-size: 12px !important;
-  padding-left: 5px;
-  width: 100px !important;
+  padding: 10px 0px;
+  width: 78px !important;
 
 }
 .bankaccount:after {
@@ -760,8 +782,9 @@ input[type="file"] {
 
 }
 .mailing_info {
-  text-align: left;
-  margin-left: 30px;
+  margin-top: 60px;
+      text-align: center;
+  }
 }
 .id_ok, .mailing_address {
   padding: 50px;
@@ -834,7 +857,7 @@ input[type="file"] {
   border-radius: 3px;
   min-height: 186px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 20px;
   padding: 30px;
   text-align: center;
 }
@@ -943,6 +966,8 @@ margin-top: 40px;
 background: #FFFFFF;
 border: 1px solid #99DFF9;
 }
+
+
 .calculator h2 {
   margin-bottom: 13px;
 }
@@ -999,7 +1024,7 @@ padding-top: 15px;
 }
 .qualify.col-md-6 {
   text-align: left !important;
-  padding-left: 0px;
+  padding-left: 50px;
 
 }
 .click p {
@@ -1062,9 +1087,7 @@ padding-top: 15px;
 .nokh [type=checkbox]:checked + span:before {
   top: -5px;
 }
-.qualify .col-md-12 h3 {
-  margin-bottom: 40px;
-}
+
 <<<<<<< HEAD
 
 .qualify ul {
@@ -1099,7 +1122,20 @@ margin-right: 40px;
 }
 .landing .col-md-3 img {
   margin-bottom: 10px;
+  margin-top: 20px;
+  max-width: 60px;
+
 }
+@media (min-width: 767px) {
+  .landing .col-md-3 img {
+    max-width: 80px;
+  }
+}
+
+.col-md-12 .col-md-3 {
+  margin-bottom: 30px;
+}
+
 .banks img {
   max-width: 100%;
 }
@@ -1109,6 +1145,8 @@ margin-right: 40px;
 background: #e4e4e4;
 font-size: 15px;
 padding: 5px;
+margin-bottom: 10px;
+
 color: var(--blue);
 line-height: 19px;
 }
@@ -1161,7 +1199,7 @@ overflow: auto;
 }
 @media (max-width: 763px) {
 
-  .desktop_cal {
+  .desktop_cal, .dropdowns {
     display: none;
   }
   .form .form {
@@ -1272,4 +1310,10 @@ margin: 0 auto;
 }
 #upload_address_card {
   margin-top: 230px;
+}
+
+.highlight {
+  width: 200px;
+margin: 0 auto;
+margin-top: 50px;
 }

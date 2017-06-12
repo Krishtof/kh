@@ -52,27 +52,6 @@
 Unrestricted loan from K&H now fully online. Start and finish your application here and you will receive money on your current account in 15 minutes after contract signature. 	</p>
 
 <div class="container qualify">
-	<div class="col-md-6 qualify">
-		<h3>Do I qualify? Yes, if </h3>
-		<ul>
-			<li>You are older than 18</li>
-			<li>You receive regular salary from employment to your bank account</li>
-			<li>You have access to internet banking of this account</li>
-			<li>This account is at one of these
-				<a href="#" class="banklist" data-toggle="tooltip" title="Erste Bank,CIB Bank, K&H Bank, MKB Bank, OTP Bank, Raiffeisen Bank ">supported banks </a>
-			</li>
-		</ul>
-
-		<h3>What sould you have ready?</h3>
-		<ul>
-			<li>Your valid ID</li>
-			<li>Your cell phone</li>
-			<li>E-mail address</li>
-		</ul>
-
-
-
-	</div>
 	<div class="col-md-6 calculator">
 		<div>
 			<div class="need">
@@ -119,9 +98,31 @@ Unrestricted loan from K&H now fully online. Start and finish your application h
 		outstanding amount become due; any expenses from the enforcement of claims arising from a
 		terminated loan agreement by the Bank will be paid by the
 		client">Client should act responsibly and
-follow the guide issued by HNB.</a>
+	follow the guide issued by HNB.</a>
 
 	</div>
+	<div class="col-md-6 qualify">
+		<h3>Do I qualify? Yes, if </h3>
+		<ul>
+			<li>You are older than 18</li>
+			<li>You receive regular salary from employment to your bank account</li>
+			<li>You have access to internet banking of this account</li>
+			<li>This account is at one of these
+				<a href="#" class="banklist" data-toggle="tooltip" title="Erste Bank,CIB Bank, K&H Bank, MKB Bank, OTP Bank, Raiffeisen Bank ">supported banks </a>
+			</li>
+		</ul>
+
+		<h3>What sould you have ready?</h3>
+		<ul>
+			<li>Your valid ID</li>
+			<li>Your cell phone</li>
+			<li>E-mail address</li>
+		</ul>
+
+
+
+	</div>
+
 	<div class="example">
 		<div class="col-md-12" style="padding: 0px;">
 
@@ -204,7 +205,7 @@ follow the guide issued by HNB.</a>
 
 
 <div class="col-md-12 banks" style="padding: 0px;">
-	<h3 style="margin-bottom: 50px;">Where can I access it?</h3>
+	<h3 style="margin-bottom: 20px;">Where can I access it?</h3>
 
 	<div class="col-md-2">
 		<h2>CIB Bank</h2>
