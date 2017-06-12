@@ -1,0 +1,93 @@
+.selected.successful{
+	display: none;
+}
+
+.selected.success{
+	display: none;
+}
+
+.selected.error{
+	display: none;
+}
+
+.mailing_address .city{
+	display: none;
+	text-align: left;
+}
+
+.back{
+	display: none;
+}
+
+.mailing_address .street{
+	display: none;
+	text-align: left;
+}
+
+h2{
+	position: relative !important;
+}
+
+#id_old{
+	cursor: pointer;
+}
+
+.street_holder{
+	width:200px;
+	display: inline-block;
+}
+
+.type_of_street{
+	width:110px;
+	display: inline-block;
+}
+
+.street_number{
+	width: 80px;
+	display: inline-block;
+}
+.floor, .door {
+	width: 90px;
+}
+
+.mailing_address{
+	padding: 0px;
+	display: none;
+}
+
+.accordion.collapsed:before{
+	display: none;
+}
+
+.accordion.collapsed.done:before{
+	display: inline-block;
+}
+
+#new_holder.active, #old_holder.active, #new_holder:hover, #old_holder:hover{
+	outline: 2px solid var(--light-blue);
+}
+
+#after_success{
+	display: none;
+}
+
+#success_message{
+	display: none;
+}
+
+h2#upload_id_issued{
+	display: none;
+}
+
+p#please_upload{
+	display: none;
+}
+
+
+p#please_upload_front_side{
+	display: none;
+}
+
+h2#upload_address_card{
+	display: none;
+}

@@ -1,0 +1,20 @@
+.verify{
+	display: none;
+}
+
+.success{
+	display: none;
+}
+
+.accordion.collapsed:before{
+	display: none;
+}
+
+.accordion.collapsed.done:before{
+	display: inline-block;
+}
+
+
+.done.form{
+	display: none;
+}
