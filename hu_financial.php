@@ -187,7 +187,7 @@
             <div class="form">
 
             <form>
-              Rendszeres havi nettó bevétel<br>
+              Rendszeres havi nettó bevétel, amelynek összegét folyószámla kivonattal tudod igazolni<br>
 							<p>
 								A rendszeres munkából, nyugdíjból vagy gyermekgondozásból származó jövedelmet említsd.
 							</p>
@@ -469,8 +469,8 @@
 								</p>
                 <input class="shorter" type="text" name="firstname" value="0"><br>
 
-                <h2>Ön kiemelt politikai közszereplő?</h2><br>
-                <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur.</p>
+                <h2>Kiemelt közszereplő vagyok</h2><br>
+                <p>kiemelt közszereplő az a természetes személy, aki fontos közfeladatot lát el, vagy az ügyfél-átvilágítási intézkedések elvégzését megelőző egy éven belül fontos közfeladatot látott el, például:  államfő, kormányfő, miniszter, miniszterhelyettes, államtitkár. A kiemelt közszereplők teljes listáját itt találod.</p>
                 <div class="switch">
                   <div class="yes">
                     Igen
@@ -501,7 +501,7 @@
             <form>
               <h2>Kérjük, add meg bankszámlaszámod</h2>
               <p>
-Azt a számlaszámodat add meg, ahova a jövedelmed érkezik. <br /><br />Egy kis összegű jóváírást küldünk a számládra, hogy ellenőrizzük az érvényességét. A későbbiekben, az aláírás során, ennek a jóváírásnak a közleményben szereplő kódra még szükséged lesz!              </p>
+Azt a számlaszámodat add meg, ahova a jövedelmed érkezik* *ha több számlát is használsz, akkor azt add meg, amelyre a jövedelmed nagyobb része érkezik <br /><br />Egy kis összegű jóváírást küldünk a számládra, hogy ellenőrizzük az érvényességét. A mostani szerződéskötési folyamat során ennek a jóváírásnak a közleményben szereplő kódjára még szükséged lesz!              </p>
             </form>
             <input placeholder="_ _ _ _ _ _ _ _" class="shorter bankaccount"type="text" maxlength="8"  name="firstname">
             <input placeholder="_ _ _ _ _ _ _ _"class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
@@ -509,7 +509,7 @@ Azt a számlaszámodat add meg, ahova a jövedelmed érkezik. <br /><br />Egy ki
 						<div class="nokh">
 							<img src="img/ok.png" />
 							<p>
-									Már a bankunk ügyfele vagy! Nagyszerű, amennyiben a jövedelmedet is igazolod, a hiteled kamata 2%-al kevesebb lesz lesz!
+									Már a bankunk ügyfele vagy! Nagyszerű, amennyiben a jövedelmedet is igazolod a hiteled kamata 2%-kal kedvezőbb lesz! A további lépésekben már ezzel a kedvezményes kamattal számolunk.
 							</p>
 
 						</div>
