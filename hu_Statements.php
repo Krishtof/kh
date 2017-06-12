@@ -441,7 +441,7 @@
       <div id="account" class="collapse">
           <div class="form">
           <p>
-          kérjük, tölts fel egy három hónapnál nem régebbi bankszámlakivonatot (az eredeti PDF-et)       </p>
+          kérjük, töltsd fel a <b>2017. márciusi<b/> bankszámlakivonatodat (azt a pdf-et, amelyet az internetbankról töltöttél le)</p>
           <div class="statementholder">
 						<h2>Hogyan tudom letölteni a bankszámla kivonatomat az e-bankomból?</h2>
             <p>
