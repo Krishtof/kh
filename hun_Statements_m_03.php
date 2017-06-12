@@ -30,7 +30,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="text">
-          <h1>Adatvédelmi nyilatkozat</h1>
+          <h1>Adatvédelmi nyilakozat</h1>
           <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur, molestiae definiebas efficiendi in mel. Sit ad eruditi persequeris, ne docendi omnesque pro. Id nibh ubique democritum eum, ea singulis senserit nec, vix no erant dolore intellegebat. Eam ex utamur elaboraret, idque saepe argumentum qui ei, his prodesset dissentiunt ex.
 
           Vis saepe concludaturque ad, eius bonorum periculis vim ea, integre suscipit prodesset eu quo. Utinam scaevola has cu, cum etiam scripserit te, no copiosae definitionem pro. Phaedrum quaerendum eum ea, pro an iuvaret accommodare. Posse adipisci theophrastus at vel, te pro dolore quaestio dignissim. In eos meliore tractatos torquatos. Duo no meis lucilius deterruisset. Mundi ludus eos cu.
@@ -64,7 +64,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="text">
-          <h1>Adatvédelmi nyilatkozat</h1>
+          <h1>Adatvédelmi nyilakozat</h1>
           <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur, molestiae definiebas efficiendi in mel. Sit ad eruditi persequeris, ne docendi omnesque pro. Id nibh ubique democritum eum, ea singulis senserit nec, vix no erant dolore intellegebat. Eam ex utamur elaboraret, idque saepe argumentum qui ei, his prodesset dissentiunt ex.
 
           Vis saepe concludaturque ad, eius bonorum periculis vim ea, integre suscipit prodesset eu quo. Utinam scaevola has cu, cum etiam scripserit te, no copiosae definitionem pro. Phaedrum quaerendum eum ea, pro an iuvaret accommodare. Posse adipisci theophrastus at vel, te pro dolore quaestio dignissim. In eos meliore tractatos torquatos. Duo no meis lucilius deterruisset. Mundi ludus eos cu.
@@ -98,37 +98,37 @@
     <div class="modal-content">
       <div class="modal-body upload">
         <img src="img/mobile.png" />
-        <h1>Kérjük nézze meg a telefonját</h1>
+        <h1>Kérjük ellenőrizze telefonját</h1>
         <p>
-          SMS érkezett a telefonodra. Nyisd meg az üzenetben szereplő linket és üsd be az alábbi biztonsági kódot: <br /><span style="font-weight: bold; font-size: 22px; line-height: 40px;">123432</span>
+          Küldtünk egy SMS-t telefonjára. Kattintson a linkre az üzenetben és adja meg a weboldalon a következő biztonsági kódot:<br /><span style="font-weight: bold; font-size: 22px; line-height: 40px;">123432</span>
         </p>
         <h2>Ezekre figyeljen a fénykép készítése során:</h2>
         <div class="container">
           <div class="col-md-3">
             <img src="img/csillan.png" />
             <p>
-              Ne tükröződjön túlságosan a felület
+              Ne tükröződjön túlságosan felület
             </p>
           </div>
 
           <div class="col-md-3">
             <img src="img/kicsi.png" />
             <p>
-              A kép szélei is látszanak
+              A kép szélei is látsszanak
             </p>
           </div>
 
           <div class="col-md-3">
             <img src="img/low.png" />
             <p>
-              Ne legyen túl világos vagy túl alacsony felbontású a kép
+              Az igazolványról készült fotó ne legyen túl kicsi
             </p>
           </div>
 
           <div class="col-md-3">
             <img src="img/kilog.png" />
             <p>
-              A kép szélei is látsszanak
+              A kép szélei nem látszanak
             </p>
           </div>
         </div>
@@ -225,7 +225,7 @@
 
 
           </div>
-          <h2 class="title">Identification</h2>
+          <h2 class="title">Azonosítás</h2>
         </div>
       </div>
 
@@ -237,7 +237,7 @@
         <h2>Hitel részletei</h2>
         <div class="amount">
           <p>
-            Hitel összeg
+            Hitelösszeg
           </p>
           <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
         </div>
@@ -275,31 +275,30 @@
 								Fotózd le az igazolványodat vagy válaszd ki a telefonod galériájából
 							</p>
 							<div class="uploadbtn">
-								<img src="img/id_front.png" />
-								<button onclick="window.location.href='Statements_m_02_1.html'" class="bluebtn" type="button" name="button">Lefotózom az igazolványom előlapját</button>
-
+								<img src="img/success.png" /><br />
+								<h2>Igazolvány előlapja sikeresen feltöltve.</h2>
 							</div>
 							<div class="uploadbtn">
-								<img src="img/id_back.png" />
-								<button onclick="window.location.href='Statements_m_02_1.html'" class="bluebtn" type="button" name="button">Lefotózom az igazolványom hátoldalát</button>
+								<img src="img/success.png" /><br />
+								<h2>Igazolvány hátlapja sikeresen feltöltve.</h2>
 
 							</div>
 							<div class="uploadbtn" style="margin-top: 50px;">
-								<h2>Lakcímkártya feltöltése</h2>
-								<p >Kérjük fotózd le a lakcímkártyádat úgy, hogy látható legyen a lakcímed.</p>
 
-								<img src="img/id_back.png" />
-								<button onclick="window.location.href='Statements_m_02_1.html'" class="bluebtn" type="button" name="button">Lefotózom a lakcímkártyámat</button>
+								<img src="img/success.png" /><br />
+								<h2>Lakcímkártya sikeresen feltöltve.</h2>
 
 							</div>
 						</div>
+						<button class="bluebtn" id="select_upload_next_button" type="button" name="button">Tovább</button>
+
 					</div>
 
 
 
 
 			<div id="after_success" class="mailing_address">
-				<p style="text-align:left" id="success_message">Adatait sikeresen felismertük.</p><br />
+				<p style="text-align:left" id="success_message">Adatait sikeresen felismertük</p><br />
 
           <div class="check">
 
@@ -349,15 +348,15 @@
 							</div>
 			</div>
 			<div class="street_number">
-				 <h2>Házszám</h2>
+				 <h2>házszám</h2>
 				 <input type="text" class="shortest" name="number">
 			</div>
 			<div class="floor inline">
-				 <h2>Emelet</h2>
+				 <h2>emelet</h2>
 				 <input type="text" class="shortest" name="number">
 			</div>
 			<div class="door inline">
-				 <h2>Ajtó</h2>
+				 <h2>ajtó</h2>
 				 <input type="text" class="shortest" name="number">
 			</div>
 
@@ -380,11 +379,11 @@
           <div class="statementholder">
 						<h2>Hogyan tudom letölteni a bankszámla kivonatomat az e-bankomból?</h2>
             <p>
-              1. Látogass el a mybank.com-ra  <br />
+              1. Látogass el a mybank.com-ra <br />
 2. Jelentkezz be az e-bankba<br />
-3. a bejelentkezés után válaszd a "bankszámlatörténet" menüpontot<br />
-4. válaszd ki az időszakot<br />
-5. kattints a "PDF letöltése" gombra<br />
+3. A bejelentkezés után válaszd a "bankszámlatörténet" menüpontot<br />
+4. Válaszd ki az időszakot<br />
+5. Kattints a "PDF letöltése" gombra<br />
             </p>
 
 
@@ -395,7 +394,7 @@
 
             <img src="img/pdf.png" />
             <p >
-A feltölteni kívánt PDF dokumentumot húzd ide a kijelölt területre            </p>
+A feltölteni kívánt PDF dokumentumot húzd ide a kijelölt területre         </p>
 
             <label class="custom-file-upload id_btn">
 			    <input type="file" id="last_file"/>Dokumentum feltöltése a számítógépről

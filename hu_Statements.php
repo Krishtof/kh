@@ -47,8 +47,8 @@
           </p>
 
         </div>
-        <button id="modal" class="bluebtn" type="button" name="button" data-dismiss="modal">Elfogadom</button>
-        <a class="dont" href="#">Nem fogadom el</a>
+        <button id="modal" class="bluebtn" type="button" name="button" data-dismiss="modal">Egyetértek</button>
+        <a class="dont" href="#">Nem értek egyet</a>
 
       </div>
     </div>
@@ -81,8 +81,8 @@
           </p>
 
         </div>
-        <button id="modal" class="bluebtn" type="button" name="button" data-dismiss="modal">Elfogadom</button>
-        <a class="dont" href="#">Nem fogadom el</a>
+        <button id="modal" class="bluebtn" type="button" name="button" data-dismiss="modal">Egyetértek</button>
+        <a class="dont" href="#">Nem értek egyet el</a>
 
       </div>
     </div>
@@ -114,21 +114,21 @@
           <div class="col-md-3">
             <img src="img/kicsi.png" />
             <p>
-              a kép szélei is látsszanak
+              A kép szélei is látsszanak
             </p>
           </div>
 
           <div class="col-md-3">
             <img src="img/low.png" />
             <p>
-              az igazolványról készült fotó ne legyen túl kicsi
+              Az igazolványról készült fotó ne legyen túl kicsi
             </p>
           </div>
 
           <div class="col-md-3">
             <img src="img/kilog.png" />
             <p>
-              a kép szélei nem látszanak
+              A kép szélei nem látszanak
             </p>
           </div>
         </div>
