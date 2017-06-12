@@ -173,7 +173,7 @@
       <div class="form nopadding approval">
 				<div class="good approve">Már csak a szerződéskötés van hátra!</div>
 
-        <h1>Az általad igényelt hitelösszeget jóváhagytuk. Ugyanakkor lehetőséged van ennél magasabb összeget is igényelni</h1>
+        <h1>Az általad igényelt hitelösszeget jóváhagytuk és ha szeretnéd, alább lehetőséged van ennél magasabb összeget is beállítani.</h1>
         <p>Az általad igényelt hitelösszeg: <?=$_SESSION["loan_amount"]?> Ft. A maximálisan igényelhető személyi hitel összege számodra: 3 000 000 forint. </p>
         <div class="container">
           <div class="col-md-6">
@@ -265,33 +265,33 @@
 				    },
 				    success: function(msg){
 				    	var obj = $.parseJSON(msg);
-				    	
+
 				    	$('input[type=range][name="monthly"]').attr('max',obj['max_loan_instalments'].replace(' ', ''));
 				    	$('input[type=range][name="monthly"]').attr('min',obj['min_loan_instalments'].replace(' ', ''));
 				    	$('#max_monthly_instalment').html(obj['max_loan_instalments']+' Ft');
 				    	$('#min_monthly_instalment').html(obj['min_loan_instalments']+' Ft');
-				    	
+
 				    	//amount you need text módosítása
 				    	$('h1#amount').html(obj['load_amount']+' Ft');
-				    	
+
 				    	var new_value = obj['load_amount'].replace(' ', '');
 				    	var new_value = new_value.replace(' ', '');
-				    	
+
 				    	$('input[type=range][name="amount"]').val(new_value);
-				    	
+
 				    	var css = getCssPercentage(300000,3000000,new_value);
-				    	
+
 						$('input[type=range][name="amount"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#99fba6 '+css+'%,#99fba6 100%)');
 						$('input[type=range][name="amount"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#99fba6 '+css+'%,#99fba6 100%)');
 						$('input[type=range][name="amount"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#99fba6 '+css+'%,#99fba6 100%)');
-				    	
+
 				    	//monthly installmenst text módosítása
 				    	$('#monthly_instalment').html(obj['loan_instalments']+' Ft');
 				    	//monthly csúszka értékének beállítása
 						$('input[type=range][name="monthly"]').val(obj['loan_instalments'].replace(' ', ''));
 						//monthly csúszka mozgatása
 						var css = getCssPercentage(obj['min_loan_instalments'].replace(' ', ''),obj['max_loan_instalments'].replace(' ', ''),obj['loan_instalments'].replace(' ', ''));
-						
+
 						$('input[type=range][name="monthly"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="monthly"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="monthly"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
