@@ -372,7 +372,7 @@
       </div>
 
 
-      <button class="accordion collapsed" data-toggle="collapse" id="account_button" data-target="">Bank account statement</button>
+      <button class="accordion collapsed" data-toggle="collapse" id="account_button" data-target="">Bankszámlakivonat</button>
       <div id="account" class="collapse">
           <div class="form">
           <p>
