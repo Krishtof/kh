@@ -51,7 +51,7 @@
 <div class="container landing">
 	<h1 class="impresto"> </h1>
 	<p style="line-height: 22px;	">
-		Szabad felhasználású hiteligénylés a K&H-tól, mostantól teljesen online! Végezd el az igénylést a neten keresztül és az aláírást követően 15 percen belül meg is érkezik a számládra a kért összeg!
+		A K&H új megoldásával szabad felhasználású hiteled igénylésének minden lépését online elintézheted! Nem szükséges bemenned a bankfiókba, mert az igénylést és a hitelszerződés megkötését is el tudod végezni a neten. Az aláírás is online zajlik és azt követően 15 percen belül meg is érkezik a számládra a kért összeg!
 <div class="container qualify">
 	<div class="col-md-6 qualify">
 		<h3>Megfelelek-e a személyi hitel igénylés feltételeinek? A válasz igen, ha:</h3>
@@ -64,11 +64,11 @@
 			</li>
 		</ul>
 
-		<h3>az igényléshez az alábbiakra lesz szükséged:</h3>
+		<h3>a folyamat során az alábbiakra lesz szükséged az igényléshez:</h3>
 		<ul>
-			<li>érvényes személyi igazolvány</li>
-			<li>érvényes mobiltelefonszám</li>
-			<li>érvényes e-mail cím</li>
+			<li>érvényes személyi igazolványod</li>
+			<li>érvényes mobiltelefonszámod</li>
+			<li>érvényes e-mail címed</li>
 		</ul>
 
 
@@ -105,7 +105,7 @@
 			<p>
 				Teljes megtakarításod a hitelen <span id="total_saving">18 035 Ft</span> lehet.
 			</p>
-			<a href="#" class="mytooltip" data-toggle="tooltip" title="A kedvezmény feltétele, hogy rendelkezel K&H számlával vagy meghatározott időn belül nyitsz egyet és legalább 100 000 Ft munkabéred érkezik ide havonta. Ebben ez esetben 2% kedvezményt adunk a kamatból.  Az új számlát bármikor megnyithatod, a kedvezmény az első fizetési jóváírás beérkezését követő hónaptól lép majd érvénybe. ">i</a>
+			<a href="#" class="mytooltip" data-toggle="tooltip" title="A kedvezmény feltétele, hogy rendelkezel K&H számlával vagy meghatározott időn belül nyitsz egyet és legalább 100 000 Ft munkabéred érkezik ide havonta. Ebben ez esetben 2% kedvezményt adunk a kamatból.  Az új számlát bármikor megnyithatod, ennek költsége max. 750 Ft/hó, a kedvezmény az első fizetési jóváírás beérkezését követő hónaptól lép majd érvénybe. A kalkulátor a kedvezmény nélküli összeget mutatja.  ">i</a>
 
 		</div>
 		<button onclick="window.location.href='hu_basic.php'" class="bluebtn" type="button" name="button">kérem a hitelt</button>
@@ -194,7 +194,7 @@
 
 
 <div class="col-md-12 banks" style="padding: 0px;">
-	<h3 style="margin-bottom: 50px;">A K&H azonnali hitelét, akkor igényelheted, ha az alábbi bankok egyikénél vezeted a folyószámládat</h3>
+	<h3 style="margin-bottom: 50px;">A K&H azonnali hitelét akkor igényelheted, ha az alábbi bankok egyikénél vezeted a folyószámládat</h3>
 
 	<div class="col-md-2">
 		<h2>CIB Bank</h2>
@@ -273,22 +273,22 @@
 				    },
 				    success: function(msg){
 				    	var obj = $.parseJSON(msg);
-				    	
+
 				    	$('input[type=range][name="monthly"]').attr('max',obj['max_loan_instalments'].replace(' ', ''));
 				    	$('input[type=range][name="monthly"]').attr('min',obj['min_loan_instalments'].replace(' ', ''));
 				    	$('#max_monthly_instalment').html(obj['max_loan_instalments']+' Ft');
 				    	$('#min_monthly_instalment').html(obj['min_loan_instalments']+' Ft');
-				    	
+
 				    	//amount you need text módosítása
 				    	$('h1#amount').html(obj['load_amount']+' Ft');
 				    	//felső csúszka módosítása
 				    	var new_value = obj['load_amount'].replace(' ', '');
 				    	var new_value = new_value.replace(' ', '');
-				    	
+
 				    	$('input[type=range][name="amount"]').val(new_value);
-				    	
+
 						var css = getCssPercentage(300000,3000000,new_value);
-						
+
 						$('input[type=range][name="amount"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="amount"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="amount"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
@@ -298,7 +298,7 @@
 						$('input[type=range][name="monthly"]').val(obj['loan_instalments'].replace(' ', ''));
 						//monthly csúszka mozgatása
 						var css = getCssPercentage(obj['min_loan_instalments'].replace(' ', ''),obj['max_loan_instalments'].replace(' ', ''),obj['loan_instalments'].replace(' ', ''));
-						
+
 						$('input[type=range][name="monthly"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="monthly"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="monthly"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
