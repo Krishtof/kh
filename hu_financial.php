@@ -514,7 +514,7 @@ Azt a számlaszámodat add meg, ahova a jövedelmed érkezik* *ha több számlá
 
 						</div>
 
-            <button onclick="window.location.href='hu_Statements.php'" class="bluebtn" type="button" name="button">Tovább</button>
+            <button onclick="window.location.href='hu_Statements.php'" class="bluebtn" type="button" name="button">Következő</button>
 
           </div>
 

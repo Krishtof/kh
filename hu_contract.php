@@ -51,8 +51,8 @@
           </p>
 
         </div>
-        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">Elfogadom</button>
-        <a class="dont" href="#">Nem fogadom el</a>
+        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">Egyetértek</button>
+        <a class="dont" href="#">Nem értek egyet</a>
 
       </div>
     </div>
@@ -86,8 +86,8 @@
           </p>
 
         </div>
-        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button"data-dismiss="modal"  name="button">Elfogadom</button>
-        <a class="dont" href="#">Nem fogadom el</a>
+        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button"data-dismiss="modal"  name="button">Egyetértek</button>
+        <a class="dont" href="#">Nem értek egyet</a>
 
       </div>
     </div>
@@ -120,8 +120,8 @@
           </p>
 
         </div>
-        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">Elfogadom</button>
-        <a class="dont" href="#">Nem fogadom el</a>
+        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">Egyetértek</button>
+        <a class="dont" href="#">Nem értek egyet</a>
 
       </div>
     </div>
@@ -156,8 +156,8 @@
           </p>
 
         </div>
-        <button onclick=""  style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">Elfogadom</button>
-        <a class="dont" href="#">Nem fogadom el</a>
+        <button onclick=""  style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">Egyetértek</button>
+        <a class="dont" href="#">Nem értek egyet</a>
 
       </div>
     </div>
