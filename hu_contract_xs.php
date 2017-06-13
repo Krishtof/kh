@@ -171,38 +171,7 @@
 
 
     <body>
-			<div class="chat">
-				<i class="fa fa-comments" aria-hidden="true"></i>
-			</div>
-			<div class="openchat" style="display: none;">
-				<div class="header">
-					<div class="green"></div>
-					<h2>Ügyfélszolgálat</h2>
-					<i class="fa fa-times closechat" aria-hidden="true"></i>
-				</div>
-				<div class="cbody">
-					<h2>Üdvözöljük! Tudunk segíteni?</h2>
-				</div>
-				<div class="type">
-					<input class="chatwithme" placeholder="Ide írjon" />
-				</div>
-				<script>
-
-
-				$('.chat').on('click',function(){
-					$('.openchat').addClass('block');
-
-				});
-				$('.closechat').on('click',function(){
-					$('.openchat').addClass('hide');
-
-				});
-				$('.closechat').on('click',function(){
-					$('.openchat').removeClass('block');
-
-				});
-				</script>
-			</div>
+			
 <!-- HEADER -->
 <div class="header">
 	<div class="subheader">

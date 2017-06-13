@@ -20,6 +20,8 @@
 
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
          <script src="js/statement.js"></script>
+				 <link rel="stylesheet" href="css/font-awesome.css">
+
     </head>
 
 <!-- BODY-->
@@ -142,18 +144,74 @@
 
 
     <body>
+			<div class="chat">
+				<i class="fa fa-comments" aria-hidden="true"></i>
+			</div>
+			<div class="openchat">
+				<div class="header">
+					<div class="green"></div>
+					<h2>Ügyfélszolgálat</h2>
+					<i class="fa fa-times closechat" aria-hidden="true"></i>
+				</div>
+				<div class="cbody">
+					<h2>Üdvözöljük! Tudunk segíteni?</h2>
+				</div>
+				<div class="type">
+					<input class="chatwithme" placeholder="Ide írjon" />
+				</div>
+				<script>
 
+
+				$('.chat').on('click',function(){
+					$('.openchat').addClass('block');
+
+				});
+				$('.closechat').on('click',function(){
+					$('.openchat').addClass('hide');
+
+				});
+				$('.closechat').on('click',function(){
+					$('.openchat').removeClass('block');
+
+				});
+				</script>
+			</div>
 <!-- HEADER -->
-      <div class="header">
-        <div class="subheader">
-        </div>
-        <div class="sec_subheader">
-        </div>
-        <div class="container">
-          <img class="logo" src="img/logo.png">
+<div class="header">
+	<div class="subheader">
+	</div>
+	<div class="sec_subheader">
+		<div class="container">
+			<button onclick="window.location.href='index.php'" class="bluebtn headerbtn" type="button" name="button">
+				<p>
+				Újrakezdés
+			</p>
+			<i class="fa fa-refresh" aria-hidden="true"></i>
 
-        </div>
-      </div>
+
+			</button>
+			<button class="bluebtn headerbtn" type="button" name="button">
+				<p>
+				Mentés
+			</p>
+
+			<i class="fa fa-floppy-o" aria-hidden="true"></i>
+
+			<button class="bluebtn headerbtn" type="button" name="button">
+				<p>
+				Visszahívást kérek
+			</p>
+			<i class="fa fa-phone" aria-hidden="true"></i>
+
+			</button>
+		</div>
+
+	</div>
+	<div class="container">
+		<img class="logo" src="img/logo.png">
+
+	</div>
+</div>
 <!-- progress bar -->
 
       <div class="container-fluid">
@@ -262,61 +320,41 @@
       <div class="form nopadding">
 				<div class="good">Remek! Még 2 lépés és készen is vagy!</div>
 
-        <button class="accordion" id="data_button" data-toggle="collapse" data-target="#data">Adatvédelmi nyilakozat</button>
-        <div id="data" class="collapse in">
-            <div class="form">
-            <p>
-								Kérjük, szkenneld be, vagy fotózd le személyi igazolványod.            </p>
-            <div class="container slider">
-              <div class="col-md-6">
-
-              </div>
-
-              <div class="col-md-6">
-
-              </div>
-            </div>
-
-
-
-            <button class="bluebtn" type="button" data-toggle="modal" data-target="#acknowledgemodal" name="button">Nyilatkozat megnyitása</button>
-
-          </div>
-
-        </div>
 
 
 
 
-        <button class="accordion collapsed" id="select_upload_button" data-toggle="collapse" data-target="">Személyi igazolvány</button>
-        <div id="expenses" class="collapse">
+
+        <button class="accordion" id="select_upload_button" data-toggle="collapse" data-target="">Személyi igazolvány</button>
+        <div id="expenses" class="collapse in">
             <div class="form id_type">
-              <h2 id="which_id">Az azonosításhoz szükségünk lesz a személyi igazolványod másolatára</h2>
+              <h2 id="which_id">Válaszd ki személyi igazolványod típusát</h2>
+              <h2 id="upload_id_issued">2016.11.12 után kiállított személyi igazolvány</h2>
               <p id="please_select">
                 Kérjük válassz
               </p>
+              <p id="please_upload">
+                Kérjük töltse fel a fájlokat
+              </p>
+              <span class="back">back</span>
               <div class="row">
                   <div class="col-md-6 old active" id="old_id" data-status="">
                     <p id="ip">
-                      2016.11.12 előtt kiállított személyi igazolvány
+                      2016.11.12 elött kiállított személyi igazolvány
                     </p>
                     <div class="col-md-12" id="old_holder">
                       <div class="selected successful">
-                        <p>
-														a feltölteni kívánt képet húzd ide a kijelölt területre                        </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése mobiloddal</button>
-						<label class="custom-file-upload id_btn">
-						    <input type="file" id="file_1"/>Kép feltöltése
-						</label>
-												</div>
+                        <p class="instruction">
+														A feltölteni kívánt képet húzd ide a kijelölt területre                        </p>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése a mobiloddal</button>
+						 <button type="button " class="id_btn"  id="upload_id" name="button">Korábban készített fotó/szkennelt kép feltöltése</button>
+					</div>
                       <div class="selected error">
                         <p>
-                          az általad feltöltött képről nem tudtuk beolvasni a szükséges adatokat, kérjük, próbáld újra:
+                          Az általad feltöltött képről nem tudtuk beolvasni a szükséges adatokat, kérjük, próbáld újra
                         </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése mobiloddal</button>
-                        <label class="custom-file-upload id_btn">
-						    <input type="file" id="file_1_2"/>Kép feltöltése
-						</label>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése a mobiloddal</button>
+                        <button type="button " class="id_btn" id="asdasd" name="button">Korábban készített fotó/szkennelt kép feltöltése</button>
                       </div>
                       <div class="selected success">
 						  <img class="id_suc" src="img/success.png" /><br />
@@ -332,23 +370,130 @@
                     <div class="col-md-12"  id="new_holder">
                       <div class="selected error">
                         <p>
-                          az általad feltöltött kép nem megfelelő, kérjük, tölts fel egy másikat:
+                          Az általad feltöltött képről nem tudtuk beolvasni a szükséges adatokat, kérjük, próbáld újra
                         </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">fotó készítése</button>
-                         <label class="custom-file-upload id_btn">
-						    <input type="file" id="file_2_2"/>Kép feltöltése
-						</label>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése a mobiloddal</button>
+                        <button type="button " class="id_btn" id="upload_id_2" name="button">Korábban készített fotó/szkennelt kép feltöltése</button>
+
                       </div>
                       <div class="selected successful">
-                        <p>
+                        <p class="instruction">
                           A feltölteni kívánt képet húzd ide a kijelölt területre:
                         </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése</button>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése a mobiloddal</button>
+						<button type="button " class="id_btn"  id="dsdsds" name="button">korábban készített fotó/szkennelt kép feltöltése</button>
+                      </div>
+                      <div class="selected success">
+						  <img class="id_suc" src="img/success.png" /><br />
+					 </div>
+                    </div>
+
+
+                  </div>
+
+                  <div class="col-md-6 front_side new_id_upload_check" data-status="" id="front_side">
+                    <div class="col-md-12"  >
+                      <div class="selected error">
+
+                        <p>
+                          Az általad feltöltött képről nem tudtuk beolvasni a szükséges adatokat, kérjük, próbáld újra
+                        </p>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése a mobiloddal</button>
+                         <label class="custom-file-upload id_btn">
+						    <input type="file" id="file_2_2"/>ID upload
+						</label>
+
+                      </div>
+                      <div class="selected successful">
+												<p class="id_title">Igazolvány előlapja</p>
+
+                        <p class="instruction">
+                          A feltölteni kívánt képet húzd ide a kijelölt területre
+                        </p>
+                        <!--<button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
                         <label class="custom-file-upload id_btn">
-						    <input type="file" id="file_2"/>Kép feltöltése
+						    <input type="file" id="file_2"/>ID upload
+						</label>-->
+						  <label class="custom-file-upload id_btn upload_new_id">
+						    <input type="file" class="new_upload_id"/>Korábban készített fotó/szkennelt kép feltöltése
 						</label>
                       </div>
                       <div class="selected success">
+												<p class="id_title">Igazolvány előlapja</p>
+
+						  <img class="id_suc" src="img/success.png" /><br />
+					 </div>
+                    </div>
+
+                  </div>
+                  <div class="col-md-6 back_side new_id_upload_check" data-status="" id="back_side">
+
+                    <div class="col-md-12" >
+                      <div class="selected error">
+                        <p>
+                          Az általad feltöltött képről nem tudtuk beolvasni a szükséges adatokat, kérjük, próbáld újra
+                        </p>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése a mobiloddal</button>
+                         <label class="custom-file-upload id_btn">
+						    <input type="file" id="file_2_2"/>ID upload
+						</label>
+
+                      </div>
+                      <div class="selected successful">
+												<p class="id_title">Igazolvány hátlapja</p>
+
+                        <p class="instruction">
+                          a feltölteni kívánt képet húzd ide a kijelölt területre
+                        </p>
+                       <!-- <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
+                        <label class="custom-file-upload id_btn">
+						    <input type="file" id="file_2"/>ID upload
+						</label>-->
+						 <label class="custom-file-upload id_btn upload_new_id" >
+						    <input type="file"  class="new_upload_id"/>Korábban készített fotó/szkennelt kép feltöltése
+						</label>
+                      </div>
+                      <div class="selected success">
+												<p class="id_title">Igazolvány hátlapja</p>
+
+						  <img class="id_suc" src="img/success.png" /><br />
+					 </div>
+                    </div>
+
+                  </div>
+                  <div class=" address_card new_id_upload_check" style="max-width: 310px; margin: 0 auto;" data-status="" id="address_card">
+					  <h2 id="upload_address_card">Lakcímkártya feltöltése</h2>
+					  <p id="please_upload_front_side">Kérjük tötsd fel lakcímkártyádat úgy, hogy a felső oldala látszódjon.</p>
+									  <div class="col-md-12" style="margin-top: 30px;" >
+
+                      <div class="selected error">
+
+                        <p>
+                          Az általad feltöltött képről nem tudtuk beolvasni a szükséges adatokat, kérjük, próbáld újra
+                        </p>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése a mobiloddal</button>
+                         <label class="custom-file-upload id_btn">
+						    <input type="file" id="file_2_2"/>ID upload
+						</label>
+
+                      </div>
+                      <div class="selected successful">
+												<p class="id_title">Lakcímkártya előlapja</p>
+
+                        <p class="instruction">
+                          a feltölteni kívánt képet húzd ide a kijelölt területre
+                        </p>
+                       <!-- <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Take a picture with your mobile phone</button>
+                        <label class="custom-file-upload id_btn">
+						    <input type="file" id="file_2"/>ID upload
+						</label>-->
+						 <label class="custom-file-upload id_btn upload_new_id" >
+						    <input type="file"  class="new_upload_id"/>Korábban készített fotó/szkennelt kép feltöltése
+						</label>
+                      </div>
+                      <div class="selected success">
+												<p class="id_title">Lakcímkártya előlapja</p>
+
 						  <img class="id_suc" src="img/success.png" /><br />
 					 </div>
                     </div>
@@ -367,21 +512,19 @@
 
           <div class="check">
 
-            <label>
+            <label style="float: left;">
               <input type='checkbox' id="employment">
               <span></span>
               <p class="checklabel">
                 Az állandó lakcímemtől eltérő levelezési címet adok meg
               </p>
-              <p class="mailing_info">
-								Hozzájárulsz, hogy az igénylésed adatait a KHR részére átadjuk.
-              </p>
+
 
             </label>
           </div>
 					<div class="city inline">
 						<div class="postal inline">
-							<h2>Ir.szám</h2>
+							<h2>Irányítószám</h2>
 							<input type="text" class="shortest" name="firstname">
 
 						</div>
@@ -400,9 +543,9 @@
 						</div>
 			<div class="type_of_street">
 				<div class="dropdown shortest">
-								<h2>Utca típus</h2>
+								<h2>Utca típusa</h2>
 
-								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Utca
+								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Street
 								<span class="caret"></span></button>
 								<ul class="dropdown-menu">
 									<li><a href="#">Utca</a></li>
@@ -427,8 +570,10 @@
 
 		</div>
 
-
-			<button class="bluebtn" id="select_upload_next_button" type="button" name="button">Tovább</button>
+		<p class="mailing_info">
+			Hozzájárulsz, hogy az igénylésed adatait a KHR részére átadjuk.
+		</p>
+			<button class="bluebtn" id="select_upload_next_button" type="button" name="button">Következő</button>
 
         </div>
 
@@ -441,29 +586,31 @@
       <div id="account" class="collapse">
           <div class="form">
           <p>
-          kérjük, töltsd fel a <b>2017. márciusi<b/> bankszámlakivonatodat (azt a pdf-et, amelyet az internetbankról töltöttél le)</p>
+						Kérjük, tölts fel egy három hónapnál nem régebbi bankszámlakivonatot (az eredeti PDF-et)       </p>
           <div class="statementholder">
 						<h2>Hogyan tudom letölteni a bankszámla kivonatomat az e-bankomból?</h2>
-            <p>
+            <p> To do this simply:
               1. látogass el a mybank.com-ra <br />
 2. jelentkezz be az e-bankodba<br />
-3. a bejelentkezés után válaszd a ""bankszámlatörténet"" menüpontot<br />
+3. a bejelentkezés után válaszd a "bankszámlatörténet" menüpontot <br />
 4. válaszd ki az időszakot<br />
-5. kattints a ""PDF letöltése"" gombra<br />
+5. kattints a "PDF letöltése" gombra<br />
             </p>
 
 
 
 
           </div>
+					<h2 class="highlight">Bankszámlakivonat feltöltése</h2>
+
           <div class="uploadbox">
 
             <img src="img/pdf.png" />
-            <p>
-A feltölteni kívánt PDF dokumentumot húzd ide a kijelölt területre            </p>
+            <p >
+A feltölteni kívánt képet húzd ide a kijelölt területre, vagy          </p>
 
             <label class="custom-file-upload id_btn">
-			    <input type="file" id="last_file"/>Dokumentum feltöltése
+			    <input type="file" id="last_file"/>Válogass a fájljaid között
 			</label>
 
           </div>
@@ -472,7 +619,7 @@ A feltölteni kívánt PDF dokumentumot húzd ide a kijelölt területre        
 
               <img src="img/success.png" /><br />
               <p>
-                Fájl sikeresen feltöltve:
+                Dokumentum sikeresen feltöltve:
               </p>
               <h2 id="last_file_name">accountstatement.pdf</h2>
               <p style="text-decoration: underline;" id="delete_file">Fájl törlése</p>
@@ -481,7 +628,7 @@ A feltölteni kívánt PDF dokumentumot húzd ide a kijelölt területre        
 
           </div>
 
-          <button onclick="window.location.href='hu_approval.php'" class="bluebtn" type="button" name="button">Tovább</button>
+          <button onclick="window.location.href='hu_approval_wrong.php'" class="bluebtn" type="button" name="button">Következő</button>
 
         </div>
 

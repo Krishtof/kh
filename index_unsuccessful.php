@@ -36,16 +36,23 @@
     <body>
 
 <!-- HEADER -->
-      <div class="header">
-        <div class="subheader">
-        </div>
-        <div class="sec_subheader">
-        </div>
-        <div class="container">
-          <img class="logo" src="img/logo.png">
+<div class="header">
+	<div class="subheader">
+	</div>
+	<div class="sec_subheader">
+		<div class="container">
+			<button onclick="window.location.href='index.php'" class="bluebtn headerbtn" type="button" name="button">Start again</button>
+			<button class="bluebtn headerbtn" type="button" name="button">Save</button>
+			<button class="bluebtn headerbtn" type="button" name="button">Call back</button>
 
-        </div>
-      </div>
+		</div>
+
+	</div>
+	<div class="container">
+		<img class="logo" src="img/logo.png">
+
+	</div>
+</div>
 <!-- progress bar -->
 
 <div class="container landing">

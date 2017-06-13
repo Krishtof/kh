@@ -276,12 +276,12 @@
 							</p>
 							<div class="uploadbtn">
 								<img src="img/id_front.png" />
-								<button onclick="window.location.href='Statements_m_02_1.html'" class="bluebtn" type="button" name="button">Lefotózom az igazolványom előlapját</button>
+								<button onclick="window.location.href='hun_Statements_m_02_1.html'" class="bluebtn" type="button" name="button">Lefotózom az igazolványom előlapját</button>
 
 							</div>
 							<div class="uploadbtn">
 								<img src="img/id_back.png" />
-								<button onclick="window.location.href='Statements_m_02_1.html'" class="bluebtn" type="button" name="button">Lefotózom az igazolványom hátoldalát</button>
+								<button onclick="window.location.href='hun_Statements_m_02_1.html'" class="bluebtn" type="button" name="button">Lefotózom az igazolványom hátoldalát</button>
 
 							</div>
 							<div class="uploadbtn" style="margin-top: 50px;">
@@ -289,7 +289,7 @@
 								<p >Kérjük fotózd le a lakcímkártyádat úgy, hogy látható legyen a lakcímed.</p>
 
 								<img src="img/id_back.png" />
-								<button onclick="window.location.href='Statements_m_02_1.html'" class="bluebtn" type="button" name="button">Lefotózom a lakcímkártyámat</button>
+								<button onclick="window.location.href='hun_Statements_m_02_1.html'" class="bluebtn" type="button" name="button">Lefotózom a lakcímkártyámat</button>
 
 							</div>
 						</div>

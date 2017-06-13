@@ -15,6 +15,8 @@
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/screen.css">
+				<link rel="stylesheet" href="css/font-awesome.css">
+
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     </head>
@@ -26,16 +28,41 @@
     <body>
 
 <!-- HEADER -->
-      <div class="header">
-        <div class="subheader">
-        </div>
-        <div class="sec_subheader">
-        </div>
-        <div class="container">
-          <img class="logo" src="img/logo.png">
+<div class="header">
+	<div class="subheader">
+	</div>
+	<div class="sec_subheader">
+		<div class="container">
+			<button onclick="window.location.href='index.php'" class="bluebtn headerbtn" type="button" name="button">
+				<p>
+				Újrakezdés
+			</p>
+			<i class="fa fa-refresh" aria-hidden="true"></i>
 
-        </div>
-      </div>
+
+			</button>
+			<button class="bluebtn headerbtn" type="button" name="button">
+				<p>
+				Mentés
+			</p>
+
+			<i class="fa fa-floppy-o" aria-hidden="true"></i>
+
+			<button class="bluebtn headerbtn" type="button" name="button">
+				<p>
+				Visszahívást kérek
+			</p>
+			<i class="fa fa-phone" aria-hidden="true"></i>
+
+			</button>
+		</div>
+
+	</div>
+	<div class="container">
+		<img class="logo" src="img/logo.png">
+
+	</div>
+</div>
 <!-- progress bar -->
 
       <div class="container-fluid">

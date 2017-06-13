@@ -7,8 +7,8 @@
 		$result = ($value-$min)/$percentage_1;
 		return $result;
 	}
-	
-	
+
+
 	//keressük ki a választottnál kisebb számot
 	function getLower($datas,$amount){
 		$val = 0;
@@ -19,16 +19,16 @@
 		}
 		return $val;
 	}
-	
+
 
 	include_once('process_csv.php');
-	
+
 	$max = str_replace(' ','',$_SESSION["loan_amount"]);
 
 	/*if(str_replace(' ','',$_SESSION["loan_amount"])>300000){
 		$_SESSION["loan_amount"] = str_replace(' ','',$_SESSION["loan_amount"]) - 50000;
 	}*/
-	
+
 	$selected = getLower($datas,str_replace(' ','',$_SESSION["loan_amount"]));
 
 	$selection = array();
@@ -61,25 +61,25 @@
 	    	}
 	    }
 	}
-	
+
 	foreach($datas as $key => $value){
 	    if($value['load_amount'] == str_replace(' ','',$selection['load_amount'])){
 	    	if($value['loan_instalments'] > $max_s){
 	    		$max_s = $value['loan_instalments'];
 	    		$selection['max_loan_instalments'] = number_format($value['loan_instalments'],0,',',' ');
-	    		
-	    	}					
+
+	    	}
 	    }
 	}
-	
+
 	$_SESSION["min_loan"] = $selection['min_loan_instalments'];
 	$_SESSION["max_loan"] = $selection['max_loan_instalments'];
 
 	$you_can_get = str_replace(' ','',$selected);
 	$amount_css = getCssPercentage(300000,$max,$you_can_get);
 	$monthly_css = getCssPercentage(str_replace(' ','',$_SESSION["min_loan"]),str_replace(' ','',$_SESSION["max_loan"]),str_replace(' ','',$_SESSION["loan_instalments"]));
-	
-	
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
@@ -124,16 +124,23 @@
     <body>
 
 <!-- HEADER -->
-      <div class="header">
-        <div class="subheader">
-        </div>
-        <div class="sec_subheader">
-        </div>
-        <div class="container">
-          <img class="logo" src="img/logo.png">
+<div class="header">
+	<div class="subheader">
+	</div>
+	<div class="sec_subheader">
+		<div class="container">
+			<button onclick="window.location.href='index.php'" class="bluebtn headerbtn" type="button" name="button">Start again</button>
+			<button class="bluebtn headerbtn" type="button" name="button">Save</button>
+			<button class="bluebtn headerbtn" type="button" name="button">Call back</button>
 
-        </div>
-      </div>
+		</div>
+
+	</div>
+	<div class="container">
+		<img class="logo" src="img/logo.png">
+
+	</div>
+</div>
 <!-- progress bar -->
 
       <div class="container-fluid">
@@ -330,7 +337,7 @@
   				}
 	  			var value = $(this).val();
 	  			var month = $('#month_number').html();
-	  			
+
 
 
 
@@ -358,13 +365,13 @@
 					    	new_value = <?=str_replace(' ','',$_SESSION["loan_amount"])?>;
 				    	}
 				    	$('input[type=range][name="amount"]').val(new_value);
-				    	
+
 				    	var css = getCssPercentage(300000,<?=$max?>,new_value);
-	  			
+
 						$('input[type=range][name="amount"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%, #e6f7fe '+css+'%, #e6f7fe '+<?=$amount_css?>+'%,#f89ca8 '+<?=$amount_css?>+'%,#f89ca8 100%)');
 						$('input[type=range][name="amount"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%, e6f7fe '+css+'%, #e6f7fe '+<?=$amount_css?>+'%,#f89ca8 '+<?=$amount_css?>+'%,#f89ca8 100%)');
 						$('input[type=range][name="amount"]').css('background','linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%, #e6f7fe '+<?=$amount_css?>+'%,#f89ca8 '+<?=$amount_css?>+'%,#f89ca8 100%)');
-				    	
+
 				    	//monthly installmenst text módosítása
 				    	$('#monthly_instalment').html(obj['loan_instalments']+' Ft');
 				    	//monthly csúszka értékének beállítása

@@ -1,5 +1,5 @@
 $(function(){
-	
+
 	/*idclick();
 	idclick2();
 	billing();
@@ -11,13 +11,13 @@ $(function(){
 	file2_2();
 	lastfile();
 	delete_file();*/
-	
+
 	//new version
 	upload_id();
 	//new_click();
 	back_click();
 	upload_new_id();
-	
+
 	modal_close();
 	billing();
 	next();
@@ -41,7 +41,7 @@ function check_all_ids(){
 }
 
 function upload_new_id(){
-	
+
 	$(document).on('change','.new_upload_id',function(){
 		var value = $(this).val();
 		$(this).closest('.new_id_upload_check').find('.successful').hide();
@@ -72,7 +72,7 @@ function new_click(){
 		$('#new_holder').find('.successful').hide();
 		$(this).find('.successful').show();
 	});
-	
+
 	$('#new_holder').click(function(){
 		$('#old_holder').find('.successful').hide();
 		$(this).find('.successful').show();
@@ -118,7 +118,7 @@ function upload_id(){
 		}
 		$('span.back').show();
 	});
-	
+
 	$('#asdasd').click(function(){
 		console.log('klikk');
 		$('#new_id').hide();
@@ -139,7 +139,7 @@ function upload_id(){
 		}
 		$('span.back').show();
 	});
-	
+
 		$('#dsdsds').click(function(){
 		console.log('klikk');
 		$('#new_id').hide();
@@ -160,7 +160,7 @@ function upload_id(){
 		}
 		$('span.back').show();
 	});
-	
+
 	$('#upload_id_2').click(function(){
 		console.log('klikk2');
 		$('#new_id').hide();
@@ -221,7 +221,7 @@ function delete_file(){
 	$('#delete_file').click(function(){
 		$('.uploadbox.success').hide();
 		$('.uploadbox:first').show();
-		
+
 	})
 }
 
@@ -288,6 +288,8 @@ function next(){
 		$('#account_button').removeClass('collapsed');
 		$('#account').addClass('in');
 		$('#account_button').attr('data-target','#account');
+		$('.openchat').addClass('block');
+
 	});
 }
 
@@ -304,16 +306,16 @@ function idclick(){
 		   $(this).find('.selected.successful').show();
 		   $(this).attr('data-status','first');
 		}
-		
+
 		if(status == 'first'){
 		   $(this).attr('data-status','second');
 		}
-		
+
 		if(status == 'second'){
 		   $(this).attr('data-status','third');
 		}
 	});
-	
+
 	$('#modal_button').click(function(){
 		var status = $('#old_id').attr('data-status');
 		if(status == 'second'){
@@ -345,16 +347,16 @@ function idclick2(){
 		    $(this).find('.selected.successful').show();
 		    $(this).attr('data-status','first');
 		}
-		
+
 		if(status == 'first'){
 		    $(this).attr('data-status','second');
 		}
-		
+
 		if(status == 'second'){
 		    $(this).attr('data-status','third');
 		}
 	});
-	
+
 	$('#modal_button').click(function(){
 		var status = $('#new_id').attr('data-status');
 		if(status == 'second'){

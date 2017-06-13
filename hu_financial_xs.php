@@ -19,6 +19,8 @@
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
          <script src="js/finance.js"></script>
+				 <link rel="stylesheet" href="css/font-awesome.css">
+
     </head>
 
 <!-- BODY-->
@@ -30,7 +32,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="text">
-          <h1>Data protection policy</h1>
+          <h1>Data processing policy</h1>
           <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur, molestiae definiebas efficiendi in mel. Sit ad eruditi persequeris, ne docendi omnesque pro. Id nibh ubique democritum eum, ea singulis senserit nec, vix no erant dolore intellegebat. Eam ex utamur elaboraret, idque saepe argumentum qui ei, his prodesset dissentiunt ex.
 
           Vis saepe concludaturque ad, eius bonorum periculis vim ea, integre suscipit prodesset eu quo. Utinam scaevola has cu, cum etiam scripserit te, no copiosae definitionem pro. Phaedrum quaerendum eum ea, pro an iuvaret accommodare. Posse adipisci theophrastus at vel, te pro dolore quaestio dignissim. In eos meliore tractatos torquatos. Duo no meis lucilius deterruisset. Mundi ludus eos cu.
@@ -65,10 +67,28 @@
 	</div>
 	<div class="sec_subheader">
 		<div class="container">
-			<button onclick="window.location.href='index.php'" class="bluebtn headerbtn" type="button" name="button">Start again</button>
-			<button class="bluebtn headerbtn" type="button" name="button">Save</button>
-			<button class="bluebtn headerbtn" type="button" name="button">Call back</button>
+			<button onclick="window.location.href='index.php'" class="bluebtn headerbtn" type="button" name="button">
+				<p>
+				Újrakezdés
+			</p>
+			<i class="fa fa-refresh" aria-hidden="true"></i>
 
+
+			</button>
+			<button class="bluebtn headerbtn" type="button" name="button">
+				<p>
+				Mentés
+			</p>
+
+			<i class="fa fa-floppy-o" aria-hidden="true"></i>
+
+			<button class="bluebtn headerbtn" type="button" name="button">
+				<p>
+				Visszahívást kérek
+			</p>
+			<i class="fa fa-phone" aria-hidden="true"></i>
+
+			</button>
 		</div>
 
 	</div>
@@ -95,7 +115,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Basic information
+                Alapadatok
               </p>
             </div>
             <div class="col-xs-2 active">
@@ -105,7 +125,7 @@
                 </p>
               </div>
               <p class="pr_title ">
-                About you
+                Személyes adatok
               </p>
             </div>
             <div class="col-xs-2">
@@ -115,7 +135,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Identification
+                Azonosítás
               </p>
             </div>
             <div class="col-xs-2">
@@ -125,7 +145,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Approval
+                Jóváhagyás
               </p>
             </div>
             <div class="col-xs-2">
@@ -135,7 +155,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Contract signature
+                Szerződéskötés
               </p>
             </div>
             <div class="col-xs-2">
@@ -145,14 +165,14 @@
                 </p>
               </div>
               <p class="pr_title">
-                Finish
+                Befejezés
               </p>
             </div>
 
 
 
           </div>
-          <h2 class="title">Personal details</h2>
+          <h2 class="title">Személyes adatok</h2>
         </div>
       </div>
 
@@ -161,24 +181,22 @@
     <div class="container">
 
 			<div class="loanholder">
-				<p class="edit" >Edit</p>
-
-        <h2>Loan I apply for</h2>
+        <h2>Hitel részletei</h2>
         <div class="amount">
           <p>
-            Loan amount:
+            Hitelösszeg
           </p>
           <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
         </div>
         <div class="info">
 
           <div class="instalments">
-            <h2>Installments:</h2>
+            <h2>Törlesztőrészlet:</h2>
             <p><?=$_SESSION["loan_instalments"]?> Ft</p>
           </div>
           <div class="instalments">
-            <h2>Repaid in:</h2>
-            <p><?=$_SESSION["repaid_in"]?> month</p>
+            <h2>Futamidő:</h2>
+            <p><?=$_SESSION["repaid_in"]?> hónap</p>
           </div>
         </div>
       </div>
@@ -189,22 +207,22 @@
 
     <div class="container">
       <div class="form nopadding">
-				<div class="good">You are doing well!Only 3 more steps!</div>
+				<div class="good">Remek! Még 4 lépés és készen is vagy!</div>
 
-        <button class="accordion  " data-toggle="collapse" id="income_button" data-target="#income">Income:</button>
+        <button class="accordion  " data-toggle="collapse" id="income_button" data-target="#income">Bevétel</button>
         <div id="income" class="collapse in">
             <div class="form">
 
             <form>
-              Your regular monthly net income<br>
+              Rendszeres havi nettó bevétel, amelynek összegét folyószámla kivonattal tudod igazolni<br>
 							<p>
-								insert just income from regular employment, pension or maternity
+								A rendszeres munkából, nyugdíjból vagy gyermekgondozásból származó jövedelmet említsd
 							</p>
               <input type="text" name="firstname" class="forint" id="forint" value="0"><br>
 
-              Source of income<br />
+              bevétel forrása<br />
 							<p>
-								You can choose more than one option
+								több bevételi forrást is megjelölhetsz
 							</p>
               <div class="check">
 
@@ -212,16 +230,16 @@
                   <input type='checkbox' id="employment">
                   <span></span>
                   <p>
-                    Employment
+                    Munkabér
                   </p>
                 </label>
               </div>
               <div class="from">
 								<div class="dropdowns">
 									<div class="dropdown">
-										<h2>Current employment from</h2>
+										<h2>Munkaviszony kezdete</h2>
 
-	                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Year
+	                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Év
 	                  <span class="caret"></span></button>
 	                  <ul class="dropdown-menu">
 	                    <li><a href="#">2017</a></li>
@@ -248,7 +266,7 @@
 	                </div>
 									<div class="dropdown">
 
-	                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Month
+	                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Hónap
 	                  <span class="caret"></span></button>
 	                  <ul class="dropdown-menu">
 	                    <li><a href="#">January</a></li>
@@ -279,7 +297,7 @@
                     <input type='checkbox'>
                     <span></span>
                     <p>
-                      I confirm that I am neither in probation or trial period.
+                      Kijelentem, hogy nem állok próbaidő vagy felmondás alatt.
                     </p>
                   </label>
                 </div>
@@ -293,7 +311,7 @@
                   <input type='checkbox'>
                   <span></span>
                   <p>
-                    Maternity
+                    TGYÁS/GYED/GYES
                   </p>
                 </label>
               </div>
@@ -304,7 +322,7 @@
                   <input type='checkbox'>
                   <span></span>
                   <p>
-                    Self-employment
+                    egyéni vállalkozó
                   </p>
                 </label>
               </div>
@@ -315,7 +333,7 @@
                   <input type='checkbox'>
                   <span></span>
                   <p>
-                    Pension
+                    Nyugdíj
                   </p>
                 </label>
               </div>
@@ -327,7 +345,7 @@
                   <input type='checkbox'>
                   <span></span>
                   <p>
-                    Other
+                    Egyéb
                   </p>
                 </label>
               </div>
@@ -337,7 +355,7 @@
 
             </form>
 
-            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#income" name="button" id="income_next">Next</button>
+            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#income" name="button" id="income_next">Tovább</button>
 
           </div>
 
@@ -346,26 +364,26 @@
 
 
 
-        <button class="accordion collapsed  " data-toggle="collapse" id="expenses_button" data-target="">Expenses</button>
+        <button class="accordion collapsed  " data-toggle="collapse" id="expenses_button" data-target="">Kiadások</button>
         <div id="expenses" class="collapse">
             <div class="form">
 
             <form class="expenses">
-              Regular loan instalments:<br>
+              Havi törlesztőrészlet:<br>
 							<p>
-								Just if you are already paying other loan installments
+								Abban az esetben, ha már van másik hiteled
 							</p>
               <input type="text" name="firstname" value="0"><br>
-              Regular monthly expenses:<br>
+              Rendszeres egyéb havi kiadások:<br>
 							<p>
-								It contain regular monthly expenses on housing, food, medicaments etc.
+								mint például közüzemi számlák, lakbér, ételre vagy gyógyszerekre fordított összeg, stb.
 							</p>
               <input type="text" name="lastname" value="0">
             </form>
 
             </form>
 
-            <button class="bluebtn" type="button" id="expense_next" data-toggle="collapse"  data-target="#expenses" name="button">Next</button>
+            <button class="bluebtn" type="button" id="expense_next" data-toggle="collapse"  data-target="#expenses" name="button">Tovább</button>
 
           </div>
 
@@ -373,54 +391,54 @@
 
 
 
-        <button class="accordion collapsed  " data-toggle="collapse"  id="housing_button" data-target="">Housing</button>
+        <button class="accordion collapsed  " data-toggle="collapse"  id="housing_button" data-target="">Lakhatás</button>
         <div id="Housing" class="collapse">
             <div class="form housing">
 							<form>
-              <h2>Type</h2>
+              <h2>Típus</h2>
               <div class="radio">
                 <input type="radio" id="r1" name="rr" />
-                <label for="r1">Rent</label>
+                <label for="r1">Bérelt ingatlanban élek</label>
               </div>
               <div class="radio">
                 <input type="radio" id="r2" name="rr" />
-                <label for="r2">Own</label>
+                <label for="r2">Saját ingatlanban élek</label>
               </div>
 
 
 
               <div class="radio">
                 <input type="radio" id="r2" name="rr" />
-                <label for="r2">Other</label>
+                <label for="r2">Egyb</label>
               </div>
 							</form>
 
 
-              <h2 style="margin-top: 40px;">Length of living on current address?</h2>
+              <h2 style="margin-top: 40px;">Mióta laksz ebben az ingatlanban?</h2>
               <div class="radio">
 								<form>
                 <input type="radio" id="r1" name="rr" />
-                <label for="r1">0-1 year</label>
+                <label for="r1">0-1 év</label>
               </div>
               <div class="radio">
                 <input type="radio" id="r2" name="rr" />
-                <label for="r2">1-3 year</label>
-              </div>
-
-              <div class="radio">
-                <input type="radio" id="r2" name="rr" />
-                <label for="r2">3-6 year</label>
+                <label for="r2">1-3 év</label>
               </div>
 
               <div class="radio">
                 <input type="radio" id="r2" name="rr" />
-                <label for="r2">6+ year</label>
+                <label for="r2">3-6 év</label>
+              </div>
+
+              <div class="radio">
+                <input type="radio" id="r2" name="rr" />
+                <label for="r2">6+ év</label>
               </div>
 
 
             </form>
 
-            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#Housing" id="housing_next" name="button">Next</button>
+            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#Housing" id="housing_next" name="button">Tovább</button>
 
           </div>
 
@@ -429,77 +447,77 @@
 
 
 
-        <button class="accordion collapsed  " data-toggle="collapse"  id="family_button" data-target="">Family and education</button>
+        <button class="accordion collapsed  " data-toggle="collapse"  id="family_button" data-target="">Családi állapot és végzettség</button>
         <div id="family" class="collapse">
 
               <div class="form family">
-                <h2>Level of education</h2>
+                <h2>Legmagasabb iskolai végzettség</h2>
 								<form>
                 <div class="radio">
                   <input type="radio" id="r1" name="rr" />
-                  <label for="r1">Elementary school</label>
+                  <label for="r1">Általános iskola</label>
                 </div>
                 <div class="radio">
                   <input type="radio" id="r2" name="rr" />
-                  <label for="r2">High school</label>
-                </div>
-
-                <div class="radio">
-                  <input type="radio" id="r2" name="rr" />
-                  <label for="r2">Vocational school with A-level graduation</label>
+                  <label for="r2">Gimnázium</label>
                 </div>
 
                 <div class="radio">
                   <input type="radio" id="r2" name="rr" />
-                  <label for="r2">Vocational school without A-level graduation</label>
+                  <label for="r2">Szakközépiskola</label>
                 </div>
 
                 <div class="radio">
                   <input type="radio" id="r2" name="rr" />
-                  <label for="r2">College/University</label>
+                  <label for="r2">Szakiskola/szakmunkásképző</label>
+                </div>
+
+                <div class="radio">
+                  <input type="radio" id="r2" name="rr" />
+                  <label for="r2">Főiskola/egyetem</label>
                 </div>
 								</form>
 
 
-                <h2 style="margin-top: 40px;">Martial status</h2>
+                <h2 style="margin-top: 40px;">Családi állapot</h2>
 								<form>
                 <div class="radio">
                   <input type="radio" id="r1" name="rr" />
-                  <label for="r1">Single</label>
+                  <label for="r1">Egyedülálló</label>
                 </div>
                 <div class="radio">
                   <input type="radio" id="r2" name="rr" />
-                  <label for="r2">Married / living in registered partnership </label>
+                  <label for="r2">Házas / bejegyzett élettársi kapcsolat </label>
                 </div>
 
                 <div class="radio">
                   <input type="radio" id="r2" name="rr" />
-                  <label for="r2">Other (companion, widow/widower, divorced, common living)</label>
+                  <label for="r2">Egyéb (párkapcsolat, élettársi kapcsolat, özvegy, elvált)</label>
                 </div><br />
 							</form>
 
-                <h2>Number of dependence:</h2><br>
+                <h2>Eltartottak száma:</h2><br>
 								<p>
-									Applicant himself doesn’t count
+									A hiteligénylő nem számít eltartottnak
 								</p>
                 <input class="shorter" type="text" name="firstname" value="0"><br>
 
-                <h2>Are you a politically exposed person?</h2><br>
-                <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur.</p>
+                <h2>Kiemelt közszereplő vagyok</h2><br>
+                <p>Kiemelt közszereplő az a természetes személy, aki fontos közfeladatot lát el, vagy az ügyfél-átvilágítási intézkedések elvégzését megelőző egy éven belül fontos közfeladatot látott el, például:  államfő, kormányfő, miniszter, miniszterhelyettes, államtitkár. A kiemelt közszereplők teljes listáját itt találod. </p>
 								<form>
 								<div class="radio">
 									<input type="radio" id="r1" name="rr" />
-									<label for="r1">Yes</label>
+									<label for="r1">Igen</label>
 								</div>
 								<div class="radio">
 									<input type="radio" id="r2" name="rr" />
-									<label for="r2">No </label>
+									<label for="r2">Nem </label>
 								</div>
 
 
                 </form>
 
-                <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#family" id="family_next" name="button">Next</button>
+                <button class="bluebtn family_next" type="button" data-toggle="collapse"  data-target="#family" id="family_next" name="button">Tovább</button>
 
               </div>
 
@@ -511,14 +529,14 @@
 
 
 
-        <button class="accordion collapsed  " data-toggle="collapse"  id="bank_button" data-target="">Bank account</button>
+        <button class="accordion collapsed  " data-toggle="collapse"  id="bank_button" data-target="">Bankszámlára vonatkozó adatok</button>
         <div id="bank" class="collapse">
             <div class="form">
 
             <form>
-              <h2>You current account number</h2>
+              <h2>Kérjük, add meg bankszámlaszámod</h2>
               <p>
-Insert your account number where you are receiving the salary <br /><br />We will send to your account a small amount validation payment via our account. You will need reference code from this payment as signature at the end of this application              </p>
+Azt a számlaszámodat add meg, ahova a jövedelmed érkezik* *ha több számlát is használsz, akkor azt add meg, amelyre a jövedelmed nagyobb része érkezik <br /><br />Egy kis összegű jóváírást küldünk a számládra, hogy ellenőrizzük az érvényességét. A mostani szerződéskötési folyamat során ennek a jóváírásnak a közleményben szereplő kódjára még szükséged lesz!             </p>
             </form>
             <input placeholder="" class="shorter bankaccount"type="text" maxlength="8"  name="firstname">
             <input placeholder=""class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
@@ -526,12 +544,12 @@ Insert your account number where you are receiving the salary <br /><br />We wil
 						<div class="nokh">
 							<img src="img/ok.png" />
 							<p>
-									You are banking with us! Great news after we will verify your income what you provided to us your loan will be about XXX FT cheaper
+									Már a bankunk ügyfele vagy! Nagyszerű, amennyiben a jövedelmedet is igazolod a hiteled kamata 2%-kal kedvezőbb lesz! A további lépésekben már ezzel a kedvezményes kamattal számolunk.
 							</p>
 
 						</div>
 
-            <button onclick="window.location.href='Statements.php'" class="bluebtn" type="button" name="button">Next</button>
+            <button onclick="window.location.href='hun_Statements_m_02.php'" class="bluebtn" type="button" name="button">Tovább</button>
 
           </div>
 

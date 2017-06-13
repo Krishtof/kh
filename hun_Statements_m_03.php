@@ -415,7 +415,7 @@ A feltölteni kívánt PDF dokumentumot húzd ide a kijelölt területre        
 
           </div>
 
-          <button onclick="window.location.href='approval.php'" class="bluebtn" type="button" name="button">Következő</button>
+          <button onclick="window.location.href='hu_approval_wrong_xs.php'" class="bluebtn" type="button" name="button">Következő</button>
 
         </div>
 

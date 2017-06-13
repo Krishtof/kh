@@ -21,12 +21,18 @@
         <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/screen.css">
-        <link rel="stylesheet" href="css/slider.css">
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+				<link rel="stylesheet" href="../css/bootstrap-switch.css">
 
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../css/screen.css">
+        <link rel="stylesheet" href="../css/slider.css">
+
+
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+				<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+				<script src="../bower_components/bootstrap/dist/js/bootstrap-switch.js"></script>
+
     </head>
 
 <!-- BODY-->
@@ -42,7 +48,7 @@
         <div class="sec_subheader">
         </div>
         <div class="container">
-          <img class="logo" src="img/logo.png">
+          <img class="logo" src="../img/logo.png">
 
         </div>
       </div>
@@ -53,27 +59,22 @@
 	<p style="line-height: 22px;	">
 		A K&H új megoldásával szabad felhasználású hiteled igénylésének minden lépését online elintézheted! Nem szükséges bemenned a bankfiókba, mert az igénylést és a hitelszerződés megkötését is el tudod végezni a neten. Az aláírás is online zajlik és azt követően 15 percen belül meg is érkezik a számládra a kért összeg!
 <div class="container qualify">
-	<div class="col-md-6 qualify">
-		<h3>Megfelelek-e a személyi hitel igénylés feltételeinek? A válasz igen, ha:</h3>
-		<ul>
-			<li>már elmúltál 18 éves</li>
-			<li>rendelkezel havi rendszerességű, munkáltatótól származó, igazolható jövedelemmel </li>
-			<li>rendelkezel bankszámlával és hozzá kapcsolódó internet bank eléréssel az oldal alján található bankok egyikénél</li>
-			<li>a fenti számla
-				<a href="#" class="banklist" data-toggle="tooltip" title="Erste Bank,CIB Bank, K&H Bank, MKB Bank, OTP Bank, Raiffeisen Bank ">az alábbi támogatott bankok valamelyikénél </a>található
-			</li>
-		</ul>
-
-		<h3>a folyamat során az alábbiakra lesz szükséged az igényléshez:</h3>
-		<ul>
-			<li>érvényes személyi igazolványod</li>
-			<li>érvényes mobiltelefonszámod</li>
-			<li>érvényes e-mail címed</li>
-		</ul>
-
-
-	</div>
 	<div class="col-md-6 calculator">
+		<div class="prem">
+			<p>
+				Magasabb a havi nettó jövedelme 250.000 Ft-nál?
+			</p>
+			<div class="myswitch">
+				<div class="active nem">
+					Nem
+				</div>
+				<div class="inactive igen">
+					Igen
+				</div>
+			</div>
+
+		</div>
+
 		<div>
 			<div class="need">
 				<h2 class="n_label">igényelt hitelösszeg</h2>
@@ -105,12 +106,43 @@
 			<p>
 				Teljes megtakarításod a hitelen <span id="total_saving">18 035 Ft</span> lehet.
 			</p>
-			<a href="#" class="mytooltip" data-toggle="tooltip" title="A kedvezmény feltétele, hogy rendelkezel K&H számlával vagy meghatározott időn belül nyitsz egyet és legalább 100 000 Ft munkabéred érkezik ide havonta. Ebben ez esetben 2% kedvezményt adunk a kamatból.  Az új számlát bármikor megnyithatod, ennek költsége max. 750 Ft/hó, a kedvezmény az első fizetési jóváírás beérkezését követő hónaptól lép majd érvénybe. A kalkulátor a kedvezmény nélküli összeget mutatja.  ">i</a>
+			<a class="ttip" data-toggle="tooltip" title="Discount will be applicable if you are having or you will open a KH current account and sending there your salary  (at least 100.000 Ft) then you will get 2% discount on the interest rate. You can open the current account in KH anytime, the discount will be effective following month after you will receive your first salary there. ">Learn more about the discount.</a>
 
 		</div>
 		<button onclick="window.location.href='hu_basic.php'" class="bluebtn" type="button" name="button">kérem a hitelt</button>
+		<a class="ttip" data-toggle="tooltip" title="Follow the guide issued by HNB will be hyper link to show this:
+		the client shall only sign a loan agreement which he or she
+		fully understands; any change in the client’s circumstances, he or she still
+		remain obliged to pay back the loan amount; if the client has solvency problems he or she must
+		immediately inform the Bank; in case of any expired payment obligation the Bank will apply
+		late payment interest; in case of non-performance of the contract the Bank is
+		entitled to immediately terminate the loan agreement and all
+		outstanding amount become due; any expenses from the enforcement of claims arising from a
+		terminated loan agreement by the Bank will be paid by the
+		client">Client should act responsibly and
+		follow the guide issued by HNB.</a>
+	</div>
+	<div class="col-md-6 qualify">
+		<h3>Megfelelek-e a személyi hitel igénylés feltételeinek? A válasz igen, ha:</h3>
+		<ul>
+			<li>már elmúltál 18 éves</li>
+			<li>rendelkezel havi rendszerességű, munkáltatótól származó, igazolható jövedelemmel </li>
+			<li>rendelkezel bankszámlával és hozzá kapcsolódó internet bank eléréssel az oldal alján található bankok egyikénél</li>
+			<li>a fenti számla
+				<a href="#" class="banklist" data-toggle="tooltip" title="Erste Bank,CIB Bank, K&H Bank, MKB Bank, OTP Bank, Raiffeisen Bank ">az alábbi támogatott bankok valamelyikénél </a>található
+			</li>
+		</ul>
+
+		<h3>a folyamat során az alábbiakra lesz szükséged az igényléshez:</h3>
+		<ul>
+			<li>érvényes személyi igazolványod</li>
+			<li>érvényes mobiltelefonszámod</li>
+			<li>érvényes e-mail címed</li>
+		</ul>
+
 
 	</div>
+
 	<div class="example">
 		<div class="col-md-12" style="padding: 0px;">
 
@@ -124,7 +156,7 @@
 	<h3>Az igénylés folyamata</h3>
 
 	<div class="col-md-3">
-		<img src="img/peronal_data.png" />
+		<img src="../img/peronal_data.png" />
 		<p>
 			személyes adatok megadása
 		</p>
@@ -132,14 +164,14 @@
 
 
 	<div class="col-md-3">
-		<img src="img/take_pic.png" />
+		<img src="../img/take_pic.png" />
 		<p>
 			a személyi igazolványról készült fotó feltöltése
 		</p>
 	</div>
 
 	<div class="col-md-3">
-		<img src="img/read_sign.png" />
+		<img src="../img/read_sign.png" />
 		<p>
 			a szerződés ellenőrzése, aláírása
 		</p>
@@ -147,7 +179,7 @@
 
 
 	<div class="col-md-3">
-		<img src="img/receive_enjoy.png" />
+		<img src="../img/receive_enjoy.png" />
 		<p>
 			Az igényelt hitelösszeg kiutalása
 		</p>
@@ -159,7 +191,7 @@
 
 	<h3>Az online hiteligénylés előnyei:</h3>
 	<div class="col-md-3">
-		<img src="img/minutes.png" />
+		<img src="../img/minutes.png" />
 		<p>
 			az igényelt összeg a szerződés aláírását követő 15 percen belűl megérkezhet bankszámládra
 		</p>
@@ -167,14 +199,14 @@
 
 
 	<div class="col-md-3">
-		<img src="img/online_application.png" />
+		<img src="../img/online_application.png" />
 		<p>
 			az igényléshez nem szükséges bankfiókba menni
 		</p>
 	</div>
 
 	<div class="col-md-3">
-		<img src="img/management.png" />
+		<img src="../img/management.png" />
 		<p>
 			nincs ügyintézési költség
 		</p>
@@ -182,7 +214,7 @@
 
 
 	<div class="col-md-3">
-		<img src="img/security.png" />
+		<img src="../img/security.png" />
 		<p>
 			A hitelt Magyarország egyik vezető pénzügyi szolgáltatója biztosítja.
 		</p>
@@ -265,7 +297,7 @@
   				var month = $('#month_number').html();
   				$.ajax({
 				    type: "POST",
-				    url: "ajax.php",
+				    url: "../ajax.php",
 				    data: {
 				    	mode: 'amountChange',
 				    	month : month,
@@ -370,4 +402,9 @@
 		$(document).ready(function(){
 		    $('[data-toggle="tooltip"]').tooltip();
 		});
+		</script>
+		<script>
+		    $(document).ready(function() {
+					$("[name='csek']").bootstrapSwitch();
+		    });
 		</script>

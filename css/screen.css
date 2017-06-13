@@ -1256,10 +1256,10 @@ overflow: auto;
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 .block {
-  display: block;
+  display: block !important ;
 }
 #precontractual .done {
   display: none;
@@ -1315,5 +1315,159 @@ margin: 0 auto;
 .highlight {
   width: 200px;
 margin: 0 auto;
+text-align: center;
 margin-top: 50px;
+}
+
+.headerbtn {
+  float: right;
+width: 40px;
+min-width: 50px;
+border: 1px solid var(--light-blue);
+background: none;
+color: var(--light-blue);
+height: 40px;
+margin-left: 10px;
+margin-top: 15px;
+}
+
+@media (min-width: 767px) {
+  .headerbtn {
+    min-width: 100px;
+  }
+}
+.prem {
+  margin-bottom: 80px;
+  margin-top: 10px;
+}
+.bootstrap-switch {
+  float: right;
+}
+.prem p{
+  float: left;
+    text-align: left;
+    max-width: 168px;
+    line-height: 18px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.headerbtn i {
+  font-size: 23px;
+    color: var(--light-blue);
+}
+.headerbtn p {
+  font-size: 14px;
+    color: var(--light-blue);
+}
+@media (max-width: 767px) {
+  .headerbtn p {
+    display: none;
+  }
+}
+@media (min-width: 767px) {
+  .headerbtn i {
+    display: none;
+  }
+}
+.chat {
+  height: 70px;
+width: 70px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+position: fixed;
+top: 50%;
+right: 0px;
+cursor: pointer;
+
+background: var(--light-blue);
+}
+.chat i {
+  color: white;
+  margin-left: 17px;
+  margin-top: 17px;
+font-size: 34px;
+}
+@media (max-width: 767px) {
+  .chat {
+    display: none;
+  }
+}
+.openchat {
+  position: fixed;
+    bottom: 0px;
+    right: 100px;
+    height: 370px;
+    width: 310px;
+    z-index: 1000000;
+    background: white;
+    border: 1px solid #cecbcb;
+}
+.cbody h2 {
+  margin-top: 50px;
+    padding: 6px;
+    margin: 16px;
+    margin-top: 40px;
+    border-radius: 30px;
+    padding-left: 15px;
+    font-weight: normal;
+    border-bottom-right-radius: 0px;
+    background: #00aeef;
+    /* border-radius: 30px; */
+    color: white;
+}
+.openchat .header {
+  background: #f3f3f3;
+  height: 42px;
+}
+.openchat .header h2 {
+  padding: 10px;
+}
+.openchat .header i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #9e9e9e;}
+
+.openchat .type {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.openchat .type input {
+height: 45px;
+width: 100%;
+padding: 10px;
+}
+input.chatwithme::-webkit-input-placeholder {
+  color: #9e9e9e;
+}
+
+.myswitch {
+  width: 120px;
+  float: right;
+  height: 35px;
+  border: 1px solid var(--light-blue);
+  border-radius: 3px;
+}
+.myswitch .active, .myswitch .inactive {
+  display: inline-block;
+  height: 100%;
+  cursor: pointer;
+    width: 48%;
+    padding-top: 9px;
+
+}
+.myswitch .active {
+background: var(--light-blue);
+color: white;
+border-radius: 0px;
+
+}
+.myswitch .igen {
+  float: right;
+
+}
+.myswitch .nem {
+  float: left;
 }

@@ -8,6 +8,7 @@
 	$_SESSION["total_repaid"] = '780 000';
 	$_SESSION["max_loan"] = '65 000';
 	$_SESSION["min_loan"] = '10 833';
+
 	?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
@@ -20,17 +21,18 @@
         <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-				<link rel="stylesheet" href="css/bootstrap-switch.css">
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+				<link rel="stylesheet" href="../css/bootstrap-switch.css">
 
-        <link rel="stylesheet" href="css/screen.css">
-        <link rel="stylesheet" href="css/slider.css">
+        <link rel="stylesheet" href="../css/screen.css">
+        <link rel="stylesheet" href="../css/slider.css">
 
 
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-				<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+				<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-				<script src="bower_components/bootstrap/dist/js/bootstrap-switch_en.js"></script>
+				<script src="../bower_components/bootstrap/dist/js/bootstrap-switch.js"></script>
+
     </head>
 
 <!-- BODY-->
@@ -44,37 +46,38 @@
         <div class="subheader">
         </div>
         <div class="sec_subheader">
-					<div class="container">
-						<button onclick="window.location.href='index.php'" class="bluebtn headerbtn" type="button" name="button">Start again</button>
-						<button class="bluebtn headerbtn" type="button" name="button">Save</button>
-						<button class="bluebtn headerbtn" type="button" name="button">Call back</button>
-
-					</div>
-
         </div>
         <div class="container">
-          <img class="logo" src="img/logo.png">
+          <img class="logo" src="../img/logo.png">
 
         </div>
       </div>
 <!-- progress bar -->
 
 <div class="container landing">
-	<p style="line-height: 22px; margin-top: 30px;	">
-Unrestricted loan from K&H now fully online. Start and finish your application here and you will receive money on your current account in 15 minutes after contract signature. 	</p>
-
+	<h1 class="impresto"> </h1>
+	<p style="line-height: 22px;	">
+		A K&H új megoldásával szabad felhasználású hiteled igénylésének minden lépését online elintézheted! Nem szükséges bemenned a bankfiókba, mert az igénylést és a hitelszerződés megkötését is el tudod végezni a neten. Az aláírás is online zajlik és azt követően 15 percen belül meg is érkezik a számládra a kért összeg!
 <div class="container qualify">
 	<div class="col-md-6 calculator">
 		<div class="prem">
 			<p>
-				Do you have more income than 250.000 HUF?
+				Magasabb a havi nettó jövedelme 250.000 Ft-nál?
 			</p>
-			<input type="checkbox" name="csek" checked>
+			<div class="myswitch">
+				<div class="inactive nem">
+					Nem
+				</div>
+				<div class="active igen">
+					Igen
+				</div>
+			</div>
 
 		</div>
+
 		<div>
 			<div class="need">
-				<h2 class="n_label">Amount you need</h2>
+				<h2 class="n_label">igényelt hitelösszeg</h2>
 				<h1 class="n_amount" id="amount">600 000 Ft</h1>
 				<input class="custom_range" type="range" name="amount" min="300000" max="3000000" step="1" value="600000">
 				<p class="min_amount">300.000 Ft</p>
@@ -84,7 +87,7 @@ Unrestricted loan from K&H now fully online. Start and finish your application h
 		</div>
 		<div>
 			<div style="margin-top: 60px;"class="need">
-				<h2 class="n_label">Monthly installment:</h2>
+				<h2 class="n_label">havi törlesztőrészlet:</h2>
 				<h1 class="n_amount" id="monthly_instalment">32 500 Ft</h1>
 				<input class="custom_range" type="range" name="monthly" min="10833" max="65000" step="1" value="32500" list="numbers">
 				<p class="min_amount" id="min_monthly_instalment">10 833 Ft</p>
@@ -93,20 +96,20 @@ Unrestricted loan from K&H now fully online. Start and finish your application h
 
 		</div>
 		<div class="repaidin">
-			<h2>Repaid in:</h2>
-			<h3><span id="month_number">24</span> month</h3>
+			<h2>futamidő:</h2>
+			<h3><span id="month_number">24</span> hónap</h3>
 		</div>
 		<div class="disc">
 			<p >
-				You can get <span id="monthly_discount">1 502 Ft</span> discount monthly. 
+				Havi <span id="monthly_discount">1 502 Ft</span> kedvezményre vagy jogosult. 
 			</p>
 			<p>
-				Your total saving on your loan can be: <span id="total_saving">18 035 Ft</span>.
+				Teljes megtakarításod a hitelen <span id="total_saving">18 035 Ft</span> lehet.
 			</p>
 			<a class="ttip" data-toggle="tooltip" title="Discount will be applicable if you are having or you will open a KH current account and sending there your salary  (at least 100.000 Ft) then you will get 2% discount on the interest rate. You can open the current account in KH anytime, the discount will be effective following month after you will receive your first salary there. ">Learn more about the discount.</a>
 
 		</div>
-		<button onclick="window.location.href='basic.php'" class="bluebtn" type="button" name="button">Yes, I want this loan</button>
+		<button onclick="window.location.href='../hun_desktop/hu_basic.php'" class="bluebtn" type="button" name="button">kérem a hitelt</button>
 		<a class="ttip" data-toggle="tooltip" title="Follow the guide issued by HNB will be hyper link to show this:
 		the client shall only sign a loan agreement which he or she
 		fully understands; any change in the client’s circumstances, he or she still
@@ -117,83 +120,68 @@ Unrestricted loan from K&H now fully online. Start and finish your application h
 		outstanding amount become due; any expenses from the enforcement of claims arising from a
 		terminated loan agreement by the Bank will be paid by the
 		client">Client should act responsibly and
-	follow the guide issued by HNB.</a>
-
+		follow the guide issued by HNB.</a>
 	</div>
-
 	<div class="col-md-6 qualify">
-		<h3>Do I qualify? Yes, if </h3>
+		<h3>Megfelelek-e a személyi hitel igénylés feltételeinek? A válasz igen, ha:</h3>
 		<ul>
-			<li>You are older than 18</li>
-			<li>You receive regular salary from employment to your bank account</li>
-			<li>You have access to internet banking of this account</li>
-			<li>This account is at one of these
-				<a href="#" class="banklist" data-toggle="tooltip" title="Erste Bank,CIB Bank, K&H Bank, MKB Bank, OTP Bank, Raiffeisen Bank ">supported banks </a>
+			<li>már elmúltál 18 éves</li>
+			<li>rendelkezel havi rendszerességű, munkáltatótól származó, igazolható jövedelemmel </li>
+			<li>rendelkezel bankszámlával és hozzá kapcsolódó internet bank eléréssel az oldal alján található bankok egyikénél</li>
+			<li>a fenti számla
+				<a href="#" class="banklist" data-toggle="tooltip" title="Erste Bank,CIB Bank, K&H Bank, MKB Bank, OTP Bank, Raiffeisen Bank ">az alábbi támogatott bankok valamelyikénél </a>található
 			</li>
 		</ul>
 
-		<h3>What sould you have ready?</h3>
+		<h3>a folyamat során az alábbiakra lesz szükséged az igényléshez:</h3>
 		<ul>
-			<li>Your valid ID</li>
-			<li>Your cell phone</li>
-			<li>E-mail address</li>
+			<li>érvényes személyi igazolványod</li>
+			<li>érvényes mobiltelefonszámod</li>
+			<li>érvényes e-mail címed</li>
 		</ul>
-
-
 
 
 	</div>
 
 	<div class="example">
-
 		<div class="col-md-12" style="padding: 0px;">
 
-		<h3>Representative Example</h3>
+		<h3>Reprezentatív példa</h3>
 		<p>
-			For a 48-month, HUF 800 thousand loan, the monthly repayment instalment with regular monthly salary income is HUF 21,063 at a fixed 11.99% annual interest rate. The total amount to be repaid is HUF 1,033,536 and the loan charges are HUF 233,536, of which fees and costs amount to HUF 22,512. The annual percentage rate (APR) is 14.0%.
-		</p>
+			800 000 forint összegû kölcsön esetén, 48 hónapos futamidõvel, éves fix, munkabér-átutalási kedvezménnyel számított 11,99% akciós kamat mellett a havi törlesztõrészlet 21 063 forint, a teljes visszafizetendõ összeg 1 033 536 forint, a hiteldíj 233 536 forint, ebbõl a hiteldíjban foglalt díjak, költségek összege 22 512 forint, THM: 14%		</p>
 	</div>
-	<div class="col-md-12">
-		<h3>
-			Is your net salary higher than 250.000 Ft?
-		</h3>
-		<p>
-			If your net salary is higher than 250.000 Ft, you are eligible for a different set of terms.
-		</p>
-		<button onclick="window.location.href='index_premium.php'" class="bluebtn" type="button" name="button">Show premium package</button>
 
-	</div>
 	</div>
 <div class="col-md-12" style="padding: 0px;">
-	<h3>How does it work?</h3>
+	<h3>Az igénylés folyamata</h3>
 
 	<div class="col-md-3">
-		<img src="img/peronal_data.png" />
+		<img src="../img/peronal_data.png" />
 		<p>
-			Enter your personal Data
+			személyes adatok megadása
 		</p>
 	</div>
 
 
 	<div class="col-md-3">
-		<img src="img/take_pic.png" />
+		<img src="../img/take_pic.png" />
 		<p>
-			Take a picture of your ID card
+			a személyi igazolványról készült fotó feltöltése
 		</p>
 	</div>
 
 	<div class="col-md-3">
-		<img src="img/read_sign.png" />
+		<img src="../img/read_sign.png" />
 		<p>
-			Read and sign the contract online
+			a szerződés ellenőrzése, aláírása
 		</p>
 	</div>
 
 
 	<div class="col-md-3">
-		<img src="img/receive_enjoy.png" />
+		<img src="../img/receive_enjoy.png" />
 		<p>
-			Receive and enjoy your money
+			Az igényelt hitelösszeg kiutalása
 		</p>
 	</div>
 </div>
@@ -201,42 +189,44 @@ Unrestricted loan from K&H now fully online. Start and finish your application h
 
 <div class="col-md-12" style="padding: 0px;">
 
-	<h3>What are the benefits?</h3>
+	<h3>Az online hiteligénylés előnyei:</h3>
 	<div class="col-md-3">
-		<img src="img/minutes.png" />
+		<img src="../img/minutes.png" />
 		<p>
-			Money credited within 15 minutes after online contract signature.
+			az igényelt összeg a szerződés aláírását követő 15 percen belűl megérkezhet bankszámládra
 		</p>
 	</div>
 
 
 	<div class="col-md-3">
-		<img src="img/online_application.png" />
+		<img src="../img/online_application.png" />
 		<p>
-			Purely online application without having to go to a branch.
+			az igényléshez nem szükséges bankfiókba menni
 		</p>
 	</div>
 
 	<div class="col-md-3">
-		<img src="img/management.png" />
+		<img src="../img/management.png" />
 		<p>
-			No management or other hidden fees.
+			nincs ügyintézési költség
 		</p>
 	</div>
 
 
 	<div class="col-md-3">
-		<img src="img/security.png" />
+		<img src="../img/security.png" />
 		<p>
-			Reliability and tradition of our bank.
+			A hitelt Magyarország egyik vezető pénzügyi szolgáltatója biztosítja.
 		</p>
 	</div>
 </div>
+
+
 
 
 
 <div class="col-md-12 banks" style="padding: 0px;">
-	<h3 style="margin-bottom: 20px;">Where can I access it?</h3>
+	<h3 style="margin-bottom: 50px;">A K&H azonnali hitelét akkor igényelheted, ha az alábbi bankok egyikénél vezeted a folyószámládat</h3>
 
 	<div class="col-md-2">
 		<h2>CIB Bank</h2>
@@ -307,7 +297,7 @@ Unrestricted loan from K&H now fully online. Start and finish your application h
   				var month = $('#month_number').html();
   				$.ajax({
 				    type: "POST",
-				    url: "ajax.php",
+				    url: "../ajax.php",
 				    data: {
 				    	mode: 'amountChange',
 				    	month : month,
@@ -408,13 +398,13 @@ Unrestricted loan from K&H now fully online. Start and finish your application h
   		}
 
   	</script>
-	<script type="text/javascript">
-	$(document).ready(function(){
-	    $('[data-toggle="tooltip"]').tooltip();
-	});
-	</script>
-	<script>
-			$(document).ready(function() {
-				$("[name='csek']").bootstrapSwitch();
-			});
-	</script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+		    $('[data-toggle="tooltip"]').tooltip();
+		});
+		</script>
+		<script>
+		    $(document).ready(function() {
+					$("[name='csek']").bootstrapSwitch();
+		    });
+		</script>

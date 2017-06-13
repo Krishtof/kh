@@ -21,16 +21,11 @@
         <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-				<link rel="stylesheet" href="css/bootstrap-switch.css">
-
         <link rel="stylesheet" href="css/screen.css">
         <link rel="stylesheet" href="css/slider.css">
 
-
         <script src="bower_components/jquery/dist/jquery.js"></script>
-				<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-				<script src="bower_components/bootstrap/dist/js/bootstrap-switch_en.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     </head>
 
 <!-- BODY-->
@@ -44,16 +39,12 @@
         <div class="subheader">
         </div>
         <div class="sec_subheader">
-					<div class="container">
-						<button onclick="window.location.href='index.php'" class="bluebtn headerbtn" type="button" name="button">Start again</button>
-						<button class="bluebtn headerbtn" type="button" name="button">Save</button>
-						<button class="bluebtn headerbtn" type="button" name="button">Call back</button>
-
-					</div>
-
         </div>
         <div class="container">
           <img class="logo" src="img/logo.png">
+
+
+					</div>
 
         </div>
       </div>
@@ -65,13 +56,6 @@ Unrestricted loan from K&H now fully online. Start and finish your application h
 
 <div class="container qualify">
 	<div class="col-md-6 calculator">
-		<div class="prem">
-			<p>
-				Do you have more income than 250.000 HUF?
-			</p>
-			<input type="checkbox" name="csek" checked>
-
-		</div>
 		<div>
 			<div class="need">
 				<h2 class="n_label">Amount you need</h2>
@@ -155,12 +139,12 @@ Unrestricted loan from K&H now fully online. Start and finish your application h
 	</div>
 	<div class="col-md-12">
 		<h3>
-			Is your net salary higher than 250.000 Ft?
+			Is your net salary lower than 250.000 Ft?
 		</h3>
 		<p>
-			If your net salary is higher than 250.000 Ft, you are eligible for a different set of terms.
+			If your net salary is lower than 250.000 Ft, you are eligible for a different set of terms.
 		</p>
-		<button onclick="window.location.href='index_premium.php'" class="bluebtn" type="button" name="button">Show premium package</button>
+		<button onclick="window.location.href='index.php'" class="bluebtn" type="button" name="button">Show basic package</button>
 
 	</div>
 	</div>
@@ -412,9 +396,4 @@ Unrestricted loan from K&H now fully online. Start and finish your application h
 	$(document).ready(function(){
 	    $('[data-toggle="tooltip"]').tooltip();
 	});
-	</script>
-	<script>
-			$(document).ready(function() {
-				$("[name='csek']").bootstrapSwitch();
-			});
 	</script>
