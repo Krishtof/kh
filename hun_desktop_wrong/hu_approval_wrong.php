@@ -85,23 +85,27 @@
 <html lang="en" class="no-js">
 
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-				<title>Testbirds prototype</title>
-        <meta name="description" content="prototype">
-        <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
-        <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/screen.css">
-				<link rel="stylesheet" href="css/font-awesome.css">
+			<meta charset="utf-8">
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Testbirds prototype</title>
+			<meta name="description" content="prototype">
+			<meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
+			<link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
+			<link rel="shortcut icon" href="favicon.ico">
+			<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+			<link rel="stylesheet" href="../css/screen.css">
+			<link rel="stylesheet" href="../css/slider.css">
+			<link rel="stylesheet" href="../css/font-awesome.css">
+			<script src="../bower_components/jquery/dist/jquery.js"></script>
+			<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" href="css/slider.css">
-		 <link rel="stylesheet" href="css/approval.css">
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <style>
+
+        <link rel="stylesheet" href="../css/slider.css">
+				<link rel="stylesheet" href="../css/approval.css">
+
+				<style>
         	input[name="amount"]{
 	        	background: #99fba6; /* Old browsers */
 				background: -moz-linear-gradient(left, #00aeef 0%, #00aeef <?=$amount_css?>%, #f89ca8 <?=$amount_css?>%, #f89ca8 100%) ; /* FF3.6-15 */
@@ -170,7 +174,7 @@
 
 	</div>
 	<div class="container">
-		<img class="logo" src="img/logo.png">
+		<img class="logo" src="../img/logo.png">
 
 	</div>
 </div>
@@ -236,7 +240,7 @@
               </p>
             </div>
 						<div class="col-xs-2 last">
-							<img src="img/finish.png" />
+							<img src="../img/finish.png" />
               <p class="pr_title ">
                 Finish
               </p>
@@ -377,7 +381,7 @@
 
 	  			$.ajax({
 				    type: "POST",
-				    url: "ajax.php",
+				    url: "../ajax.php",
 				    data: {
 				    	mode: 'amountChange',
 				    	month : month,
@@ -448,7 +452,7 @@
 
   				$.ajax({
 				    type: "POST",
-				    url: "ajax.php",
+				    url: "../ajax.php",
 				    data: {
 				    	mode: 'monhtlyChange',
 				    	monthly: value,

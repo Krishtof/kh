@@ -21,9 +21,9 @@
 			<script src="../bower_components/jquery/dist/jquery.js"></script>
 			<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-         <script src="js/finance.js"></script>
-				 <link rel="stylesheet" href="css/font-awesome.css">
-				 <link rel="stylesheet" href="css/finance.css">
+         <script src="../js/finance.js"></script>
+				 <link rel="stylesheet" href="../css/font-awesome.css">
+				 <link rel="stylesheet" href="../css/finance.css">
 
     </head>
 

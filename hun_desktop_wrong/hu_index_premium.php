@@ -48,7 +48,7 @@
 			    background: linear-gradient(to right, #00aeef 0%,#00aeef 100%,#e6f7fe 100%,#e6f7fe 100%);
 			    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#e6f7fe',GradientType=1 );
 			}
-			
+
 		</style>
     </head>
 
@@ -126,7 +126,7 @@
 			<a class="ttip" data-toggle="tooltip" title="Discount will be applicable if you are having or you will open a KH current account and sending there your salary  (at least 100.000 Ft) then you will get 2% discount on the interest rate. You can open the current account in KH anytime, the discount will be effective following month after you will receive your first salary there. ">Learn more about the discount.</a>
 
 		</div>
-		<button onclick="window.location.href='../hun_desktop/hu_basic.php'" class="bluebtn" type="button" name="button">kérem a hitelt</button>
+		<button onclick="window.location.href='hu_basic.php'" class="bluebtn" type="button" name="button">kérem a hitelt</button>
 		<a class="ttip" data-toggle="tooltip" title="Follow the guide issued by HNB will be hyper link to show this:
 		the client shall only sign a loan agreement which he or she
 		fully understands; any change in the client’s circumstances, he or she still
