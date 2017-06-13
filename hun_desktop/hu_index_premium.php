@@ -297,7 +297,7 @@
   				var month = $('#month_number').html();
   				$.ajax({
 				    type: "POST",
-				    url: "../ajax.php",
+				    url: "../ajax2.php",
 				    data: {
 				    	mode: 'amountChange',
 				    	month : month,
@@ -364,7 +364,7 @@
 
   				$.ajax({
 				    type: "POST",
-				    url: "ajax.php",
+				    url: "ajax2.php",
 				    data: {
 				    	mode: 'monhtlyChange',
 				    	monthly: value,
