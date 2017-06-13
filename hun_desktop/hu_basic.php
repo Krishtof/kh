@@ -15,17 +15,12 @@
 	        <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
 	        <link rel="shortcut icon" href="favicon.ico">
 	        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-					<link rel="stylesheet" href="../css/bootstrap-switch.css">
-
 	        <link rel="stylesheet" href="../css/screen.css">
 	        <link rel="stylesheet" href="../css/slider.css">
-
 					<link rel="stylesheet" href="../css/font-awesome.css">
-
 	        <script src="../bower_components/jquery/dist/jquery.js"></script>
 					<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-					<script src="../bower_components/bootstrap/dist/js/bootstrap-switch.js"></script>
 					<link rel="stylesheet" href="../css/basics.css">
 					<script src="../js/basics.js"></script>
 

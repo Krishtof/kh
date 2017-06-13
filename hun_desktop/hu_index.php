@@ -68,7 +68,7 @@
 				<div class="active nem">
 					Nem
 				</div>
-				<div class="inactive igen">
+				<div onclick="window.location.href='hu_index_premium.php'" class="inactive igen">
 					Igen
 				</div>
 			</div>
@@ -297,7 +297,7 @@
   				var month = $('#month_number').html();
   				$.ajax({
 				    type: "POST",
-				    url: "../ajax.php",
+				    url: "../ajax2.php",
 				    data: {
 				    	mode: 'amountChange',
 				    	month : month,
@@ -364,7 +364,7 @@
 
   				$.ajax({
 				    type: "POST",
-				    url: "ajax.php",
+				    url: "../ajax2.php",
 				    data: {
 				    	mode: 'monhtlyChange',
 				    	monthly: value,

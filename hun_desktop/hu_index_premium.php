@@ -65,7 +65,7 @@
 				Magasabb a havi nettó jövedelme 250.000 Ft-nál?
 			</p>
 			<div class="myswitch">
-				<div class="inactive nem">
+				<div onclick="window.location.href='hu_index.php'" class="inactive nem">
 					Nem
 				</div>
 				<div class="active igen">
