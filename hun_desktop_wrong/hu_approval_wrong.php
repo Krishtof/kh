@@ -21,16 +21,23 @@
 	}
 
 
-	include_once('process_csv.php');
-
+	include_once('../process3_csv.php');
+	//echo '<pre>';
+	//print_r($datas);
+	if(str_replace(' ','',$_SESSION["loan_amount"]) < 1000000 ){
+		$_SESSION["loan_amount"] = 2000000;
+	}
+	
 	$max = str_replace(' ','',$_SESSION["loan_amount"]);
 
 	/*if(str_replace(' ','',$_SESSION["loan_amount"])>300000){
 		$_SESSION["loan_amount"] = str_replace(' ','',$_SESSION["loan_amount"]) - 50000;
 	}*/
-
+	
+	
 	$selected = getLower($datas,str_replace(' ','',$_SESSION["loan_amount"]));
-
+	
+	
 	$selection = array();
 
 	foreach($datas as $key => $value){
@@ -74,9 +81,9 @@
 
 	$_SESSION["min_loan"] = $selection['min_loan_instalments'];
 	$_SESSION["max_loan"] = $selection['max_loan_instalments'];
-
+	
 	$you_can_get = str_replace(' ','',$selected);
-	$amount_css = getCssPercentage(300000,$max,$you_can_get);
+	$amount_css = getCssPercentage(1000000,$max,$you_can_get);
 	$monthly_css = getCssPercentage(str_replace(' ','',$_SESSION["min_loan"]),str_replace(' ','',$_SESSION["max_loan"]),str_replace(' ','',$_SESSION["loan_instalments"]));
 
 
@@ -294,8 +301,8 @@
 			<div class="need">
 					<h2 class="n_label">igényelt hitelösszeg</h2>
 					<h1 class="n_amount" id="amount"><?=$_SESSION["loan_amount"]?> Ft</h1>
-					<input class="custom_range" type="range" name="amount" min="300000" max="<?=$max?>" step="50000" value="<?=str_replace(' ','',$_SESSION["loan_amount"])?>">
-					<p class="min_amount">300 000 Ft</p>
+					<input class="custom_range" type="range" name="amount" min="1000000" max="<?=$max?>" step="50000" value="<?=str_replace(' ','',$_SESSION["loan_amount"])?>">
+					<p class="min_amount">1 000 000 Ft</p>
 					<p class="max_amount"><?=number_format($max,0,',',' ')?> Ft</p>
 				</div>
 
@@ -403,7 +410,7 @@
 				    	}
 				    	$('input[type=range][name="amount"]').val(new_value);
 
-				    	var css = getCssPercentage(300000,<?=$max?>,new_value);
+				    	var css = getCssPercentage(1000000,<?=$max?>,new_value);
 
 						$('input[type=range][name="amount"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%, #e6f7fe '+css+'%, #e6f7fe '+<?=$amount_css?>+'%,#f89ca8 '+<?=$amount_css?>+'%,#f89ca8 100%)');
 						$('input[type=range][name="amount"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%, e6f7fe '+css+'%, #e6f7fe '+<?=$amount_css?>+'%,#f89ca8 '+<?=$amount_css?>+'%,#f89ca8 100%)');
