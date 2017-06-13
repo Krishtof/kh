@@ -5,22 +5,25 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-				<title>Testbirds prototype</title>
-        <meta name="description" content="prototype">
-        <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
-        <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/screen.css">
-				<link rel="stylesheet" href="css/font-awesome.css">
+			<meta charset="utf-8">
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Testbirds prototype</title>
+			<meta name="description" content="prototype">
+			<meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
+			<link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
+			<link rel="shortcut icon" href="favicon.ico">
+			<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+			<link rel="stylesheet" href="../css/screen.css">
+			<link rel="stylesheet" href="../css/slider.css">
+			<link rel="stylesheet" href="../css/font-awesome.css">
+			<script src="../bower_components/jquery/dist/jquery.js"></script>
+			<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" href="css/contract.css">
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-         <script src="js/contract.js"></script>
+
+        <link rel="stylesheet" href="../css/contract.css">
+         <script src="../js/contract.js"></script>
     </head>
 
 <!-- BODY-->
@@ -235,7 +238,7 @@
 
 	</div>
 	<div class="container">
-		<img class="logo" src="img/logo.png">
+		<img class="logo" src="../img/logo.png">
 
 	</div>
 </div>
@@ -301,7 +304,7 @@
               </p>
             </div>
 						<div class="col-xs-2 last">
-							<img src="img/finish.png" />
+							<img src="../img/finish.png" />
               <p class="pr_title ">
                 Befejezés
               </p>
@@ -361,7 +364,7 @@
 					</div>
 
 						<div class="done form">
-							<img src="img/ok.png" />
+							<img src="../img/ok.png" />
 							<p>
 								Az előzetes ajánlatot elfogadtad és azt le is töltötted.
 							</p><br />
@@ -395,7 +398,7 @@
 
           </div>
 					<div class="done form">
-						<img src="img/ok.png" />
+						<img src="../img/ok.png" />
 						<p>
 							Az Ügyféltájékoztatót és általános szerződési feltételeket elfogadtad és azt le is töltötted.
 						</p><br />
@@ -424,7 +427,7 @@
 
           </div>
 					<div class="done form">
-						<img src="img/ok.png" />
+						<img src="../img/ok.png" />
 						<p>
 							A Kondíciós listát elfogadtad és azt le is töltötted.
 						</p><br />
@@ -454,7 +457,7 @@
 
               </div>
 							<div class="done form">
-								<img src="img/ok.png" />
+								<img src="../img/ok.png" />
 								<p>
 									A Szerződést elfogadtad és azt le is töltötted.
 								</p><br />
