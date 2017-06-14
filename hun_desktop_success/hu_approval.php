@@ -15,22 +15,25 @@
 <html lang="en" class="no-js">
 
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-				<title>Testbirds prototype</title>
-        <meta name="description" content="prototype">
-        <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
-        <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/screen.css">
-        <link rel="stylesheet" href="css/slider.css">
-		 <link rel="stylesheet" href="css/approval.css">
-		 <link rel="stylesheet" href="css/font-awesome.css">
+			<meta charset="utf-8">
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Testbirds prototype</title>
+			<meta name="description" content="prototype">
+			<meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
+			<link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
+			<link rel="shortcut icon" href="favicon.ico">
+			<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+			<link rel="stylesheet" href="../css/screen.css">
+			<link rel="stylesheet" href="../css/slider.css">
+			<link rel="stylesheet" href="../css/font-awesome.css">
+			<script src="../bower_components/jquery/dist/jquery.js"></script>
+			<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="../css/slider.css">
+				<link rel="stylesheet" href="../css/approval.css">
         <style>
         	input[name="amount"]{
 	        	background: #99fba6; /* Old browsers */
@@ -57,144 +60,118 @@
 			<div class="chat">
 				<i class="fa fa-comments" aria-hidden="true"></i>
 			</div>
-<!-- HEADER -->
-<div class="header">
-	<div class="subheader">
-	</div>
-	<div class="sec_subheader">
-		<div class="container">
-			<button onclick="window.location.href='index.php'" class="bluebtn headerbtn" type="button" name="button">
-				<p>
-				Újrakezdés
-			</p>
-			<i class="fa fa-refresh" aria-hidden="true"></i>
+			<!-- HEADER -->
+			<div class="header">
+				<div class="subheader">
+				</div>
+				<div class="sec_subheader">
+				</div>
+				<div class="container">
+					<img class="logo" src="../img/logo.png">
 
+				</div>
+			</div>
+			<!-- progress bar -->
 
-			</button>
-			<button class="bluebtn headerbtn" type="button" name="button">
-				<p>
-				Mentés
-			</p>
+			      <div class="container-fluid">
+			        <div class="container progress_bar">
+			          <div class="line">
+			            <div class="line2">
 
-			<i class="fa fa-floppy-o" aria-hidden="true"></i>
+			            </div>
 
-			<button class="bluebtn headerbtn" type="button" name="button">
-				<p>
-				Visszahívást kérek
-			</p>
-			<i class="fa fa-phone" aria-hidden="true"></i>
-
-			</button>
-		</div>
-
-	</div>
-	<div class="container">
-		<img class="logo" src="img/logo.png">
-
-	</div>
-</div>
-<!-- progress bar -->
-
-      <div class="container-fluid">
-        <div class="container progress_bar">
-          <div class="line">
-            <div class="line2">
-
-            </div>
-
-          </div>
-          <div class="row">
-						<div class="col-xs-2 ">
-              <div class="nr">
-                <p>
-                  1
-                </p>
-              </div>
-              <p class="pr_title">
-                Alapadatok
-              </p>
-            </div>
-            <div class="col-xs-2 ">
-              <div class="nr">
-                <p>
-                  2
-                </p>
-              </div>
-              <p class="pr_title ">
-                Személyes adatok
-              </p>
-            </div>
-            <div class="col-xs-2 ">
-              <div class="nr">
-                <p>
-                  3
-                </p>
-              </div>
-              <p class="pr_title">
-                Azonosítás
-              </p>
-            </div>
-            <div class="col-xs-2 active">
-              <div class="nr">
-                <p>
-                  4
-                </p>
-              </div>
-              <p class="pr_title">
-                Jóváhagyás
-              </p>
-            </div>
-            <div class="col-xs-2">
-              <div class="nr">
-                <p>
-                  5
-                </p>
-              </div>
-              <p class="pr_title">
-                Szerződéskötés
-              </p>
-            </div>
-						<div class="col-xs-2 last">
-							<img src="img/finish.png" />
-              <p class="pr_title ">
-                Befejezés
-              </p>
-            </div>
+			          </div>
+			          <div class="row">
+			            <div class="col-xs-2 ">
+			              <div class="nr">
+			                <p>
+			                  1
+			                </p>
+			              </div>
+			              <p class="pr_title">
+			                Alapadatok
+			              </p>
+			            </div>
+			            <div class="col-xs-2">
+			              <div class="nr">
+			                <p>
+			                  2
+			                </p>
+			              </div>
+			              <p class="pr_title ">
+			                Személyes adatok
+			              </p>
+			            </div>
+			            <div class="col-xs-2">
+			              <div class="nr">
+			                <p>
+			                  3
+			                </p>
+			              </div>
+			              <p class="pr_title">
+			                Azonosítás
+			              </p>
+			            </div>
+			            <div class="col-xs-2 active">
+			              <div class="nr">
+			                <p>
+			                  4
+			                </p>
+			              </div>
+			              <p class="pr_title">
+			                Jóváhagyás
+			              </p>
+			            </div>
+			            <div class="col-xs-2">
+			              <div class="nr">
+			                <p>
+			                  5
+			                </p>
+			              </div>
+			              <p class="pr_title">
+			                Szerződéskötés
+			              </p>
+			            </div>
+			            <div class="col-xs-2 last">
+										<img src="../img/finish.png" />
+			              <p class="pr_title ">
+			                Befejezés
+			              </p>
+			            </div>
 
 
 
-          </div>
-          <h2 class="title">Jóváhagyás</h2>
-        </div>
-      </div>
+			          </div>
+			          <h2 class="title">Jóváhagyás</h2>
+			        </div>
+			      </div>
 
 
-<!-- Loan I apply for -->
-    <div class="container">
+			<!-- Loan I apply for -->
+			    <div class="container">
 
-			<div class="loanholder">
-        <h2>Hitel részletei</h2>
-        <div class="amount">
-          <p>
-            Hitelösszeg
-          </p>
-          <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
-        </div>
-        <div class="info">
+			      <div class="loanholder">
+			        <h2>Hitel részletei</h2>
+			        <div class="amount">
+			          <p>
+			            Hitelösszeg
+			          </p>
+			          <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
+			        </div>
+			        <div class="info">
 
-          <div class="instalments">
-            <h2>Törlesztőrészlet:</h2>
-            <p><?=$_SESSION["loan_instalments"]?> Ft</p>
-          </div>
-          <div class="instalments">
-            <h2>Futamidő:</h2>
-            <p><?=$_SESSION["repaid_in"]?> hónap</p>
-          </div>
-        </div>
-      </div>
+			          <div class="instalments">
+			            <h2>Törlesztőrészlet:</h2>
+			            <p><?=$_SESSION["loan_instalments"]?> Ft</p>
+			          </div>
+			          <div class="instalments">
+			            <h2>Futamidő:</h2>
+			            <p><?=$_SESSION["repaid_in"]?> hónap</p>
+			          </div>
+			        </div>
+			      </div>
 
-
-    </div>
+			    </div>
 
 <!-- form -->
 

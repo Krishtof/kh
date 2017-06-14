@@ -325,7 +325,7 @@
 
 
 
-
+								<h2 class="mobile_cal" style="padding: 0px !important;">Munkaviszony kezdete</h2>
 								<input class="mobile_cal" type="date" name="lastname">
 
                 <div class="check">
@@ -392,7 +392,7 @@
 
             </form>
 
-            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#income" name="button" id="income_next">Tovább</button>
+            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#income" name="button" id="income_next">Következő</button>
 
           </div>
 
@@ -420,7 +420,7 @@
 
             </form>
 
-            <button class="bluebtn" type="button" id="expense_next" data-toggle="collapse"  data-target="#expenses" name="button">Tovább</button>
+            <button class="bluebtn" type="button" id="expense_next" data-toggle="collapse"  data-target="#expenses" name="button">Következő</button>
 
           </div>
 
@@ -475,7 +475,7 @@
 
             </form>
 
-            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#Housing" id="housing_next" name="button">Tovább</button>
+            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#Housing" id="housing_next" name="button">Következő</button>
 
           </div>
 
@@ -554,7 +554,7 @@
 
                 </form>
 
-                <button class="bluebtn family_next" type="button" data-toggle="collapse"  data-target="#family" id="family_next" name="button">Tovább</button>
+                <button class="bluebtn family_next" type="button" data-toggle="collapse"  data-target="#family" id="family_next" name="button">Következő</button>
 
               </div>
 
@@ -581,7 +581,7 @@ Azt a számlaszámodat add meg, ahova a jövedelmed érkezik* *ha több számlá
 						<div class="nokh">
 							<img src="../img/ok.png" />
 							<p>
-									Már a bankunk ügyfele vagy! Nagyszerű, amennyiben a jövedelmedet is igazolod a hiteled kamata 2%-kal kedvezőbb lesz! A további lépésekben már ezzel a kedvezményes kamattal számolunk.
+									Már a bankunk ügyfele vagy! Nagyszerű, amennyiben a jövedelmedet is igazolod a hiteled kamata 2%-kal kedvezőbb lesz! A Következői lépésekben már ezzel a kedvezményes kamattal számolunk.
 							</p>
 
 						</div>

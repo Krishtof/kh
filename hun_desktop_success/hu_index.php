@@ -21,17 +21,17 @@
         <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-				<link rel="stylesheet" href="css/bootstrap-switch.css">
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+				<link rel="stylesheet" href="../css/bootstrap-switch.css">
 
-        <link rel="stylesheet" href="css/screen.css">
-        <link rel="stylesheet" href="css/slider.css">
+        <link rel="stylesheet" href="../css/screen.css">
+        <link rel="stylesheet" href="../css/slider.css">
 
 
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-				<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+				<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-				<script src="bower_components/bootstrap/dist/js/bootstrap-switch.js"></script>
+				<script src="../bower_components/bootstrap/dist/js/bootstrap-switch.js"></script>
 
     </head>
 
@@ -48,7 +48,7 @@
         <div class="sec_subheader">
         </div>
         <div class="container">
-          <img class="logo" src="img/logo.png">
+          <img class="logo" src="../img/logo.png">
 
         </div>
       </div>
@@ -64,7 +64,14 @@
 			<p>
 				Magasabb a havi nettó jövedelme 250.000 Ft-nál?
 			</p>
-			<input type="checkbox" name="csek" checked>
+			<div class="myswitch">
+				<div class="active nem">
+					Nem
+				</div>
+				<div onclick="window.location.href='hu_index_premium.php'" class="inactive igen">
+					Igen
+				</div>
+			</div>
 
 		</div>
 
@@ -99,21 +106,11 @@
 			<p>
 				Teljes megtakarításod a hitelen <span id="total_saving">18 035 Ft</span> lehet.
 			</p>
-			<a class="ttip" data-toggle="tooltip" title="Discount will be applicable if you are having or you will open a KH current account and sending there your salary  (at least 100.000 Ft) then you will get 2% discount on the interest rate. You can open the current account in KH anytime, the discount will be effective following month after you will receive your first salary there. ">Learn more about the discount.</a>
+			<a class="ttip" data-toggle="tooltip" title="A kedvezmény feltétele, hogy rendelkezel K&H számlával vagy meghatározott időn belül nyitsz egyet és legalább 100 000 Ft munkabéred érkezik ide havonta. Ebben ez esetben 2% kedvezményt adunk a kamatból.  Az új számlát bármikor megnyithatod, ennek költsége max. 750 Ft/hó, a kedvezmény az első fizetési jóváírás beérkezését követő hónaptól lép majd érvénybe. A kalkulátor a kedvezmény nélküli összeget mutatja.  ">Tudj meg többet a kedvezményről!</a>
 
 		</div>
-		<button onclick="window.location.href='hu_basic_xs.php'" class="bluebtn" type="button" name="button">kérem a hitelt</button>
-		<a class="ttip" data-toggle="tooltip" title="Follow the guide issued by HNB will be hyper link to show this:
-		the client shall only sign a loan agreement which he or she
-		fully understands; any change in the client’s circumstances, he or she still
-		remain obliged to pay back the loan amount; if the client has solvency problems he or she must
-		immediately inform the Bank; in case of any expired payment obligation the Bank will apply
-		late payment interest; in case of non-performance of the contract the Bank is
-		entitled to immediately terminate the loan agreement and all
-		outstanding amount become due; any expenses from the enforcement of claims arising from a
-		terminated loan agreement by the Bank will be paid by the
-		client">Client should act responsibly and
-		follow the guide issued by HNB.</a>
+		<button onclick="window.location.href='hu_basic.php'" class="bluebtn" type="button" name="button">kérem a hitelt</button>
+		<a class="ttip" data-toggle="tooltip" title="Az ügyfél csak olyan kölcsönszerződést írhat alá, melyet teljes mértékben megértett; az ügyfél körülményeiben történt bármilyen változás nem menti fel az ügyfelet a kölcsön összegének visszafizetése alól; fizetési nehézsége esetén az ügyfélnek haladéktalanul tájékoztatnia kell a Bankot; bármilyen lejárt fizetési kötelezettség esetén a Bank késedelmi kamatot számol fel; a szerződés nem teljesítése esetén a Bank jogosult azonnali hatállyal felmondani a kölcsönszerződést, ezzel egyidőben minden fennálló tartozás esedékessé válik; a Bank a megszüntetett kölcsönszerződésből eredő követelések érvényesítésével kapcsolatos költségeket az ügyfélre terheli">Az ügyfélnek felelősségteljesen és a Magyar Nemzeti Bank előírásainak megfelelően kell eljárnia.</a>
 	</div>
 	<div class="col-md-6 qualify">
 		<h3>Megfelelek-e a személyi hitel igénylés feltételeinek? A válasz igen, ha:</h3>
@@ -149,7 +146,7 @@
 	<h3>Az igénylés folyamata</h3>
 
 	<div class="col-md-3">
-		<img src="img/peronal_data.png" />
+		<img src="../img/peronal_data.png" />
 		<p>
 			személyes adatok megadása
 		</p>
@@ -157,14 +154,14 @@
 
 
 	<div class="col-md-3">
-		<img src="img/take_pic.png" />
+		<img src="../img/take_pic.png" />
 		<p>
 			a személyi igazolványról készült fotó feltöltése
 		</p>
 	</div>
 
 	<div class="col-md-3">
-		<img src="img/read_sign.png" />
+		<img src="../img/read_sign.png" />
 		<p>
 			a szerződés ellenőrzése, aláírása
 		</p>
@@ -172,7 +169,7 @@
 
 
 	<div class="col-md-3">
-		<img src="img/receive_enjoy.png" />
+		<img src="../img/receive_enjoy.png" />
 		<p>
 			Az igényelt hitelösszeg kiutalása
 		</p>
@@ -184,7 +181,7 @@
 
 	<h3>Az online hiteligénylés előnyei:</h3>
 	<div class="col-md-3">
-		<img src="img/minutes.png" />
+		<img src="../img/minutes.png" />
 		<p>
 			az igényelt összeg a szerződés aláírását követő 15 percen belűl megérkezhet bankszámládra
 		</p>
@@ -192,14 +189,14 @@
 
 
 	<div class="col-md-3">
-		<img src="img/online_application.png" />
+		<img src="../img/online_application.png" />
 		<p>
 			az igényléshez nem szükséges bankfiókba menni
 		</p>
 	</div>
 
 	<div class="col-md-3">
-		<img src="img/management.png" />
+		<img src="../img/management.png" />
 		<p>
 			nincs ügyintézési költség
 		</p>
@@ -207,7 +204,7 @@
 
 
 	<div class="col-md-3">
-		<img src="img/security.png" />
+		<img src="../img/security.png" />
 		<p>
 			A hitelt Magyarország egyik vezető pénzügyi szolgáltatója biztosítja.
 		</p>
@@ -290,7 +287,7 @@
   				var month = $('#month_number').html();
   				$.ajax({
 				    type: "POST",
-				    url: "ajax.php",
+				    url: "../ajax.php",
 				    data: {
 				    	mode: 'amountChange',
 				    	month : month,
@@ -357,7 +354,7 @@
 
   				$.ajax({
 				    type: "POST",
-				    url: "ajax.php",
+				    url: "../ajax.php",
 				    data: {
 				    	mode: 'monhtlyChange',
 				    	monthly: value,

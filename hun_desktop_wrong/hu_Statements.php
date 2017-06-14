@@ -351,14 +351,14 @@
                       <div class="selected successful">
                         <p class="instruction">
 														A feltölteni kívánt képet húzd ide a kijelölt területre                        </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése a mobiloddal</button>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Kép készítése</button>
 						 <button type="button " class="id_btn"  id="upload_id" name="button">Korábban készített fotó/szkennelt kép feltöltése</button>
 					</div>
                       <div class="selected error">
                         <p>
                           Az általad feltöltött képről nem tudtuk beolvasni a szükséges adatokat, kérjük, próbáld újra
                         </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése a mobiloddal</button>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Kép készítése</button>
                         <button type="button " class="id_btn" id="asdasd" name="button">Korábban készített fotó/szkennelt kép feltöltése</button>
                       </div>
                       <div class="selected success">
@@ -377,7 +377,7 @@
                         <p>
                           Az általad feltöltött képről nem tudtuk beolvasni a szükséges adatokat, kérjük, próbáld újra
                         </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése a mobiloddal</button>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Kép készítése</button>
                         <button type="button " class="id_btn" id="upload_id_2" name="button">Korábban készített fotó/szkennelt kép feltöltése</button>
 
                       </div>
@@ -385,7 +385,7 @@
                         <p class="instruction">
                           A feltölteni kívánt képet húzd ide a kijelölt területre:
                         </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése a mobiloddal</button>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Kép készítése</button>
 						<button type="button " class="id_btn"  id="dsdsds" name="button">korábban készített fotó/szkennelt kép feltöltése</button>
                       </div>
                       <div class="selected success">
@@ -403,7 +403,7 @@
                         <p>
                           Az általad feltöltött képről nem tudtuk beolvasni a szükséges adatokat, kérjük, próbáld újra
                         </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése a mobiloddal</button>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Kép készítése</button>
                          <label class="custom-file-upload id_btn">
 						    <input type="file" id="file_2_2"/>ID upload
 						</label>
@@ -438,7 +438,7 @@
                         <p>
                           Az általad feltöltött képről nem tudtuk beolvasni a szükséges adatokat, kérjük, próbáld újra
                         </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése a mobiloddal</button>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Kép készítése</button>
                          <label class="custom-file-upload id_btn">
 						    <input type="file" id="file_2_2"/>ID upload
 						</label>
@@ -476,7 +476,7 @@
                         <p>
                           Az általad feltöltött képről nem tudtuk beolvasni a szükséges adatokat, kérjük, próbáld újra
                         </p>
-                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Fotó készítése a mobiloddal</button>
+                        <button type="button " class="id_btn" data-toggle="modal" data-target="#upload" name="button">Kép készítése</button>
                          <label class="custom-file-upload id_btn">
 						    <input type="file" id="file_2_2"/>ID upload
 						</label>
@@ -591,10 +591,10 @@
       <div id="account" class="collapse">
           <div class="form">
           <p>
-						Kérjük, tölts fel egy három hónapnál nem régebbi bankszámlakivonatot (az eredeti PDF-et)       </p>
+						Kérjük, töltsd fel a <span style="font-weight: bold;">2017. márciusi</span> bankszámlakivonatodat (azt a pdf-et, amelyet az internetbankról töltöttél le)       </p>
           <div class="statementholder">
 						<h2>Hogyan tudom letölteni a bankszámla kivonatomat az e-bankomból?</h2>
-            <p> To do this simply:
+            <p>
               1. látogass el a mybank.com-ra <br />
 2. jelentkezz be az e-bankodba<br />
 3. a bejelentkezés után válaszd a "bankszámlatörténet" menüpontot <br />

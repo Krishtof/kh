@@ -5,27 +5,27 @@
 
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-				<title>Testbirds prototype</title>
-        <meta name="description" content="prototype">
-        <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
-        <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/screen.css">
-        <link rel="stylesheet" href="css/basics.css">
-        <link rel="stylesheet" href="css/datepicker3.css">
-				<link rel="stylesheet" href="css/font-awesome.css">
+			<head>
+	        <meta charset="utf-8">
+	        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	        <meta name="viewport" content="width=device-width, initial-scale=1">
+					<title>Testbirds prototype</title>
+	        <meta name="description" content="prototype">
+	        <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
+	        <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
+	        <link rel="shortcut icon" href="favicon.ico">
+	        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+	        <link rel="stylesheet" href="../css/screen.css">
+	        <link rel="stylesheet" href="../css/slider.css">
+					<link rel="stylesheet" href="../css/font-awesome.css">
+	        <script src="../bower_components/jquery/dist/jquery.js"></script>
+					<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-         <script src="js/basics.js"></script>
-         <script src="js/bootstrap-datepicker.js"></script>
+					<link rel="stylesheet" href="../css/basics.css">
+					<script src="../js/basics.js"></script>
 
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    </head>
+	    </head>
+
 
 <!-- BODY-->
 
@@ -53,7 +53,7 @@
           </p>
 
         </div>
-        <button onclick="window.location.href='hu_financial_xs.php'" class="bluebtn" type="button" name="button">Elfogadom</button>
+        <button onclick="window.location.href='hu_financial.php'" class="bluebtn" type="button" name="button">Elfogadom</button>
         <a class="dont" href="#">Nem fogadom el</a>
 
       </div>
@@ -104,7 +104,7 @@
 	<div class="sec_subheader">
 	</div>
 	<div class="container">
-		<img class="logo" src="img/logo.png">
+		<img class="logo" src="../img/logo.png">
 
 	</div>
 </div>
@@ -170,7 +170,7 @@
               </p>
             </div>
             <div class="col-xs-2 last">
-							<img src="img/finish.png" />
+							<img src="../img/finish.png" />
               <p class="pr_title ">
                 Befejezés
               </p>
@@ -364,7 +364,7 @@ Add meg a mobilszámod és kattints a "megerősítő kód küldése" gombra     
             </div>
 
             <div class="success phone" id="phone_success">
-              <img src="img/ok.png" />
+              <img src="../img/ok.png" />
               <h2>a telefonszámodat sikeresen azonosítottuk</h2>
             </div>
 
@@ -391,7 +391,7 @@ Add meg a mobilszámod és kattints a "megerősítő kód küldése" gombra     
             </div>
 
             <div class="success email" id="email_success">
-              <img src="img/ok.png" />
+              <img src="../img/ok.png" />
               <h2>Az e-mail címedet sikeresen azonosítottuk</h2>
             </div>
 

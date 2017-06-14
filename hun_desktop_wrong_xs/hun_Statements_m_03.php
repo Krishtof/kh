@@ -5,21 +5,25 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-				<title>Testbirds prototype</title>
-        <meta name="description" content="prototype">
-        <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
-        <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/screen.css">
-        <link rel="stylesheet" href="css/statement.css">
-        <script src="bower_components/jquery/dist/jquery.js"></script>
+			<meta charset="utf-8">
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Testbirds prototype</title>
+			<meta name="description" content="prototype">
+			<meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
+			<link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
+			<link rel="shortcut icon" href="favicon.ico">
+			<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+			<link rel="stylesheet" href="../css/screen.css">
+			<link rel="stylesheet" href="../css/slider.css">
+			<link rel="stylesheet" href="../css/font-awesome.css">
+			<script src="../bower_components/jquery/dist/jquery.js"></script>
+			<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-         <script src="js/statement.js"></script>
+
+        <link rel="stylesheet" href="../css/statement.css">
+         <script src="../js/statement.js"></script>
     </head>
 
 <!-- BODY-->
@@ -97,7 +101,7 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-body upload">
-        <img src="img/mobile.png" />
+        <img src="../img/mobile.png" />
         <h1>Kérjük ellenőrizze telefonját</h1>
         <p>
           Küldtünk egy SMS-t telefonjára. Kattintson a linkre az üzenetben és adja meg a weboldalon a következő biztonsági kódot:<br /><span style="font-weight: bold; font-size: 22px; line-height: 40px;">123432</span>
@@ -105,28 +109,28 @@
         <h2>Ezekre figyeljen a fénykép készítése során:</h2>
         <div class="container">
           <div class="col-md-3">
-            <img src="img/csillan.png" />
+            <img src="../img/csillan.png" />
             <p>
               Ne tükröződjön túlságosan felület
             </p>
           </div>
 
           <div class="col-md-3">
-            <img src="img/kicsi.png" />
+            <img src="../img/kicsi.png" />
             <p>
               A kép szélei is látsszanak
             </p>
           </div>
 
           <div class="col-md-3">
-            <img src="img/low.png" />
+            <img src="../img/low.png" />
             <p>
               Az igazolványról készült fotó ne legyen túl kicsi
             </p>
           </div>
 
           <div class="col-md-3">
-            <img src="img/kilog.png" />
+            <img src="../img/kilog.png" />
             <p>
               A kép szélei nem látszanak
             </p>
@@ -150,7 +154,7 @@
         <div class="sec_subheader">
         </div>
         <div class="container">
-          <img class="logo" src="img/logo.png">
+          <img class="logo" src="../img/logo.png">
 
         </div>
       </div>
@@ -216,7 +220,7 @@
               </p>
             </div>
 						<div class="col-xs-2 last">
-							<img src="img/finish.png" />
+							<img src="../img/finish.png" />
               <p class="pr_title ">
                 Befejezés
               </p>
@@ -275,17 +279,17 @@
 								Fotózd le az igazolványodat vagy válaszd ki a telefonod galériájából
 							</p>
 							<div class="uploadbtn">
-								<img src="img/success.png" /><br />
+								<img src="../img/success.png" /><br />
 								<h2>Igazolvány előlapja sikeresen feltöltve.</h2>
 							</div>
 							<div class="uploadbtn">
-								<img src="img/success.png" /><br />
+								<img src="../img/success.png" /><br />
 								<h2>Igazolvány hátlapja sikeresen feltöltve.</h2>
 
 							</div>
 							<div class="uploadbtn" style="margin-top: 50px;">
 
-								<img src="img/success.png" /><br />
+								<img src="../img/success.png" /><br />
 								<h2>Lakcímkártya sikeresen feltöltve.</h2>
 
 							</div>
@@ -363,7 +367,7 @@
 		</div>
 
 
-			<button class="bluebtn" id="select_upload_next_button" type="button" name="button">Tovább</button>
+			<button class="bluebtn" id="select_upload_next_button" type="button" name="button">Következő</button>
 
         </div>
 
@@ -375,7 +379,7 @@
       <div id="account" class="collapse">
           <div class="form">
           <p>
-						Kérjük, töltsd fel a <span style="font-weight: bold;">2017 márciusi</span> bankszámlakivonatodat (azt a pdf-et, amelyet az internetbankról töltöttél le)</p>
+						Kérjük, töltsd fel a <span style="font-weight: bold;">2017. márciusi</span> bankszámlakivonatodat (azt a pdf-et, amelyet az internetbankról töltöttél le)       </p>
           <div class="statementholder">
 						<h2>Hogyan tudom letölteni a bankszámla kivonatomat az e-bankomból?</h2>
             <p>
@@ -390,21 +394,12 @@
 
 
           </div>
-          <div class="uploadbox">
 
-            <img src="img/pdf.png" />
-            <p >
-A feltölteni kívánt PDF dokumentumot húzd ide a kijelölt területre         </p>
-
-            <label class="custom-file-upload id_btn">
-			    <input type="file" id="last_file"/>Dokumentum feltöltése a számítógépről
-			</label>
-
-          </div>
+					<button class="bluebtn uploadbutton" type="button" name="button">Kép kiválasztása</button>
 
           <div class="uploadbox success">
 
-              <img src="img/success.png" /><br />
+              <img src="../img/success.png" /><br />
               <p>
                 Fájl sikeresen feltöltve:
               </p>
@@ -415,7 +410,7 @@ A feltölteni kívánt PDF dokumentumot húzd ide a kijelölt területre        
 
           </div>
 
-          <button onclick="window.location.href='hu_approval_wrong_xs.php'" class="bluebtn" type="button" name="button">Következő</button>
+          <button onclick="window.location.href='hu_approval_wrong.php'" class="bluebtn" type="button" name="button">Tovább</button>
 
         </div>
 

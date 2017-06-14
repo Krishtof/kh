@@ -1,11 +1,11 @@
 <?php
 	error_reporting(0);
 
-	$file = fopen("mark3.csv","r");
+	$file = fopen("mark2.csv","r");
 	$csv = fgetcsv($file,100000,"x");
 
 	$datas = array();
-	
+
 	foreach($csv as $key => $value){
 		$data = explode(';', $value);
 		$db = sizeof($datas);

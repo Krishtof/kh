@@ -98,7 +98,17 @@ margin: 0 auto;
   height: 70px;
 }
 .logo {
-  margin-top: -110px;
+  max-width: 110px;
+  position: absolute;
+  top: 0px;
+}
+
+@media (min-width: 767px) {
+  .logo {
+    max-width: 150px;
+    position: absolute;
+    top: 0px;
+    }
 }
 
 .progress_bar {
@@ -1025,6 +1035,9 @@ padding-top: 15px;
   padding-left: 50px;
 
 }
+.qualify.col-md-6 ul {
+  list-style: none;
+}
 .click p {
   color: white;
 }
@@ -1140,12 +1153,14 @@ margin-right: 40px;
 
 .banks .col-md-2 h2 {
   font-weight: bold;
-background: #e4e4e4;
-font-size: 15px;
-padding: 5px;
-margin-bottom: 10px;
-
-color: var(--blue);
+      background: #19ade8;
+      font-size: 15px;
+      padding: 5px;
+      color: white;
+      min-height: 50px;
+      margin-bottom: 10px;
+      color: white;
+      line-height: 19px;
 line-height: 19px;
 }
 =======
@@ -1471,7 +1486,7 @@ border-radius: 0px;
 }
 .video ol, ul {
   margin-left: 20px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
   font-weight: normal;
 }
@@ -1486,4 +1501,14 @@ border-radius: 0px;
       color: var(--light-blue);
       margin-top: 0px;
       margin-bottom: 80px;
+}
+.uploadbutton {
+  background: none;
+border: 1px solid var(--light-blue);
+color: var(--light-blue);
+margin-top: 20px;
+margin-bottom: 70px;
+}
+.bank .form h2 {
+  font-weight: normal;
 }

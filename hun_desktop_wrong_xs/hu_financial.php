@@ -6,20 +6,24 @@
 <html lang="en" class="no-js">
     <head>
       <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-				<title>Testbirds prototype</title>
-        <meta name="description" content="prototype">
-        <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
-        <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/screen.css">
-        <link rel="stylesheet" href="css/finance.css">
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-         <script src="js/finance.js"></script>
-				 <link rel="stylesheet" href="css/font-awesome.css">
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Testbirds prototype</title>
+			<meta name="description" content="prototype">
+			<meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
+			<link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
+			<link rel="shortcut icon" href="favicon.ico">
+			<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+			<link rel="stylesheet" href="../css/screen.css">
+			<link rel="stylesheet" href="../css/slider.css">
+			<link rel="stylesheet" href="../css/font-awesome.css">
+			<script src="../bower_components/jquery/dist/jquery.js"></script>
+			<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+         <script src="../js/finance.js"></script>
+				 <link rel="stylesheet" href="../css/font-awesome.css">
+				 <link rel="stylesheet" href="../css/finance.css">
 
     </head>
 
@@ -60,7 +64,40 @@
 
 
     <body>
+			<div class="chat">
+				<i class="fa fa-comments" aria-hidden="true"></i>
+			</div>
+			<div class="openchat" style="display: none;">
+				<div class="header">
+					<div class="green"></div>
+					<h2>Ügyfélszolgálat</h2>
+					<i class="fa fa-times closechat" aria-hidden="true"></i>
+				</div>
+				<div class="cbody">
+					<h2>Üdvözöljük! Tudunk segíteni?</h2>
+				</div>
+				<div class="type">
+					<input class="chatwithme" placeholder="Ide írjon" />
+				</div>
+				<script>
 
+
+				$('.chat').on('click',function(){
+					$('.openchat').addClass('block');
+
+				});
+				$('.closechat').on('click',function(){
+					$('.openchat').addClass('hide');
+
+				});
+				$('.closechat').on('click',function(){
+					$('.openchat').removeClass('block');
+
+				});
+
+
+				</script>
+			</div>
 <!-- HEADER -->
 <div class="header">
 	<div class="subheader">
@@ -93,7 +130,7 @@
 
 	</div>
 	<div class="container">
-		<img class="logo" src="img/logo.png">
+		<img class="logo" src="../img/logo.png">
 
 	</div>
 </div>
@@ -288,7 +325,7 @@
 
 
 
-
+								<h2 class="mobile_cal" style="padding: 0px !important;">Munkaviszony kezdete</h2>
 								<input class="mobile_cal" type="date" name="lastname">
 
                 <div class="check">
@@ -355,7 +392,7 @@
 
             </form>
 
-            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#income" name="button" id="income_next">Tovább</button>
+            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#income" name="button" id="income_next">Következő</button>
 
           </div>
 
@@ -383,7 +420,7 @@
 
             </form>
 
-            <button class="bluebtn" type="button" id="expense_next" data-toggle="collapse"  data-target="#expenses" name="button">Tovább</button>
+            <button class="bluebtn" type="button" id="expense_next" data-toggle="collapse"  data-target="#expenses" name="button">Következő</button>
 
           </div>
 
@@ -438,7 +475,7 @@
 
             </form>
 
-            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#Housing" id="housing_next" name="button">Tovább</button>
+            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#Housing" id="housing_next" name="button">Következő</button>
 
           </div>
 
@@ -517,7 +554,7 @@
 
                 </form>
 
-                <button class="bluebtn family_next" type="button" data-toggle="collapse"  data-target="#family" id="family_next" name="button">Tovább</button>
+                <button class="bluebtn family_next" type="button" data-toggle="collapse"  data-target="#family" id="family_next" name="button">Következő</button>
 
               </div>
 
@@ -542,7 +579,7 @@ Azt a számlaszámodat add meg, ahova a jövedelmed érkezik* *ha több számlá
             <input placeholder=""class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
             <input placeholder=""class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
 						<div class="nokh">
-							<img src="img/ok.png" />
+							<img src="../img/ok.png" />
 							<p>
 									Már a bankunk ügyfele vagy! Nagyszerű, amennyiben a jövedelmedet is igazolod a hiteled kamata 2%-kal kedvezőbb lesz! A további lépésekben már ezzel a kedvezményes kamattal számolunk.
 							</p>

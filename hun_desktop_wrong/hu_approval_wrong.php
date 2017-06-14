@@ -27,17 +27,17 @@
 	if(str_replace(' ','',$_SESSION["loan_amount"]) < 1000000 ){
 		$_SESSION["loan_amount"] = 2000000;
 	}
-	
+
 	$max = str_replace(' ','',$_SESSION["loan_amount"]);
 
 	/*if(str_replace(' ','',$_SESSION["loan_amount"])>300000){
 		$_SESSION["loan_amount"] = str_replace(' ','',$_SESSION["loan_amount"]) - 50000;
 	}*/
-	
-	
+
+
 	$selected = getLower($datas,str_replace(' ','',$_SESSION["loan_amount"]));
-	
-	
+
+
 	$selection = array();
 
 	foreach($datas as $key => $value){
@@ -81,7 +81,7 @@
 
 	$_SESSION["min_loan"] = $selection['min_loan_instalments'];
 	$_SESSION["max_loan"] = $selection['max_loan_instalments'];
-	
+
 	$you_can_get = str_replace(' ','',$selected);
 	$amount_css = getCssPercentage(1000000,$max,$you_can_get);
 	$monthly_css = getCssPercentage(str_replace(' ','',$_SESSION["min_loan"]),str_replace(' ','',$_SESSION["max_loan"]),str_replace(' ','',$_SESSION["loan_instalments"]));
@@ -167,125 +167,118 @@
 				});
 				</script>
 			</div>
-<!-- HEADER -->
-<div class="header">
-	<div class="subheader">
-	</div>
-	<div class="sec_subheader">
-		<div class="container">
-			<button onclick="window.location.href='index.php'" class="bluebtn headerbtn" type="button" name="button">Start again</button>
-			<button class="bluebtn headerbtn" type="button" name="button">Save</button>
-			<button class="bluebtn headerbtn" type="button" name="button">Call back</button>
+			<!-- HEADER -->
+			<div class="header">
+				<div class="subheader">
+				</div>
+				<div class="sec_subheader">
+				</div>
+				<div class="container">
+					<img class="logo" src="../img/logo.png">
 
-		</div>
+				</div>
+			</div>
+			<!-- progress bar -->
 
-	</div>
-	<div class="container">
-		<img class="logo" src="../img/logo.png">
+			      <div class="container-fluid">
+			        <div class="container progress_bar">
+			          <div class="line">
+			            <div class="line2">
 
-	</div>
-</div>
-<!-- progress bar -->
+			            </div>
 
-      <div class="container-fluid">
-        <div class="container progress_bar">
-          <div class="line">
-            <div class="line2">
-
-            </div>
-
-          </div>
-          <div class="row">
-            <div class="col-xs-2 ">
-              <div class="nr">
-                <p>
-                  1
-                </p>
-              </div>
-              <p class="pr_title">
-                Basic information
-              </p>
-            </div>
-            <div class="col-xs-2 ">
-              <div class="nr">
-                <p>
-                  2
-                </p>
-              </div>
-              <p class="pr_title ">
-                Financial evaluation
-              </p>
-            </div>
-            <div class="col-xs-2 ">
-              <div class="nr">
-                <p>
-                  3
-                </p>
-              </div>
-              <p class="pr_title">
-                Statements
-              </p>
-            </div>
-            <div class="col-xs-2 active">
-              <div class="nr">
-                <p>
-                  4
-                </p>
-              </div>
-              <p class="pr_title">
-                Approval
-              </p>
-            </div>
-            <div class="col-xs-2 ">
-              <div class="nr">
-                <p>
-                  5
-                </p>
-              </div>
-              <p class="pr_title">
-                Contract
-              </p>
-            </div>
-						<div class="col-xs-2 last">
-							<img src="../img/finish.png" />
-              <p class="pr_title ">
-                Finish
-              </p>
-            </div>
+			          </div>
+			          <div class="row">
+			            <div class="col-xs-2 ">
+			              <div class="nr">
+			                <p>
+			                  1
+			                </p>
+			              </div>
+			              <p class="pr_title">
+			                Alapadatok
+			              </p>
+			            </div>
+			            <div class="col-xs-2">
+			              <div class="nr">
+			                <p>
+			                  2
+			                </p>
+			              </div>
+			              <p class="pr_title ">
+			                Személyes adatok
+			              </p>
+			            </div>
+			            <div class="col-xs-2">
+			              <div class="nr">
+			                <p>
+			                  3
+			                </p>
+			              </div>
+			              <p class="pr_title">
+			                Azonosítás
+			              </p>
+			            </div>
+			            <div class="col-xs-2 active">
+			              <div class="nr">
+			                <p>
+			                  4
+			                </p>
+			              </div>
+			              <p class="pr_title">
+			                Jóváhagyás
+			              </p>
+			            </div>
+			            <div class="col-xs-2">
+			              <div class="nr">
+			                <p>
+			                  5
+			                </p>
+			              </div>
+			              <p class="pr_title">
+			                Szerződéskötés
+			              </p>
+			            </div>
+			            <div class="col-xs-2 last">
+										<img src="../img/finish.png" />
+			              <p class="pr_title ">
+			                Befejezés
+			              </p>
+			            </div>
 
 
 
-          </div>
-          <h2 class="title">Finish</h2>
-        </div>
-      </div>
+			          </div>
+			          <h2 class="title">Jóváhagyás</h2>
+			        </div>
+			      </div>
 
 
-<!-- Loan I apply for -->
-    <div class="container">
+			<!-- Loan I apply for -->
+			    <div class="container">
 
-      <div class="loanholder">
-        <h2>Loan I apply for</h2>
-        <div class="amount">
-          <p>
-            Loan amount
-          </p>
-         <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
-        </div>
-        <div class="info">
+			      <div class="loanholder">
+			        <h2>Hitel részletei</h2>
+			        <div class="amount">
+			          <p>
+			            Hitelösszeg
+			          </p>
+			          <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
+			        </div>
+			        <div class="info">
 
-          <div class="instalments">
-            <h2>Instalments:</h2>
-            <p><?=$_SESSION["loan_instalments"]?> Ft</p>
-          </div>
-          <div class="instalments">
-            <h2>Repaid in::</h2>
-           <p><?=$_SESSION["repaid_in"]?> months</p>
-          </div>
-        </div>
-      </div>
+			          <div class="instalments">
+			            <h2>Törlesztőrészlet:</h2>
+			            <p><?=$_SESSION["loan_instalments"]?> Ft</p>
+			          </div>
+			          <div class="instalments">
+			            <h2>Futamidő:</h2>
+			            <p><?=$_SESSION["repaid_in"]?> hónap</p>
+			          </div>
+			        </div>
+			      </div>
 
-    </div>
+			    </div>
 
 <!-- form -->
 
@@ -333,6 +326,18 @@
             <div class="line"></div>
             <p>Éves kamat</p>
             <h2><span id="interest_rate"><?=$_SESSION["interest_rate"]?></span>%</h2>
+						<p>
+							THM:
+						</p>
+						<h2>13,99%</h2>
+						<p>
+							Ügyintézési költség:
+						</p>
+						<h2>0 Ft</h2>
+						<p>
+							Első törlesztés napja:
+						</p>
+						<h2>2017. 07.15.</h2>
           </div>
 
 

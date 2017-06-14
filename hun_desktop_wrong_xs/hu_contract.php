@@ -1560,7 +1560,7 @@ hiányában a támogatást igénybe vevő Adós levelezési címére.
               <div class="form family">
 
 
-                <p>Az aláírás előtt kérjük, hogy olvasd el a szerződést alaposan. A szerződést elektronikusan fogod aláírni, a korábban a számládra (12345678-12345678-1235678) küldött kis összegű jóváírás közleményében található kóddal. Az elekromos aláírás másik két eleme a korábban megerősített SMS-ben és e-mail-ben kapott két másik kód.             </p>
+                <p>Az aláírás előtt kérjük, hogy olvasd el a szerződést alaposan. A szerződést elektronikusan fogod aláírni, a korábban a számládra (12345678-12345678-1235678) küldött kis összegű jóváírás közleményében található kóddal. Az elekronikus aláírás másik két eleme a korábban megerősített SMS-ben és e-mail-ben kapott két másik kód.           </p>
 
 
 

@@ -5,26 +5,27 @@
 
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-				<title>Testbirds prototype</title>
-        <meta name="description" content="prototype">
-        <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
-        <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/screen.css">
-        <link rel="stylesheet" href="css/basics.css">
-        <link rel="stylesheet" href="css/datepicker3.css">
+			<head>
+	        <meta charset="utf-8">
+	        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	        <meta name="viewport" content="width=device-width, initial-scale=1">
+					<title>Testbirds prototype</title>
+	        <meta name="description" content="prototype">
+	        <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
+	        <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
+	        <link rel="shortcut icon" href="favicon.ico">
+	        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+	        <link rel="stylesheet" href="../css/screen.css">
+	        <link rel="stylesheet" href="../css/slider.css">
+					<link rel="stylesheet" href="../css/font-awesome.css">
+	        <script src="../bower_components/jquery/dist/jquery.js"></script>
+					<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-         <script src="js/basics.js"></script>
-         <script src="js/bootstrap-datepicker.js"></script>
+					<link rel="stylesheet" href="../css/basics.css">
+					<script src="../js/basics.js"></script>
 
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    </head>
+	    </head>
+
 
 <!-- BODY-->
 
@@ -52,7 +53,7 @@
           </p>
 
         </div>
-        <button onclick="window.location.href='hu_financial_unsuccessful.php'" class="bluebtn" type="button" name="button">Elfogadom</button>
+        <button onclick="window.location.href='hu_financial.php'" class="bluebtn" type="button" name="button">Elfogadom</button>
         <a class="dont" href="#">Nem fogadom el</a>
 
       </div>
@@ -64,17 +65,49 @@
 
     <body>
 
-<!-- HEADER -->
-      <div class="header">
-        <div class="subheader">
-        </div>
-        <div class="sec_subheader">
-        </div>
-        <div class="container">
-          <img class="logo" src="img/logo.png">
+			<div class="chat">
+				<i class="fa fa-comments" aria-hidden="true"></i>
+			</div>
+			<div class="openchat" style="display: none;">
+				<div class="header">
+					<div class="green"></div>
+					<h2>Ügyfélszolgálat</h2>
+					<i class="fa fa-times closechat" aria-hidden="true"></i>
+				</div>
+				<div class="cbody">
+					<h2>Üdvözöljük! Tudunk segíteni?</h2>
+				</div>
+				<div class="type">
+					<input class="chatwithme" placeholder="Ide írjon" />
+				</div>
+				<script>
 
-        </div>
-      </div>
+
+				$('.chat').on('click',function(){
+					$('.openchat').addClass('block');
+
+				});
+				$('.closechat').on('click',function(){
+					$('.openchat').addClass('hide');
+
+				});
+				$('.closechat').on('click',function(){
+					$('.openchat').removeClass('block');
+
+				});
+				</script>
+			</div>
+<!-- HEADER -->
+<div class="header">
+	<div class="subheader">
+	</div>
+	<div class="sec_subheader">
+	</div>
+	<div class="container">
+		<img class="logo" src="../img/logo.png">
+
+	</div>
+</div>
 <!-- progress bar -->
 
       <div class="container-fluid">
@@ -136,12 +169,13 @@
                 Szerződéskötés
               </p>
             </div>
-						<div class="col-xs-2 last">
-							<img src="img/finish.png" />
+            <div class="col-xs-2 last">
+							<img src="../img/finish.png" />
               <p class="pr_title ">
                 Befejezés
               </p>
             </div>
+
 
 
           </div>
@@ -190,30 +224,30 @@
               <input type="text" name="lastname">
               <div class="cal">
 								<div class="from">
-									<div class="dropdown">
+									<div class="dropdown desktop_cal">
 										<h2>Születési dátum</h2>
 
-										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Év
-										<span class="caret"></span></button>
-										<ul class="dropdown-menu">
-											<li><a href="#">2017</a></li>
-											<li><a href="#">2016</a></li>
-											<li><a href="#">2015</a></li>
-											<li><a href="#">2014</a></li>
-											<li><a href="#">2013</a></li>
-											<li><a href="#">2012</a></li>
-											<li><a href="#">2011</a></li>
-											<li><a href="#">2010</a></li>
-											<li><a href="#">2009</a></li>
-											<li><a href="#">2008</a></li>
-											<li><a href="#">2007</a></li>
-											<li><a href="#">2006</a></li>
-											<li><a href="#">2005</a></li>
-											<li><a href="#">2004</a></li>
-											<li><a href="#">2003</a></li>
-											<li><a href="#">2002</a></li>
-											<li><a href="#">2001</a></li>
-											<li><a href="#">2000</a></li>
+	                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Év
+	                  <span class="caret"></span></button>
+	                  <ul class="dropdown-menu">
+	                    <li><a href="#">2017</a></li>
+	                    <li><a href="#">2016</a></li>
+	                    <li><a href="#">2015</a></li>
+	                    <li><a href="#">2014</a></li>
+	                    <li><a href="#">2013</a></li>
+	                    <li><a href="#">2012</a></li>
+	                    <li><a href="#">2011</a></li>
+	                    <li><a href="#">2010</a></li>
+	                    <li><a href="#">2009</a></li>
+	                    <li><a href="#">2008</a></li>
+	                    <li><a href="#">2007</a></li>
+	                    <li><a href="#">2006</a></li>
+	                    <li><a href="#">2005</a></li>
+	                    <li><a href="#">2004</a></li>
+	                    <li><a href="#">2003</a></li>
+	                    <li><a href="#">2002</a></li>
+	                    <li><a href="#">2001</a></li>
+	                    <li><a href="#">2000</a></li>
 											<li><a href="#">1999</a></li>
 											<li><a href="#">1998</a></li>
 											<li><a href="#">1997</a></li>
@@ -236,52 +270,52 @@
 											<li><a href="#">1980</a></li>
 
 
-										</ul>
-									</div>
-									<div class="dropdown">
+	                  </ul>
+	                </div>
+									<div class="dropdown desktop_cal">
 
 										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Hónap
 										<span class="caret"></span></button>
 										<ul class="dropdown-menu">
-											<li><a href="#">Január</a></li>
-											<li><a href="#">Február</a></li>
-											<li><a href="#">Március</a></li>
-											<li><a href="#">Április</a></li>
-											<li><a href="#">Május</a></li>
-											<li><a href="#">Június</a></li>
-											<li><a href="#">Július</a></li>
-											<li><a href="#">Augusztus</a></li>
-											<li><a href="#">Szeptember</a></li>
-											<li><a href="#">Oktober</a></li>
+											<li><a href="#">January</a></li>
+											<li><a href="#">February</a></li>
+											<li><a href="#">March</a></li>
+											<li><a href="#">April</a></li>
+											<li><a href="#">May</a></li>
+											<li><a href="#">June</a></li>
+											<li><a href="#">July</a></li>
+											<li><a href="#">August</a></li>
+											<li><a href="#">September</a></li>
+											<li><a href="#">October</a></li>
 											<li><a href="#">November</a></li>
 											<li><a href="#">December</a></li>
 										</ul>
 									</div>
-									<div class="dropdown">
+									<div class="dropdown desktop_cal">
 
-										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Nap
-										<span class="caret"></span></button>
-										<ul class="dropdown-menu">
-											<li><a href="#">1</a></li>
-											<li><a href="#">2</a></li>
-											<li><a href="#">3</a></li>
-											<li><a href="#">4</a></li>
-											<li><a href="#">5</a></li>
-											<li><a href="#">6</a></li>
-											<li><a href="#">7</a></li>
-											<li><a href="#">8</a></li>
-											<li><a href="#">9</a></li>
-											<li><a href="#">10</a></li>
-											<li><a href="#">11</a></li>
-											<li><a href="#">12</a></li>
-											<li><a href="#">13</a></li>
+	                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Nap
+	                  <span class="caret"></span></button>
+	                  <ul class="dropdown-menu">
+	                    <li><a href="#">1</a></li>
+	                    <li><a href="#">2</a></li>
+	                    <li><a href="#">3</a></li>
+	                    <li><a href="#">4</a></li>
+	                    <li><a href="#">5</a></li>
+	                    <li><a href="#">6</a></li>
+	                    <li><a href="#">7</a></li>
+	                    <li><a href="#">8</a></li>
+	                    <li><a href="#">9</a></li>
+	                    <li><a href="#">10</a></li>
+	                    <li><a href="#">11</a></li>
+	                    <li><a href="#">12</a></li>
+	                    <li><a href="#">13</a></li>
 											<li><a href="#">14</a></li>
 											<li><a href="#">15</a></li>
 											<li><a href="#">16</a></li>
 											<li><a href="#">17</a></li>
 											<li><a href="#">18</a></li>
 											<li><a href="#">19</a></li>
-											<li><a href="#">20</a></li>
+	                    <li><a href="#">20</a></li>
 											<li><a href="#">21</a></li>
 											<li><a href="#">22</a></li>
 											<li><a href="#">23</a></li>
@@ -293,9 +327,10 @@
 											<li><a href="#">29</a></li>
 											<li><a href="#">30</a></li>
 											<li><a href="#">31</a></li>
-										</ul>
-									</div>
-
+	                  </ul>
+	                </div>
+									<h2 class="mobile_cal">Születési dátum:</h2>
+		              <input class="mobile_cal" type="date" name="lastname">
 
 
 								</div>
@@ -303,7 +338,7 @@
             </form>
             <h1>kapcsolati adatok</h1>
             <p>
-							Add meg a <span style="font-weight: bold;">mobilszámod és az e-mail címed</span>. A fentiek megadásával hozzájárulsz, hogy hiteligényléseddel kapcsolatban megkeressünk.            </p>
+Add meg a <span style="font-weight: bold;">mobilszámod és az e-mail címed</span>. A fentiek megadásával hozzájárulsz, hogy hiteligényléseddel kapcsolatban megkeressünk.            </p>
             <form class="contact">
 
             <div class="phone" id="single_phone">
@@ -319,7 +354,7 @@ Add meg a mobilszámod és kattints a "megerősítő kód küldése" gombra     
             <div class="verify" id="phone_verification">
               <h2>Add meg a megerősítő kódot:</h2>
               <p>
-                Az általad megadott, <span style="font-weight: bold;" id="phone_number">+36 20 418 48 83</span> mobilszámra egy megerősítő kódot küldünk. Kérjük, hogy másold be ide a kódot és kattints a "megerősítem" gombra . Kód megadása:
+                Az általad megadott, <span style="font-weight: bold;" id="phone_number">+36 20 418 48 83</span> mobilszámra egy megerősítő kódot küldünk. Kérjük, hogy másold be ide a kódot és kattints a "megerősítem" gombra.
               </p>
               <input type="email" name="email" id="phone_verify" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
               <button type="button" class="bluebtn" id="phone-verify"  name="button">megerősítem </button>
@@ -329,7 +364,7 @@ Add meg a mobilszámod és kattints a "megerősítő kód küldése" gombra     
             </div>
 
             <div class="success phone" id="phone_success">
-              <img src="img/ok.png" />
+              <img src="../img/ok.png" />
               <h2>a telefonszámodat sikeresen azonosítottuk</h2>
             </div>
 
@@ -356,14 +391,14 @@ Add meg a mobilszámod és kattints a "megerősítő kód küldése" gombra     
             </div>
 
             <div class="success email" id="email_success">
-              <img src="img/ok.png" />
+              <img src="../img/ok.png" />
               <h2>Az e-mail címedet sikeresen azonosítottuk</h2>
             </div>
 
             </form>
 
             <p class="continue">
-Az igénylés folytatáshoz kérjük, olvasd el a személyes adatok kezelésére vonatkozó nyilatkozatot            </p>
+Az igénylés folytatáshoz a személyes adatok kezelésére vonatkozó nyilatkozat elolvasása és elfogadása szükséges</p>
             <button type="button" class="orangebtn btn btn-info btn-lg" data-toggle="modal" data-target="#acknowledgemodal">nyilatkozat megnyitása</button>
 
           </div>

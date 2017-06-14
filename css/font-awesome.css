@@ -275,8 +275,12 @@
   content: "\f01e";
 }
 .fa-refresh:before {
-  content: "\f021";
-}
+  content: "";
+  background-image: url(../img/again.png);
+  height: 20px;
+  display: block;
+  width: 20px;
+  background-size: contain;}
 .fa-list-alt:before {
   content: "\f022";
 }
@@ -613,7 +617,12 @@
   content: "\f094";
 }
 .fa-phone:before {
-  content: "\f095";
+  content: "";
+  background-image: url(../img/phone.png);
+  height: 20px;
+  display: block;
+  width: 20px;
+  background-size: contain;
 }
 .fa-square-o:before {
   content: "\f096";
@@ -725,8 +734,12 @@
 }
 .fa-save:before,
 .fa-floppy-o:before {
-  content: "\f0c7";
-}
+  content: "";
+  background-image: url(../img/save.png);
+  height: 20px;
+  display: block;
+  width: 20px;
+  background-size: contain;}
 .fa-square:before {
   content: "\f0c8";
 }

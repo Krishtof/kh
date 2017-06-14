@@ -106,21 +106,11 @@
 			<p>
 				Teljes megtakarításod a hitelen <span id="total_saving">18 035 Ft</span> lehet.
 			</p>
-			<a class="ttip" data-toggle="tooltip" title="Discount will be applicable if you are having or you will open a KH current account and sending there your salary  (at least 100.000 Ft) then you will get 2% discount on the interest rate. You can open the current account in KH anytime, the discount will be effective following month after you will receive your first salary there. ">Learn more about the discount.</a>
+			<a class="ttip" data-toggle="tooltip" title="A kedvezmény feltétele, hogy rendelkezel K&H számlával vagy meghatározott időn belül nyitsz egyet és legalább 100 000 Ft munkabéred érkezik ide havonta. Ebben ez esetben 2% kedvezményt adunk a kamatból.  Az új számlát bármikor megnyithatod, ennek költsége max. 750 Ft/hó, a kedvezmény az első fizetési jóváírás beérkezését követő hónaptól lép majd érvénybe. A kalkulátor a kedvezmény nélküli összeget mutatja.  ">Tudj meg többet a kedvezményről!</a>
 
 		</div>
 		<button onclick="window.location.href='hu_basic.php'" class="bluebtn" type="button" name="button">kérem a hitelt</button>
-		<a class="ttip" data-toggle="tooltip" title="Follow the guide issued by HNB will be hyper link to show this:
-		the client shall only sign a loan agreement which he or she
-		fully understands; any change in the client’s circumstances, he or she still
-		remain obliged to pay back the loan amount; if the client has solvency problems he or she must
-		immediately inform the Bank; in case of any expired payment obligation the Bank will apply
-		late payment interest; in case of non-performance of the contract the Bank is
-		entitled to immediately terminate the loan agreement and all
-		outstanding amount become due; any expenses from the enforcement of claims arising from a
-		terminated loan agreement by the Bank will be paid by the
-		client">Client should act responsibly and
-		follow the guide issued by HNB.</a>
+		<a class="ttip" data-toggle="tooltip" title="Az ügyfél csak olyan kölcsönszerződést írhat alá, melyet teljes mértékben megértett; az ügyfél körülményeiben történt bármilyen változás nem menti fel az ügyfelet a kölcsön összegének visszafizetése alól; fizetési nehézsége esetén az ügyfélnek haladéktalanul tájékoztatnia kell a Bankot; bármilyen lejárt fizetési kötelezettség esetén a Bank késedelmi kamatot számol fel; a szerződés nem teljesítése esetén a Bank jogosult azonnali hatállyal felmondani a kölcsönszerződést, ezzel egyidőben minden fennálló tartozás esedékessé válik; a Bank a megszüntetett kölcsönszerződésből eredő követelések érvényesítésével kapcsolatos költségeket az ügyfélre terheli">Az ügyfélnek felelősségteljesen és a Magyar Nemzeti Bank előírásainak megfelelően kell eljárnia.</a>
 	</div>
 	<div class="col-md-6 qualify">
 		<h3>Megfelelek-e a személyi hitel igénylés feltételeinek? A válasz igen, ha:</h3>

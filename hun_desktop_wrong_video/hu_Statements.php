@@ -5,28 +5,21 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
-	<meta charset="utf-8">
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Testbirds prototype</title>
-	<meta name="description" content="prototype">
-	<meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../css/screen.css">
-	<link rel="stylesheet" href="../css/slider.css">
-	<link rel="stylesheet" href="../css/font-awesome.css">
-	<script src="../bower_components/jquery/dist/jquery.js"></script>
-	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Testbirds prototype</title>
+		<meta name="description" content="prototype">
+		<meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/screen.css">
+		<link rel="stylesheet" href="../css/statement.css">
+		<script src="../bower_components/jquery/dist/jquery.js"></script>
 
-
+		<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 		 <script src="../js/statement.js"></script>
-		 <link rel="stylesheet" href="../css/font-awesome.css">
-		 <link rel="stylesheet" href="../css/statement.css">
-
-
 </head>
 
 
@@ -106,7 +99,7 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-body upload">
-        <img src="img/mobile.png" />
+        <img src="../img/mobile.png" />
         <h1>Please check your phone</h1>
         <p>
           We have sent you an SMS to your cell phone. Click on the link in the message and enter the following security code on the webpage:<br /><span style="font-weight: bold; font-size: 22px; line-height: 40px;">123432</span>
@@ -114,28 +107,28 @@
         <h2>Please take care of the followings when taking the picture:</h2>
         <div class="container">
           <div class="col-md-3">
-            <img src="img/csillan.png" />
+            <img src="../img/csillan.png" />
             <p>
               Flash reflection
             </p>
           </div>
 
           <div class="col-md-3">
-            <img src="img/kicsi.png" />
+            <img src="../img/kicsi.png" />
             <p>
               Edge cut-off
             </p>
           </div>
 
           <div class="col-md-3">
-            <img src="img/low.png" />
+            <img src="../img/low.png" />
             <p>
               Far from the border(less then 3/4 of the picture)
             </p>
           </div>
 
           <div class="col-md-3">
-            <img src="img/kilog.png" />
+            <img src="../img/kilog.png" />
             <p>
               Edge cut-off
             </p>
@@ -159,124 +152,125 @@
         <div class="sec_subheader">
         </div>
         <div class="container">
-          <img class="logo" src="img/logo.png">
+          <img class="logo" src="../img/logo.png">
 
         </div>
       </div>
 <!-- progress bar -->
 
-      <div class="container-fluid">
-        <div class="container progress_bar">
-          <div class="line">
-            <div class="line2">
+<div class="container-fluid">
+	<div class="container progress_bar">
+		<div class="line">
+			<div class="line2">
 
-            </div>
+			</div>
 
-          </div>
-          <div class="row">
-						<div class="col-xs-2 ">
-              <div class="nr">
-                <p>
-                  1
-                </p>
-              </div>
-              <p class="pr_title">
-                Basic information
-              </p>
-            </div>
-            <div class="col-xs-2 ">
-              <div class="nr">
-                <p>
-                  2
-                </p>
-              </div>
-              <p class="pr_title ">
-                About You
-              </p>
-            </div>
-            <div class="col-xs-2 active">
-              <div class="nr">
-                <p>
-                  3
-                </p>
-              </div>
-              <p class="pr_title">
-                Identification
-              </p>
-            </div>
-            <div class="col-xs-2">
-              <div class="nr">
-                <p>
-                  4
-                </p>
-              </div>
-              <p class="pr_title">
-                Approval
-              </p>
-            </div>
-            <div class="col-xs-2">
-              <div class="nr">
-                <p>
-                  5
-                </p>
-              </div>
-              <p class="pr_title">
-                Contract signature
-              </p>
-            </div>
-						<div class="col-xs-2 last">
-							<img src="img/finish.png" />
-              <p class="pr_title ">
-                Finish
-              </p>
-            </div>
+		</div>
+		<div class="row">
+			<div class="col-xs-2 ">
+				<div class="nr">
+					<p>
+						1
+					</p>
+				</div>
+				<p class="pr_title">
+					Alapadatok
+				</p>
+			</div>
+			<div class="col-xs-2 ">
+				<div class="nr">
+					<p>
+						2
+					</p>
+				</div>
+				<p class="pr_title ">
+					Személyes adatok
+				</p>
+			</div>
+			<div class="col-xs-2 active">
+				<div class="nr">
+					<p>
+						3
+					</p>
+				</div>
+				<p class="pr_title">
+					Azonosítás
+				</p>
+			</div>
+			<div class="col-xs-2">
+				<div class="nr">
+					<p>
+						4
+					</p>
+				</div>
+				<p class="pr_title">
+					Jóváhagyás
+				</p>
+			</div>
+			<div class="col-xs-2">
+				<div class="nr">
+					<p>
+						5
+					</p>
+				</div>
+				<p class="pr_title">
+					Szerződéskötés
+				</p>
+			</div>
+			<div class="col-xs-2 last">
+				<img src="../img//finish.png" />
+				<p class="pr_title ">
+					Befejezés
+				</p>
+			</div>
 
 
 
-          </div>
-          <h2 class="title">Identification</h2>
-        </div>
-      </div>
+		</div>
+		<h2 class="title">Azonosítás</h2>
+	</div>
+</div>
+
 
 
 <!-- Loan I apply for -->
-    <div class="container">
+<div class="container">
 
-			<div class="loanholder">
-        <h2>Loan I apply for</h2>
-        <div class="amount">
-          <p>
-            Loan amount
-          </p>
-          <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
-        </div>
-        <div class="info">
+	<div class="loanholder">
+		<h2>Hitel részletei</h2>
+		<div class="amount">
+			<p>
+				Hitelösszeg
+			</p>
+			<h1><?=$_SESSION["loan_amount"]?> Ft</h1>
+		</div>
+		<div class="info">
 
-          <div class="instalments">
-            <h2>Instalments:</h2>
-            <p><?=$_SESSION["loan_instalments"]?> Ft</p>
-          </div>
-          <div class="instalments">
-            <h2>Repaid in:</h2>
-            <p><?=$_SESSION["repaid_in"]?> month</p>
-          </div>
-        </div>
-      </div>
+			<div class="instalments">
+				<h2>Törlesztőrészlet:</h2>
+				<p><?=$_SESSION["loan_instalments"]?> Ft</p>
+			</div>
+			<div class="instalments">
+				<h2>Futamidő:</h2>
+				<p><?=$_SESSION["repaid_in"]?> hónap</p>
+			</div>
+		</div>
+	</div>
 
-    </div>
+</div>
 
 <!-- form -->
 
-    <div class="container">
-      <div class="form nopadding">
-				<div class="good">You are doing well! Only 2 more steps!</div>
+<div class="container">
+	<div class="form nopadding">
+		<div class="good">Remek! Még 2 lépés és készen is vagy!</div>
 
 
 
 
 
 
-        <button class="accordion" id="select_upload_button" data-toggle="collapse" data-target="">Videóchates azonosítás</button>
+        <button class="accordion" id="select_upload_button" data-toggle="collapse" data-target="">Videochat azonosítás</button>
         <div id="expenses" class="collapse in">
 					<div class="form">
 						<div class="container mobile_first form" style="width: 100%; padding: 0px;">
@@ -305,152 +299,152 @@
 							</li>
 							</ol> <br />
 
-							<button onclick="window.location.href='hun_Statements_m_02_1.html'" class="bluebtn videobtn" type="button" name="button">Azonosítás indítása</button>
+							<button class="bluebtn videobtn" type="button" name="button">Azonosítás indítása</button>
 
 
 							</div>
-						<button class="bluebtn" id="select_upload_next_button" type="button" name="button">Next</button>
+						</div>
+						<button class="bluebtn" id="select_upload_next_button" type="button" name="button">Következő</button>
 
 					</div>
 
 
 
 
-			<div id="after_success" class="mailing_address">
-				<p style="text-align:left" id="success_message">Your data were succesfully recognized.</p><br />
+					<div id="after_success" class="mailing_address">
+						<p style="text-align:left" id="success_message">Adatait sikeresen felismertük</p><br />
 
-          <div class="check">
+		          <div class="check">
 
-            <label>
-              <input type='checkbox' id="employment">
-              <span></span>
-              <p class="checklabel">
-                I have different mailing address than the permanent address
-              </p>
-              <p class="mailing_info">
-								You acknowledge that we will enter the credit bureau and save there the data about your application.
-              </p>
+		            <label>
+		              <input type='checkbox' id="employment">
+		              <span></span>
+		              <p class="checklabel">
+		                Az állandó lakcímemtől eltérő levelezési címet adok meg
+		              </p>
+		              <p class="mailing_info">
+										Hozzájárulsz, hogy az igénylésed adatait a KHR részére átadjuk.
+		              </p>
 
-            </label>
-          </div>
-					<div class="city inline">
-						<div class="postal inline">
-							<h2>Postal code</h2>
-							<input type="text" class="shortest" name="firstname">
+		            </label>
+		          </div>
+							<div class="city inline">
+								<div class="postal inline">
+									<h2>Irányítószám</h2>
+									<input type="text" class="shortest" name="firstname">
+
+								</div>
+							<div class="cit inline">
+
+							<h2>Város</h2>
+							<input type="text" class="shorter" name="firstname">
+						</div>
 
 						</div>
-					<div class="cit inline">
 
-					<h2>City</h2>
-					<input type="text" class="shorter" name="firstname">
+				<div class="street">
+					<div class="street_holder">
+						<h2>Utca</h2>
+						<input type="text" class="shorter" name="firstname">
+								</div>
+					<div class="type_of_street">
+						<div class="dropdown shortest">
+										<h2>Típusa</h2>
+
+										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Utca
+										<span class="caret"></span></button>
+										<ul class="dropdown-menu">
+											<li><a href="#">utca</a></li>
+											<li><a href="#">tér</a></li>
+											<li><a href="#">út</a></li>
+
+										</ul>
+									</div>
+					</div>
+					<div class="street_number">
+						 <h2>házszám</h2>
+						 <input type="text" class="shortest" name="number">
+					</div>
+					<div class="floor inline">
+						 <h2>emelet</h2>
+						 <input type="text" class="shortest" name="number">
+					</div>
+					<div class="door inline">
+						 <h2>ajtó</h2>
+						 <input type="text" class="shortest" name="number">
+					</div>
+
 				</div>
 
-				</div>
 
-		<div class="street">
-			<div class="street_holder">
-				<h2>Street</h2>
-				<input type="text" class="shorter" name="firstname">
-						</div>
-			<div class="type_of_street">
-				<div class="dropdown shortest">
-								<h2>Type of street</h2>
+					<button class="bluebtn" id="select_upload_next_button" type="button" name="button">Tovább</button>
 
-								<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Street
-								<span class="caret"></span></button>
-								<ul class="dropdown-menu">
-									<li><a href="#">Street</a></li>
-									<li><a href="#">Square</a></li>
-									<li><a href="#">Road</a></li>
-
-								</ul>
-							</div>
-			</div>
-			<div class="street_number">
-				 <h2>Number</h2>
-				 <input type="text" class="shortest" name="number">
-			</div>
-			<div class="floor inline">
-				 <h2>Floor</h2>
-				 <input type="text" class="shortest" name="number">
-			</div>
-			<div class="door inline">
-				 <h2>Door</h2>
-				 <input type="text" class="shortest" name="number">
-			</div>
-
-		</div>
+		        </div>
 
 
-			<button class="bluebtn" id="select_upload_next_button" type="button" name="button">Next</button>
-
-        </div>
+		      </div>
 
 
-      </div>
-
-
-      <button class="accordion collapsed" data-toggle="collapse" id="account_button" data-target="">Bank account statement</button>
-      <div id="account" class="collapse">
-          <div class="form">
-          <p>
-						Please upload account statement from your bank account from <span style="font-weight: bold;">March 2017</span> in PDF (need to be original PDF, the picture is not enough)       </p>
-          <div class="statementholder">
-						<h2>How to download the Account statement from your internet banking?</h2>
-            <p> To do this simply:
-              1. Visit mybank.com <br />
-2. Log in to Internet Banking<br />
-3. Once you're logged in, select 'statements' from the options on the left of the screen<br />
-4. Click on view statement<br />
-5. Choose a time period to view<br />
-6. Click on 'download in PDF'<br />
-            </p>
+		      <button class="accordion collapsed" data-toggle="collapse" id="account_button" data-target="">Bankszámlakivonat</button>
+		      <div id="account" class="collapse">
+		          <div class="form">
+		          <p>
+								kérjük, töltsd fel a <span style="font-weight: bold;">2017. márciusi</span> bankszámlakivonatodat (azt a pdf-et, amelyet az internetbankról töltöttél le)       </p>
+		          <div class="statementholder">
+								<h2>Hogyan tudom letölteni a bankszámla kivonatomat az e-bankomból?</h2>
+		            <p>
+		              1. Látogass el a mybank.com-ra <br />
+		2. Jelentkezz be az e-bankba<br />
+		3. A bejelentkezés után válaszd a "bankszámlatörténet" menüpontot<br />
+		4. Válaszd ki az időszakot<br />
+		5. Kattints a "PDF letöltése" gombra<br />
+		            </p>
 
 
 
 
-          </div>
-          <div class="uploadbox">
+		          </div>
+		          <div class="uploadbox">
 
-            <img src="img/pdf.png" />
-            <p >
-Drag and drop images into this window to upload            </p>
+		            <img src="../img/pdf.png" />
+		            <p >
+		A feltölteni kívánt PDF dokumentumot húzd ide a kijelölt területre         </p>
 
-            <label class="custom-file-upload id_btn">
-			    <input type="file" id="last_file"/>Browse for file on your computer
-			</label>
+		            <label class="custom-file-upload id_btn">
+					    <input type="file" id="last_file"/>Dokumentum feltöltése a számítógépről
+					</label>
 
-          </div>
+		          </div>
 
-          <div class="uploadbox success">
+		          <div class="uploadbox success">
 
-              <img src="img/success.png" /><br />
-              <p>
-                File successfully uploaded:
-              </p>
-              <h2 id="last_file_name">accountstatement.pdf</h2>
-              <p style="text-decoration: underline;" id="delete_file">Delete file</p>
-
-
-
-          </div>
-
-          <button onclick="window.location.href='approval.php'" class="bluebtn" type="button" name="button">Next</button>
-
-        </div>
-
-
-    </div>
-
-
-  </div>
+		              <img src="../img/success.png" /><br />
+		              <p>
+		                Fájl sikeresen feltöltve:
+		              </p>
+		              <h2 id="last_file_name">accountstatement.pdf</h2>
+		              <p style="text-decoration: underline;" id="delete_file">Fájl törlése</p>
 
 
 
-    </body>
+		          </div>
 
-<!-- FOOTER-->
+		          <button onclick="window.location.href='hu_approval_wrong.php'" class="bluebtn" type="button" name="button">Tovább</button>
+
+		        </div>
 
 
-    <footer>
-    </footer>
+		    </div>
+
+
+		  </div>
+
+
+
+		    </body>
+
+		<!-- FOOTER-->
+
+
+		    <footer>
+		    </footer>
