@@ -1,13 +1,13 @@
 <?php
 	session_start();
 	error_reporting(0);
-	$_SESSION["loan_amount"] = number_format(1800000,0,',',' ');
-	$_SESSION["loan_instalments"] = number_format(75000,0,',',' ');
+	$_SESSION["loan_amount"] = number_format(600000,0,',',' ');
+	$_SESSION["loan_instalments"] = number_format(32500,0,',',' ');
 	$_SESSION["repaid_in"] = 24;
 	$_SESSION["interest_rate"] = 13.99;
-	$_SESSION["total_repaid"] = '1 993 261';
-	$_SESSION["max_loan"] = '75 000';
-	$_SESSION["min_loan"] = '29 873';
+	$_SESSION["total_repaid"] = '780 000';
+	$_SESSION["max_loan"] = '65 000';
+	$_SESSION["min_loan"] = '10 833';
 
 	?>
 <!DOCTYPE html>
@@ -33,23 +33,6 @@
 
 				<script src="../bower_components/bootstrap/dist/js/bootstrap-switch.js"></script>
 
-		<style>
-			input[type=range][name=amount]{
-				    background: #00aeef;
-				    background: -moz-linear-gradient(left, #00aeef 0%, #00aeef 40%, #e6f7fe 40%, #e6f7fe 100%);
-				    background: -webkit-linear-gradient(left, #00aeef 0%,#00aeef 40%,#e6f7fe 40%,#e6f7fe 100%);
-				    background: linear-gradient(to right, #00aeef 0%,#00aeef 40%,#e6f7fe 40%,#e6f7fe 100%);
-				    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#e6f7fe',GradientType=1 );
-			}
-			input[type=range][name=monthly]{
-			    background: #00aeef;
-			    background: -moz-linear-gradient(left, #00aeef 0%, #00aeef 100%, #e6f7fe 100%, #e6f7fe 100%);
-			    background: -webkit-linear-gradient(left, #00aeef 0%,#00aeef 100%,#e6f7fe 100%,#e6f7fe 100%);
-			    background: linear-gradient(to right, #00aeef 0%,#00aeef 100%,#e6f7fe 100%,#e6f7fe 100%);
-			    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#e6f7fe',GradientType=1 );
-			}
-
-		</style>
     </head>
 
 <!-- BODY-->
@@ -77,27 +60,45 @@
 		A K&H új megoldásával szabad felhasználású hiteled igénylésének minden lépését online elintézheted! Nem szükséges bemenned a bankfiókba, mert az igénylést és a hitelszerződés megkötését is el tudod végezni a neten. Az aláírás is online zajlik és azt követően 15 percen belül meg is érkezik a számládra a kért összeg!
 <div class="container qualify">
 	<div class="col-md-6 calculator">
-		<div class="prem">
-			<p>
-				Magasabb a havi nettó jövedelme 250.000 Ft-nál?
-			</p>
-			<div class="myswitch">
-				<div onclick="window.location.href='hu_index.php'" class="inactive nem">
-					Nem
+			<div class="prem">
+				<p>
+					Magasabb a havi nettó jövedelme 250.000 Ft-nál?
+				</p>
+				<div class="myswitch">
+					<div  class="active nem">
+						Nem
+					</div>
+					<div  onclick="window.location.href='index_premium_kh.php'" class="inactive igen">
+						Igen
+					</div>
 				</div>
-				<div class="active igen">
-					Igen
-				</div>
+
 			</div>
 
-		</div>
+			<div class="prem client">
+				<p>
+					Ön a K&H Bank ügyfele?
+				</p>
+				<div class="myswitch">
+					<div onclick="window.location.href='index_basic_else.php'" class="inactive nem">
+						Nem
+					</div>
+					<div  class="active igen">
+						Igen
+					</div>
+				</div>
+
+			</div>
+
+		<a class="ttip" data-toggle="tooltip" title="A kedvezmény feltétele, hogy rendelkezel K&H számlával vagy meghatározott időn belül nyitsz egyet és legalább 100 000 Ft munkabéred érkezik ide havonta. Ebben ez esetben 2% kedvezményt adunk a kamatból.  Az új számlát bármikor megnyithatod, ennek költsége max. 750 Ft/hó, a kedvezmény az első fizetési jóváírás beérkezését követő hónaptól lép majd érvénybe. A kalkulátor a kedvezmény nélküli összeget mutatja.  ">Tudj meg többet a kedvezményről!</a>
+<div class="boxed">
 
 		<div>
 			<div class="need">
 				<h2 class="n_label">igényelt hitelösszeg</h2>
-				<h1 class="n_amount" id="amount">1 800 000 Ft</h1>
-				<input class="custom_range" type="range" name="amount" min="1000000" max="3000000" step="1" value="1800000">
-				<p class="min_amount">1.000.000 Ft</p>
+				<h1 class="n_amount" id="amount">600 000 Ft</h1>
+				<input class="custom_range" type="range" name="amount" min="300000" max="3000000" step="1" value="600000">
+				<p class="min_amount">300.000 Ft</p>
 				<p class="max_amount">3.000.000 Ft</p>
 			</div>
 
@@ -105,10 +106,10 @@
 		<div>
 			<div style="margin-top: 60px;"class="need">
 				<h2 class="n_label">havi törlesztőrészlet:</h2>
-				<h1 class="n_amount" id="monthly_instalment">75 000 Ft</h1>
-				<input class="custom_range" type="range" name="monthly" min="29873" max="75000" step="1" value="75000" list="numbers">
-				<p class="min_amount" id="min_monthly_instalment">29 873 Ft</p>
-				<p class="max_amount" id="max_monthly_instalment">75 000 Ft</p>
+				<h1 class="n_amount" id="monthly_instalment">32 500 Ft</h1>
+				<input class="custom_range" type="range" name="monthly" min="10833" max="65000" step="1" value="32500" list="numbers">
+				<p class="min_amount" id="min_monthly_instalment">10 833 Ft</p>
+				<p class="max_amount" id="max_monthly_instalment">65 000 Ft</p>
 			</div>
 
 		</div>
@@ -123,12 +124,13 @@
 			<p>
 				Teljes megtakarításod a hitelen <span id="total_saving">18 035 Ft</span> lehet.
 			</p>
-			<a class="ttip" data-toggle="tooltip" title="A kedvezmény feltétele, hogy rendelkezel K&H számlával vagy meghatározott időn belül nyitsz egyet és legalább 100 000 Ft munkabéred érkezik ide havonta. Ebben ez esetben 2% kedvezményt adunk a kamatból.  Az új számlát bármikor megnyithatod, ennek költsége max. 750 Ft/hó, a kedvezmény az első fizetési jóváírás beérkezését követő hónaptól lép majd érvénybe. A kalkulátor a kedvezmény nélküli összeget mutatja.  ">Tudj meg többet a kedvezményről!</a>
 
 		</div>
-		<button onclick="window.location.href='hu_basic.php'" class="bluebtn" type="button" name="button">kérem a hitelt</button>
+		<button onclick="window.location.href='basic.php'" class="bluebtn" type="button" name="button">kérem a hitelt</button>
 		<a class="ttip" data-toggle="tooltip" title="Az ügyfél csak olyan kölcsönszerződést írhat alá, melyet teljes mértékben megértett; az ügyfél körülményeiben történt bármilyen változás nem menti fel az ügyfelet a kölcsön összegének visszafizetése alól; fizetési nehézsége esetén az ügyfélnek haladéktalanul tájékoztatnia kell a Bankot; bármilyen lejárt fizetési kötelezettség esetén a Bank késedelmi kamatot számol fel; a szerződés nem teljesítése esetén a Bank jogosult azonnali hatállyal felmondani a kölcsönszerződést, ezzel egyidőben minden fennálló tartozás esedékessé válik; a Bank a megszüntetett kölcsönszerződésből eredő követelések érvényesítésével kapcsolatos költségeket az ügyfélre terheli">Az ügyfélnek felelősségteljesen és a Magyar Nemzeti Bank előírásainak megfelelően kell eljárnia.</a>
 	</div>
+</div>
+
 	<div class="col-md-6 qualify">
 		<h3>Megfelelek-e a személyi hitel igénylés feltételeinek? A válasz igen, ha:</h3>
 		<ul>
@@ -162,7 +164,7 @@
 <div class="col-md-12" style="padding: 0px;">
 	<h3>Az igénylés folyamata</h3>
 
-	<div class="col-md-3">
+	<div class="col-md-3 col-xs-6">
 		<img src="../img/peronal_data.png" />
 		<p>
 			személyes adatok megadása
@@ -170,14 +172,14 @@
 	</div>
 
 
-	<div class="col-md-3">
+	<div class="col-md-3 col-xs-6">
 		<img src="../img/take_pic.png" />
 		<p>
 			a személyi igazolványról készült fotó feltöltése
 		</p>
 	</div>
 
-	<div class="col-md-3">
+	<div class="col-md-3 col-xs-6">
 		<img src="../img/read_sign.png" />
 		<p>
 			a szerződés ellenőrzése, aláírása
@@ -185,7 +187,7 @@
 	</div>
 
 
-	<div class="col-md-3">
+	<div class="col-md-3 col-xs-6">
 		<img src="../img/receive_enjoy.png" />
 		<p>
 			Az igényelt hitelösszeg kiutalása
@@ -197,7 +199,7 @@
 <div class="col-md-12" style="padding: 0px;">
 
 	<h3>Az online hiteligénylés előnyei:</h3>
-	<div class="col-md-3">
+	<div class="col-md-3 col-xs-6">
 		<img src="../img/minutes.png" />
 		<p>
 			az igényelt összeg a szerződés aláírását követő 15 percen belűl megérkezhet bankszámládra
@@ -205,14 +207,15 @@
 	</div>
 
 
-	<div class="col-md-3">
+	<div class="col-md-3 col-xs-6">
 		<img src="../img/online_application.png" />
 		<p>
 			az igényléshez nem szükséges bankfiókba menni
 		</p>
 	</div>
+<div class="row">
 
-	<div class="col-md-3">
+	<div class="col-md-3 col-xs-6">
 		<img src="../img/management.png" />
 		<p>
 			nincs ügyintézési költség
@@ -220,12 +223,13 @@
 	</div>
 
 
-	<div class="col-md-3">
+	<div class="col-md-3 col-xs-6">
 		<img src="../img/security.png" />
 		<p>
 			A hitelt Magyarország egyik vezető pénzügyi szolgáltatója biztosítja.
 		</p>
 	</div>
+</div>
 </div>
 
 
@@ -304,7 +308,7 @@
   				var month = $('#month_number').html();
   				$.ajax({
 				    type: "POST",
-				    url: "../ajax2.php",
+				    url: "../ajax.php",
 				    data: {
 				    	mode: 'amountChange',
 				    	month : month,
@@ -326,7 +330,7 @@
 
 				    	$('input[type=range][name="amount"]').val(new_value);
 
-						var css = getCssPercentage(1000000,3000000,new_value);
+						var css = getCssPercentage(300000,3000000,new_value);
 
 						$('input[type=range][name="amount"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="amount"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
@@ -371,7 +375,7 @@
 
   				$.ajax({
 				    type: "POST",
-				    url: "../ajax2.php",
+				    url: "../ajax.php",
 				    data: {
 				    	mode: 'monhtlyChange',
 				    	monthly: value,

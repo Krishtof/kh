@@ -38,7 +38,7 @@ function verification(){
 			$('div#phone_verification').show();
 		}
 	});
-	
+
 	$('#phone-verify').click(function(){
 		if($('input#phone_verify').val() != ''){
 			$(this).closest('.verify').hide();
@@ -52,7 +52,7 @@ function verification(){
 			$('div#email_verification').show();
 		}
 	});
-	
+
 	$('#email-verify').click(function(){
 		if($('input#email-verify').val() != ''){
 			$(this).closest('.verify').hide();

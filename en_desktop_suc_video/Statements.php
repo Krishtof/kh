@@ -416,7 +416,7 @@
 
 		          </div>
 
-		          <button onclick="window.location.href='hu_approval_wrong.php'" class="bluebtn next" type="button" name="button">Tovább</button>
+		          <button onclick="window.location.href='en_approval.php'" class="bluebtn next" type="button" name="button">Tovább</button>
 
 		        </div>
 

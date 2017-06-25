@@ -200,7 +200,7 @@ Az általad igényelt összeg 15 percen belül megérkezik a megadott számládr
 Ne felejtsd el megnézni az e-mail fiókodat. Az aláírt szerződésedet és a törlesztőrészletekkel kapcsolatos dokumentumokat átküldtük neked.           </p></div>
 
             </div>
-						<button onclick="window.location.href='hu_index.php'" class="bluebtn next" type="button" name="button">Vissza a főoldalra</button>
+						<button onclick="window.location.href='index.php'" class="bluebtn next" type="button" name="button">Vissza a főoldalra</button>
 
 
 

@@ -9,11 +9,11 @@
         <meta name="author" content="testbirds">    <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/screen.css">
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/screen.css">
 
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     </head>
 
 <!-- BODY-->
@@ -29,7 +29,7 @@
         <div class="sec_subheader">
         </div>
         <div class="container">
-          <img class="logo" src="img/logo.png">
+          <img class="logo" src="../img/logo.png">
 
         </div>
       </div>
@@ -150,7 +150,7 @@
 				    	//monthly_discount módosítása
 						$('#monthly_discount').html(obj['monthly_discount']+' Ft');
 						$('#total_saving').html(obj['total_saving']);
-						//css
+						/../css
 						var css = getCssPercentage2(min_monthly, max_monthly,obj['loan_instalments'].replace(' ', ''));
 
 						$('input[type=range][name="monthly"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');

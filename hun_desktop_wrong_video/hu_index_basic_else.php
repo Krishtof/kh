@@ -60,20 +60,38 @@
 		A K&H új megoldásával szabad felhasználású hiteled igénylésének minden lépését online elintézheted! Nem szükséges bemenned a bankfiókba, mert az igénylést és a hitelszerződés megkötését is el tudod végezni a neten. Az aláírás is online zajlik és azt követően 15 percen belül meg is érkezik a számládra a kért összeg!
 <div class="container qualify">
 	<div class="col-md-6 calculator">
-		<div class="prem">
-			<p>
-				Magasabb a havi nettó jövedelme 250.000 Ft-nál?
-			</p>
-			<div class="myswitch">
-				<div class="active nem">
-					Nem
+			<div class="prem">
+				<p>
+					Magasabb a havi nettó jövedelme 250.000 Ft-nál?
+				</p>
+				<div class="myswitch">
+					<div  class="active nem">
+						Nem
+					</div>
+					<div  onclick="window.location.href='hu_index_premium_else.php'" class="inactive igen">
+						Igen
+					</div>
 				</div>
-				<div onclick="window.location.href='hu_index_premium.php'" class="inactive igen">
-					Igen
-				</div>
+
 			</div>
 
-		</div>
+			<div class="prem client">
+				<p>
+					Ön a K&H Bank ügyfele?
+				</p>
+				<div class="myswitch">
+					<div class="active nem">
+						Nem
+					</div>
+					<div onclick="window.location.href='hu_index_basic_kh.php'" class="inactive igen">
+						Igen
+					</div>
+				</div>
+
+			</div>
+
+		<a class="ttip" data-toggle="tooltip" title="A kedvezmény feltétele, hogy rendelkezel K&H számlával vagy meghatározott időn belül nyitsz egyet és legalább 100 000 Ft munkabéred érkezik ide havonta. Ebben ez esetben 2% kedvezményt adunk a kamatból.  Az új számlát bármikor megnyithatod, ennek költsége max. 750 Ft/hó, a kedvezmény az első fizetési jóváírás beérkezését követő hónaptól lép majd érvénybe. A kalkulátor a kedvezmény nélküli összeget mutatja.  ">Tudj meg többet a kedvezményről!</a>
+<div class="boxed">
 
 		<div>
 			<div class="need">
@@ -106,12 +124,13 @@
 			<p>
 				Teljes megtakarításod a hitelen <span id="total_saving">18 035 Ft</span> lehet.
 			</p>
-			<a class="ttip" data-toggle="tooltip" title="A kedvezmény feltétele, hogy rendelkezel K&H számlával vagy meghatározott időn belül nyitsz egyet és legalább 100 000 Ft munkabéred érkezik ide havonta. Ebben ez esetben 2% kedvezményt adunk a kamatból.  Az új számlát bármikor megnyithatod, ennek költsége max. 750 Ft/hó, a kedvezmény az első fizetési jóváírás beérkezését követő hónaptól lép majd érvénybe. A kalkulátor a kedvezmény nélküli összeget mutatja.  ">Tudj meg többet a kedvezményről!</a>
 
 		</div>
 		<button onclick="window.location.href='hu_basic.php'" class="bluebtn" type="button" name="button">kérem a hitelt</button>
 		<a class="ttip" data-toggle="tooltip" title="Az ügyfél csak olyan kölcsönszerződést írhat alá, melyet teljes mértékben megértett; az ügyfél körülményeiben történt bármilyen változás nem menti fel az ügyfelet a kölcsön összegének visszafizetése alól; fizetési nehézsége esetén az ügyfélnek haladéktalanul tájékoztatnia kell a Bankot; bármilyen lejárt fizetési kötelezettség esetén a Bank késedelmi kamatot számol fel; a szerződés nem teljesítése esetén a Bank jogosult azonnali hatállyal felmondani a kölcsönszerződést, ezzel egyidőben minden fennálló tartozás esedékessé válik; a Bank a megszüntetett kölcsönszerződésből eredő követelések érvényesítésével kapcsolatos költségeket az ügyfélre terheli">Az ügyfélnek felelősségteljesen és a Magyar Nemzeti Bank előírásainak megfelelően kell eljárnia.</a>
 	</div>
+</div>
+
 	<div class="col-md-6 qualify">
 		<h3>Megfelelek-e a személyi hitel igénylés feltételeinek? A válasz igen, ha:</h3>
 		<ul>

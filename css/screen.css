@@ -968,13 +968,17 @@ font-size: 48px;
 color: var(--blue);
 margin: 30px 0px 20px;
 }
-.calculator {
+.boxed {
 padding: 20px;
+padding-top: 30px;
 margin-top: 40px;
 background: #FFFFFF;
 border: 1px solid #99DFF9;
 }
-
+.calculator {
+  padding: 0px;
+  padding-top: 50px;
+}
 
 .calculator h2 {
   margin-bottom: 13px;
@@ -1153,7 +1157,7 @@ margin-right: 40px;
 
 .banks .col-md-2 h2 {
   font-weight: bold;
-      background: #19ade8;
+      background: #99bdca;
       font-size: 15px;
       padding: 5px;
       color: white;
@@ -1457,7 +1461,7 @@ input.chatwithme::-webkit-input-placeholder {
 }
 
 .myswitch {
-  width: 120px;
+  width: 100px;
   float: right;
   height: 35px;
   border: 1px solid var(--light-blue);
@@ -1511,4 +1515,49 @@ margin-bottom: 70px;
 }
 .bank .form h2 {
   font-weight: normal;
+}
+
+.col-md-3.col-xs-6 {
+  min-height: 225px;
+}
+
+.next {
+  background-color: var(--orange);
+}
+
+.wayofvideo {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid var(--light-blue);
+}
+
+.wayofvideo .box {
+  width: 48.5%;
+  min-height: 20px;
+  height: 100%;
+  text-align: center;
+  display: inline-block;
+padding: 40px 0px;}
+
+.wayofvideo .box:hover {
+  cursor: pointer;
+}
+
+
+.wayofvideo .box img {
+  max-width: 60px;
+  margin-bottom: 20px;
+}
+.wayofvideo .box p {
+margin: 0 auto;
+color: var(--light-blue);
+
+}
+
+
+
+.client {
+  margin-bottom: 160px;
 }

@@ -1599,7 +1599,7 @@ hiányában a támogatást igénybe vevő Adós levelezési címére.
 						<input type="text" name="firstname">
 
 						<p style="text-align: center;">Az "aláírom" gomb megnyomásával a szerződést elektonikusan aláírod</p>
-            <button onclick="window.location.href='hu_finish.php'" class="bluebtn next" type="button" name="button">Aláírom</button>
+            <button onclick="window.location.href='finish.php'" class="bluebtn next" type="button" name="button">Aláírom</button>
 
           </div>
 
