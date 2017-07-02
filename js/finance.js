@@ -5,7 +5,19 @@ $(function(){
 	jump_next();
 	dropdown();
 	a_prevent();
+	income_other();
 });
+
+function income_other(){
+	$('input#income_other').change(function(){
+		var value = $(this).is(':checked');
+		if(value === true){
+			$('input[name="other_income"]').removeClass('hidden-xs hidden-sm hidden-md hidden-lg');
+		}else{
+			$('input[name="other_income"]').addClass('hidden-xs hidden-sm hidden-md hidden-lg');
+		}
+	});
+}
 
 function dropdown(){
 	$('.dropdown-menu li').click(function(){

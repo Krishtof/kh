@@ -379,13 +379,14 @@
               <div class="check">
 
                 <label>
-                  <input type='checkbox'>
+                  <input type='checkbox' id="income_other">
                   <span></span>
                   <p>
                     other
                   </p>
                 </label>
               </div>
+             <input type="text" name="other_income" class="forint hidden-xs hidden-sm hidden-md hidden-lg" id="forint" >
 
 
             </form>
