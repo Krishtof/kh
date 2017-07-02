@@ -246,8 +246,16 @@
       <div class="form nopadding">
 				<div class="good">You are doing well! Only 4 more steps</div>
 
-        <button class="accordion  " data-toggle="collapse" id="income_button" data-target="#income">income</button>
-        <div id="income" class="collapse in">
+		 <button class="accordion" data-toggle="collapse" id="new_button" data-target="#new">new page</button>
+		 <div id="new" class="collapse in">
+            <div class="form">
+            	<button class="bluebtn" type="button" data-toggle="collapse"  data-target="#new" name="button" id="new_next">Next</button>
+          </div>
+
+        </div>
+
+        <button class="accordion  collapsed" data-toggle="collapse" id="income_button" data-target="#income"><span class="inactive_accordion">income</span></button>
+        <div id="income" class="collapse ">
             <div class="form">
 
             <form>
@@ -481,7 +489,6 @@
           </div>
 
         </div>
-
 
 
 

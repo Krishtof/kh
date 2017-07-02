@@ -68,13 +68,23 @@ function employment(){
 }
 
 function next(){
+	$('button#new_next').click(function(){
+		$('#income_button').attr('data-target','#income');
+		$('#income_button').removeClass('collapsed');
+		$('#income_button span.inactive_accordion').removeClass('inactive_accordion');
+		$('#income').addClass('in');
+		$('#income').css('height','auto');
+		$('#new_button').addClass('done');
+	});
+
+
 	$('button#income_next').click(function(){
 		$('#expenses_button').attr('data-target','#expenses');
 		$('#expenses_button').removeClass('collapsed');
 		$('#expenses_button span.inactive_accordion').removeClass('inactive_accordion');
 		$('#expenses').addClass('in');
 		$('#expenses').css('height','auto');
-		$('#income_button').addClass('done');
+		$('#income_button').addClass('done collapsed');
 	});
 
 
@@ -101,6 +111,7 @@ function next(){
 		$('#bank_button').attr('data-target','#bank');
 		$('#bank_button').removeClass('collapsed');
 		$('#bank_button span.inactive_accordion').removeClass('inactive_accordion');
+
 		$('#bank').addClass('in');
 
 
