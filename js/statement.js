@@ -286,6 +286,8 @@ function next(){
 		$('#expenses').removeClass('in');
 		$('#select_upload_button').attr('data-target','#expenses');
 		$('#account_button').removeClass('collapsed');
+		$('#account_button span.inactive_accordion').removeClass('inactive_accordion');
+		
 		$('#account').addClass('in');
 		$('#account_button').attr('data-target','#account');
 		$('.openchat').addClass('block');

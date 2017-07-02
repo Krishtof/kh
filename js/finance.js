@@ -59,6 +59,7 @@ function next(){
 	$('button#income_next').click(function(){
 		$('#expenses_button').attr('data-target','#expenses');
 		$('#expenses_button').removeClass('collapsed');
+		$('#expenses_button span.inactive_accordion').removeClass('inactive_accordion');
 		$('#expenses').addClass('in');
 		$('#expenses').css('height','auto');
 		$('#income_button').addClass('done');
@@ -68,6 +69,7 @@ function next(){
 	$('button#expense_next').click(function(){
 		$('#housing_button').attr('data-target','#Housing');
 		$('#housing_button').removeClass('collapsed');
+		$('#housing_button span.inactive_accordion').removeClass('inactive_accordion');
 		$('#Housing').addClass('in');
 		$('#Housing').css('height','auto');
 		$('#expenses_button').addClass('done');
@@ -77,6 +79,7 @@ function next(){
 	$('button#housing_next').click(function(){
 		$('#family_button').attr('data-target','#family');
 		$('#family_button').removeClass('collapsed');
+		$('#family_button span.inactive_accordion').removeClass('inactive_accordion');
 		$('#family').addClass('in');
 		$('#family').css('height','auto');
 		$('#housing_button').addClass('done');
@@ -85,6 +88,7 @@ function next(){
 	$('button#family_next').click(function(){
 		$('#bank_button').attr('data-target','#bank');
 		$('#bank_button').removeClass('collapsed');
+		$('#bank_button span.inactive_accordion').removeClass('inactive_accordion');
 		$('#bank').addClass('in');
 
 
