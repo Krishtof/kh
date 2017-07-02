@@ -50,7 +50,7 @@
 
         </div>
         <button id="modal" class="bluebtn" type="button" name="button" data-dismiss="modal">I acknowledge</button>
-        <a class="dont" href="#">I don't acknowledge</a>
+        <a class="dont" href="#">I do not acknowledge</a>
 
       </div>
     </div>
@@ -84,7 +84,7 @@
 
         </div>
         <button id="modal" class="bluebtn" type="button" name="button" data-dismiss="modal">I acknowledge</button>
-        <a class="dont" href="#">I don't acknowledge</a>
+        <a class="dont" href="#">I do not acknowledge</a>
 
       </div>
     </div>
@@ -145,7 +145,7 @@
 					</p>
 				</div>
 				<p class="pr_title">
-					Alapadatok
+					basic information
 				</p>
 			</div>
 			<div class="col-xs-2 ">
@@ -155,7 +155,7 @@
 					</p>
 				</div>
 				<p class="pr_title ">
-					Személyes adatok
+					about you
 				</p>
 			</div>
 			<div class="col-xs-2 active">
@@ -165,7 +165,7 @@
 					</p>
 				</div>
 				<p class="pr_title">
-					Azonosítás
+					identification
 				</p>
 			</div>
 			<div class="col-xs-2">
@@ -175,7 +175,7 @@
 					</p>
 				</div>
 				<p class="pr_title">
-					Jóváhagyás
+					approval
 				</p>
 			</div>
 			<div class="col-xs-2">
@@ -185,20 +185,20 @@
 					</p>
 				</div>
 				<p class="pr_title">
-					Szerződéskötés
+					contract signiture
 				</p>
 			</div>
 			<div class="col-xs-2 last">
 				<img src="../img//finish.png" />
 				<p class="pr_title ">
-					Befejezés
+					finish
 				</p>
 			</div>
 
 
 
 		</div>
-		<h2 class="title">Azonosítás</h2>
+		<h2 class="title">identification</h2>
 	</div>
 </div>
 
@@ -208,22 +208,22 @@
 <div class="container">
 
 	<div class="loanholder">
-		<h2>Hitel részletei</h2>
+		<h2>Loan I apply for</h2>
 		<div class="amount">
 			<p>
-				Hitelösszeg
+				loan amount
 			</p>
 			<h1><?=$_SESSION["loan_amount"]?> Ft</h1>
 		</div>
 		<div class="info">
 
 			<div class="instalments">
-				<h2>Törlesztőrészlet:</h2>
+				<h2>installment:</h2>
 				<p><?=$_SESSION["loan_instalments"]?> Ft</p>
 			</div>
 			<div class="instalments">
-				<h2>Futamidő:</h2>
-				<p><?=$_SESSION["repaid_in"]?> hónap</p>
+				<h2>repaid in:</h2>
+				<p><?=$_SESSION["repaid_in"]?> months</p>
 			</div>
 		</div>
 	</div>
@@ -234,53 +234,53 @@
 
 <div class="container">
 	<div class="form nopadding">
-		<div class="good">Remek! Még 2 lépés és készen is vagy!</div>
+		<div class="good">You are doing well! Only 2 more steps!</div>
 
 
 
 
 
 
-        <button class="accordion" id="select_upload_button" data-toggle="collapse" data-target="">Videochat azonosítás</button>
+        <button class="accordion" id="select_upload_button" data-toggle="collapse" data-target="">Videochat identification</button>
         <div id="expenses" class="collapse in">
 					<div class="form">
 						<div class="container mobile_first form" style="width: 100%; padding: 0px;">
 							<div class="video">
 								<p>
 
-								A következőnkben a K&H egyik kollégája segítségével videóchates azonosítást fogunk végrehajtani. Kérjük, készítsd elő a személyazonosító igazolványodat és a lakcímkártyádat!
-							Azonosításod a következő lépésekből áll majd: </p>
+									In the following a K&H employee will identify you through videochat. Please prepare your identity card and your address card!
+	Your Identification will consist of the following steps: </p>
 							<ol>
 							<li>
-							Az azonosítás megkezdésekor engedélyezned kell számítógépeden a webkamera és a mikrofon bekapcsolását.
+							If you choose to identify you on your desktop, you must enable your webcam and microphone on your computer.
 							</li>
 							<li>
-							Ezután kollégánk hamarosan bejelentkezik videóchaten, és a következőket fogja tőled kérni:
+								Then our colleague will log in on your video chat soon and will ask you:
 							<ul>
 							<li>
-							Mutasd fel a személyi igazolványod mindkét oldalát, hogy be tudjunk azonosítani a személyazonosságod!
+							Show both sides of your ID so that we can identify your identity.
 							</li>
 							<li>
-							Mutasd fel a lakcímkártyádnak azt a felét, amely a lakcímadataidat tartalmazza!
+							Show the half of your home address card containing your home address data!
 							</li>
 							</ul>
 							</li>
 							<li>
-							A sikeres azonosítás után tovább tudod folytatni a hiteligénylés folyamatát.
+							After successfull identification, you can continue the process of applying for a loan.
 							</li>
 							</ol> <br />
 							<div  class="wayofvideo">
 								<div data-toggle="modal" data-target="#upload" class="box" style="border-right: 1px solid #00aeef">
 									<img src="../img/mobile.png" />
 									<p>
-										Azonosítás indítása mobilon
+										Start identification on mobile
 									</p>
 
 								</div>
 								<div onclick="window.location.href='skype:username?call'" class="box">
 									<img src="../img/desktop.png" />
 									<p>
-										Azonosítás indítása számítógépen
+										Start identification on desktop
 									</p>
 								</div>
 							</div>
@@ -291,7 +291,7 @@
 
 							</div>
 						</div>
-						<button class="bluebtn" id="select_upload_next_button" type="button" name="button">Következő</button>
+						<button class="bluebtn" id="select_upload_next_button" type="button" name="button">Next</button>
 
 					</div>
 
@@ -299,7 +299,7 @@
 
 
 					<div id="after_success" class="mailing_address">
-						<p style="text-align:left" id="success_message">Adatait sikeresen felismertük</p><br />
+						<p style="text-align:left" id="success_message">Data was succesfully recognized</p><br />
 
 		          <div class="check">
 
@@ -307,23 +307,23 @@
 		              <input type='checkbox' id="employment">
 		              <span></span>
 		              <p class="checklabel">
-		                Az állandó lakcímemtől eltérő levelezési címet adok meg
+		                I have different mailing address than the permanent address
 		              </p>
 		              <p class="mailing_info">
-										Hozzájárulsz, hogy az igénylésed adatait a KHR részére átadjuk.
+										You acknowledge that we will enter the credit bureau and save there the data about your application
 		              </p>
 
 		            </label>
 		          </div>
 							<div class="city inline">
 								<div class="postal inline">
-									<h2>Irányítószám</h2>
+									<h2>postal code</h2>
 									<input type="text" class="shortest" name="firstname">
 
 								</div>
 							<div class="cit inline">
 
-							<h2>Város</h2>
+							<h2>city</h2>
 							<input type="text" class="shorter" name="firstname">
 						</div>
 
@@ -331,40 +331,40 @@
 
 				<div class="street">
 					<div class="street_holder">
-						<h2>Utca</h2>
+						<h2>street</h2>
 						<input type="text" class="shorter" name="firstname">
 								</div>
 					<div class="type_of_street">
 						<div class="dropdown shortest">
-										<h2>Típusa</h2>
+										<h2>type</h2>
 
-										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Utca
+										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">street
 										<span class="caret"></span></button>
 										<ul class="dropdown-menu">
-											<li><a href="#">utca</a></li>
-											<li><a href="#">tér</a></li>
-											<li><a href="#">út</a></li>
+											<li><a href="#">street</a></li>
+											<li><a href="#">square</a></li>
+											<li><a href="#">road</a></li>
 
 										</ul>
 									</div>
 					</div>
 					<div class="street_number">
-						 <h2>házszám</h2>
+						 <h2>number</h2>
 						 <input type="text" class="shortest" name="number">
 					</div>
 					<div class="floor inline">
-						 <h2>emelet</h2>
+						 <h2>floor</h2>
 						 <input type="text" class="shortest" name="number">
 					</div>
 					<div class="door inline">
-						 <h2>ajtó</h2>
+						 <h2>door</h2>
 						 <input type="text" class="shortest" name="number">
 					</div>
 
 				</div>
 
 
-					<button class="bluebtn next" id="select_upload_next_button" type="button" name="button">Tovább</button>
+					<button class="bluebtn next" id="select_upload_next_button" type="button" name="button">Next</button>
 
 		        </div>
 
@@ -372,19 +372,20 @@
 		      </div>
 
 
-		      <button class="accordion collapsed" data-toggle="collapse" id="account_button" data-target="">Bankszámlakivonat</button>
+		      <button class="accordion collapsed" data-toggle="collapse" id="account_button" data-target="">bank account statement</button>
 		      <div id="account" class="collapse">
 		          <div class="form">
 		          <p>
-								kérjük, töltsd fel a <span style="font-weight: bold;">2017. márciusi</span> bankszámlakivonatodat (azt a pdf-et, amelyet az internetbankról töltöttél le)       </p>
+								Please upload account statement from your bank account from  <span style="font-weight: bold;">March 2017</span> in PDF (need to be original PDF, the picture is not enough)       </p>
 		          <div class="statementholder">
-								<h2>Hogyan tudom letölteni a bankszámla kivonatomat az e-bankomból?</h2>
+								<h2>How to download the Account statement from your internet banking</h2>
 		            <p>
-		              1. Látogass el a mybank.com-ra <br />
-		2. Jelentkezz be az e-bankba<br />
-		3. A bejelentkezés után válaszd a "bankszámlatörténet" menüpontot<br />
-		4. Válaszd ki az időszakot<br />
-		5. Kattints a "PDF letöltése" gombra<br />
+		             To do this simply:
+1.Visit mybank.com <br />
+		2. Log in to Internet Banking<br />
+		3. Once you're logged in, select 'statements' from the options on the left of the screen.<br />
+		4. Choose a time period to view.<br />
+		5. Click on "download in PDF"<br />
 		            </p>
 
 
@@ -395,10 +396,10 @@
 
 		            <img src="../img/pdf.png" />
 		            <p >
-		A feltölteni kívánt PDF dokumentumot húzd ide a kijelölt területre         </p>
+		Drag and drop images into this window to upload         </p>
 
 		            <label class="custom-file-upload id_btn">
-					    <input type="file" id="last_file"/>Dokumentum feltöltése a számítógépről
+					    <input type="file" id="last_file"/>Browse for file on your computer
 					</label>
 
 		          </div>
@@ -407,16 +408,16 @@
 
 		              <img src="../img/success.png" /><br />
 		              <p>
-		                Fájl sikeresen feltöltve:
+		                File successfully uploaded:
 		              </p>
 		              <h2 id="last_file_name">accountstatement.pdf</h2>
-		              <p style="text-decoration: underline;" id="delete_file">Fájl törlése</p>
+		              <p style="text-decoration: underline;" id="delete_file">delete file</p>
 
 
 
 		          </div>
 
-		          <button onclick="window.location.href='en_approval.php'" class="bluebtn next" type="button" name="button">Tovább</button>
+		          <button onclick="window.location.href='approval.php'" class="bluebtn next" type="button" name="button">Next</button>
 
 		        </div>
 

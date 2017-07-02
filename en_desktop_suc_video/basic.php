@@ -36,7 +36,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="text">
-          <h1>adatkezelési nyilatkozat</h1>
+          <h1>Data processing policy</h1>
           <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur, molestiae definiebas efficiendi in mel. Sit ad eruditi persequeris, ne docendi omnesque pro. Id nibh ubique democritum eum, ea singulis senserit nec, vix no erant dolore intellegebat. Eam ex utamur elaboraret, idque saepe argumentum qui ei, his prodesset dissentiunt ex.
 
           Vis saepe concludaturque ad, eius bonorum periculis vim ea, integre suscipit prodesset eu quo. Utinam scaevola has cu, cum etiam scripserit te, no copiosae definitionem pro. Phaedrum quaerendum eum ea, pro an iuvaret accommodare. Posse adipisci theophrastus at vel, te pro dolore quaestio dignissim. In eos meliore tractatos torquatos. Duo no meis lucilius deterruisset. Mundi ludus eos cu.
@@ -53,8 +53,8 @@
           </p>
 
         </div>
-        <button onclick="window.location.href='hu_financial.php'" class="bluebtn" type="button" name="button">Elfogadom</button>
-        <a class="dont" href="#">Nem fogadom el</a>
+        <button onclick="window.location.href='financial.php'" class="bluebtn" type="button" name="button">I agree</button>
+        <a class="dont" href="#">I do not agree</a>
 
       </div>
     </div>
@@ -71,11 +71,11 @@
 			<div class="openchat" style="display: none;">
 				<div class="header">
 					<div class="green"></div>
-					<h2>Ügyfélszolgálat</h2>
+					<h2>Customer service</h2>
 					<i class="fa fa-times closechat" aria-hidden="true"></i>
 				</div>
 				<div class="cbody">
-					<h2>Üdvözöljük! Tudunk segíteni?</h2>
+					<h2>Welcome! How can we help you?</h2>
 				</div>
 				<div class="type">
 					<input class="chatwithme" placeholder="Ide írjon" />
@@ -126,7 +126,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Alapadatok
+                basic information
               </p>
             </div>
             <div class="col-xs-2">
@@ -136,7 +136,7 @@
                 </p>
               </div>
               <p class="pr_title ">
-                Személyes adatok
+                about you
               </p>
             </div>
             <div class="col-xs-2">
@@ -146,7 +146,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Azonosítás
+                identification
               </p>
             </div>
             <div class="col-xs-2">
@@ -156,7 +156,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Jóváhagyás
+                approval
               </p>
             </div>
             <div class="col-xs-2">
@@ -166,20 +166,20 @@
                 </p>
               </div>
               <p class="pr_title">
-                Szerződéskötés
+                contract signiture
               </p>
             </div>
             <div class="col-xs-2 last">
 							<img src="../img/finish.png" />
               <p class="pr_title ">
-                Befejezés
+                completion
               </p>
             </div>
 
 
 
           </div>
-          <h2 class="title">Alapadatok</h2>
+          <h2 class="title">basic information</h2>
         </div>
       </div>
 
@@ -188,22 +188,22 @@
     <div class="container">
 
       <div class="loanholder">
-        <h2>Hitel részletei</h2>
+        <h2>loan I apply for</h2>
         <div class="amount">
           <p>
-            Hitelösszeg
+            loan amount
           </p>
           <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
         </div>
         <div class="info">
 
           <div class="instalments">
-            <h2>Törlesztőrészlet:</h2>
+            <h2>installments:</h2>
             <p><?=$_SESSION["loan_instalments"]?> Ft</p>
           </div>
           <div class="instalments">
-            <h2>Futamidő:</h2>
-            <p><?=$_SESSION["repaid_in"]?> hónap</p>
+            <h2>repaid in:</h2>
+            <p><?=$_SESSION["repaid_in"]?> months</p>
           </div>
         </div>
       </div>
@@ -214,20 +214,20 @@
 
     <div class="container">
       <div class="form nopadding">
-				<div class="good">Remek! Még 4 lépés és készen is vagy!</div>
+				<div class="good">You are doing well! Only 4 more steps</div>
             <div class="form basic">
-            <h1 >Személyes adatok</h1>
+            <h1 >about you</h1>
             <form>
-              Vezetéknév:<br>
+              surname:<br>
               <input type="text" name="firstname"><br>
-              Keresztnév:<br>
+              first name:<br>
               <input type="text" name="lastname">
               <div class="cal">
 								<div class="from">
 									<div class="dropdown desktop_cal">
-										<h2>Születési dátum</h2>
+										<h2>date of birth</h2>
 
-	                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Év
+	                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">year
 	                  <span class="caret"></span></button>
 	                  <ul class="dropdown-menu">
 	                    <li><a href="#">2017</a></li>
@@ -274,7 +274,7 @@
 	                </div>
 									<div class="dropdown desktop_cal">
 
-										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Hónap
+										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">month
 										<span class="caret"></span></button>
 										<ul class="dropdown-menu">
 											<li><a href="#">January</a></li>
@@ -293,7 +293,7 @@
 									</div>
 									<div class="dropdown desktop_cal">
 
-	                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Nap
+	                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">day
 	                  <span class="caret"></span></button>
 	                  <ul class="dropdown-menu">
 	                    <li><a href="#">1</a></li>
@@ -329,77 +329,77 @@
 											<li><a href="#">31</a></li>
 	                  </ul>
 	                </div>
-									<h2 class="mobile_cal">Születési dátum:</h2>
+									<h2 class="mobile_cal">date of birth:</h2>
 		              <input class="mobile_cal" type="date" name="lastname">
 
 
 								</div>
               </div>
             </form>
-            <h1>kapcsolati adatok</h1>
+            <h1>contact details</h1>
             <p>
-Add meg a <span style="font-weight: bold;">mobilszámod és az e-mail címed</span>. A fentiek megadásával hozzájárulsz, hogy hiteligényléseddel kapcsolatban megkeressünk.            </p>
+Please add your <span style="font-weight: bold;">hone number and your email address</span>. By inserting them you give us the consent to contact you regarding your application.            </p>
             <form class="contact">
 
             <div class="phone" id="single_phone">
 
-              <h2>Telefonszám:</h2>
+              <h2>phone number:</h2>
               <p>
-Add meg a mobilszámod és kattints a "megerősítő kód küldése" gombra             </p>
+Enter phone number and click on send verification code button             </p>
                 <p class="hun">+36</p>
                 <input type="name" name="name" id="phone_phone" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-                <button type="button" class="bluebtn" id="phone-send" name="button">megerősítő kód elküldése</button>
+                <button type="button" class="bluebtn" id="phone-send" name="button">send verification code</button>
             </div>
 
             <div class="verify" id="phone_verification">
-              <h2>Add meg a megerősítő kódot:</h2>
+              <h2>Enter the verification code:</h2>
               <p>
-                Az általad megadott, <span style="font-weight: bold;" id="phone_number">+36 20 418 48 83</span> mobilszámra egy megerősítő kódot küldünk. Kérjük, hogy másold be ide a kódot és kattints a "megerősítem" gombra.
+                We sent you a code to the phone number, <span style="font-weight: bold;" id="phone_number">+36 20 418 48 83</span> please insert the code to the application & click on verify button
               </p>
               <input type="email" name="email" id="phone_verify" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-              <button type="button" class="bluebtn" id="phone-verify"  name="button">megerősítem </button>
-							<button  class="bluebtn nobg2" type="button" name="button">újraküldés</button>
-							<button  class="bluebtn nobg2" type="button" name="button" id="try_1">másik telefonszámot adok meg</button>
+              <button type="button" class="bluebtn" id="phone-verify"  name="button">verify </button>
+							<button  class="bluebtn nobg2" type="button" name="button">send again</button>
+							<button  class="bluebtn nobg2" type="button" name="button" id="try_1">try different phone number</button>
 
             </div>
 
             <div class="success phone" id="phone_success">
               <img src="../img/ok.png" />
-              <h2>a telefonszámodat sikeresen azonosítottuk</h2>
+              <h2>phone number successfully verified</h2>
             </div>
 
             <div class="email" id="single_email">
 
-              <h2>E-mail cím</h2>
+              <h2>E-mail address</h2>
               <p>
-                Add meg az e-mail címed és kattints a "megerősítő kód küldése" gombra
+                Enter email address  and click on send verification code button
               </p>
                 <input type="email" name="name" id="email_email">
-                <button type="button" class="bluebtn" id="email-send"  name="button">megerősítő kód elküldése</button>
+                <button type="button" class="bluebtn" id="email-send"  name="button">send verification code</button>
             </div>
 
             <div class="verify" id="email_verification">
-              <h2>Megerősítő kód megadása:</h2>
+              <h2>enter verification code:</h2>
               <p>
-                az általad megadott e-mail címre egy megerősítő kódot küldünk. Kérjük, hogy másold be ide a kódot és kattints a "megerősítem" gombra:
+								We sent you a code to the email address, xxx  please insert the code to the application & click on verify button:
               </p>
               <input type="email" name="email" id="email_verify" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-              <button type="button" class="bluebtn" id="email-verify"  name="button">megerősítem </button>
-							<button  class="bluebtn nobg2" type="button" name="button">Újraküldés</button>
-							<button  class="bluebtn nobg2" type="button" name="button" id="try_2">Másik email cím megadása</button>
+              <button type="button" class="bluebtn" id="email-verify"  name="button">verify </button>
+							<button  class="bluebtn nobg2" type="button" name="button">send again</button>
+							<button  class="bluebtn nobg2" type="button" name="button" id="try_2">try different email address</button>
 
             </div>
 
             <div class="success email" id="email_success">
               <img src="../img/ok.png" />
-              <h2>Az e-mail címedet sikeresen azonosítottuk</h2>
+              <h2>Email address successfully verified</h2>
             </div>
 
             </form>
 
             <p class="continue">
-Az igénylés folytatáshoz a személyes adatok kezelésére vonatkozó nyilatkozat elolvasása és elfogadása szükséges</p>
-            <button type="button" class="orangebtn btn btn-info btn-lg" data-toggle="modal" data-target="#acknowledgemodal">nyilatkozat megnyitása</button>
+To continue you must read and acknowledge the personal data protection policy</p>
+            <button type="button" class="orangebtn btn btn-info btn-lg" data-toggle="modal" data-target="#acknowledgemodal">Display policy</button>
 
           </div>
 

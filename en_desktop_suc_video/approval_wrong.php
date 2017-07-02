@@ -127,11 +127,11 @@
 			<div class="openchat">
 				<div class="header">
 					<div class="green"></div>
-					<h2>Ügyfélszolgálat</h2>
+					<h2>customer service</h2>
 					<i class="fa fa-times closechat" aria-hidden="true"></i>
 				</div>
 				<div class="cbody">
-					<h2>Üdvözöljük! Tudunk segíteni?</h2>
+					<h2>Welcome! How can we help?</h2>
 				</div>
 				<div class="type">
 					<input class="chatwithme" placeholder="Ide írjon" />
@@ -272,15 +272,15 @@
 
     <div class="container">
       <div class="form nopadding approval">
-				<div class="good approve">Már csak a szerződéskötés van hátra!</div>
+				<div class="good approve">You only need to sign the contract!</div>
 
-        <h1>A kért összeg nem fogadható el, kérjük próbálkozzon kisebb összeggel.</h1>
-        <p>Az általad igényelt hitelösszeg <?=number_format($max,0,',',' ')?> Ft. A maximálisan igényelhető személyi hitel összege számodra: <?=number_format(str_replace(' ','',$_SESSION["loan_amount"]),0,',',' ')?> Ft.</p>
+        <h1>The requested amount can not be accepted, please try a smaller amount.</h1>
+        <p>The loan amont you applied for is <?=number_format($max,0,',',' ')?> Ft. The maximum amount you can request is: <?=number_format(str_replace(' ','',$_SESSION["loan_amount"]),0,',',' ')?> Ft.</p>
         <div class="container">
           <div class="col-md-6">
 			<div>
 			<div class="need">
-					<h2 class="n_label">igényelt hitelösszeg</h2>
+					<h2 class="n_label">amount you need</h2>
 					<h1 class="n_amount" id="amount"><?=$_SESSION["loan_amount"]?> Ft</h1>
 					<input class="custom_range" type="range" name="amount" min="1000000" max="<?=$max?>" step="50000" value="<?=str_replace(' ','',$_SESSION["loan_amount"])?>">
 					<p class="min_amount">1 000 000 Ft</p>
@@ -290,7 +290,7 @@
 			</div>
 			<div>
 				<div style="margin-top: 60px;"class="need">
-					<h2 class="n_label">havi törlesztőrészlet:</h2>
+					<h2 class="n_label">monthly installment you want:</h2>
 					<h1 class="n_amount" id="monthly_instalment"><?=$_SESSION["loan_instalments"]?> Ft</h1>
 					<input class="custom_range" type="range" name="monthly" style="background: #99fba6; /* Old browsers */
 				background: -moz-linear-gradient(left, #00aeef 0%, #00aeef <?=$monthly_css?>%, #e6f7fe <?=$monthly_css?>%, #e6f7fe 100%) ; /* FF3.6-15 */
@@ -303,27 +303,27 @@
 
 			</div>
 			<div class="repaidin">
-				<h2>Futamidő:</h2>
-				<h3><span id="month_number"><?=$_SESSION["repaid_in"]?></span> hónap</h3>
+				<h2>repaid in:</h2>
+				<h3><span id="month_number"><?=$_SESSION["repaid_in"]?></span> months</h3>
 			</div>
           </div>
 
           <div class="col-md-6 loaninfo">
-            <h4>Visszafizetendő összeg:</h4>
+            <h4>total repayment:</h4>
             <h1><span id="total_repaid_id"><?=$_SESSION["total_repaid"]?></span> Ft </h1>
             <div class="line"></div>
-            <p>Éves kamat</p>
+            <p>interest rate</p>
             <h2><span id="interest_rate"><?=$_SESSION["interest_rate"]?></span>%</h2>
 						<p>
-							THM:
+							APR ( for this purposes same as interest rate):
 						</p>
 						<h2>13,99%</h2>
 						<p>
-							Ügyintézési költség:
+							management fee:
 						</p>
 						<h2>0 Ft</h2>
 						<p>
-							Első törlesztés napja:
+							day of first installment:
 						</p>
 						<h2>2017. 07.15.</h2>
           </div>
@@ -332,7 +332,7 @@
 
 
           </div>
-          <button onclick="window.location.href='hu_contract.php'" class="bluebtn next" type="button" name="button">Tovább</button>
+          <button onclick="window.location.href='contract.php'" class="bluebtn next" type="button" name="button">Next</button>
 
         </div>
 

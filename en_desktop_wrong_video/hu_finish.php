@@ -37,7 +37,7 @@
 		<div class="container">
 			<button onclick="window.location.href='index.php'" class="bluebtn headerbtn" type="button" name="button">
 				<p>
-				Újrakezdés
+				start again
 			</p>
 			<i class="fa fa-refresh" aria-hidden="true"></i>
 
@@ -45,14 +45,14 @@
 			</button>
 			<button class="bluebtn headerbtn" type="button" name="button">
 				<p>
-				Mentés
+				save
 			</p>
 
 			<i class="fa fa-floppy-o" aria-hidden="true"></i>
 
 			<button class="bluebtn headerbtn" type="button" name="button">
 				<p>
-				Visszahívást kérek
+				call back
 			</p>
 			<i class="fa fa-phone" aria-hidden="true"></i>
 
@@ -83,7 +83,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Alapadatok
+                basic information
               </p>
             </div>
             <div class="col-xs-2 ">
@@ -93,7 +93,7 @@
                 </p>
               </div>
               <p class="pr_title ">
-                Személyes adatok
+                about you
               </p>
             </div>
             <div class="col-xs-2">
@@ -103,7 +103,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Azonosítás
+                identification
               </p>
             </div>
             <div class="col-xs-2">
@@ -113,7 +113,7 @@
                 </p>
               </div>
               <p class="pr_title">
-                Jóváhagyás
+                approval
               </p>
             </div>
             <div class="col-xs-2 ">
@@ -123,20 +123,20 @@
                 </p>
               </div>
               <p class="pr_title">
-                Szerződés
+                contract signiture
               </p>
             </div>
 						<div class="col-xs-2 last active">
 							<img src="../img/finish.png" />
               <p class="pr_title ">
-                Befejezés
+                completion
               </p>
             </div>
 
 
 
           </div>
-          <h2 class="title">Befejezés</h2>
+          <h2 class="title">completion</h2>
         </div>
       </div>
 
@@ -145,22 +145,22 @@
     <div class="container">
 
 			<div class="loanholder">
-        <h2>Hitel részletei</h2>
+        <h2>Loan I apply for </h2>
         <div class="amount">
           <p>
-            Hitelösszeg
+            loan amount
           </p>
           <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
         </div>
         <div class="info">
 
           <div class="instalments">
-            <h2>Törlesztőrészlet:</h2>
+            <h2>installment:</h2>
             <p><?=$_SESSION["loan_instalments"]?> Ft</p>
           </div>
           <div class="instalments">
-            <h2>Futamidő:</h2>
-            <p><?=$_SESSION["repaid_in"]?> hónap</p>
+            <h2>repaid in:</h2>
+            <p><?=$_SESSION["repaid_in"]?> months</p>
           </div>
         </div>
       </div>
@@ -172,7 +172,7 @@
     <div class="container">
       <div class="form nopadding">
             <div class="form finish">
-              <h1>A szerződés sikeresen létrejött! Az igényelt összeg már úton is van!</h2>
+              <h1>Your contract has been successfully signed! Money is on the way to you!</h2>
               <p>
 Köszönjük, hogy a K&H-t válaszottad. Bízunk benne, hogy minden egyszerűen és gyorsan ment. Az igényelt összeg néhány percen belül megérkezik a megadott számládra.              </p>
 
@@ -184,23 +184,22 @@ Köszönjük, hogy a K&H-t válaszottad. Bízunk benne, hogy minden egyszerűen 
                 </div>
               </div>
               <div class="col-md-9"><p>
-Kérjük, hogy a hiteltörlesztéshez állíts be a fiókodban havi rendszerességű, közvetlen fizetést a lejjebb megadott bankszámlánkra.
-Fizetési részletek: számlaszám (12345678-12345678-12345678), hivatkozási kód (123456), részlet esedékességének első napja (20.06.2017), havi előfordulások száma (125) </p></div>
+Please setup a direct debit in the required installement amount on your account 12345678-12345678-12345678. Please bear in mind that you can only repay your installments from this account! </p></div>
               <div class="col-md-2">
                 <div class="placeholder">
                 </div>
               </div>
               <div class="col-md-9"><p>
-Az általad igényelt összeg 15 percen belül megérkezik a megadott számládra. Ha bármilyen problémába ütköznél, kérjük vedd fel velünk a kapcsolatot a +36 1 123 45 67 számon.          </p></div>
+Your money will be credited to your account within 15 minutes through a payment from K&H. If somerthing goes wrong, please call us at +36 1 123 45 67.          </p></div>
               <div class="col-md-2">
                 <div class="placeholder">
                 </div>
               </div>
               <div class="col-md-9"><p>
-Ne felejtsd el megnézni az e-mail fiókodat. Az aláírt szerződésedet és a törlesztőrészletekkel kapcsolatos dokumentumokat átküldtük neked.           </p></div>
+Do not forget to check your e-mail. We just sent you the signed contract and information about repayment installments.            </p></div>
 
             </div>
-						<button onclick="window.location.href='hu_index.php'" class="bluebtn next" type="button" name="button">Vissza a főoldalra</button>
+						<button onclick="window.location.href='hu_index.php'" class="bluebtn next" type="button" name="button">go to the home page</button>
 
 
 
