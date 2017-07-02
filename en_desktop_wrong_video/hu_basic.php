@@ -53,7 +53,7 @@
           </p>
 
         </div>
-        <button onclick="window.location.href='hu_financial.php'" class="bluebtn" type="button" name="button">I agree</button>
+        <button  class="bluebtn" type="button" name="button" onclick="modal_close();" data-dismiss="modal">I agree</button>
         <a class="dont" href="#">I do not agree</a>
 
       </div>
@@ -400,7 +400,8 @@ Enter phone number and click on send verification code button             </p>
             <p class="continue">
 To continue you must read and acknowledge the personal data protection policy</p>
             <button type="button" class="orangebtn btn btn-info btn-lg" data-toggle="modal" data-target="#acknowledgemodal">Display policy</button>
-
+			<button id="basic_next_button" type="button" class="orangebtn btn btn-info btn-lg hidden-lg hidden-md hidden-sm hidden-xs" onclick="window.location.href='hu_financial.php'">Next</button>
+			
           </div>
 
         </div>
