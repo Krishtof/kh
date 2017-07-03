@@ -174,7 +174,9 @@
             <div class="form finish">
               <h1>Your contract has been successfully signed! Money is on the way to you!</h2>
               <p>
-Köszönjük, hogy a K&H-t válaszottad. Bízunk benne, hogy minden egyszerűen és gyorsan ment. Az igényelt összeg néhány percen belül megérkezik a megadott számládra.              </p>
+								Thank you for using our new Quick Loan Services. We hope everything went smoothly. In a few minutes your money will be credited to your account.
+
+          </p>
 
 
               <div class="info">
@@ -199,7 +201,7 @@ Your money will be credited to your account within 15 minutes through a payment 
 Do not forget to check your e-mail. We just sent you the signed contract and information about repayment installments.            </p></div>
 
             </div>
-						<button onclick="window.location.href='index.php'" class="bluebtn next" type="button" name="button">go to the home page</button>
+						<button onclick="window.location.href='index_basic_else.php'" class="bluebtn next" type="button" name="button">go to the home page</button>
 
 
 

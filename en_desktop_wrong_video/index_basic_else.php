@@ -125,15 +125,7 @@
 			<h2>repaid in:</h2>
 			<h3><span id="month_number">24</span> months</h3>
 		</div>
-		<div class="disc">
-			<p >
-				You could pay less just <span id="monthly_discount">1 502 Ft</span> monthly. 
-			</p>
-			<p>
-				Your total saving on the loan will be <span id="total_saving">18 035 Ft</span>.
-			</p>
 
-		</div>
 		<button onclick="window.location.href='basic.php'" class="bluebtn" type="button" name="button">yes, I want this loan</button>
 		<a class="ttip" data-toggle="tooltip" title="The client shall only sign a loan agreement which he or she fully understands; any change in the client's circumstances, he or she still remain obliged to pay back the loan amount; if the client has solvency problems he or she must immediately inform the Bank; in case of any expired payment obligation the Bank will apply late payment interest; in case of non-performance of the contract the Bank is entiteled to immediately terminate the loan agreement and all outstanding amount become due; any expenses from the enforcment of claims arising from a terminated loan agreement by the Bank will be paid by the client.">Client should act responsibly and follow the guide issued by HNB.</a>
 	</div>

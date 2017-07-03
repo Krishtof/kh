@@ -488,7 +488,7 @@
 
 		          </div>
 
-		          <button onclick="window.location.href='approval_wrong.php'" class="bluebtn next" type="button" name="button">Next</button>
+		          <button onclick="window.location.href='approval.php'" class="bluebtn next" type="button" name="button">Next</button>
 
 		        </div>
 
