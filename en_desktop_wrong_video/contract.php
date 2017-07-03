@@ -676,7 +676,7 @@
 						<input type="text" name="firstname">
 
 						<p style="text-align: center;">By pressing the button your contract will be electronically signed</p>
-            <button onclick="window.location.href='hu_finish.php'" class="bluebtn next" type="button" name="button">sign</button>
+            <button onclick="window.location.href='finish.php'" class="bluebtn next" type="button" name="button">sign</button>
 
           </div>
 

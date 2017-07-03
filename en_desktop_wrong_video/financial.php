@@ -246,9 +246,43 @@
       <div class="form nopadding">
 				<div class="good">You are doing well! Only 4 more steps</div>
 
-		 <button class="accordion" data-toggle="collapse" id="new_button" data-target="#new">new page</button>
+		 <button class="accordion" data-toggle="collapse" id="new_button" data-target="#new">Target of your loan</button>
 		 <div id="new" class="collapse in">
             <div class="form">
+							<h2>Please chose a target</h2>
+							<form>
+							<div class="radio">
+								<input type="radio" id="r1" name="rr" />
+								<label for="r1">Renewal</label>
+							</div>
+							<div class="radio">
+								<input type="radio" id="r2" name="rr" />
+								<label for="r2">Car purchase</label>
+							</div>
+
+							<div class="radio">
+								<input type="radio" id="r3" name="rr" />
+								<label for="r3">Debt consolidation</label>
+							</div>
+
+							<div class="radio">
+								<input type="radio" id="r4" name="rr" />
+								<label for="r4">Other non-perish consum goods</label>
+							</div>
+
+							<div class="radio">
+								<input type="radio" id="r5" name="rr" />
+								<label for="r5">Real estate - Building or buying</label>
+							</div>
+							<div class="radio">
+								<input type="radio" id="r6" name="rr" />
+								<label for="r6">Other family event</label>
+							</div>
+							<div class="radio">
+								<input type="radio" id="r7" name="rr" />
+								<label for="r7">Other</label>
+							</div>
+							</form>
             	<button class="bluebtn" type="button" data-toggle="collapse"  data-target="#new" name="button" id="new_next">Next</button>
           </div>
 
@@ -410,7 +444,7 @@
 
 
 
-        <button class="accordion collapsed  " data-toggle="collapse" id="expenses_button" data-target=""><span class="inactive_accordion">expenses</span></button>
+        <button class="accordion collapsed " data-toggle="collapse" id="expenses_button" data-target=""><span class="inactive_accordion">expenses</span></button>
         <div id="expenses" class="collapse">
             <div class="form">
 
@@ -594,7 +628,7 @@ Insert your account number where you are receiving the salary <br /><br />We wil
 
 						</div>
 
-            <button onclick="window.location.href='hu_Statements.php'" class="bluebtn" type="button" name="button">Next</button>
+            <button onclick="window.location.href='Statements.php'" class="bluebtn" type="button" name="button">Next</button>
 
           </div>
 

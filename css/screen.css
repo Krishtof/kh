@@ -78,6 +78,7 @@ margin: 0 auto;
 
 .container.mobile_first p {
   padding-bottom: 20px;
+  font-size: 16px;
 }
 
 .subheader {
@@ -94,7 +95,9 @@ margin: 0 auto;
 .sec_subheader {
   width: 100%;
   background: #FFFFFF;
-  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.29);
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.29);
+     -moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.29);
+          box-shadow: 0 2px 3px 0 rgba(0,0,0,0.29);
   height: 70px;
 }
 .logo {
@@ -125,7 +128,8 @@ margin: 0 auto;
   padding-top: 6px;
   text-align: center;
   color: white;
-  border-radius: 10000px;
+  -moz-border-radius: 10000px;
+       border-radius: 10000px;
 }
 .nr p {
   color: white;
@@ -265,7 +269,8 @@ text-decoration: underline;
   background: #FFFFFF;
   border: 1px solid #00AEEF;
   font-size: 14px;
-  border-radius: 5px;
+  -moz-border-radius: 5px;
+       border-radius: 5px;
 }
 
 form  {
@@ -289,7 +294,8 @@ form  {
   font-size: 14px;
   display: block;
   color: white;
-  border-radius: 5px;
+  -moz-border-radius: 5px;
+       border-radius: 5px;
   margin: 0 auto;
   margin-top: 20px;
   border: none;
@@ -305,7 +311,8 @@ form  {
   font-size: 14px;
   display: block;
   color: white;
-  border-radius: 5px;
+  -moz-border-radius: 5px;
+       border-radius: 5px;
   margin: 0 auto;
   margin-top: 20px;
   border: none;
@@ -393,7 +400,8 @@ form  {
       margin-top: -22px;
       font-weight: bold;
       border: 1px solid #d4d4d4;
-      border-radius: 5px;
+      -moz-border-radius: 5px;
+           border-radius: 5px;
       /* float: right; */
       display: block;
   /* margin-left: 50%; */
@@ -421,7 +429,8 @@ form  {
 .mytooltip {
   width: 30px;
 height: 30px;
-border-radius: 1000000px;
+-moz-border-radius: 1000000px;
+     border-radius: 1000000px;
 display: block;
 margin-top: 20px;
 color: white;
@@ -530,7 +539,8 @@ label span {/* <-- style the artificial checkbox */
   border: 1px solid var(--light-blue);
   display: inline-block;
   float: left;
-  border-radius: 3px;
+  -moz-border-radius: 3px;
+       border-radius: 3px;
   position: relative;
 }
 [type=checkbox]:checked + span:before {/* <-- style its checked state..with a ticked icon */
@@ -622,7 +632,8 @@ border-color: var(--light-blue);
 }
 
 .switch {
-  border-radius: 5px;
+  -moz-border-radius: 5px;
+       border-radius: 5px;
   border: 1px solid var(--light-blue);
   margin-top: 20px;
   font-size: 14px;
@@ -632,19 +643,25 @@ border-color: var(--light-blue);
 }
 .yes {
   background: white;
-  border-radius: 1px solid var(--light-blue);
+  -moz-border-radius: 1px solid var(--light-blue);
+       border-radius: 1px solid var(--light-blue);
   border-right: 1px solid var(--light-blue);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+       border-top-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+       border-bottom-left-radius: 5px;
 }
 .yes:hover {
   background: #ececec;
 }
 
 .no {
-  border-radius: 1px solid var(--light-blue);
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  -moz-border-radius: 1px solid var(--light-blue);
+       border-radius: 1px solid var(--light-blue);
+  -moz-border-radius-topright: 5px;
+       border-top-right-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+       border-bottom-right-radius: 5px;
 }
 .switchbtn .active {
   background: var(--paleblue);
@@ -676,7 +693,8 @@ border-color: var(--light-blue);
 
 .old .col-md-12 {
   background-image: url(../img/new.png);
-  background-size: cover;
+  -moz-background-size: cover;
+       background-size: cover;
   background-repeat: no-repeat;
   min-height: 229px;
   padding: 0px;
@@ -693,7 +711,8 @@ border-color: var(--light-blue);
       margin-bottom: 10px;
       padding: 10px;
       min-width: 190px;
-      border-radius: 3px;
+      -moz-border-radius: 3px;
+           border-radius: 3px;
       cursor: pointer;
       width: 200px;
       color: var(--light-blue);
@@ -714,7 +733,8 @@ input[type="file"] {
 }
 .new .col-md-12{
   background-image: url(../img/old.png);
-  background-size: cover;
+  -moz-background-size: cover;
+       background-size: cover;
   background-repeat: no-repeat;
   min-height: 229px;
   padding: 0px;
@@ -783,17 +803,28 @@ input[type="file"] {
 }
 .selected.success {
   background: rgba(230, 247, 254, 0.78);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 200px;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
 }
 .mailing_info {
   margin-top: 60px;
       text-align: center;
   }
-}
 .id_ok, .mailing_address {
   padding: 50px;
 }
@@ -843,7 +874,8 @@ input[type="file"] {
 .statementholder {
   max-width: 460px;
   border: 1px solid var(--light-blue);
-  border-radius: 5px;
+  -moz-border-radius: 5px;
+       border-radius: 5px;
   padding: 10px;
   text-align: center;
   margin: 0 auto;
@@ -862,7 +894,8 @@ input[type="file"] {
   max-width: 288px;
   background: #FBFBFB;
   border: 1px solid #E3E3E3;
-  border-radius: 3px;
+  -moz-border-radius: 3px;
+       border-radius: 3px;
   min-height: 186px;
   margin: 0 auto;
   margin-top: 20px;
@@ -1029,7 +1062,8 @@ padding-top: 15px;
   height: 80px;
       width: 80px;
       text-align: center;
-      border-radius: 10000px;
+      -moz-border-radius: 10000px;
+           border-radius: 10000px;
       padding-top: 20px;
       background: #4a4a4a;
       margin: 0 auto;
@@ -1276,12 +1310,18 @@ overflow: auto;
   display: none !important;
 }
 .block {
-  display: block !important ;
+  display: block !important;
 }
 #precontractual .done {
   display: none;
 }
-
+#policyok button {
+  margin-top: -10px;
+margin-bottom: 50px;
+background: none;
+border: 1px solid var(--light-blue);
+color: var(--light-blue);
+}
 .form.id_type .row {
   margin-top: 20px;
 }
@@ -1306,7 +1346,8 @@ overflow: auto;
 .selected {
   /* Mask: */
 border: 5px solid #F6F6F6;
-border-radius: 3px;
+-moz-border-radius: 3px;
+     border-radius: 3px;
 }
 
 
@@ -1323,7 +1364,7 @@ margin: 0 auto;
 }
 .uploadbtn img {
   max-width: 50px;
-  margin-top: 20px !important:;
+  margin-top: 20px; !important:
 }
 #upload_address_card {
   margin-top: 230px;
@@ -1388,8 +1429,10 @@ margin-top: 15px;
 .chat {
   height: 70px;
 width: 70px;
-border-top-left-radius: 5px;
-border-bottom-left-radius: 5px;
+-moz-border-radius-topleft: 5px;
+     border-top-left-radius: 5px;
+-moz-border-radius-bottomleft: 5px;
+     border-bottom-left-radius: 5px;
 position: fixed;
 top: 50%;
 right: 0px;
@@ -1423,10 +1466,12 @@ font-size: 34px;
     padding: 6px;
     margin: 16px;
     margin-top: 40px;
-    border-radius: 30px;
+    -moz-border-radius: 30px;
+         border-radius: 30px;
     padding-left: 15px;
     font-weight: normal;
-    border-bottom-right-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+         border-bottom-right-radius: 0px;
     background: #00aeef;
     /* border-radius: 30px; */
     color: white;
@@ -1464,7 +1509,8 @@ input.chatwithme::-webkit-input-placeholder {
   float: right;
   height: 35px;
   border: 1px solid var(--light-blue);
-  border-radius: 3px;
+  -moz-border-radius: 3px;
+       border-radius: 3px;
 }
 .myswitch .active, .myswitch .inactive {
   display: inline-block;
@@ -1477,7 +1523,8 @@ input.chatwithme::-webkit-input-placeholder {
 .myswitch .active {
 background: var(--light-blue);
 color: white;
-border-radius: 0px;
+-moz-border-radius: 0px;
+     border-radius: 0px;
 
 }
 .myswitch .igen {
@@ -1532,6 +1579,26 @@ margin-bottom: 70px;
   border: 1px solid var(--light-blue);
 }
 
+.app_identification {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  border: 1px solid var(--light-blue);
+}
+
+.app_identification img {
+  margin-top: 30px !important;
+}
+
+.app_identification p {
+  color: var(--light-blue);
+  padding: 30px !important;
+}
+
+
 .wayofvideo .box {
   width: 48.5%;
   min-height: 20px;
@@ -1559,4 +1626,19 @@ color: var(--light-blue);
 
 .client {
   margin-bottom: 110px;
+}
+.inactive_accordion{
+	color: rgba(0, 55, 103, 0.4);
+}
+.inactive_accordion:before {
+	content: url(../img/no_ok.png);
+	display: inline-block;
+	margin-right: 14px;
+}
+.upload_desktop img{
+  width: 100%;
+}
+
+.upload_desktop {
+  padding: 0px;
 }

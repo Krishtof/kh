@@ -396,12 +396,22 @@ Enter phone number and click on send verification code button             </p>
             </div>
 
             </form>
+						<div id="policy">
+							<p class="continue">
+	To continue you must read and acknowledge the personal data protection policy</p>
+	            <button type="button" class="orangebtn btn btn-info btn-lg" data-toggle="modal" data-target="#acknowledgemodal">Display policy</button>
+						</div>
+						<div id="policyok" style="display: none">
+							<img src="../img/ok.png" />
+							<p>
+								You accepted personal data protection policy.
+							</p><br />
+							<a href="img/downloaded_document.txt" download="Precontractual information">
+								<button class="bluebtn left" type="button" data-toggle="modal"  name="button">download again</button></a>
 
-            <p class="continue">
-To continue you must read and acknowledge the personal data protection policy</p>
-            <button type="button" class="orangebtn btn btn-info btn-lg" data-toggle="modal" data-target="#acknowledgemodal">Display policy</button>
-			<button id="basic_next_button" type="button" class="orangebtn btn btn-info btn-lg hidden-lg hidden-md hidden-sm hidden-xs" onclick="window.location.href='hu_financial.php'">Next</button>
-			
+						</div>
+			<button id="basic_next_button" type="button" class="orangebtn btn btn-info btn-lg hidden-lg hidden-md hidden-sm hidden-xs" onclick="window.location.href='financial.php'">Next</button>
+
           </div>
 
         </div>

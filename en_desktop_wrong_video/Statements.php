@@ -113,6 +113,42 @@
   </div>
 </div>
 
+<div id="appupload" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body upload">
+        <img src="../img/mobile.png" />
+        <h1>Please check your phone</h1>
+        <p>
+          We have sent you an SMS to your cell phone with a link to the APP store or Google Play. Download the app and insert the following security code there:<br /><span style="font-weight: bold; font-size: 22px; line-height: 40px;">123432</span>
+        </p>
+				<p>
+					* The app has just 5MB and you don’t need to register.
+				</p>
+        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" id="modal_button" type="button" data-dismiss="modal" name="button">Ok</button>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="upload_desktop" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body upload_desktop">
+				<img src="../img/vchat.png" />
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
 
     <body>
 
@@ -248,36 +284,71 @@
 							<div class="video">
 								<p>
 
-									In the following a K&H employee will identify you through videochat. Please prepare your identity card and your address card!
-	Your Identification will consist of the following steps: </p>
+									We are taking your security really seriously and we need to confirm that it is really you who want to take the loan! The requirement is to see you in person over the video!</p>
+							<p>
+								What does the process look like?
+							</p>
 							<ol>
 							<li>
-							If you choose to identify you on your desktop, you must enable your webcam and microphone on your computer.
+							Get acquainted and confirm that you agree with Video identification
 							</li>
 							<li>
-								Then our colleague will log in on your video chat soon and will ask you:
-							<ul>
-							<li>
-							Show both sides of your ID so that we can identify your identity.
+								Choose if you want to stay on desktop or you will rather do it over the phone
 							</li>
 							<li>
-							Show the half of your home address card containing your home address data!
-							</li>
-							</ul>
+							Start the VIDEO call with our bank employee.
 							</li>
 							<li>
-							After successfull identification, you can continue the process of applying for a loan.
+							Introduce yourself and show your ID to our bank employee.
+							</li>
+							<li>
+							Bank employee will confirm that it is really you and you can continue in the process
 							</li>
 							</ol> <br />
+							<div class="check">
+
+                <label>
+                  <input type='checkbox' id="employment">
+                  <span></span>
+                  <p style="max-width: 90%">
+                    I agree that my identification will be accomplished through the VIDEO with certificated KH employee
+
+
+                  </p>
+                </label>
+              </div>
+
+							<div class="check">
+
+                <label>
+                  <input type='checkbox' id="employment">
+                  <span></span>
+                  <p style="max-width: 90%">
+                    I agree that the VIDEO will be recorded for identification purposes and save it (the video will not be provided to third parties and it will be stored just for security reasons).
+
+                  </p>
+                </label>
+              </div>
+							<h2 style="text-align: center;">The best option to make identification is through our mobile application. The identification is really comfortable, fast and secure. </h2>
+							<div data-toggle="modal" data-target="#appupload" class="box app_identification" style="margin-bottom: 60px; border-right: 1px solid #00aeef">
+									<img src="../img/mobile.png" />
+									<p>
+										Start identification in mobile app
+									</p>
+
+							</div>
+
+
+
 							<div  class="wayofvideo">
 								<div data-toggle="modal" data-target="#upload" class="box" style="border-right: 1px solid #00aeef">
 									<img src="../img/mobile.png" />
 									<p>
-										Start identification on mobile
+										Start identification in mobile
 									</p>
 
 								</div>
-								<div onclick="window.location.href='skype:username?call'" class="box">
+								<div data-toggle="modal" data-target="#upload_desktop" class="box">
 									<img src="../img/desktop.png" />
 									<p>
 										Start identification on desktop
@@ -417,7 +488,7 @@
 
 		          </div>
 
-		          <button onclick="window.location.href='hu_approval_wrong.php'" class="bluebtn next" type="button" name="button">Next</button>
+		          <button onclick="window.location.href='approval_wrong.php'" class="bluebtn next" type="button" name="button">Next</button>
 
 		        </div>
 

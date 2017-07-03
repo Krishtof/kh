@@ -332,7 +332,7 @@
 
 
           </div>
-          <button onclick="window.location.href='hu_contract.php'" class="bluebtn next" type="button" name="button">Next</button>
+          <button onclick="window.location.href='contract.php'" class="bluebtn next" type="button" name="button">Next</button>
 
         </div>
 

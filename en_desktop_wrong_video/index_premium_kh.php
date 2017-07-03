@@ -65,7 +65,7 @@
 					is your salary higher than 250 000 Ft?
 				</p>
 				<div class="myswitch">
-					<div onclick="window.location.href='hu_index_basic_kh.php'" class="inactive nem">
+					<div onclick="window.location.href='index_basic_kh.php'" class="inactive nem">
 						no
 					</div>
 					<div  class="active igen">
@@ -80,7 +80,7 @@
 					are you already a K&H client?
 				</p>
 				<div class="myswitch">
-					<div onclick="window.location.href='hu_index_premium_else.php'" class="inactive nem">
+					<div onclick="window.location.href='index_premium_else.php'" class="inactive nem">
 						no
 					</div>
 					<div  class="active igen">
@@ -126,7 +126,7 @@
 			</p>
 
 		</div>
-		<button onclick="window.location.href='hu_basic.php'" class="bluebtn" type="button" name="button">yes, I want this loan</button>
+		<button onclick="window.location.href='basic.php'" class="bluebtn" type="button" name="button">yes, I want this loan</button>
 		<a class="ttip" data-toggle="tooltip" title="The client shall only sign a loan agreement which he or she fully understands; any change in the client's circumstances, he or she still remain obliged to pay back the loan amount; if the client has solvency problems he or she must immediately inform the Bank; in case of any expired payment obligation the Bank will apply late payment interest; in case of non-performance of the contract the Bank is entiteled to immediately terminate the loan agreement and all outstanding amount become due; any expenses from the enforcment of claims arising from a terminated loan agreement by the Bank will be paid by the client.">Client should act responsibly and follow the guide issued by HNB.</a>
 	</div>
 </div>
