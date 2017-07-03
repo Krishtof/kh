@@ -2,12 +2,12 @@
 	session_start();
 	error_reporting(0);
 	$_SESSION["loan_amount"] = number_format(600000,0,',',' ');
-	$_SESSION["loan_instalments"] = number_format(32500,0,',',' ');
+	$_SESSION["loan_instalments"] = number_format(28805,0,',',' ');
 	$_SESSION["repaid_in"] = 24;
 	$_SESSION["interest_rate"] = 13.99;
 	$_SESSION["total_repaid"] = '780 000';
-	$_SESSION["max_loan"] = '65 000';
-	$_SESSION["min_loan"] = '10 833';
+	$_SESSION["max_loan"] = '28 805';
+	$_SESSION["min_loan"] = '11 241';
 
 	?>
 <!DOCTYPE html>
@@ -36,7 +36,15 @@
     </head>
 
 <!-- BODY-->
-
+	<style>
+		input[type=range][name=monthly]{
+		    background: #00aeef;
+			background: -moz-linear-gradient(left, #00aeef 0%, #00aeef 100%, #e6f7fe 100%, #e6f7fe 100%);
+			background: -webkit-linear-gradient(left, #00aeef 0%,#00aeef 40%,#e6f7fe 100%,#e6f7fe 100%);
+			background: linear-gradient(to right, #00aeef 0%,#00aeef 100%,#e6f7fe 100%,#e6f7fe 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#e6f7fe',GradientType=1 );
+		}
+	</style>
 
 
     <body>
@@ -106,10 +114,10 @@
 		<div>
 			<div style="margin-top: 60px;"class="need">
 				<h2 class="n_label">monthly installment you want:</h2>
-				<h1 class="n_amount" id="monthly_instalment">32 500 Ft</h1>
-				<input class="custom_range" type="range" name="monthly" min="10833" max="65000" step="1" value="32500" list="numbers">
-				<p class="min_amount" id="min_monthly_instalment">10 833 Ft</p>
-				<p class="max_amount" id="max_monthly_instalment">65 000 Ft</p>
+				<h1 class="n_amount" id="monthly_instalment">28 805 Ft</h1>
+				<input class="custom_range" type="range" name="monthly" min="11241" max="28805" step="1" value="28805" list="numbers">
+				<p class="min_amount" id="min_monthly_instalment">11 241 Ft</p>
+				<p class="max_amount" id="max_monthly_instalment">28 805 Ft</p>
 			</div>
 
 		</div>
@@ -308,7 +316,7 @@
   				var month = $('#month_number').html();
   				$.ajax({
 				    type: "POST",
-				    url: "../ajax.php",
+				    url: "../ajax_basic.php",
 				    data: {
 				    	mode: 'amountChange',
 				    	month : month,
@@ -375,7 +383,7 @@
 
   				$.ajax({
 				    type: "POST",
-				    url: "../ajax.php",
+				    url: "../ajax_basic.php",
 				    data: {
 				    	mode: 'monhtlyChange',
 				    	monthly: value,

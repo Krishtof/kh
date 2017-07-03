@@ -1,13 +1,13 @@
 <?php
 	session_start();
 	error_reporting(0);
-	$_SESSION["loan_amount"] = number_format(600000,0,',',' ');
-	$_SESSION["loan_instalments"] = number_format(32500,0,',',' ');
+	$_SESSION["loan_amount"] = number_format(1400000,0,',',' ');
+	$_SESSION["loan_instalments"] = number_format(64596,',',' ');
 	$_SESSION["repaid_in"] = 24;
 	$_SESSION["interest_rate"] = 13.99;
-	$_SESSION["total_repaid"] = '780 000';
-	$_SESSION["max_loan"] = '65 000';
-	$_SESSION["min_loan"] = '10 833';
+	$_SESSION["total_repaid"] = '1 550 314';
+	$_SESSION["max_loan"] = '64 596';
+	$_SESSION["min_loan"] = '23 234';
 
 	?>
 <!DOCTYPE html>
@@ -37,7 +37,23 @@
 
 <!-- BODY-->
 
-
+	<style>
+		input[type=range][name=monthly]{
+		    background: #00aeef;
+			background: -moz-linear-gradient(left, #00aeef 0%, #00aeef 100%, #e6f7fe 100%, #e6f7fe 100%);
+			background: -webkit-linear-gradient(left, #00aeef 0%,#00aeef 40%,#e6f7fe 100%,#e6f7fe 100%);
+			background: linear-gradient(to right, #00aeef 0%,#00aeef 100%,#e6f7fe 100%,#e6f7fe 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#e6f7fe',GradientType=1 );
+		}
+		
+		input[type=range][name=amount]{
+			    background: #00aeef;
+			    background: -moz-linear-gradient(left, #00aeef 0%, #00aeef 20%, #e6f7fe 20%, #e6f7fe 100%);
+			    background: -webkit-linear-gradient(left, #00aeef 0%,#00aeef 20%,#e6f7fe 20%,#e6f7fe 100%);
+			    background: linear-gradient(to right, #00aeef 0%,#00aeef 20%,#e6f7fe 20%,#e6f7fe 100%);
+			    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#e6f7fe',GradientType=1 );
+		}
+	</style>
 
     <body>
 
@@ -96,9 +112,9 @@
 		<div>
 			<div class="need">
 				<h2 class="n_label">amount you need</h2>
-				<h1 class="n_amount" id="amount">600 000 Ft</h1>
-				<input class="custom_range" type="range" name="amount" min="300000" max="3000000" step="1" value="600000">
-				<p class="min_amount">300.000 Ft</p>
+				<h1 class="n_amount" id="amount">1 400 000 Ft</h1>
+				<input class="custom_range" type="range" name="amount" min="1000000" max="3000000" step="1" value="1400000">
+				<p class="min_amount">1.000.000 Ft</p>
 				<p class="max_amount">3.000.000 Ft</p>
 			</div>
 
@@ -106,10 +122,10 @@
 		<div>
 			<div style="margin-top: 60px;"class="need">
 				<h2 class="n_label">monthly installment you want:</h2>
-				<h1 class="n_amount" id="monthly_instalment">32 500 Ft</h1>
-				<input class="custom_range" type="range" name="monthly" min="10833" max="65000" step="1" value="32500" list="numbers">
+				<h1 class="n_amount" id="monthly_instalment">64 596 Ft</h1>
+				<input class="custom_range" type="range" name="monthly" min="23234" max="64596" step="1" value="64596" list="numbers">
 				<p class="min_amount" id="min_monthly_instalment">10 833 Ft</p>
-				<p class="max_amount" id="max_monthly_instalment">65 000 Ft</p>
+				<p class="max_amount" id="max_monthly_instalment">64 596 Ft</p>
 			</div>
 
 		</div>
@@ -308,7 +324,7 @@
   				var month = $('#month_number').html();
   				$.ajax({
 				    type: "POST",
-				    url: "../ajax.php",
+				    url: "../ajax_premium_kh.php",
 				    data: {
 				    	mode: 'amountChange',
 				    	month : month,
@@ -330,7 +346,7 @@
 
 				    	$('input[type=range][name="amount"]').val(new_value);
 
-						var css = getCssPercentage(300000,3000000,new_value);
+						var css = getCssPercentage(1000000,3000000,new_value);
 
 						$('input[type=range][name="amount"]').css('background','-webkit-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
 						$('input[type=range][name="amount"]').css('background','-moz-linear-gradient(left, #00aeef 0%,#00aeef '+css+'%,#e6f7fe '+css+'%,#e6f7fe 100%)');
@@ -375,7 +391,7 @@
 
   				$.ajax({
 				    type: "POST",
-				    url: "../ajax.php",
+				    url: "../ajax_premium_kh.php",
 				    data: {
 				    	mode: 'monhtlyChange',
 				    	monthly: value,
