@@ -18,3 +18,7 @@
 .done.form{
 	display: none;
 }
+
+.inactive:after{
+	display: none !important;
+}

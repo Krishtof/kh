@@ -288,7 +288,7 @@
 
         </div>
 
-        <button class="accordion  collapsed" data-toggle="collapse" id="income_button" data-target="#income"><span class="inactive_accordion">income</span></button>
+        <button class="accordion  collapsed inactive" data-toggle="collapse" id="income_button" data-target="#income"><span class="inactive_accordion">income</span></button>
         <div id="income" class="collapse ">
             <div class="form">
 
@@ -444,7 +444,7 @@
 
 
 
-        <button class="accordion collapsed " data-toggle="collapse" id="expenses_button" data-target=""><span class="inactive_accordion">expenses</span></button>
+        <button class="accordion collapsed inactive" data-toggle="collapse" id="expenses_button" data-target=""><span class="inactive_accordion">expenses</span></button>
         <div id="expenses" class="collapse">
             <div class="form">
 
@@ -471,7 +471,7 @@
 
 
 
-        <button class="accordion collapsed  " data-toggle="collapse"  id="housing_button" data-target=""><span class="inactive_accordion">housing</span></button>
+        <button class="accordion collapsed  inactive" data-toggle="collapse"  id="housing_button" data-target=""><span class="inactive_accordion">housing</span></button>
         <div id="Housing" class="collapse">
             <div class="form housing">
 							<form>
@@ -526,7 +526,7 @@
 
 
 
-        <button class="accordion collapsed  " data-toggle="collapse"  id="family_button" data-target=""><span class="inactive_accordion">family and education</span></button>
+        <button class="accordion collapsed  inactive" data-toggle="collapse"  id="family_button" data-target=""><span class="inactive_accordion">family and education</span></button>
         <div id="family" class="collapse">
 
               <div class="form family">
@@ -608,7 +608,7 @@
 
 
 
-        <button class="accordion collapsed  " data-toggle="collapse"  id="bank_button" data-target=""><span class="inactive_accordion">bank account</span></button>
+        <button class="accordion collapsed  inactive" data-toggle="collapse"  id="bank_button" data-target=""><span class="inactive_accordion">bank account</span></button>
         <div id="bank" class="collapse">
             <div class="form">
 

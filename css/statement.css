@@ -91,3 +91,7 @@ p#please_upload_front_side{
 h2#upload_address_card{
 	display: none;
 }
+
+.inactive:after{
+	display: none !important;
+}
