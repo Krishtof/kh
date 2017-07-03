@@ -285,7 +285,7 @@ function next(){
 		$('#select_upload_button').addClass('collapsed done');
 		$('#expenses').removeClass('in');
 		$('#select_upload_button').attr('data-target','#expenses');
-		$('#account_button').removeClass('collapsed');
+		$('#account_button').removeClass('collapsed inactive');
 		$('#account_button span.inactive_accordion').removeClass('inactive_accordion');
 		
 		$('#account').addClass('in');

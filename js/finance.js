@@ -70,7 +70,7 @@ function employment(){
 function next(){
 	$('button#new_next').click(function(){
 		$('#income_button').attr('data-target','#income');
-		$('#income_button').removeClass('collapsed');
+		$('#income_button').removeClass('collapsed inactive');
 		$('#income_button span.inactive_accordion').removeClass('inactive_accordion');
 		$('#income').addClass('in');
 		$('#income').css('height','auto');
@@ -80,7 +80,7 @@ function next(){
 
 	$('button#income_next').click(function(){
 		$('#expenses_button').attr('data-target','#expenses');
-		$('#expenses_button').removeClass('collapsed');
+		$('#expenses_button').removeClass('collapsed inactive');
 		$('#expenses_button span.inactive_accordion').removeClass('inactive_accordion');
 		$('#expenses').addClass('in');
 		$('#expenses').css('height','auto');
@@ -90,7 +90,7 @@ function next(){
 
 	$('button#expense_next').click(function(){
 		$('#housing_button').attr('data-target','#Housing');
-		$('#housing_button').removeClass('collapsed');
+		$('#housing_button').removeClass('collapsed inactive');
 		$('#housing_button span.inactive_accordion').removeClass('inactive_accordion');
 		$('#Housing').addClass('in');
 		$('#Housing').css('height','auto');
@@ -100,7 +100,7 @@ function next(){
 
 	$('button#housing_next').click(function(){
 		$('#family_button').attr('data-target','#family');
-		$('#family_button').removeClass('collapsed');
+		$('#family_button').removeClass('collapsed inactive');
 		$('#family_button span.inactive_accordion').removeClass('inactive_accordion');
 		$('#family').addClass('in');
 		$('#family').css('height','auto');
@@ -109,7 +109,7 @@ function next(){
 
 	$('button#family_next').click(function(){
 		$('#bank_button').attr('data-target','#bank');
-		$('#bank_button').removeClass('collapsed');
+		$('#bank_button').removeClass('collapsed inactive');
 		$('#bank_button span.inactive_accordion').removeClass('inactive_accordion');
 
 		$('#bank').addClass('in');

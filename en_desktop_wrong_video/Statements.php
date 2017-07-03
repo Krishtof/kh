@@ -443,7 +443,7 @@
 		      </div>
 
 
-		      <button class="accordion collapsed" data-toggle="collapse" id="account_button" data-target=""><span class="inactive_accordion">bank account statement</span></button>
+		      <button class="accordion collapsed inactive" data-toggle="collapse" id="account_button" data-target=""><span class="inactive_accordion">bank account statement</span></button>
 		      <div id="account" class="collapse">
 		          <div class="form">
 		          <p>

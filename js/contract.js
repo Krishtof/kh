@@ -12,7 +12,7 @@ function next(){
 		$('#precontractual .form.done').show();
 
 		$('#terms').addClass('in');
-		$('#terms_button').removeClass('collapsed');
+		$('#terms_button').removeClass('collapsed inactive');
 		$('#terms_button').attr('data-target','#terms');
 		$('#terms_button span.inactive_accordion').removeClass('inactive_accordion');
 	});
@@ -25,7 +25,7 @@ function next(){
 
 		$('#pricelist_button span.inactive_accordion').removeClass('inactive_accordion');
 		$('#pricelist').addClass('in');
-		$('#pricelist_button').removeClass('collapsed');
+		$('#pricelist_button').removeClass('collapsed inactive');
 		$('#pricelist_button').attr('data-target','#pricelist');
 	});
 
@@ -38,7 +38,7 @@ function next(){
 
 		$('#contract').addClass('in');
 		$('#contract_button span.inactive_accordion').removeClass('inactive_accordion');
-		$('#contract_button').removeClass('collapsed');
+		$('#contract_button').removeClass('collapsed inactive');
 		$('#contract_button').attr('data-target','#contract');
 	});
 
@@ -49,7 +49,7 @@ function next(){
 		$('#contract .form.done').show();
 
 		$('#bank').addClass('in');
-		$('#bank_button').removeClass('collapsed');
+		$('#bank_button').removeClass('collapsed inactive');
 		$('#bank_button span.inactive_accordion').removeClass('inactive_accordion');
 		$('#bank_button').attr('data-target','#bank');
 		$('.openchat').addClass('block');

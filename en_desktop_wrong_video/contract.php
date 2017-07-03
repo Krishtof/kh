@@ -570,7 +570,7 @@
 
 
 
-        <button class="accordion collapsed" id = "terms_button" data-toggle="collapse" data-target=""><span class="inactive_accordion">General terms and conditions</span></button>
+        <button class="accordion collapsed inactive" id = "terms_button" data-toggle="collapse" data-target=""><span class="inactive_accordion">General terms and conditions</span></button>
         <div id="terms" class="collapse ">
             <div class="form">
               <p>
@@ -601,7 +601,7 @@
 
 
 
-        <button class="accordion collapsed" id = "pricelist_button" data-toggle="collapse" data-target=""><span class="inactive_accordion">Price list</span></button>
+        <button class="accordion collapsed inactive" id = "pricelist_button" data-toggle="collapse" data-target=""><span class="inactive_accordion">Price list</span></button>
         <div id="pricelist" class="collapse">
             <div class="form ">
               <p>
@@ -631,7 +631,7 @@
 
 
 
-        <button class="accordion collapsed" id = "contract_button" data-toggle="collapse" data-target=""><span class="inactive_accordion">Contract</span></button>
+        <button class="accordion collapsed inactive" id = "contract_button" data-toggle="collapse" data-target=""><span class="inactive_accordion">Contract</span></button>
         <div id="contract" class="collapse">
 
               <div class="form family">
@@ -664,7 +664,7 @@
 
 
 
-        <button class="accordion collapsed" id = "bank_button" data-toggle="collapse" data-target=""><span class="inactive_accordion">Sign</span></button>
+        <button class="accordion collapsed inactive" id = "bank_button" data-toggle="collapse" data-target=""><span class="inactive_accordion">Sign</span></button>
         <div id="bank" class="collapse">
             <div class="form">
 
