@@ -233,7 +233,12 @@
 
 
           </div>
-          <button onclick="window.location.href='contract.php'" class="bluebtn" type="button" name="button">next</button>
+
+
+					<button  onclick="window.location.href='contract.php'" class="bluebtn next" type="button" name="button">
+						<span>Next</span>
+						<img class="arrow" src="../img/arr_right.png"/>
+					</button>
 
         </div>
 

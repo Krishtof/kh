@@ -53,8 +53,11 @@
           </p>
 
         </div>
-        <button  class="bluebtn" type="button" name="button" onclick="modal_close();" data-dismiss="modal">I agree</button>
-        <a class="dont" href="#">I do not agree</a>
+				<button  onclick="window.location.href='financial.php'" class="bluebtn" type="button" name="button" onclick="modal_close();" data-dismiss="modal">
+					<span>I agree</span>
+					<img class="arrow" src="../img/arr_right.png"/>
+				</button>
+				<a class="dont" href="#">I do not agree</a>
 
       </div>
     </div>
@@ -216,7 +219,7 @@
       <div class="form nopadding">
 				<div class="good">You are doing well! Only 4 more steps</div>
             <div class="form basic">
-            <h1 >about you</h1>
+            <h1 >Basic information</h1>
             <form>
               surname:<br>
               <input type="text" name="firstname"><br>
@@ -338,7 +341,7 @@
             </form>
             <h1>contact details</h1>
             <p>
-Please add your <span style="font-weight: bold;">hone number and your email address</span>. By inserting them you give us the consent to contact you regarding your application.            </p>
+Please add both your <span style="font-weight: bold;">phone number and your email address</span>. By inserting them you give us the consent to contact you regarding your application.            </p>
             <form class="contact">
 
             <div class="phone" id="single_phone">
@@ -354,7 +357,7 @@ Enter phone number and click on send verification code button             </p>
             <div class="verify" id="phone_verification">
               <h2>Enter the verification code:</h2>
               <p>
-                We sent you a code to the phone number, <span style="font-weight: bold;" id="phone_number">+36 20 418 48 83</span> please insert the code to the application & click on verify button
+                We sent you a code to the phone number <span style="font-weight: bold;" id="phone_number">+36 20 418 48 83</span> please insert the code here and click on 'verify' button:
               </p>
               <input type="email" name="email" id="phone_verify" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
               <button type="button" class="bluebtn" id="phone-verify"  name="button">verify </button>
@@ -381,7 +384,7 @@ Enter phone number and click on send verification code button             </p>
             <div class="verify" id="email_verification">
               <h2>enter verification code:</h2>
               <p>
-                We will send you an email with a verification code. Please insert the code to the application & click on verify button:
+              	We sent you a code to the e-mail address <span style="font-weight: bold;" id="user_email">email@email.hu</span>, please insert the code here and click on 'verify' button:
               </p>
               <input type="email" name="email" id="email_verify" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
               <button type="button" class="bluebtn" id="email-verify"  name="button">verify </button>
@@ -399,7 +402,11 @@ Enter phone number and click on send verification code button             </p>
 						<div id="policy">
 							<p class="continue">
 	To continue you must read and acknowledge the personal data protection policy</p>
-	            <button type="button" class="orangebtn btn btn-info btn-lg" data-toggle="modal" data-target="#acknowledgemodal">Display policy</button>
+
+							<button  class="bluebtn next" data-toggle="modal" data-target="#acknowledgemodal">
+								<span class="text">display policy</span>
+								<img class="arrow" src="../img/arr_right.png"/>
+							</button>
 						</div>
 						<div id="policyok" style="display: none">
 							<img src="../img/ok.png" />

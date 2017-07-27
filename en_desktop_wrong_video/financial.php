@@ -283,7 +283,11 @@
 								<label for="r7">Other</label>
 							</div>
 							</form>
-            	<button class="bluebtn" type="button" data-toggle="collapse"  data-target="#new" name="button" id="new_next">Next</button>
+
+							<button class="bluebtn" type="button" data-toggle="collapse"  data-target="#new" name="button" id="new_next">
+								<span>Next</span>
+								<img class="arrow" src="../img/arr_dwn.png"/>
+							</button>
           </div>
 
         </div>
@@ -435,8 +439,11 @@
 
             </form>
 
-            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#income" name="button" id="income_next">Next</button>
 
+						<button class="bluebtn" type="button" data-toggle="collapse"  data-target="#income" name="button" id="income_next">
+							<span>Next</span>
+							<img class="arrow" src="../img/arr_dwn.png"/>
+						</button>
           </div>
 
         </div>
@@ -463,7 +470,11 @@
 
             </form>
 
-            <button class="bluebtn" type="button" id="expense_next" data-toggle="collapse"  data-target="#expenses" name="button">Next</button>
+
+						<button class="bluebtn" type="button" id="expense_next" data-toggle="collapse"  data-target="#expenses" name="button">
+							<span>Next</span>
+							<img class="arrow" src="../img/arr_dwn.png"/>
+						</button>
 
           </div>
 
@@ -478,19 +489,30 @@
               <h2>type</h2>
               <div class="radio">
                 <input type="radio" id="r1" name="rr" />
-                <label for="r1">rent</label>
+                <label for="r1">Owner</label>
               </div>
               <div class="radio">
                 <input type="radio" id="r2" name="rr" />
-                <label for="r2">own</label>
+                <label for="r2">Co-owner</label>
               </div>
 
 
 
               <div class="radio">
-                <input type="radio" id="r2" name="rr" />
-                <label for="r2">other</label>
+                <input type="radio" id="r3" name="rr" />
+                <label for="r3">Family member</label>
               </div>
+
+							<div class="radio">
+								<input type="radio" id="r4" name="rr" />
+								<label for="r4">Lodge/Tenant</label>
+							</div>
+
+							<div class="radio">
+								<input type="radio" id="r5" name="rr" />
+								<label for="r5">Other</label>
+							</div>
+
 							</form>
 
 
@@ -518,7 +540,13 @@
 
             </form>
 
-            <button class="bluebtn" type="button" data-toggle="collapse"  data-target="#Housing" id="housing_next" name="button">Next</button>
+
+
+						<button class="bluebtn" type="button" data-toggle="collapse"  data-target="#Housing" id="housing_next" name="button">
+							<span>Next</span>
+							<img class="arrow" src="../img/arr_dwn.png"/>
+						</button>
+
 
           </div>
 
@@ -534,26 +562,16 @@
 								<form>
                 <div class="radio">
                   <input type="radio" id="r1" name="rr" />
-                  <label for="r1">elementary school</label>
+                  <label for="r1">Low (Elementary, Vocational Training)</label>
                 </div>
                 <div class="radio">
                   <input type="radio" id="r2" name="rr" />
-                  <label for="r2">high school</label>
-                </div>
-
-                <div class="radio">
-                  <input type="radio" id="r2" name="rr" />
-                  <label for="r2">vocational school with A-level graduation</label>
+                  <label for="r2">Medium (Technical College, High School)</label>
                 </div>
 
-                <div class="radio">
-                  <input type="radio" id="r2" name="rr" />
-                  <label for="r2">cocation school without A-level graduation</label>
-                </div>
-
-                <div class="radio">
-                  <input type="radio" id="r2" name="rr" />
-                  <label for="r2">college/university</label>
+								<div class="radio">
+                  <input type="radio" id="r3" name="rr" />
+                  <label for="r3">High (College, University, Academic)</label>
                 </div>
 								</form>
 
@@ -562,41 +580,49 @@
 								<form>
                 <div class="radio">
                   <input type="radio" id="r1" name="rr" />
-                  <label for="r1">single</label>
+                  <label for="r1">Married</label>
                 </div>
                 <div class="radio">
                   <input type="radio" id="r2" name="rr" />
-                  <label for="r2">married / living in registered partnership </label>
+                  <label for="r2">Single</label>
                 </div>
 
                 <div class="radio">
-                  <input type="radio" id="r2" name="rr" />
-                  <label for="r2">other (companion, widow/widower, divorced, common living)</label>
-                </div><br />
+                  <input type="radio" id="r3" name="rr" />
+                  <label for="r3">Widow</label>
+                </div>
+
+								<div class="radio">
+                  <input type="radio" id="r4" name="rr" />
+                  <label for="r4">Divorced</label>
+                </div>
+
+								<div class="radio">
+                  <input type="radio" id="r5" name="rr" />
+                  <label for="r5">Common law marriage</label>
+                </div>
+								<br />
 							</form>
 
-                <h2>number of dependents:</h2><br>
+                <h2>How many dependents do you have?</h2>
 								<p>
-									applicant himself doesn’t count
-								</p>
+									Number of persons which relies on you for financial support.
+								</p><br>
+
                 <input class="shorter" type="text" name="firstname" value="0"><br>
 
-                <h2>are you a politically exposed person?</h2><br>
-                <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur. </p>
-								<form>
-								<div class="radio">
-									<input type="radio" id="r1" name="rr" />
-									<label for="r1">yes</label>
-								</div>
-								<div class="radio">
-									<input type="radio" id="r2" name="rr" />
-									<label for="r2">no </label>
-								</div>
 
 
                 </form>
 
-                <button class="bluebtn family_next" type="button" data-toggle="collapse"  data-target="#family" id="family_next" name="button">Next</button>
+
+
+
+								<button class="bluebtn family_next" type="button" data-toggle="collapse"  data-target="#family" id="family_next" name="button">
+									<span>Next</span>
+									<img class="arrow" src="../img/arr_dwn.png"/>
+								</button>
+
 
               </div>
 
@@ -617,9 +643,9 @@
               <p>
 Insert your account number where you are receiving the salary <br /><br />We will send to your account a small amount validation payment via our account. You will need reference code from this payment as signature at the end of this application             </p>
             </form>
-            <input placeholder="" class="shorter bankaccount"type="text" maxlength="8"  name="firstname">
-            <input placeholder=""class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
-            <input placeholder=""class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
+            <input placeholder="________" class="shorter bankaccount"type="text" maxlength="8"  name="firstname">
+            <input placeholder="________" class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
+            <input placeholder="________" class="shorter bankaccount"type="text"  maxlength="8" name="firstname">
 						<div class="nokh">
 							<img src="../img/ok.png" />
 							<p>
@@ -628,7 +654,34 @@ Insert your account number where you are receiving the salary <br /><br />We wil
 
 						</div>
 
-            <button onclick="window.location.href='Statements.php'" class="bluebtn" type="button" name="button">Next</button>
+
+
+
+								<div class="panel-group" id="accordion">
+								  <div class="panel panel-default">
+								    <div class="panel-heading">
+								      <h4 class="panel-title">
+								        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+								          What does the payment look like?
+								        </a>
+								      </h4>
+								    </div>
+								    <div id="collapseOne" class="panel-collapse collapse">
+								      <div class="panel-body">
+												<p class="accountdesc">
+													The payment will appear on your bank account as the one here below:
+												</p>
+												<img class="accountimg" src="../img/account.png" />								      </div>
+								    </div>
+									</div>
+
+						<button  onclick="window.location.href='Statements.php'" class="bluebtn next" type="button" name="button">
+							<span>Next</span>
+							<img class="arrow" src="../img/arr_right.png"/>
+						</button>
+
+
+
 
           </div>
 

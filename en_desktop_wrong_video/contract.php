@@ -56,8 +56,13 @@
           </p>
 
         </div>
-        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">I agree</button>
-        <a class="dont" href="#">I do not agree</a>
+
+				<button  onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">
+					<span>I agree</span>
+					<img class="arrow" src="../img/arr_right.png"/>
+				</button>
+
+				<a class="dont" href="#">I do not agree</a>
 
       </div>
     </div>
@@ -91,7 +96,12 @@
           </p>
 
         </div>
-        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button"data-dismiss="modal"  name="button">I agree</button>
+
+				<button  onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button"data-dismiss="modal"  name="button">
+					<span>I agree</span>
+					<img class="arrow" src="../img/arr_right.png"/>
+				</button>
+
         <a class="dont" href="#">I do not agree</a>
 
       </div>
@@ -148,7 +158,11 @@
           </p>
 
         </div>
-        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">I agree</button>
+
+				<button  onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button"data-dismiss="modal"  name="button">
+					<span>I agree</span>
+					<img class="arrow" src="../img/arr_right.png"/>
+				</button>
         <a class="dont" href="#">I do not agree</a>
 
       </div>
@@ -184,7 +198,11 @@
           </p>
 
         </div>
-        <button onclick=""  style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">I agree</button>
+
+				<button  style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">
+					<span>I agree</span>
+					<img class="arrow" src="../img/arr_right.png"/>
+				</button>
         <a class="dont" href="#">I do not agree</a>
 
       </div>
@@ -383,7 +401,12 @@
 						<h2>
 							Get acquainted with the Pre-contractual information to continue.
 						</h2>
-            <button class="bluebtn left" type="button" data-toggle="modal" data-target="#preco" name="button">display policy</button>
+
+						<button  class="bluebtn left" type="button" data-toggle="modal" data-target="#preco" name="button">
+							<span>display information</span>
+							<img class="arrow" src="../img/arr_dwn.png"/>
+						</button>
+
 					</div>
 
 						<div class="done form">
@@ -411,10 +434,12 @@
 
 
 
-              <button class="bluebtn left" type="button" data-toggle="modal" data-target="#general" name="button">display policy</button>
 
 
-
+							<button  class="bluebtn left" type="button" data-toggle="modal" data-target="#general" name="button">
+								<span>display Terms</span>
+								<img class="arrow" src="../img/arr_dwn.png"/>
+							</button>
 
             </form>
 
@@ -440,9 +465,11 @@
                 Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur.
               </p>
 
+							<button  class="bluebtn left" type="button" data-toggle="modal" data-target="#list" name="button">
+								<span>display price list</span>
+								<img class="arrow" src="../img/arr_dwn.png"/>
+							</button>
 
-
-              <button class="bluebtn left" type="button" data-toggle="modal" data-target="#list" name="button">display price list</button>
 
 
             </form>
@@ -473,9 +500,11 @@
 
 
 
-                <button class="bluebtn left" type="button" data-toggle="modal" data-target="#contr" name="button">display contract</button>
 
-
+								<button  class="bluebtn left" type="button" data-toggle="modal" data-target="#contr" name="button">
+									<span>display contract</span>
+									<img class="arrow" src="../img/arr_dwn.png"/>
+								</button>
 
 
               </div>
@@ -497,18 +526,46 @@
 
 
         <button class="accordion collapsed inactive" id = "bank_button" data-toggle="collapse" data-target=""><span class="inactive_accordion">Sign</span></button>
-        <div id="bank" class="collapse">
+
+
+
+
+				<div id="bank" class="collapse">
             <div class="form">
 
             <form>
 
             </form>
-            <h2>To sign the contract insert the reference code of the payment form Impresto what you just received on your account (12345678-12345678-12345678). In case you will not received the payment in 5 minutes please call to help line. </h2>
+            <p>To sign the contract insert the reference code of the payment form Impresto what you just received on your account (12345678-12345678-12345678). In case you will not received the payment in 5 minutes please call to help line. </p>
+						<div style="margin-top: 30px;"class="panel-group" id="accordion">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+											What does the payment look like?
+										</a>
+									</h4>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p class="accountdesc">
+											The payment will appear on your bank account as the one here below:
+										</p>
+										<img class="accountimg" src="../img/account.png" />								      </div>
+								</div>
+							</div>
+						</div>
 
-						<input type="text" name="firstname">
 
-						<p style="text-align: center;">By pressing the button your contract will be electronically signed</p>
-            <button onclick="window.location.href='finish.php'" class="bluebtn next" type="button" name="button">sign</button>
+						<input class="signinput" placeholder="___________"type="text" name="firstname">
+
+						<p style="text-align: center; font-weight: bold;">By pressing the 'sign contract' button your contract will be electronically signed</p>
+
+
+						<button  onclick="window.location.href='finish.php'" class="bluebtn next" type="button" name="button">
+							<span>Sign contract</span>
+							<img class="arrow" src="../img/arr_right.png"/>
+						</button>
 
           </div>
 

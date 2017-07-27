@@ -5,14 +5,6 @@ $(function(){
 	a_prevent();
 });
 
-function modal_close(){
-	$('#basic_next_button').removeClass('hidden-lg hidden-md hidden-sm hidden-xs');
-	$('#policy').addClass('hidden-lg hidden-md hidden-sm hidden-xs');
-	$('#policyok').addClass('block');
-
-
-
-}
 
 function try_again(){
 	$('#try_1').click(function(){

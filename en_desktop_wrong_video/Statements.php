@@ -98,12 +98,18 @@
 
     <!-- Modal content-->
     <div class="modal-content">
-      <div class="modal-body upload">
+      <div class="modal-body upload videochat">
         <img src="../img/mobile.png" />
         <h1>Please check your phone</h1>
-        <p>
-          We have sent you an SMS to your cell phone. Click on the link in the message and enter the following security code on the webpage:<br /><span style="font-weight: bold; font-size: 22px; line-height: 40px;">123432</span>
-        </p>
+				<p>
+					We have sent you and SMS to your cellphone. Click the url in the message and enter the following security code on the webpage:
+				</p>
+				<h2 style="font-size: 28px;">123123</h2>
+				<br />
+				<h2>Please take care of the followings during the videochat:</h2>
+				<img src="../img/popup.png" />
+
+
 
         <button onclick="" style="margin-bottom: 10px;"class="bluebtn" id="modal_button" type="button" data-dismiss="modal" name="button">Ok</button>
 
@@ -118,15 +124,18 @@
 
     <!-- Modal content-->
     <div class="modal-content">
-      <div class="modal-body upload">
-        <img src="../img/mobile.png" />
-        <h1>Please check your phone</h1>
-        <p>
-          We have sent you an SMS to your cell phone with a link to the APP store or Google Play. Download the app and insert the following security code there:<br /><span style="font-weight: bold; font-size: 22px; line-height: 40px;">123432</span>
-        </p>
+      <div class="modal-body upload videochat">
+
+				<img src="../img/mobile.png" />
+				<h1>Please check your phone</h1>
 				<p>
-					* The app has just 5MB and you don’t need to register.
+					We have sent you and SMS to your cellphone. Click the url in the message to download the application you'll need for the identification. Open the application and enter the following security code:
 				</p>
+				<h2 style="font-size: 28px;">123123</h2>
+				<br />
+				<h2>Please take care of the followings during the videochat:</h2>
+				<img src="../img/popup.png" />
+
         <button onclick="" style="margin-bottom: 10px;"class="bluebtn" id="modal_button" type="button" data-dismiss="modal" name="button">Ok</button>
 
       </div>
@@ -280,7 +289,7 @@
         <button class="accordion" id="select_upload_button" data-toggle="collapse" data-target="">Videochat identification</button>
         <div id="expenses" class="collapse in">
 					<div class="form">
-						<div class="container mobile_first form" style="width: 100%; padding: 0px;">
+						<div class="container form" style="width: 100%; padding: 0px;">
 							<div class="video">
 								<p>
 
@@ -330,31 +339,134 @@
                 </label>
               </div>
 							<h2 style="text-align: center;">The best option to make identification is through our mobile application. The identification is really comfortable, fast and secure. </h2>
-							<div data-toggle="modal" data-target="#appupload" class="box app_identification" style="margin-bottom: 60px; border-right: 1px solid #00aeef">
-									<img src="../img/mobile.png" />
-									<p>
-										Start identification in mobile app
-									</p>
 
+							<div class="container-fluid statementoptions">
+								<div class="row">
+									<div class="col-md-4">
+										<div class="box">
+												<img class="device" src="../img/desktop copy.png" />
+												<a href="skype:-skype-name-?chat">
+												<button   class="bluebtn next" >
+													<span>Continue on Laptop/PC</span>
+													<img class="arrow" src="../img/arr_right.png"/>
+												</button></a>
+
+										</div>
+
+										<div style="margin-top: 30px; padding: 0px 15px;"class="panel-group" id="accordion_e">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion_e" href="#collapseone">
+															How does it work?
+														</a>
+													</h4>
+												</div>
+												<div id="collapseone" class="panel-collapse collapse">
+													<div class="panel-body">
+														<div class="textholder">
+															<ul>
+																<li>1. Click on the button “start identification on desktop"</li>
+																<li>2. Bank employee is connecting and identification starts</li>
+																<br />
+																<li style="font-weight: bold;">Please note, that resolution and quality of your webcamera needs to be high quality, otherwise you should try walking through the process on mobile.</li>
+															</ul>
+														</div>							      </div>
+												</div>
+											</div>
+										</div>
+
+
+									</div>
+									<div class="col-md-4">
+
+
+
+
+										<div class="box">
+												<img class="device" src="../img/mobile copy.png" />
+												<button  data-toggle="modal" data-target="#upload" class="bluebtn next" type="button" name="button">
+													<span>Continue on Mobile device</span>
+													<img class="arrow" src="../img/arr_right.png"/>
+												</button>
+										</div>
+
+										<div style="margin-top: 30px; padding: 0px 15px;"class="panel-group" id="accordion_w">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion_w" href="#collapsethree">
+															How does it work?
+														</a>
+													</h4>
+												</div>
+												<div id="collapsethree" class="panel-collapse collapse">
+													<div class="panel-body">
+														<div class="textholder">
+															<ul>
+																<li>1. Click on the button “start identification on mobile device"</li>
+																<li>2. You will receive an SMS with an url</li>
+																<li>3. Click on the url and visit the impresto mobile site</li>
+																<li>4. Insert this code: 1234</li>
+																<li>5. Click start video identification</li>
+																<li>6. Bank employee will connect and identification will start</li>
+
+															</ul>
+														</div>							      </div>
+												</div>
+											</div>
+										</div>
+
+
+									</div>
+									<div class="col-md-4">
+										<div class="box">
+												<img class="device" src="../img/mobileos.png" />
+												<button  data-toggle="modal" data-target="#appupload"  class="bluebtn next" type="button" name="button">
+													<span>Continue on Mobile app</span>
+													<img class="arrow" src="../img/arr_right.png"/>
+												</button>
+										</div>
+
+										<div style="margin-top: 30px; padding: 0px 15px;"class="panel-group" id="accordion_e">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion_e" href="#collapsetwo">
+															How does it work?
+														</a>
+													</h4>
+												</div>
+												<div id="collapsetwo" class="panel-collapse collapse">
+													<div class="panel-body">
+														<div class="textholder">
+															<ul>
+																<li>1. Click on the button “Continue with mobile app"</li>
+																<li>2. You will receive an SMS with a link to the app store</li>
+																<li>3. Click on the link and install the app</li>
+																<li>4. Open the app and insert this code: 1234</li>
+																<li>5. Click to start video identification</li>
+																<li>6. Bank employee will connect and identification will start</li>
+																<br />
+																<li style="font-weight: bold;">The app is only 5MB and there is no need to register</li>
+
+															</ul>
+														</div>							      </div>
+												</div>
+											</div>
+										</div>
+
+
+
+									</div>
+								</div>
 							</div>
 
 
 
-							<div  class="wayofvideo">
-								<div data-toggle="modal" data-target="#upload" class="box" style="border-right: 1px solid #00aeef">
-									<img src="../img/mobile.png" />
-									<p>
-										Start identification in mobile
-									</p>
 
-								</div>
-								<div data-toggle="modal" data-target="#upload_desktop" class="box">
-									<img src="../img/desktop.png" />
-									<p>
-										Start identification on desktop
-									</p>
-								</div>
-							</div>
+
+
 
 
 
@@ -362,14 +474,19 @@
 
 							</div>
 						</div>
-						<button class="bluebtn" id="select_upload_next_button" type="button" name="button">Next</button>
+
+						<button class="bluebtn" id="select_upload_next_button" type="button" name="button">
+							<span>Next</span>
+							<img class="arrow" src="../img/arr_dwn.png"/>
+						</button>
+
 
 					</div>
 
 
 
 
-					<div id="after_success" class="mailing_address">
+					<div >
 						<p style="text-align:left" id="success_message">Data was succesfully recognized</p><br />
 
 		          <div class="check">
@@ -443,6 +560,26 @@
 		      </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		      <button class="accordion collapsed inactive" data-toggle="collapse" id="account_button" data-target=""><span class="inactive_accordion">bank account statement</span></button>
 		      <div id="account" class="collapse">
 		          <div class="form">
@@ -488,7 +625,13 @@
 
 		          </div>
 
-		          <button onclick="window.location.href='approval.php'" class="bluebtn next" type="button" name="button">Next</button>
+
+
+							<button  onclick="window.location.href='approval.php'" class="bluebtn next" type="button" name="button">
+								<span>Next</span>
+								<img class="arrow" src="../img/arr_right.png"/>
+							</button>
+
 
 		        </div>
 

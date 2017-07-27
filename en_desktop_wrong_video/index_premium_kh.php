@@ -45,7 +45,7 @@
 			background: linear-gradient(to right, #00aeef 0%,#00aeef 100%,#e6f7fe 100%,#e6f7fe 100%);
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#e6f7fe',GradientType=1 );
 		}
-		
+
 		input[type=range][name=amount]{
 			    background: #00aeef;
 			    background: -moz-linear-gradient(left, #00aeef 0%, #00aeef 20%, #e6f7fe 20%, #e6f7fe 100%);
@@ -57,12 +57,68 @@
 
     <body>
 
+			<div id="guide" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+			    <!-- Modal content-->
+			    <div class="modal-content">
+			      <div class="modal-body">
+			        <div class="text">
+			          <h1>Guide</h1>
+			          <p>Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur, molestiae definiebas efficiendi in mel. Sit ad eruditi persequeris, ne docendi omnesque pro. Id nibh ubique democritum eum, ea singulis senserit nec, vix no erant dolore intellegebat. Eam ex utamur elaboraret, idque saepe argumentum qui ei, his prodesset dissentiunt ex.
+
+			          Vis saepe concludaturque ad, eius bonorum periculis vim ea, integre suscipit prodesset eu quo. Utinam scaevola has cu, cum etiam scripserit te, no copiosae definitionem pro. Phaedrum quaerendum eum ea, pro an iuvaret accommodare. Posse adipisci theophrastus at vel, te pro dolore quaestio dignissim. In eos meliore tractatos torquatos. Duo no meis lucilius deterruisset. Mundi ludus eos cu.
+
+			          Ut simul possit incorrupte cum, quo explicari temporibus ea. Dolor invidunt mel in, ferri omnium offendit ut ius. Eos at regione mentitum probatus, mel consequat elaboraret ne, pro tamquam adolescens moderatius ne. Mundi explicari torquatos vel et, duo vide epicurei ea. Ei facilisi definitiones pro, pri esse essent in.
+
+			          Causae lobortis indoctum sit cu, vel case atomorum ut. Ne dolores mandamus constituto sit. Voluptaria inciderint mea ei, quo adipisci corrumpit elaboraret in. Qui bonorum molestie sententiae id, cum cu purto facete latine. Rebum virtute delicatissimi ad pri. Ius posse nobis cu, vim an nobis accusata incorrupte.
+
+			          Porro iuvaret salutatus pro cu, alia sint offendit duo ei, denique reprimique dissentiet no duo. Sea ei vero brute consetetur, sed efficiendi definitiones ea. Vis quidam commodo efficiendi no. Deserunt tacimates suscipiantur ne vim. Vix ad amet delicata contentiones, ius mundi admodum suscipit eu, an mea falli euripidis.
+
+			          Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur, molestiae definiebas efficiendi in mel. Sit ad eruditi persequeris, ne docendi omnesque pro. Id nibh ubique democritum eum, ea singulis senserit nec, vix no erant dolore intellegebat. Eam ex utamur elaboraret, idque saepe argumentum qui ei, his prodesset dissentiunt ex.
+
+			          Vis saepe concludaturque ad, eius bonorum periculis vim ea, integre suscipit prodesset eu quo. Utinam scaevola has cu, cum etiam scripserit te, no copiosae definitionem pro. Phaedrum quaerendum eum ea, pro an iuvaret accommodare. Posse adipisci theophrastus at vel, te pro dolore quaestio dignissim. In eos meliore tractatos torquatos. Duo no meis lucilius deterruisset. Mundi ludus eos cu.
+			          </p>
+
+			        </div>
+			        <button onclick="" style="margin-bottom: 10px;"class="bluebtn" type="button" name="button" data-dismiss="modal">Ok</button>
+
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
 <!-- HEADER -->
       <div class="header">
         <div class="subheader">
         </div>
-        <div class="sec_subheader">
-        </div>
+				<div class="sec_subheader">
+					<div class="container">
+						<button onclick="window.location.href='index.php'" class="bluebtn headerbtn" type="button" name="button">
+							<p>
+							About loan
+						</p>
+						<i class="fa fa-refresh" aria-hidden="true"></i>
+
+
+						</button>
+						<button class="bluebtn headerbtn" type="button" name="button">
+							<p>
+							FAQ
+						</p>
+
+						<i class="fa fa-floppy-o" aria-hidden="true"></i>
+
+						<button class="bluebtn headerbtn" type="button" name="button">
+							<p>
+							Call back
+						</p>
+						<i class="fa fa-phone" aria-hidden="true"></i>
+
+						</button>
+					</div>
+
+				</div>
         <div class="container">
           <img class="logo" src="../img/logo.png">
 
@@ -106,7 +162,7 @@
 
 			</div>
 
-		<a class="ttip" data-toggle="tooltip" title="Discount will be applicable if you are having or you will open a KH current account and sending there your salary  (at least 100.000 Ft) then you will get 2% discount on the interest rate. You can open the current account in KH anytime, the discount will be effective following month after you will receive your first salary there.  ">Learn more about the discount!</a>
+		<a class="ttip"  data-placement="right" data-toggle="tooltip" title="Standard interest rate of K&H personal loan is 13.99% p.a. but your interest rate could starts at 7.99% p.a. 2% discount on interest rate, if you currently have a K&H account and you receive at least 100 000 HUF monthly 4% discount on interest rate, if you have at least 250 000 HUF net income per month and you can verify it during the proccess. 6% discount on interest rate, if you meet both conditions mentioned above. Do not have a K&H account? It is not mandatory for getting the loan, but if you will open an account after you got the loan and you will receive at least 100 000 HUF salary per month you will start paying less from the following month after we identifed your first income payment to the account.  ">Learn more about the discount!</a>
 <div class="boxed">
 
 		<div>
@@ -133,10 +189,17 @@
 			<h2>repaid in:</h2>
 			<h3><span id="month_number">24</span> months</h3>
 		</div>
-		
-		<button onclick="window.location.href='basic.php'" class="bluebtn" type="button" name="button">yes, I want this loan</button>
-		<a class="ttip" data-toggle="tooltip" title="The client shall only sign a loan agreement which he or she fully understands; any change in the client's circumstances, he or she still remain obliged to pay back the loan amount; if the client has solvency problems he or she must immediately inform the Bank; in case of any expired payment obligation the Bank will apply late payment interest; in case of non-performance of the contract the Bank is entiteled to immediately terminate the loan agreement and all outstanding amount become due; any expenses from the enforcment of claims arising from a terminated loan agreement by the Bank will be paid by the client.">Client should act responsibly and follow the guide issued by HNB.</a>
-	</div>
+
+		<button style="margin-bottom: 30px;"onclick="window.location.href='basic.php'" class="bluebtn next" type="button" name="button">
+			<span class="text">Yes I want this loan</span>
+			<img class="arrow" src="../img/arr_right.png"/>
+		</button>
+
+		<div class="tooltipholder">Client should act responsibly and follow the guide
+			<a class="ttip" data-toggle="tooltip" title="The client shall only sign a loan agreement which he or she fully understands; any change in the client's circumstances, he or she still remain obliged to pay back the loan amount; if the client has solvency problems he or she must immediately inform the Bank; in case of any expired payment obligation the Bank will apply late payment interest; in case of non-performance of the contract the Bank is entiteled to immediately terminate the loan agreement and all outstanding amount become due; any expenses from the enforcment of claims arising from a terminated loan agreement by the Bank will be paid by the client.">issued by HNB.</a>
+
+		</div>
+		<button type="button" type="button" data-toggle="modal" data-target="#guide" class="btn bluebtn ttipbtb" name="button">Show HNB Guide</button>	</div>
 </div>
 
 	<div class="col-md-6 qualify">
@@ -165,7 +228,7 @@
 
 		<h3>Representative Example</h3>
 		<p>
-			For a 48-month, HUF 800 thousand loan, the monthly repayment instalment with regular monthly salary income is HUF 21,063 at a fixed 11.99% annual interest rate. The Total amount to be repaid is HUF 1,033,536 and the loan charges are HUF 233,536% of which fees and costs amount to HUF 22,512. The annual percentage rate (APR) is 14.0%		</p>
+			For a 48-month, HUF 1000 thousand loan, the monthly repayment instalment with regular monthly salary income is HUF 29,569 at a fixed 9.99% annual interest rate. The Total amount to be repaid is HUF 1,222,047 and the loan charges are HUF 222,047 of which fees and costs amount to HUF 22,512. The annual percentage rate (APR) is 12.0%		</p>
 	</div>
 
 	</div>
