@@ -24,7 +24,8 @@ $(function(){
 	lastfile();
 	idclick2();
 	idclick();
-	test();
+	nextModal();
+	//test();
 });
 
 
@@ -282,9 +283,27 @@ function modal_close(){
 
 function next(){
 	$('#select_upload_next_button').click(function(){
+		console.log('klikk');
 		$('#select_upload_button').addClass('collapsed done');
 		$('#expenses').removeClass('in');
 		$('#select_upload_button').attr('data-target','#expenses');
+		$('#new_accordion_button').removeClass('collapsed inactive');
+		$('#new_accordion_button span.inactive_accordion').removeClass('inactive_accordion');
+		
+		$('#new_accordion').addClass('in');
+		$('#new_accordion_button').attr('data-target','#new_accordion');
+		//$('.openchat').addClass('block');
+
+	});
+	
+}
+
+function nextModal(){
+	//új
+	$('#new_accordion_next_button').click(function(){
+		$('#new_accordion_button').addClass('collapsed done');
+		$('#new_accordion').removeClass('in');
+		$('#new_accordion_button').attr('data-target','#new_accordion');
 		$('#account_button').removeClass('collapsed inactive');
 		$('#account_button span.inactive_accordion').removeClass('inactive_accordion');
 		

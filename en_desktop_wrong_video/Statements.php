@@ -559,23 +559,10 @@
 
 		      </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	   <button class="accordion collapsed inactive" data-toggle="collapse" id="new_accordion_button" data-target=""><span class="inactive_accordion">new accordion</span></button>
+	   <div id="new_accordion" class="collapse">
+	      <button class="bluebtn next" id="new_accordion_next_button" type="button" name="button">Next</button>
+	   </div>
 
 
 
