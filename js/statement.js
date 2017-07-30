@@ -401,9 +401,11 @@ function billing(){
 	$('input#employment').click(function(){
 		var value = $(this).is(':checked');
 		if(value == true){
+			$('.mailing_address').show();
 			$('.mailing_address .city').show();
 			$('.mailing_address .street').show();
 		}else{
+			$('.mailing_address').hide();
 			$('.mailing_address .city').hide();
 			$('.mailing_address .street').hide();
 		}

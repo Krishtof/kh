@@ -580,7 +580,8 @@
 
 		 			</label>
 		 		</div>
-		 		<div class="city inline">
+		 		<div class="mailing_address" style="display:none;">
+		 			<div class="city inline">
 		 			<div class="postal inline">
 		 				<h2>postal code</h2>
 		 				<input type="text" class="shortest" name="firstname">
@@ -594,7 +595,7 @@
 
 		 	</div>
 
-		 <div class="street">
+		 			<div class="street">
 		 <div class="street_holder">
 		 	<h2>street</h2>
 		 	<input type="text" class="shorter" name="firstname">
@@ -627,6 +628,7 @@
 		 </div>
 
 		 </div>
+		 		</div>
 	 </div>
 
 	      <button class="bluebtn next" id="new_accordion_next_button" type="button" name="button">Next</button>
