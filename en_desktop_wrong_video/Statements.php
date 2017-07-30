@@ -486,7 +486,7 @@
 
 
 
-					<div >
+				<!--	<div >
 						<p style="text-align:left" id="success_message">Data was succesfully recognized</p><br />
 
 		          <div class="check">
@@ -554,13 +554,81 @@
 
 					<button class="bluebtn next" id="select_upload_next_button" type="button" name="button">Next</button>
 
-		        </div>
+		        </div>-->
 
 
 		      </div>
 
-	   <button class="accordion collapsed inactive" data-toggle="collapse" id="new_accordion_button" data-target=""><span class="inactive_accordion">new accordion</span></button>
+	   <button class="accordion collapsed inactive" data-toggle="collapse" id="new_accordion_button" data-target=""><span class="inactive_accordion">Mailing addres</span></button>
 	   <div id="new_accordion" class="collapse">
+			 <div class="form">
+
+
+			 <p style="text-align:left" id="success_message">Data was succesfully recognized</p><br />
+
+		 		<div class="check">
+
+		 			<label>
+		 				<input type='checkbox' id="employment">
+		 				<span></span>
+		 				<p class="checklabel">
+		 					I have different mailing address than the permanent address
+		 				</p>
+		 				<p class="mailing_info">
+		 					You acknowledge that we will enter the credit bureau and save there the data about your application
+		 				</p>
+
+		 			</label>
+		 		</div>
+		 		<div class="city inline">
+		 			<div class="postal inline">
+		 				<h2>postal code</h2>
+		 				<input type="text" class="shortest" name="firstname">
+
+		 			</div>
+		 		<div class="cit inline">
+
+		 		<h2>city</h2>
+		 		<input type="text" class="shorter" name="firstname">
+		 	</div>
+
+		 	</div>
+
+		 <div class="street">
+		 <div class="street_holder">
+		 	<h2>street</h2>
+		 	<input type="text" class="shorter" name="firstname">
+		 			</div>
+		 <div class="type_of_street">
+		 	<div class="dropdown shortest">
+		 					<h2>type</h2>
+
+		 					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">street
+		 					<span class="caret"></span></button>
+		 					<ul class="dropdown-menu">
+		 						<li><a href="#">street</a></li>
+		 						<li><a href="#">square</a></li>
+		 						<li><a href="#">road</a></li>
+
+		 					</ul>
+		 				</div>
+		 </div>
+		 <div class="street_number">
+		 	 <h2>number</h2>
+		 	 <input type="text" class="shortest" name="number">
+		 </div>
+		 <div class="floor inline">
+		 	 <h2>floor</h2>
+		 	 <input type="text" class="shortest" name="number">
+		 </div>
+		 <div class="door inline">
+		 	 <h2>door</h2>
+		 	 <input type="text" class="shortest" name="number">
+		 </div>
+
+		 </div>
+	 </div>
+
 	      <button class="bluebtn next" id="new_accordion_next_button" type="button" name="button">Next</button>
 	   </div>
 
