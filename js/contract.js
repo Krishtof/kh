@@ -11,10 +11,16 @@ function next(){
 		$('#precontractual .form').hide();
 		$('#precontractual .form.done').show();
 
-		$('#terms').addClass('in');
+		/*$('#terms').addClass('in');
 		$('#terms_button').removeClass('collapsed inactive');
 		$('#terms_button').attr('data-target','#terms');
-		$('#terms_button span.inactive_accordion').removeClass('inactive_accordion');
+		$('#terms_button span.inactive_accordion').removeClass('inactive_accordion');*/
+		
+		
+		$('#contract').addClass('in');
+		$('#contract_button span.inactive_accordion').removeClass('inactive_accordion');
+		$('#contract_button').removeClass('collapsed inactive');
+		$('#contract_button').attr('data-target','#contract');
 	});
 
 	$('#general button').click(function(){
