@@ -144,7 +144,7 @@
 <!-- Loan I apply for -->
     <div class="container">
 
-			<div class="loanholder">
+			<div class="loanholder approve">
         <h2>Loan I apply for </h2>
         <div class="amount">
           <p>

@@ -105,8 +105,20 @@
 	<div class="subheader">
 	</div>
 	<div class="sec_subheader">
+		<div class="container">
+			<button onclick="window.location.href='index.php'" class="bluebtn headerbtn" type="button" name="button">
+				<p>
+				Edit
+			</p>
+			<i class="fa fa-edit" aria-hidden="true"></i>
+
+
+			</button>
+
+		</div>
 	</div>
 	<div class="container">
+
 		<img class="logo" src="../img/logo.png">
 
 	</div>

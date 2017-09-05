@@ -227,7 +227,7 @@
 
 		</div>
 		<button type="button" type="button" data-toggle="modal" data-target="#guide" class="btn bluebtn ttipbtb" name="button">Show HNB Guide</button>	</div>
-	</div>
+
 </div>
 
 	<div class="col-md-6 qualify">

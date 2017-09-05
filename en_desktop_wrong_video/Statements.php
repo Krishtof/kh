@@ -166,6 +166,17 @@
         <div class="subheader">
         </div>
         <div class="sec_subheader">
+					<div class="container">
+						<button onclick="window.location.href='index.php'" class="bluebtn headerbtn" type="button" name="button">
+							<p>
+							Edit
+						</p>
+						<i class="fa fa-edit" aria-hidden="true"></i>
+
+
+						</button>
+
+					</div>
         </div>
         <div class="container">
           <img class="logo" src="../img/logo.png">
@@ -559,18 +570,21 @@
 
 		      </div>
 
-	   <button class="accordion collapsed inactive" data-toggle="collapse" id="new_accordion_button" data-target=""><span class="inactive_accordion">Mailing addres</span></button>
+	   <button class="accordion collapsed inactive" data-toggle="collapse" id="new_accordion_button" data-target=""><span class="inactive_accordion">Mailing address</span></button>
 	   <div id="new_accordion" class="collapse">
 			 <div class="form">
 
 
-			 <p style="text-align:left" id="success_message">Data was succesfully recognized</p><br />
+			 <h2 style="text-align:left" >Your permanent address is:</h2><br />
+			 <p>
+				1062 Budapest, Andrássy ut 87-89.
+			 </p><br />
 
 		 		<div class="check">
 
 		 			<label>
 		 				<input type='checkbox' id="employment">
-		 				<span></span>
+		 				<span class="checkfix"></span>
 		 				<p class="checklabel">
 		 					I have different mailing address than the permanent address
 		 				</p>

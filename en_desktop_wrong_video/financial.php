@@ -106,26 +106,16 @@
 		<div class="container">
 			<button onclick="window.location.href='index.php'" class="bluebtn headerbtn" type="button" name="button">
 				<p>
-				start again
+				Edit
 			</p>
-			<i class="fa fa-refresh" aria-hidden="true"></i>
+			<i class="fa fa-edit" aria-hidden="true"></i>
 
 
 			</button>
-			<button class="bluebtn headerbtn" type="button" name="button">
-				<p>
-				save
-			</p>
 
-			<i class="fa fa-floppy-o" aria-hidden="true"></i>
-
-			<button class="bluebtn headerbtn" type="button" name="button">
-				<p>
-				call back
-			</p>
-			<i class="fa fa-phone" aria-hidden="true"></i>
-
-			</button>
+		</div>
+		<div class="container">
+			
 		</div>
 
 	</div>
@@ -251,10 +241,16 @@
             <div class="form">
 							<h2>Please chose a target</h2>
 							<form>
+
+
 							<div class="radio">
 								<input type="radio" id="r1" name="rr" />
 								<label for="r1">Renewal</label>
 							</div>
+
+
+
+
 							<div class="radio">
 								<input type="radio" id="r2" name="rr" />
 								<label for="r2">Car purchase</label>

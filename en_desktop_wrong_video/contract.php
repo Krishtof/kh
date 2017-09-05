@@ -425,68 +425,11 @@
 
 
 
-        <button class="accordion collapsed inactive" id = "terms_button" data-toggle="collapse" data-target=""><span class="inactive_accordion">General terms and conditions</span></button>
-        <div id="terms" class="collapse ">
-            <div class="form">
-              <p>
-                Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur.
-              </p>
 
 
 
 
-
-							<button  class="bluebtn left" type="button" data-toggle="modal" data-target="#general" name="button">
-								<span>display Terms</span>
-								<img class="arrow" src="../img/arr_dwn.png"/>
-							</button>
-
-            </form>
-
-
-          </div>
-					<div class="done form">
-						<img src="../img/ok.png" />
-						<p>
-							General terms and conditions was agreed and downloaded to your computer
-						</p><br />
-						<a href="img/downloaded_document.txt" download="Precontractual information">
-							<button class="bluebtn left" type="button" data-toggle="modal"  name="button">download again</button></a>
-
-					</div>
-        </div>
-
-
-
-        <button class="accordion collapsed inactive" id = "pricelist_button" data-toggle="collapse" data-target=""><span class="inactive_accordion">Price list</span></button>
-        <div id="pricelist" class="collapse">
-            <div class="form ">
-              <p>
-                Lorem ipsum dolor sit amet, te his erant posidonium, no sea ferri labore. Apeirian salutatus mea no, sint doming invenire qui id, nam eu epicurei luptatum. No pri melius voluptaria complectitur.
-              </p>
-
-							<button  class="bluebtn left" type="button" data-toggle="modal" data-target="#list" name="button">
-								<span>display price list</span>
-								<img class="arrow" src="../img/arr_dwn.png"/>
-							</button>
-
-
-
-            </form>
-
-
-          </div>
-					<div class="done form">
-						<img src="../img/ok.png" />
-						<p>
-							The Price list was agreed and downloaded to your computer
-						</p><br />
-						<a href="img/downloaded_document.txt" download="Precontractual information">
-							<button class="bluebtn left" type="button" data-toggle="modal"  name="button">download again</button></a>
-
-					</div>
-        </div>
-
+        
 
 
 
