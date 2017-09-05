@@ -1915,4 +1915,25 @@ margin-bottom: 30px;
 
 .loanholder.approve {
   background-color: #68c57e;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+          
+  display: flex;
+
+  height: 140px;
+}
+.loanholder.approve img, .loanholder.approve h2 {
+  display: inline-block;
 }

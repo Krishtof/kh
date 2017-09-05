@@ -151,24 +151,7 @@
 			    <div class="container">
 
 			      <div class="loanholder approve">
-			        <h2>loan I apply for</h2>
-			        <div class="amount">
-			          <p>
-			            loan amount
-			          </p>
-			          <h1><?=$_SESSION["loan_amount"]?> Ft</h1>
-			        </div>
-			        <div class="info">
-
-			          <div class="instalments">
-			            <h2>installments:</h2>
-			            <p><?=$_SESSION["loan_instalments"]?> Ft</p>
-			          </div>
-			          <div class="instalments">
-			            <h2>repaid in:</h2>
-			            <p><?=$_SESSION["repaid_in"]?> months</p>
-			          </div>
-			        </div>
+							<h2>the loan you requested is approved!</h2>
 			      </div>
 
 			    </div>

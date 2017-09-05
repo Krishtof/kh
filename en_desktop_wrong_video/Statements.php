@@ -264,6 +264,8 @@
 <div class="container">
 
 	<div class="loanholder">
+		<p class="edit">Edit</p>
+
 		<h2>Loan I apply for</h2>
 		<div class="amount">
 			<p>
@@ -325,18 +327,7 @@
 							Bank employee will confirm that it is really you and you can continue in the process
 							</li>
 							</ol> <br />
-							<div class="check">
 
-                <label>
-                  <input type='checkbox' id="employment">
-                  <span></span>
-                  <p style="max-width: 90%">
-                    I agree that my identification will be accomplished through the VIDEO with certificated KH employee
-
-
-                  </p>
-                </label>
-              </div>
 
 							<div class="check">
 
@@ -344,7 +335,7 @@
                   <input type='checkbox' id="employment">
                   <span></span>
                   <p style="max-width: 90%">
-                    I agree that the VIDEO will be recorded for identification purposes and save it (the video will not be provided to third parties and it will be stored just for security reasons).
+                    I agree that my AML identification will be accomplished through a video channel and that the bank will record and save in a retrievable manner the entire communication between myself and the bank in the course of the identification process.
 
                   </p>
                 </label>

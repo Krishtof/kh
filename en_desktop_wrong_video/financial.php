@@ -103,19 +103,9 @@
 	<div class="subheader">
 	</div>
 	<div class="sec_subheader">
+
 		<div class="container">
-			<button onclick="window.location.href='index.php'" class="bluebtn headerbtn" type="button" name="button">
-				<p>
-				Edit
-			</p>
-			<i class="fa fa-edit" aria-hidden="true"></i>
 
-
-			</button>
-
-		</div>
-		<div class="container">
-			
 		</div>
 
 	</div>
@@ -208,6 +198,8 @@
     <div class="container">
 
 			<div class="loanholder">
+				<p class="edit">Edit</p>
+
         <h2>Loan I apply for</h2>
         <div class="amount">
           <p>
